@@ -1,0 +1,914 @@
+primeira execução, sem hazard
+decodificou addiu 9 28 28 1760
+chamou addiu com 28 28 1760
+decodificou addiu 9 29 29 4294967272
+chamou addiu com 29 29 -24
+decodificou addiu 9 4 4 31384
+chamou addiu com 4 4 31384
+chamou lw com 35 28 2 4294934652
+decodificou addiu 9 29 29 4294967272
+chamou addiu com 29 29 -24
+Hazard
+chamou lw com 35 2 4 8
+decodificou addiu 9 29 6 28
+chamou addiu com 6 29 28
+Hazard
+decodificou addiu 9 29 29 4294967264
+chamou addiu com 29 29 -32
+chamou lw com 35 4 4 84
+Hazard
+chamou lw com 35 4 2 56
+Hazard
+decodificou addiu 9 29 29 4294967272
+chamou addiu com 29 29 -24
+decodificou addiu 9 2 2 14580
+chamou addiu com 2 2 14580
+decodificou addiu 9 0 3 1
+chamou addiu com 3 0 1
+decodificou addiu 9 16 5 616
+chamou addiu com 5 16 616
+chamou lw com 35 4 4 4
+decodificou addiu 9 0 2 3
+chamou addiu com 2 0 3
+Hazard
+decodificou addiu 9 0 5 4
+chamou addiu com 5 0 4
+decodificou addiu 9 2 2 26260
+chamou addiu com 2 2 26260
+decodificou addiu 9 3 3 26368
+chamou addiu com 3 3 26368
+decodificou addiu 9 2 2 26500
+chamou addiu com 2 2 26500
+decodificou addiu 9 3 3 26608
+chamou addiu com 3 3 26608
+chamou lw com 35 16 4 8
+Hazard
+decodificou addiu 9 0 5 9
+chamou addiu com 5 0 9
+decodificou addiu 9 0 6 1
+chamou addiu com 6 0 1
+decodificou addiu 9 2 2 26260
+chamou addiu com 2 2 26260
+decodificou addiu 9 3 3 26368
+chamou addiu com 3 3 26368
+decodificou addiu 9 2 2 26500
+chamou addiu com 2 2 26500
+decodificou addiu 9 3 3 26608
+chamou addiu com 3 3 26608
+chamou lw com 35 16 4 12
+Hazard
+decodificou addiu 9 0 5 10
+chamou addiu com 5 0 10
+decodificou addiu 9 0 6 2
+chamou addiu com 6 0 2
+decodificou addiu 9 2 2 26260
+chamou addiu com 2 2 26260
+decodificou addiu 9 3 3 26368
+chamou addiu com 3 3 26368
+decodificou addiu 9 2 2 26500
+chamou addiu com 2 2 26500
+decodificou addiu 9 3 3 26608
+chamou addiu com 3 3 26608
+chamou lw com 35 29 31 20
+chamou lw com 35 29 16 16
+Hazard
+Hazard
+decodificou addiu 9 29 29 24
+chamou addiu com 29 29 24
+chamou lw com 35 16 4 84
+Hazard
+decodificou addiu 9 29 29 4294966696
+chamou addiu com 29 29 -600
+decodificou addiu 9 29 29 4294967272
+chamou addiu com 29 29 -24
+chamou lw com 35 28 4 4294934652
+Hazard
+decodificou addiu 9 2 2 31892
+chamou addiu com 2 2 31892
+chamou lw com 35 29 31 16
+Hazard
+decodificou addiu 9 29 29 24
+chamou addiu com 29 29 24
+chamou lw com 35 2 2 0
+decodificou addiu 9 29 4 496
+chamou addiu com 4 29 496
+Hazard
+decodificou addiu 9 0 6 8
+chamou addiu com 6 0 8
+decodificou addiu 9 6 6 4294967295
+chamou addiu com 6 6 -1
+decodificou addiu 9 3 3 1
+chamou addiu com 3 3 1
+decodificou addiu 9 6 6 4294967295
+chamou addiu com 6 6 -1
+decodificou addiu 9 3 3 1
+chamou addiu com 3 3 1
+decodificou addiu 9 6 6 4294967295
+chamou addiu com 6 6 -1
+decodificou addiu 9 3 3 1
+chamou addiu com 3 3 1
+decodificou addiu 9 6 6 4294967295
+chamou addiu com 6 6 -1
+decodificou addiu 9 3 3 1
+chamou addiu com 3 3 1
+decodificou addiu 9 6 6 4294967295
+chamou addiu com 6 6 -1
+decodificou addiu 9 3 3 1
+chamou addiu com 3 3 1
+decodificou addiu 9 6 6 4294967295
+chamou addiu com 6 6 -1
+decodificou addiu 9 3 3 1
+chamou addiu com 3 3 1
+decodificou addiu 9 6 6 4294967295
+chamou addiu com 6 6 -1
+decodificou addiu 9 3 3 1
+chamou addiu com 3 3 1
+decodificou addiu 9 6 6 4294967295
+chamou addiu com 6 6 -1
+decodificou addiu 9 3 3 1
+chamou addiu com 3 3 1
+chamou lw com 35 29 2 604
+Hazard
+Hazard
+chamou lw com 35 29 5 604
+Hazard
+chamou lw com 35 5 2 16
+Hazard
+chamou lw com 35 29 4 604
+Hazard
+decodificou addiu 9 29 29 4294967272
+chamou addiu com 29 29 -24
+chamou lw com 35 4 4 84
+Hazard
+chamou lw com 35 4 2 56
+Hazard
+Hazard
+chamou lw com 35 16 3 16
+Hazard
+decodificou addiu 9 29 29 4294967200
+chamou addiu com 29 29 -96
+Hazard
+Hazard
+chamou lw com 35 4 4 84
+Hazard
+decodificou addiu 9 29 6 16
+chamou addiu com 6 29 16
+decodificou addiu 9 29 29 4294967272
+chamou addiu com 29 29 -24
+decodificou addiu 9 0 3 96
+chamou addiu com 3 0 96
+Hello World
+decodificou addiu 9 0 2 4294967295
+chamou addiu com 2 0 -1
+chamou lw com 35 29 31 20
+chamou lw com 35 29 16 16
+Hazard
+Hazard
+decodificou addiu 9 29 29 24
+chamou addiu com 29 29 24
+chamou lw com 35 29 2 20
+Hazard
+decodificou addiu 9 0 17 1024
+chamou addiu com 17 0 1024
+Hazard
+chamou lw com 35 16 4 84
+decodificou addiu 9 0 5 1024
+chamou addiu com 5 0 1024
+Hazard
+decodificou addiu 9 5 5 11
+chamou addiu com 5 5 11
+decodificou addiu 9 29 29 4294967256
+chamou addiu com 29 29 -40
+decodificou addiu 9 0 17 16
+chamou addiu com 17 0 16
+decodificou addiu 9 0 2 4294967288
+chamou addiu com 2 0 -8
+decodificou addiu 9 2 10 56
+chamou addiu com 10 2 56
+decodificou addiu 9 20 2 4294935172
+chamou addiu com 2 20 -32124
+chamou lw com 35 3 16 12
+Hazard
+decodificou addiu 9 10 10 1
+chamou addiu com 10 10 1
+decodificou addiu 9 12 8 4294935180
+chamou addiu com 8 12 -32116
+chamou lw com 35 8 16 8
+Hazard
+decodificou addiu 9 0 3 4294967292
+chamou addiu com 3 0 -4
+decodificou addiu 9 20 3 4294935172
+chamou addiu com 3 20 -32124
+chamou lw com 35 3 5 4
+decodificou addiu 9 0 2 1
+chamou addiu com 2 0 1
+Hazard
+decodificou addiu 9 20 16 4294935172
+chamou addiu com 16 20 -32124
+chamou lw com 35 16 2 8
+decodificou addiu 9 0 19 4294967292
+chamou addiu com 19 0 -4
+Hazard
+chamou lw com 35 2 3 4
+Hazard
+decodificou addiu 9 29 29 4294967240
+chamou addiu com 29 29 -56
+decodificou addiu 9 23 22 4294935172
+chamou addiu com 22 23 -32124
+chamou lw com 35 22 19 8
+Hazard
+chamou lw com 35 19 6 4
+decodificou addiu 9 0 2 4294967292
+chamou addiu com 2 0 -4
+Hazard
+chamou lw com 35 28 3 4294934716
+Hazard
+chamou lw com 35 28 2 4294934680
+Hazard
+decodificou addiu 9 0 21 4294967295
+chamou addiu com 21 0 -1
+decodificou addiu 9 3 18 16
+chamou addiu com 18 3 16
+decodificou addiu 9 29 29 4294967272
+chamou addiu com 29 29 -24
+decodificou addiu 9 0 3 88
+chamou addiu com 3 0 88
+decodificou addiu 9 0 2 4294967295
+chamou addiu com 2 0 -1
+chamou lw com 35 29 31 20
+chamou lw com 35 29 16 16
+Hazard
+Hazard
+decodificou addiu 9 29 29 24
+chamou addiu com 29 29 24
+chamou lw com 35 21 2 4294936492
+Hazard
+chamou lw com 35 28 3 4294934680
+decodificou addiu 9 0 2 4294967295
+chamou addiu com 2 0 -1
+Hazard
+decodificou addiu 9 0 2 8
+chamou addiu com 2 0 8
+decodificou addiu 9 0 3 4096
+chamou addiu com 3 0 4096
+decodificou addiu 9 29 29 4294967272
+chamou addiu com 29 29 -24
+decodificou addiu 9 0 3 88
+chamou addiu com 3 0 88
+decodificou addiu 9 0 2 4294967295
+chamou addiu com 2 0 -1
+chamou lw com 35 29 31 20
+chamou lw com 35 29 16 16
+Hazard
+Hazard
+decodificou addiu 9 29 29 24
+chamou addiu com 29 29 24
+decodificou addiu 9 0 2 4294967295
+chamou addiu com 2 0 -1
+chamou lw com 35 21 2 4294936492
+Hazard
+decodificou addiu 9 23 4 4294935172
+chamou addiu com 4 23 -32124
+chamou lw com 35 21 3 4294936492
+chamou lw com 35 28 2 4294934720
+Hazard
+Hazard
+chamou lw com 35 28 2 4294934724
+Hazard
+chamou lw com 35 29 31 52
+chamou lw com 35 29 30 48
+Hazard
+chamou lw com 35 29 23 44
+Hazard
+chamou lw com 35 29 22 40
+Hazard
+chamou lw com 35 29 21 36
+Hazard
+chamou lw com 35 29 20 32
+Hazard
+chamou lw com 35 29 19 28
+Hazard
+chamou lw com 35 29 18 24
+Hazard
+chamou lw com 35 29 17 20
+Hazard
+chamou lw com 35 29 16 16
+Hazard
+Hazard
+decodificou addiu 9 29 29 56
+chamou addiu com 29 29 56
+chamou lw com 35 16 2 8
+Hazard
+chamou lw com 35 2 3 4
+Hazard
+decodificou addiu 9 20 5 4294935172
+chamou addiu com 5 20 -32124
+chamou lw com 35 5 16 8
+Hazard
+decodificou addiu 9 16 2 8
+chamou addiu com 2 16 8
+chamou lw com 35 29 31 36
+chamou lw com 35 29 20 32
+Hazard
+chamou lw com 35 29 19 28
+Hazard
+chamou lw com 35 29 18 24
+Hazard
+chamou lw com 35 29 17 20
+Hazard
+chamou lw com 35 29 16 16
+Hazard
+Hazard
+decodificou addiu 9 29 29 40
+chamou addiu com 29 29 40
+chamou lw com 35 16 4 84
+Hazard
+Hazard
+decodificou addiu 9 3 3 14580
+chamou addiu com 3 3 14580
+chamou lw com 35 29 31 92
+chamou lw com 35 29 18 88
+Hazard
+chamou lw com 35 29 17 84
+Hazard
+chamou lw com 35 29 16 80
+Hazard
+Hazard
+decodificou addiu 9 29 29 96
+chamou addiu com 29 29 96
+Hazard
+chamou lw com 35 16 2 20
+Hazard
+chamou lw com 35 29 31 20
+chamou lw com 35 29 16 16
+Hazard
+Hazard
+decodificou addiu 9 29 29 24
+chamou addiu com 29 29 24
+decodificou addiu 9 0 3 4294967295
+chamou addiu com 3 0 -1
+chamou lw com 35 29 2 604
+Hazard
+Hazard
+decodificou addiu 9 0 2 10
+chamou addiu com 2 0 10
+decodificou addiu 9 29 18 72
+chamou addiu com 18 29 72
+decodificou addiu 9 0 17 37
+chamou addiu com 17 0 37
+chamou lw com 35 28 4 4294934652
+chamou lw com 35 28 7 4294934656
+Hazard
+decodificou addiu 9 29 2 496
+chamou addiu com 2 29 496
+Hazard
+decodificou addiu 9 29 5 504
+chamou addiu com 5 29 504
+decodificou addiu 9 29 29 4294967288
+chamou addiu com 29 29 -8
+decodificou addiu 9 0 2 4294967294
+chamou addiu com 2 0 -2
+Hazard
+Hazard
+decodificou addiu 9 29 29 8
+chamou addiu com 29 29 8
+chamou lw com 35 29 2 504
+Hazard
+chamou lw com 35 28 4 4294934652
+chamou lw com 35 28 7 4294934656
+Hazard
+decodificou addiu 9 29 2 496
+chamou addiu com 2 29 496
+Hazard
+decodificou addiu 9 29 5 504
+chamou addiu com 5 29 504
+decodificou addiu 9 29 29 4294967288
+chamou addiu com 29 29 -8
+decodificou addiu 9 0 2 4294967294
+chamou addiu com 2 0 -2
+Hazard
+Hazard
+decodificou addiu 9 29 29 8
+chamou addiu com 29 29 8
+chamou lw com 35 29 2 504
+Hazard
+chamou lw com 35 28 4 4294934652
+chamou lw com 35 28 7 4294934656
+Hazard
+decodificou addiu 9 29 2 496
+chamou addiu com 2 29 496
+Hazard
+decodificou addiu 9 29 5 504
+chamou addiu com 5 29 504
+decodificou addiu 9 29 29 4294967288
+chamou addiu com 29 29 -8
+decodificou addiu 9 0 2 4294967294
+chamou addiu com 2 0 -2
+Hazard
+Hazard
+decodificou addiu 9 29 29 8
+chamou addiu com 29 29 8
+chamou lw com 35 29 2 504
+Hazard
+chamou lw com 35 28 4 4294934652
+chamou lw com 35 28 7 4294934656
+Hazard
+decodificou addiu 9 29 2 496
+chamou addiu com 2 29 496
+Hazard
+decodificou addiu 9 29 5 504
+chamou addiu com 5 29 504
+decodificou addiu 9 29 29 4294967288
+chamou addiu com 29 29 -8
+decodificou addiu 9 0 2 4294967294
+chamou addiu com 2 0 -2
+Hazard
+Hazard
+decodificou addiu 9 29 29 8
+chamou addiu com 29 29 8
+chamou lw com 35 29 2 504
+Hazard
+chamou lw com 35 28 4 4294934652
+chamou lw com 35 28 7 4294934656
+Hazard
+decodificou addiu 9 29 2 496
+chamou addiu com 2 29 496
+Hazard
+decodificou addiu 9 29 5 504
+chamou addiu com 5 29 504
+decodificou addiu 9 29 29 4294967288
+chamou addiu com 29 29 -8
+decodificou addiu 9 0 2 4294967294
+chamou addiu com 2 0 -2
+Hazard
+Hazard
+decodificou addiu 9 29 29 8
+chamou addiu com 29 29 8
+chamou lw com 35 29 2 504
+Hazard
+chamou lw com 35 28 4 4294934652
+chamou lw com 35 28 7 4294934656
+Hazard
+decodificou addiu 9 29 2 496
+chamou addiu com 2 29 496
+Hazard
+decodificou addiu 9 29 5 504
+chamou addiu com 5 29 504
+decodificou addiu 9 29 29 4294967288
+chamou addiu com 29 29 -8
+decodificou addiu 9 0 2 4294967294
+chamou addiu com 2 0 -2
+Hazard
+Hazard
+decodificou addiu 9 29 29 8
+chamou addiu com 29 29 8
+chamou lw com 35 29 2 504
+Hazard
+chamou lw com 35 28 4 4294934652
+chamou lw com 35 28 7 4294934656
+Hazard
+decodificou addiu 9 29 2 496
+chamou addiu com 2 29 496
+Hazard
+decodificou addiu 9 29 5 504
+chamou addiu com 5 29 504
+decodificou addiu 9 29 29 4294967288
+chamou addiu com 29 29 -8
+decodificou addiu 9 0 2 4294967294
+chamou addiu com 2 0 -2
+Hazard
+Hazard
+decodificou addiu 9 29 29 8
+chamou addiu com 29 29 8
+chamou lw com 35 29 2 504
+Hazard
+chamou lw com 35 28 4 4294934652
+chamou lw com 35 28 7 4294934656
+Hazard
+decodificou addiu 9 29 2 496
+chamou addiu com 2 29 496
+Hazard
+decodificou addiu 9 29 5 504
+chamou addiu com 5 29 504
+decodificou addiu 9 29 29 4294967288
+chamou addiu com 29 29 -8
+decodificou addiu 9 0 2 4294967294
+chamou addiu com 2 0 -2
+Hazard
+Hazard
+decodificou addiu 9 29 29 8
+chamou addiu com 29 29 8
+chamou lw com 35 29 2 504
+Hazard
+chamou lw com 35 28 4 4294934652
+chamou lw com 35 28 7 4294934656
+Hazard
+decodificou addiu 9 29 2 496
+chamou addiu com 2 29 496
+Hazard
+decodificou addiu 9 29 5 504
+chamou addiu com 5 29 504
+decodificou addiu 9 29 29 4294967288
+chamou addiu com 29 29 -8
+decodificou addiu 9 0 2 4294967294
+chamou addiu com 2 0 -2
+Hazard
+Hazard
+decodificou addiu 9 29 29 8
+chamou addiu com 29 29 8
+chamou lw com 35 29 2 504
+Hazard
+chamou lw com 35 28 4 4294934652
+chamou lw com 35 28 7 4294934656
+Hazard
+decodificou addiu 9 29 2 496
+chamou addiu com 2 29 496
+Hazard
+decodificou addiu 9 29 5 504
+chamou addiu com 5 29 504
+decodificou addiu 9 29 29 4294967288
+chamou addiu com 29 29 -8
+decodificou addiu 9 0 2 4294967294
+chamou addiu com 2 0 -2
+Hazard
+Hazard
+decodificou addiu 9 29 29 8
+chamou addiu com 29 29 8
+chamou lw com 35 29 2 504
+Hazard
+chamou lw com 35 28 4 4294934652
+chamou lw com 35 28 7 4294934656
+Hazard
+decodificou addiu 9 29 2 496
+chamou addiu com 2 29 496
+Hazard
+decodificou addiu 9 29 5 504
+chamou addiu com 5 29 504
+decodificou addiu 9 29 29 4294967288
+chamou addiu com 29 29 -8
+decodificou addiu 9 0 2 4294967294
+chamou addiu com 2 0 -2
+Hazard
+Hazard
+decodificou addiu 9 29 29 8
+chamou addiu com 29 29 8
+chamou lw com 35 29 2 504
+Hazard
+chamou lw com 35 28 4 4294934652
+chamou lw com 35 28 7 4294934656
+Hazard
+decodificou addiu 9 29 2 496
+chamou addiu com 2 29 496
+Hazard
+decodificou addiu 9 29 5 504
+chamou addiu com 5 29 504
+decodificou addiu 9 29 29 4294967288
+chamou addiu com 29 29 -8
+decodificou addiu 9 0 2 4294967294
+chamou addiu com 2 0 -2
+Hazard
+Hazard
+decodificou addiu 9 29 29 8
+chamou addiu com 29 29 8
+chamou lw com 35 29 2 504
+Hazard
+chamou lw com 35 28 4 4294934652
+chamou lw com 35 28 7 4294934656
+Hazard
+decodificou addiu 9 29 2 496
+chamou addiu com 2 29 496
+Hazard
+decodificou addiu 9 29 5 504
+chamou addiu com 5 29 504
+decodificou addiu 9 29 29 4294967288
+chamou addiu com 29 29 -8
+decodificou addiu 9 0 2 4294967294
+chamou addiu com 2 0 -2
+Hazard
+Hazard
+decodificou addiu 9 29 29 8
+chamou addiu com 29 29 8
+chamou lw com 35 29 2 60
+chamou lw com 35 29 3 64
+Hazard
+decodificou addiu 9 2 2 1
+chamou addiu com 2 2 1
+Hazard
+decodificou addiu 9 18 18 8
+chamou addiu com 18 18 8
+chamou lw com 35 29 3 520
+Hazard
+decodificou addiu 9 20 20 1
+chamou addiu com 20 20 1
+chamou lw com 35 29 2 64
+Hazard
+chamou lw com 35 29 4 604
+Hazard
+decodificou addiu 9 29 5 56
+chamou addiu com 5 29 56
+decodificou addiu 9 29 29 4294967272
+chamou addiu com 29 29 -24
+chamou lw com 35 5 2 8
+Hazard
+decodificou addiu 9 29 29 4294967240
+chamou addiu com 29 29 -56
+chamou lw com 35 5 17 8
+Hazard
+Hazard
+chamou lw com 35 4 2 16
+Hazard
+chamou lw com 35 21 18 0
+Hazard
+chamou lw com 35 18 17 4
+chamou lw com 35 18 19 0
+Hazard
+Hazard
+decodificou addiu 9 18 18 8
+chamou addiu com 18 18 8
+decodificou addiu 9 0 5 10
+chamou addiu com 5 0 10
+decodificou addiu 9 4 4 1
+chamou addiu com 4 4 1
+decodificou addiu 9 4 4 1
+chamou addiu com 4 4 1
+decodificou addiu 9 4 4 1
+chamou addiu com 4 4 1
+decodificou addiu 9 4 4 1
+chamou addiu com 4 4 1
+chamou lw com 35 9 2 0
+Hazard
+decodificou addiu 9 6 6 4294967292
+chamou addiu com 6 6 -4
+decodificou addiu 9 9 9 4
+chamou addiu com 9 9 4
+chamou lw com 35 9 2 0
+Hazard
+decodificou addiu 9 6 6 4294967292
+chamou addiu com 6 6 -4
+decodificou addiu 9 9 9 4
+chamou addiu com 9 9 4
+chamou lw com 35 9 2 0
+Hazard
+decodificou addiu 9 8 8 1
+chamou addiu com 8 8 1
+Hazard
+decodificou addiu 9 4 4 1
+chamou addiu com 4 4 1
+decodificou addiu 9 8 8 1
+chamou addiu com 8 8 1
+Hazard
+decodificou addiu 9 4 4 1
+chamou addiu com 4 4 1
+decodificou addiu 9 8 8 1
+chamou addiu com 8 8 1
+Hazard
+decodificou addiu 9 4 4 1
+chamou addiu com 4 4 1
+decodificou addiu 9 8 8 1
+chamou addiu com 8 8 1
+Hazard
+decodificou addiu 9 4 4 1
+chamou addiu com 4 4 1
+decodificou addiu 9 17 22 1
+chamou addiu com 22 17 1
+decodificou addiu 9 2 22 1
+chamou addiu com 22 2 1
+decodificou addiu 9 0 23 1
+chamou addiu com 23 0 1
+chamou lw com 35 20 4 0
+chamou lw com 35 20 2 16
+Hazard
+chamou lw com 35 20 3 8
+Hazard
+chamou lw com 35 20 7 20
+Hazard
+Hazard
+chamou lw com 35 20 4 0
+Hazard
+decodificou addiu 9 7 7 4294967295
+chamou addiu com 7 7 -1
+decodificou addiu 9 0 2 4294967295
+chamou addiu com 2 0 -1
+decodificou addiu 9 0 3 4294967295
+chamou addiu com 3 0 -1
+decodificou addiu 9 7 7 4294967295
+chamou addiu com 7 7 -1
+Hazard
+decodificou addiu 9 5 5 1
+chamou addiu com 5 5 1
+decodificou addiu 9 8 8 1
+chamou addiu com 8 8 1
+decodificou addiu 9 7 7 4294967295
+chamou addiu com 7 7 -1
+Hazard
+decodificou addiu 9 5 5 1
+chamou addiu com 5 5 1
+decodificou addiu 9 8 8 1
+chamou addiu com 8 8 1
+decodificou addiu 9 7 7 4294967295
+chamou addiu com 7 7 -1
+Hazard
+decodificou addiu 9 5 5 1
+chamou addiu com 5 5 1
+decodificou addiu 9 8 8 1
+chamou addiu com 8 8 1
+decodificou addiu 9 7 7 4294967295
+chamou addiu com 7 7 -1
+Hazard
+decodificou addiu 9 5 5 1
+chamou addiu com 5 5 1
+decodificou addiu 9 8 8 1
+chamou addiu com 8 8 1
+decodificou addiu 9 7 7 4294967295
+chamou addiu com 7 7 -1
+Hazard
+decodificou addiu 9 5 5 1
+chamou addiu com 5 5 1
+decodificou addiu 9 8 8 1
+chamou addiu com 8 8 1
+decodificou addiu 9 7 7 4294967295
+chamou addiu com 7 7 -1
+Hazard
+decodificou addiu 9 5 5 1
+chamou addiu com 5 5 1
+decodificou addiu 9 8 8 1
+chamou addiu com 8 8 1
+decodificou addiu 9 7 7 4294967295
+chamou addiu com 7 7 -1
+Hazard
+decodificou addiu 9 5 5 1
+chamou addiu com 5 5 1
+decodificou addiu 9 8 8 1
+chamou addiu com 8 8 1
+decodificou addiu 9 7 7 4294967295
+chamou addiu com 7 7 -1
+Hazard
+decodificou addiu 9 5 5 1
+chamou addiu com 5 5 1
+decodificou addiu 9 8 8 1
+chamou addiu com 8 8 1
+decodificou addiu 9 7 7 4294967295
+chamou addiu com 7 7 -1
+Hazard
+decodificou addiu 9 5 5 1
+chamou addiu com 5 5 1
+decodificou addiu 9 8 8 1
+chamou addiu com 8 8 1
+decodificou addiu 9 7 7 4294967295
+chamou addiu com 7 7 -1
+Hazard
+decodificou addiu 9 5 5 1
+chamou addiu com 5 5 1
+decodificou addiu 9 8 8 1
+chamou addiu com 8 8 1
+decodificou addiu 9 7 7 4294967295
+chamou addiu com 7 7 -1
+Hazard
+decodificou addiu 9 5 5 1
+chamou addiu com 5 5 1
+decodificou addiu 9 8 8 1
+chamou addiu com 8 8 1
+decodificou addiu 9 7 7 4294967295
+chamou addiu com 7 7 -1
+Hazard
+decodificou addiu 9 5 5 1
+chamou addiu com 5 5 1
+decodificou addiu 9 8 8 1
+chamou addiu com 8 8 1
+chamou lw com 35 20 3 8
+chamou lw com 35 20 2 0
+Hazard
+Hazard
+decodificou addiu 9 29 29 4294967264
+chamou addiu com 29 29 -32
+chamou lw com 35 4 4 84
+Hazard
+chamou lw com 35 4 2 56
+Hazard
+Hazard
+chamou lw com 35 18 17 16
+Hazard
+chamou lw com 35 18 2 0
+Hazard
+chamou lw com 35 18 2 36
+chamou lw com 35 18 4 28
+Hazard
+Hazard
+decodificou addiu 9 29 29 4294967264
+chamou addiu com 29 29 -32
+Hazard
+decodificou addiu 9 0 7 2
+chamou addiu com 7 0 2
+Hazard
+chamou lw com 35 16 4 84
+Hazard
+Hazard
+decodificou addiu 9 29 29 4294967272
+chamou addiu com 29 29 -24
+decodificou addiu 9 0 3 80
+chamou addiu com 3 0 80
+decodificou addiu 9 0 2 4294967295
+chamou addiu com 2 0 -1
+chamou lw com 35 29 31 20
+chamou lw com 35 29 16 16
+Hazard
+Hazard
+decodificou addiu 9 29 29 24
+chamou addiu com 29 29 24
+chamou lw com 35 29 31 28
+chamou lw com 35 29 18 24
+Hazard
+chamou lw com 35 29 17 20
+Hazard
+chamou lw com 35 29 16 16
+Hazard
+Hazard
+decodificou addiu 9 29 29 32
+chamou addiu com 29 29 32
+chamou lw com 35 29 31 28
+chamou lw com 35 29 18 24
+Hazard
+chamou lw com 35 29 17 20
+Hazard
+chamou lw com 35 29 16 16
+Hazard
+Hazard
+decodificou addiu 9 29 29 32
+chamou addiu com 29 29 32
+chamou lw com 35 21 2 8
+Hazard
+chamou lw com 35 29 31 48
+chamou lw com 35 29 23 44
+Hazard
+chamou lw com 35 29 22 40
+Hazard
+chamou lw com 35 29 21 36
+Hazard
+chamou lw com 35 29 20 32
+Hazard
+chamou lw com 35 29 19 28
+Hazard
+chamou lw com 35 29 18 24
+Hazard
+chamou lw com 35 29 17 20
+Hazard
+chamou lw com 35 29 16 16
+Hazard
+Hazard
+decodificou addiu 9 29 29 56
+chamou addiu com 29 29 56
+chamou lw com 35 29 31 20
+chamou lw com 35 29 16 16
+Hazard
+Hazard
+decodificou addiu 9 29 29 24
+chamou addiu com 29 29 24
+chamou lw com 35 29 3 604
+Hazard
+chamou lw com 35 29 3 520
+Hazard
+Hazard
+chamou lw com 35 29 31 596
+chamou lw com 35 29 30 592
+Hazard
+chamou lw com 35 29 23 588
+Hazard
+chamou lw com 35 29 22 584
+Hazard
+chamou lw com 35 29 21 580
+Hazard
+chamou lw com 35 29 20 576
+Hazard
+chamou lw com 35 29 19 572
+Hazard
+chamou lw com 35 29 18 568
+Hazard
+chamou lw com 35 29 17 564
+Hazard
+chamou lw com 35 29 16 560
+Hazard
+Hazard
+decodificou addiu 9 29 29 600
+chamou addiu com 29 29 600
+chamou lw com 35 29 31 28
+chamou lw com 35 29 18 24
+Hazard
+chamou lw com 35 29 17 20
+Hazard
+chamou lw com 35 29 16 16
+Hazard
+Hazard
+decodificou addiu 9 29 29 32
+chamou addiu com 29 29 32
+chamou lw com 35 29 31 16
+Hazard
+decodificou addiu 9 29 29 24
+chamou addiu com 29 29 24
+chamou lw com 35 29 31 20
+chamou lw com 35 29 30 16
+Hazard
+Hazard
+decodificou addiu 9 29 29 24
+chamou addiu com 29 29 24
+decodificou addiu 9 0 3 100
+chamou addiu com 3 0 100
