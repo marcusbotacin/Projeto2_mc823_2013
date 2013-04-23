@@ -131,6 +131,7 @@ void ac_behavior( lhu )
 //!Instruction lw behavior method.
 void ac_behavior( lw )
 {
+  cout<<"lw com rt= "<<rt<<" rs= "<<rs<<" \n";
   dbg_printf("lw r%d, %d(r%d)\n", rt, imm & 0xFFFF, rs);
   RB[rt] = DM.read(RB[rs]+ imm);
   dbg_printf("Result = %#x\n", RB[rt]);
