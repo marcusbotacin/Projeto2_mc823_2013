@@ -316,6 +316,7 @@ void ac_behavior( lui )
 //!Instruction add behavior method.
 void ac_behavior( add )
 {
+  cout<<"add com rd "<<rd<<" rs "<<rs<<" rt "<<rt<<" \n";
   dbg_printf("add r%d, r%d, r%d\n", rd, rs, rt);
   RB[rd] = RB[rs] + RB[rt];
   dbg_printf("Result = %#x\n", RB[rd]);
@@ -348,6 +349,8 @@ void ac_behavior( sub )
 //!Instruction subu behavior method.
 void ac_behavior( subu )
 {
+  
+  cout<<"subu com rd "<<rd<<" rs "<<rs<<" rt "<<rt<<" \n";
   dbg_printf("subu r%d, r%d, r%d\n", rd, rs, rt);
   RB[rd] = RB[rs] - RB[rt];
   dbg_printf("Result = %#x\n", RB[rd]);

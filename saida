@@ -1,6399 +1,8041 @@
 primeira execução, sem hazard
 
 
-Instrucao Atual: 47 rs: 0 rt: 28
+Instrucao Atual: 47 rs: 0 rs2 0 rt: 28
 Instrucao Anterior: 20 rs: 0 rt: 28
 
 decodificou addiu 9 28 28 1760
 chamou addiu com 28 28 1760
 
 
-Instrucao Atual: 14 rs: 28 rt: 28
+Instrucao Atual: 14 rs: 28 rs2 0 rt: 28
 Instrucao Anterior: 47 rs: 0 rt: 28
 
 decodificou addiu 9 29 29 4294967272
 chamou addiu com 29 29 -24
 
 
-Instrucao Atual: 14 rs: 29 rt: 29
+Instrucao Atual: 14 rs: 29 rs2 0 rt: 29
 Instrucao Anterior: 14 rs: 28 rt: 28
 
 
 
-Instrucao Atual: 10 rs: 29 rt: 31
+Instrucao Atual: 10 rs: 29 rs2 0 rt: 31
 Instrucao Anterior: 14 rs: 29 rt: 29
 
 
 
-Instrucao Atual: 10 rs: 29 rt: 30
+Instrucao Atual: 10 rs: 29 rs2 0 rt: 30
 Instrucao Anterior: 10 rs: 29 rt: 31
 
+addu
 
 
-Instrucao Atual: 22 rs: 29 rt: 30
+Instrucao Atual: 22 rs: 29 rs2 0 rt: 30
 Instrucao Anterior: 10 rs: 29 rt: 30
 
 
 
-Instrucao Atual: 20 rs: 0 rt: 4
+Instrucao Atual: 20 rs: 0 rs2 0 rt: 4
 Instrucao Anterior: 22 rs: 29 rt: 30
 
 
 
-Instrucao Atual: 47 rs: 0 rt: 4
+Instrucao Atual: 47 rs: 0 rs2 0 rt: 4
 Instrucao Anterior: 20 rs: 0 rt: 4
 
 decodificou addiu 9 4 4 31384
 chamou addiu com 4 4 31384
 
 
-Instrucao Atual: 14 rs: 4 rt: 4
+Instrucao Atual: 14 rs: 4 rs2 0 rt: 4
 Instrucao Anterior: 47 rs: 0 rt: 4
 
 
 
-Instrucao Atual: 10 rs: 29 rt: 5
+Instrucao Atual: 10 rs: 29 rs2 0 rt: 5
 Instrucao Anterior: 14 rs: 4 rt: 4
 
 
 
-Instrucao Atual: 10 rs: 29 rt: 6
+Instrucao Atual: 10 rs: 29 rs2 0 rt: 6
 Instrucao Anterior: 10 rs: 29 rt: 5
 
 
 
-Instrucao Atual: 10 rs: 29 rt: 7
+Instrucao Atual: 10 rs: 29 rs2 0 rt: 7
 Instrucao Anterior: 10 rs: 29 rt: 6
 
 chamou lw com 35 28 2 4294934652
 lw com rt= 2 rs= 28 
 
 
-Instrucao Atual: 5 rs: 28 rt: 2
+Instrucao Atual: 5 rs: 28 rs2 0 rt: 2
 Instrucao Anterior: 10 rs: 29 rt: 7
 
 decodificou addiu 9 29 29 4294967272
 chamou addiu com 29 29 -24
 
 
-Instrucao Atual: 14 rs: 29 rt: 29
+Instrucao Atual: 14 rs: 29 rs2 0 rt: 29
 Instrucao Anterior: 5 rs: 28 rt: 2
 
 
 
-Instrucao Atual: 10 rs: 29 rt: 31
+Instrucao Atual: 10 rs: 29 rs2 0 rt: 31
 Instrucao Anterior: 14 rs: 29 rt: 29
 
+addu
 
 
-Instrucao Atual: 22 rs: 29 rt: 31
+Instrucao Atual: 22 rs: 4 rs2 0 rt: 5
 Instrucao Anterior: 10 rs: 29 rt: 31
 
 chamou lw com 35 2 4 8
 lw com rt= 4 rs= 2 
 
 
-Instrucao Atual: 5 rs: 2 rt: 4
-Instrucao Anterior: 22 rs: 29 rt: 31
+Instrucao Atual: 5 rs: 2 rs2 0 rt: 4
+Instrucao Anterior: 22 rs: 4 rt: 5
 
 decodificou addiu 9 29 6 28
 chamou addiu com 6 29 28
 
 
-Instrucao Atual: 14 rs: 29 rt: 6
+Instrucao Atual: 14 rs: 29 rs2 0 rt: 6
 Instrucao Anterior: 5 rs: 2 rt: 4
 
 
 
-Instrucao Atual: 47 rs: 29 rt: 6
+Instrucao Atual: 47 rs: 29 rs2 0 rt: 6
 Instrucao Anterior: 14 rs: 29 rt: 6
 
 
 
-Instrucao Atual: 10 rs: 4 rt: 2
+Instrucao Atual: 10 rs: 4 rs2 0 rt: 2
 Instrucao Anterior: 47 rs: 29 rt: 6
 
 decodificou addiu 9 29 29 4294967264
 chamou addiu com 29 29 -32
 
 
-Instrucao Atual: 14 rs: 29 rt: 29
+Instrucao Atual: 14 rs: 29 rs2 0 rt: 29
 Instrucao Anterior: 10 rs: 4 rt: 2
 
 
 
-Instrucao Atual: 10 rs: 29 rt: 18
+Instrucao Atual: 10 rs: 29 rs2 0 rt: 18
 Instrucao Anterior: 14 rs: 29 rt: 29
 
 
 
-Instrucao Atual: 10 rs: 29 rt: 17
+Instrucao Atual: 10 rs: 29 rs2 0 rt: 17
 Instrucao Anterior: 10 rs: 29 rt: 18
 
 
 
-Instrucao Atual: 10 rs: 29 rt: 16
+Instrucao Atual: 10 rs: 29 rs2 0 rt: 16
 Instrucao Anterior: 10 rs: 29 rt: 17
 
 
 
-Instrucao Atual: 10 rs: 29 rt: 31
+Instrucao Atual: 10 rs: 29 rs2 0 rt: 31
 Instrucao Anterior: 10 rs: 29 rt: 16
 
+addu
 
 
-Instrucao Atual: 22 rs: 29 rt: 31
+Instrucao Atual: 22 rs: 4 rs2 0 rt: 16
 Instrucao Anterior: 10 rs: 29 rt: 31
 
 chamou lw com 35 4 4 84
 lw com rt= 4 rs= 4 
 
 
-Instrucao Atual: 5 rs: 4 rt: 4
-Instrucao Anterior: 22 rs: 29 rt: 31
+Instrucao Atual: 5 rs: 4 rs2 0 rt: 4
+Instrucao Anterior: 22 rs: 4 rt: 16
 
-Hazard
+addu
 
 
-Instrucao Atual: 22 rs: 4 rt: 4
+Instrucao Atual: 22 rs: 5 rs2 0 rt: 17
 Instrucao Anterior: 5 rs: 4 rt: 4
 
 
 
-Instrucao Atual: 51 rs: 4 rt: 4
-Instrucao Anterior: 22 rs: 4 rt: 4
+Instrucao Atual: 51 rs: 5 rs2 0 rt: 17
+Instrucao Anterior: 22 rs: 5 rt: 17
+
+addu
 
 
-
-Instrucao Atual: 22 rs: 4 rt: 4
-Instrucao Anterior: 51 rs: 4 rt: 4
+Instrucao Atual: 22 rs: 6 rs2 0 rt: 18
+Instrucao Anterior: 51 rs: 5 rt: 17
 
 chamou lw com 35 4 2 56
 lw com rt= 2 rs= 4 
 
 
-Instrucao Atual: 5 rs: 4 rt: 2
-Instrucao Anterior: 22 rs: 4 rt: 4
-
-Hazard
+Instrucao Atual: 5 rs: 4 rs2 0 rt: 2
+Instrucao Anterior: 22 rs: 6 rt: 18
 
 
-Instrucao Atual: 31 rs: 4 rt: 2
+
+Instrucao Atual: 31 rs: 0 rs2 0 rt: 0
 Instrucao Anterior: 5 rs: 4 rt: 2
 
 
 
-Instrucao Atual: 50 rs: 4 rt: 2
-Instrucao Anterior: 31 rs: 4 rt: 2
+Instrucao Atual: 50 rs: 0 rs2 0 rt: 0
+Instrucao Anterior: 31 rs: 0 rt: 0
 
 
 
-Instrucao Atual: 31 rs: 4 rt: 2
-Instrucao Anterior: 50 rs: 4 rt: 2
+Instrucao Atual: 31 rs: 0 rs2 0 rt: 0
+Instrucao Anterior: 50 rs: 0 rt: 0
 
 
 
-Instrucao Atual: 47 rs: 4 rt: 2
-Instrucao Anterior: 31 rs: 4 rt: 2
+Instrucao Atual: 47 rs: 0 rs2 0 rt: 0
+Instrucao Anterior: 31 rs: 0 rt: 0
 
 
 
-Instrucao Atual: 31 rs: 4 rt: 2
-Instrucao Anterior: 47 rs: 4 rt: 2
+Instrucao Atual: 31 rs: 0 rs2 0 rt: 0
+Instrucao Anterior: 47 rs: 0 rt: 0
 
 decodificou addiu 9 29 29 4294967272
 chamou addiu com 29 29 -24
 
 
-Instrucao Atual: 14 rs: 29 rt: 29
-Instrucao Anterior: 31 rs: 4 rt: 2
+Instrucao Atual: 14 rs: 29 rs2 0 rt: 29
+Instrucao Anterior: 31 rs: 0 rt: 0
 
 
 
-Instrucao Atual: 20 rs: 0 rt: 2
+Instrucao Atual: 20 rs: 0 rs2 0 rt: 2
 Instrucao Anterior: 14 rs: 29 rt: 29
 
 
 
-Instrucao Atual: 10 rs: 29 rt: 31
+Instrucao Atual: 10 rs: 29 rs2 0 rt: 31
 Instrucao Anterior: 20 rs: 0 rt: 2
 
 
 
-Instrucao Atual: 10 rs: 29 rt: 16
+Instrucao Atual: 10 rs: 29 rs2 0 rt: 16
 Instrucao Anterior: 10 rs: 29 rt: 31
 
 decodificou addiu 9 2 2 14580
 chamou addiu com 2 2 14580
 
 
-Instrucao Atual: 14 rs: 2 rt: 2
+Instrucao Atual: 14 rs: 2 rs2 0 rt: 2
 Instrucao Anterior: 10 rs: 29 rt: 16
 
+addu
 
 
-Instrucao Atual: 22 rs: 2 rt: 2
+Instrucao Atual: 22 rs: 4 rs2 0 rt: 16
 Instrucao Anterior: 14 rs: 2 rt: 2
 
 decodificou addiu 9 0 3 1
 chamou addiu com 3 0 1
 
 
-Instrucao Atual: 14 rs: 0 rt: 3
-Instrucao Anterior: 22 rs: 2 rt: 2
+Instrucao Atual: 14 rs: 0 rs2 0 rt: 3
+Instrucao Anterior: 22 rs: 4 rt: 16
 
 decodificou addiu 9 16 5 616
 chamou addiu com 5 16 616
 
 
-Instrucao Atual: 14 rs: 16 rt: 5
+Instrucao Atual: 14 rs: 16 rs2 0 rt: 5
 Instrucao Anterior: 14 rs: 0 rt: 3
 
 
 
-Instrucao Atual: 10 rs: 16 rt: 2
+Instrucao Atual: 10 rs: 16 rs2 0 rt: 2
 Instrucao Anterior: 14 rs: 16 rt: 5
 
 chamou lw com 35 4 4 4
 lw com rt= 4 rs= 4 
 
 
-Instrucao Atual: 5 rs: 4 rt: 4
+Instrucao Atual: 5 rs: 4 rs2 0 rt: 4
 Instrucao Anterior: 10 rs: 16 rt: 2
 
 decodificou addiu 9 0 2 3
 chamou addiu com 2 0 3
 
 
-Instrucao Atual: 14 rs: 0 rt: 2
+Instrucao Atual: 14 rs: 0 rs2 0 rt: 2
 Instrucao Anterior: 5 rs: 4 rt: 4
 
 
 
-Instrucao Atual: 10 rs: 16 rt: 3
+Instrucao Atual: 10 rs: 16 rs2 0 rt: 3
 Instrucao Anterior: 14 rs: 0 rt: 2
 
 
 
-Instrucao Atual: 10 rs: 16 rt: 2
+Instrucao Atual: 10 rs: 16 rs2 0 rt: 2
 Instrucao Anterior: 10 rs: 16 rt: 3
 
 
 
-Instrucao Atual: 10 rs: 16 rt: 5
+Instrucao Atual: 10 rs: 16 rs2 0 rt: 5
 Instrucao Anterior: 10 rs: 16 rt: 2
 
+addu
 
 
-Instrucao Atual: 22 rs: 16 rt: 5
+Instrucao Atual: 22 rs: 16 rs2 0 rt: 7
 Instrucao Anterior: 10 rs: 16 rt: 5
 
 
 
-Instrucao Atual: 10 rs: 16 rt: 0
-Instrucao Anterior: 22 rs: 16 rt: 5
+Instrucao Atual: 10 rs: 16 rs2 0 rt: 0
+Instrucao Anterior: 22 rs: 16 rt: 7
 
 decodificou addiu 9 0 5 4
 chamou addiu com 5 0 4
 
 
-Instrucao Atual: 14 rs: 0 rt: 5
+Instrucao Atual: 14 rs: 0 rs2 0 rt: 5
 Instrucao Anterior: 10 rs: 16 rt: 0
 
 
 
-Instrucao Atual: 47 rs: 0 rt: 5
+Instrucao Atual: 47 rs: 0 rs2 0 rt: 5
 Instrucao Anterior: 14 rs: 0 rt: 5
 
+addu
 
 
-Instrucao Atual: 22 rs: 0 rt: 5
+Instrucao Atual: 22 rs: 0 rs2 0 rt: 6
 Instrucao Anterior: 47 rs: 0 rt: 5
 
 
 
-Instrucao Atual: 20 rs: 0 rt: 2
-Instrucao Anterior: 22 rs: 0 rt: 5
+Instrucao Atual: 20 rs: 0 rs2 0 rt: 2
+Instrucao Anterior: 22 rs: 0 rt: 6
 
 
 
-Instrucao Atual: 20 rs: 0 rt: 3
+Instrucao Atual: 20 rs: 0 rs2 0 rt: 3
 Instrucao Anterior: 20 rs: 0 rt: 2
 
 decodificou addiu 9 2 2 26260
 chamou addiu com 2 2 26260
 
 
-Instrucao Atual: 14 rs: 2 rt: 2
+Instrucao Atual: 14 rs: 2 rs2 0 rt: 2
 Instrucao Anterior: 20 rs: 0 rt: 3
 
 decodificou addiu 9 3 3 26368
 chamou addiu com 3 3 26368
 
 
-Instrucao Atual: 14 rs: 3 rt: 3
+Instrucao Atual: 14 rs: 3 rs2 0 rt: 3
 Instrucao Anterior: 14 rs: 2 rt: 2
 
 
 
-Instrucao Atual: 10 rs: 4 rt: 2
+Instrucao Atual: 10 rs: 4 rs2 0 rt: 2
 Instrucao Anterior: 14 rs: 3 rt: 3
 
 
 
-Instrucao Atual: 10 rs: 4 rt: 3
+Instrucao Atual: 10 rs: 4 rs2 0 rt: 3
 Instrucao Anterior: 10 rs: 4 rt: 2
 
 
 
-Instrucao Atual: 20 rs: 0 rt: 2
+Instrucao Atual: 20 rs: 0 rs2 0 rt: 2
 Instrucao Anterior: 10 rs: 4 rt: 3
 
 
 
-Instrucao Atual: 20 rs: 0 rt: 3
+Instrucao Atual: 20 rs: 0 rs2 0 rt: 3
 Instrucao Anterior: 20 rs: 0 rt: 2
 
 decodificou addiu 9 2 2 26500
 chamou addiu com 2 2 26500
 
 
-Instrucao Atual: 14 rs: 2 rt: 2
+Instrucao Atual: 14 rs: 2 rs2 0 rt: 2
 Instrucao Anterior: 20 rs: 0 rt: 3
 
 decodificou addiu 9 3 3 26608
 chamou addiu com 3 3 26608
 
 
-Instrucao Atual: 14 rs: 3 rt: 3
+Instrucao Atual: 14 rs: 3 rs2 0 rt: 3
 Instrucao Anterior: 14 rs: 2 rt: 2
 
 
 
-Instrucao Atual: 10 rs: 4 rt: 7
+Instrucao Atual: 10 rs: 4 rs2 0 rt: 7
 Instrucao Anterior: 14 rs: 3 rt: 3
 
 
 
-Instrucao Atual: 9 rs: 4 rt: 5
+Instrucao Atual: 9 rs: 4 rs2 0 rt: 5
 Instrucao Anterior: 10 rs: 4 rt: 7
 
 
 
-Instrucao Atual: 9 rs: 4 rt: 6
+Instrucao Atual: 9 rs: 4 rs2 0 rt: 6
 Instrucao Anterior: 9 rs: 4 rt: 5
 
 
 
-Instrucao Atual: 10 rs: 4 rt: 2
+Instrucao Atual: 10 rs: 4 rs2 0 rt: 2
 Instrucao Anterior: 9 rs: 4 rt: 6
 
 
 
-Instrucao Atual: 10 rs: 4 rt: 3
+Instrucao Atual: 10 rs: 4 rs2 0 rt: 3
 Instrucao Anterior: 10 rs: 4 rt: 2
 
 
 
-Instrucao Atual: 10 rs: 4 rt: 0
+Instrucao Atual: 10 rs: 4 rs2 0 rt: 0
 Instrucao Anterior: 10 rs: 4 rt: 3
 
 
 
-Instrucao Atual: 10 rs: 4 rt: 0
+Instrucao Atual: 10 rs: 4 rs2 0 rt: 0
 Instrucao Anterior: 10 rs: 4 rt: 0
 
 
 
-Instrucao Atual: 10 rs: 4 rt: 0
+Instrucao Atual: 10 rs: 4 rs2 0 rt: 0
 Instrucao Anterior: 10 rs: 4 rt: 0
 
 
 
-Instrucao Atual: 10 rs: 4 rt: 0
+Instrucao Atual: 10 rs: 4 rs2 0 rt: 0
 Instrucao Anterior: 10 rs: 4 rt: 0
 
 
 
-Instrucao Atual: 10 rs: 4 rt: 0
+Instrucao Atual: 10 rs: 4 rs2 0 rt: 0
 Instrucao Anterior: 10 rs: 4 rt: 0
 
 
 
-Instrucao Atual: 10 rs: 4 rt: 0
+Instrucao Atual: 10 rs: 4 rs2 0 rt: 0
 Instrucao Anterior: 10 rs: 4 rt: 0
 
 
 
-Instrucao Atual: 48 rs: 4 rt: 0
+Instrucao Atual: 48 rs: 4 rs2 0 rt: 0
 Instrucao Anterior: 10 rs: 4 rt: 0
 
 
 
-Instrucao Atual: 10 rs: 4 rt: 4
+Instrucao Atual: 10 rs: 4 rs2 0 rt: 4
 Instrucao Anterior: 48 rs: 4 rt: 0
 
 chamou lw com 35 16 4 8
 lw com rt= 4 rs= 16 
 
 
-Instrucao Atual: 5 rs: 16 rt: 4
+Instrucao Atual: 5 rs: 16 rs2 0 rt: 4
 Instrucao Anterior: 10 rs: 4 rt: 4
 
-Hazard
+addu
 
 
-Instrucao Atual: 22 rs: 16 rt: 4
+Instrucao Atual: 22 rs: 16 rs2 0 rt: 7
 Instrucao Anterior: 5 rs: 16 rt: 4
 
 decodificou addiu 9 0 5 9
 chamou addiu com 5 0 9
 
 
-Instrucao Atual: 14 rs: 0 rt: 5
-Instrucao Anterior: 22 rs: 16 rt: 4
+Instrucao Atual: 14 rs: 0 rs2 0 rt: 5
+Instrucao Anterior: 22 rs: 16 rt: 7
 
 
 
-Instrucao Atual: 47 rs: 0 rt: 5
+Instrucao Atual: 47 rs: 0 rs2 0 rt: 5
 Instrucao Anterior: 14 rs: 0 rt: 5
 
 decodificou addiu 9 0 6 1
 chamou addiu com 6 0 1
 
 
-Instrucao Atual: 14 rs: 0 rt: 6
+Instrucao Atual: 14 rs: 0 rs2 0 rt: 6
 Instrucao Anterior: 47 rs: 0 rt: 5
 
 
 
-Instrucao Atual: 20 rs: 0 rt: 2
+Instrucao Atual: 20 rs: 0 rs2 0 rt: 2
 Instrucao Anterior: 14 rs: 0 rt: 6
 
 
 
-Instrucao Atual: 20 rs: 0 rt: 3
+Instrucao Atual: 20 rs: 0 rs2 0 rt: 3
 Instrucao Anterior: 20 rs: 0 rt: 2
 
 decodificou addiu 9 2 2 26260
 chamou addiu com 2 2 26260
 
 
-Instrucao Atual: 14 rs: 2 rt: 2
+Instrucao Atual: 14 rs: 2 rs2 0 rt: 2
 Instrucao Anterior: 20 rs: 0 rt: 3
 
 decodificou addiu 9 3 3 26368
 chamou addiu com 3 3 26368
 
 
-Instrucao Atual: 14 rs: 3 rt: 3
+Instrucao Atual: 14 rs: 3 rs2 0 rt: 3
 Instrucao Anterior: 14 rs: 2 rt: 2
 
 
 
-Instrucao Atual: 10 rs: 4 rt: 2
+Instrucao Atual: 10 rs: 4 rs2 0 rt: 2
 Instrucao Anterior: 14 rs: 3 rt: 3
 
 
 
-Instrucao Atual: 10 rs: 4 rt: 3
+Instrucao Atual: 10 rs: 4 rs2 0 rt: 3
 Instrucao Anterior: 10 rs: 4 rt: 2
 
 
 
-Instrucao Atual: 20 rs: 0 rt: 2
+Instrucao Atual: 20 rs: 0 rs2 0 rt: 2
 Instrucao Anterior: 10 rs: 4 rt: 3
 
 
 
-Instrucao Atual: 20 rs: 0 rt: 3
+Instrucao Atual: 20 rs: 0 rs2 0 rt: 3
 Instrucao Anterior: 20 rs: 0 rt: 2
 
 decodificou addiu 9 2 2 26500
 chamou addiu com 2 2 26500
 
 
-Instrucao Atual: 14 rs: 2 rt: 2
+Instrucao Atual: 14 rs: 2 rs2 0 rt: 2
 Instrucao Anterior: 20 rs: 0 rt: 3
 
 decodificou addiu 9 3 3 26608
 chamou addiu com 3 3 26608
 
 
-Instrucao Atual: 14 rs: 3 rt: 3
+Instrucao Atual: 14 rs: 3 rs2 0 rt: 3
 Instrucao Anterior: 14 rs: 2 rt: 2
 
 
 
-Instrucao Atual: 10 rs: 4 rt: 7
+Instrucao Atual: 10 rs: 4 rs2 0 rt: 7
 Instrucao Anterior: 14 rs: 3 rt: 3
 
 
 
-Instrucao Atual: 9 rs: 4 rt: 5
+Instrucao Atual: 9 rs: 4 rs2 0 rt: 5
 Instrucao Anterior: 10 rs: 4 rt: 7
 
 
 
-Instrucao Atual: 9 rs: 4 rt: 6
+Instrucao Atual: 9 rs: 4 rs2 0 rt: 6
 Instrucao Anterior: 9 rs: 4 rt: 5
 
 
 
-Instrucao Atual: 10 rs: 4 rt: 2
+Instrucao Atual: 10 rs: 4 rs2 0 rt: 2
 Instrucao Anterior: 9 rs: 4 rt: 6
 
 
 
-Instrucao Atual: 10 rs: 4 rt: 3
+Instrucao Atual: 10 rs: 4 rs2 0 rt: 3
 Instrucao Anterior: 10 rs: 4 rt: 2
 
 
 
-Instrucao Atual: 10 rs: 4 rt: 0
+Instrucao Atual: 10 rs: 4 rs2 0 rt: 0
 Instrucao Anterior: 10 rs: 4 rt: 3
 
 
 
-Instrucao Atual: 10 rs: 4 rt: 0
+Instrucao Atual: 10 rs: 4 rs2 0 rt: 0
 Instrucao Anterior: 10 rs: 4 rt: 0
 
 
 
-Instrucao Atual: 10 rs: 4 rt: 0
+Instrucao Atual: 10 rs: 4 rs2 0 rt: 0
 Instrucao Anterior: 10 rs: 4 rt: 0
 
 
 
-Instrucao Atual: 10 rs: 4 rt: 0
+Instrucao Atual: 10 rs: 4 rs2 0 rt: 0
 Instrucao Anterior: 10 rs: 4 rt: 0
 
 
 
-Instrucao Atual: 10 rs: 4 rt: 0
+Instrucao Atual: 10 rs: 4 rs2 0 rt: 0
 Instrucao Anterior: 10 rs: 4 rt: 0
 
 
 
-Instrucao Atual: 10 rs: 4 rt: 0
+Instrucao Atual: 10 rs: 4 rs2 0 rt: 0
 Instrucao Anterior: 10 rs: 4 rt: 0
 
 
 
-Instrucao Atual: 48 rs: 4 rt: 0
+Instrucao Atual: 48 rs: 4 rs2 0 rt: 0
 Instrucao Anterior: 10 rs: 4 rt: 0
 
 
 
-Instrucao Atual: 10 rs: 4 rt: 4
+Instrucao Atual: 10 rs: 4 rs2 0 rt: 4
 Instrucao Anterior: 48 rs: 4 rt: 0
 
 chamou lw com 35 16 4 12
 lw com rt= 4 rs= 16 
 
 
-Instrucao Atual: 5 rs: 16 rt: 4
+Instrucao Atual: 5 rs: 16 rs2 0 rt: 4
 Instrucao Anterior: 10 rs: 4 rt: 4
 
-Hazard
+addu
 
 
-Instrucao Atual: 22 rs: 16 rt: 4
+Instrucao Atual: 22 rs: 16 rs2 0 rt: 7
 Instrucao Anterior: 5 rs: 16 rt: 4
 
 decodificou addiu 9 0 5 10
 chamou addiu com 5 0 10
 
 
-Instrucao Atual: 14 rs: 0 rt: 5
-Instrucao Anterior: 22 rs: 16 rt: 4
+Instrucao Atual: 14 rs: 0 rs2 0 rt: 5
+Instrucao Anterior: 22 rs: 16 rt: 7
 
 
 
-Instrucao Atual: 47 rs: 0 rt: 5
+Instrucao Atual: 47 rs: 0 rs2 0 rt: 5
 Instrucao Anterior: 14 rs: 0 rt: 5
 
 decodificou addiu 9 0 6 2
 chamou addiu com 6 0 2
 
 
-Instrucao Atual: 14 rs: 0 rt: 6
+Instrucao Atual: 14 rs: 0 rs2 0 rt: 6
 Instrucao Anterior: 47 rs: 0 rt: 5
 
 
 
-Instrucao Atual: 20 rs: 0 rt: 2
+Instrucao Atual: 20 rs: 0 rs2 0 rt: 2
 Instrucao Anterior: 14 rs: 0 rt: 6
 
 
 
-Instrucao Atual: 20 rs: 0 rt: 3
+Instrucao Atual: 20 rs: 0 rs2 0 rt: 3
 Instrucao Anterior: 20 rs: 0 rt: 2
 
 decodificou addiu 9 2 2 26260
 chamou addiu com 2 2 26260
 
 
-Instrucao Atual: 14 rs: 2 rt: 2
+Instrucao Atual: 14 rs: 2 rs2 0 rt: 2
 Instrucao Anterior: 20 rs: 0 rt: 3
 
 decodificou addiu 9 3 3 26368
 chamou addiu com 3 3 26368
 
 
-Instrucao Atual: 14 rs: 3 rt: 3
+Instrucao Atual: 14 rs: 3 rs2 0 rt: 3
 Instrucao Anterior: 14 rs: 2 rt: 2
 
 
 
-Instrucao Atual: 10 rs: 4 rt: 2
+Instrucao Atual: 10 rs: 4 rs2 0 rt: 2
 Instrucao Anterior: 14 rs: 3 rt: 3
 
 
 
-Instrucao Atual: 10 rs: 4 rt: 3
+Instrucao Atual: 10 rs: 4 rs2 0 rt: 3
 Instrucao Anterior: 10 rs: 4 rt: 2
 
 
 
-Instrucao Atual: 20 rs: 0 rt: 2
+Instrucao Atual: 20 rs: 0 rs2 0 rt: 2
 Instrucao Anterior: 10 rs: 4 rt: 3
 
 
 
-Instrucao Atual: 20 rs: 0 rt: 3
+Instrucao Atual: 20 rs: 0 rs2 0 rt: 3
 Instrucao Anterior: 20 rs: 0 rt: 2
 
 decodificou addiu 9 2 2 26500
 chamou addiu com 2 2 26500
 
 
-Instrucao Atual: 14 rs: 2 rt: 2
+Instrucao Atual: 14 rs: 2 rs2 0 rt: 2
 Instrucao Anterior: 20 rs: 0 rt: 3
 
 decodificou addiu 9 3 3 26608
 chamou addiu com 3 3 26608
 
 
-Instrucao Atual: 14 rs: 3 rt: 3
+Instrucao Atual: 14 rs: 3 rs2 0 rt: 3
 Instrucao Anterior: 14 rs: 2 rt: 2
 
 
 
-Instrucao Atual: 10 rs: 4 rt: 7
+Instrucao Atual: 10 rs: 4 rs2 0 rt: 7
 Instrucao Anterior: 14 rs: 3 rt: 3
 
 
 
-Instrucao Atual: 9 rs: 4 rt: 5
+Instrucao Atual: 9 rs: 4 rs2 0 rt: 5
 Instrucao Anterior: 10 rs: 4 rt: 7
 
 
 
-Instrucao Atual: 9 rs: 4 rt: 6
+Instrucao Atual: 9 rs: 4 rs2 0 rt: 6
 Instrucao Anterior: 9 rs: 4 rt: 5
 
 
 
-Instrucao Atual: 10 rs: 4 rt: 2
+Instrucao Atual: 10 rs: 4 rs2 0 rt: 2
 Instrucao Anterior: 9 rs: 4 rt: 6
 
 
 
-Instrucao Atual: 10 rs: 4 rt: 3
+Instrucao Atual: 10 rs: 4 rs2 0 rt: 3
 Instrucao Anterior: 10 rs: 4 rt: 2
 
 
 
-Instrucao Atual: 10 rs: 4 rt: 0
+Instrucao Atual: 10 rs: 4 rs2 0 rt: 0
 Instrucao Anterior: 10 rs: 4 rt: 3
 
 
 
-Instrucao Atual: 10 rs: 4 rt: 0
+Instrucao Atual: 10 rs: 4 rs2 0 rt: 0
 Instrucao Anterior: 10 rs: 4 rt: 0
 
 
 
-Instrucao Atual: 10 rs: 4 rt: 0
+Instrucao Atual: 10 rs: 4 rs2 0 rt: 0
 Instrucao Anterior: 10 rs: 4 rt: 0
 
 
 
-Instrucao Atual: 10 rs: 4 rt: 0
+Instrucao Atual: 10 rs: 4 rs2 0 rt: 0
 Instrucao Anterior: 10 rs: 4 rt: 0
 
 
 
-Instrucao Atual: 10 rs: 4 rt: 0
+Instrucao Atual: 10 rs: 4 rs2 0 rt: 0
 Instrucao Anterior: 10 rs: 4 rt: 0
 
 
 
-Instrucao Atual: 10 rs: 4 rt: 0
+Instrucao Atual: 10 rs: 4 rs2 0 rt: 0
 Instrucao Anterior: 10 rs: 4 rt: 0
 
 
 
-Instrucao Atual: 48 rs: 4 rt: 0
+Instrucao Atual: 48 rs: 4 rs2 0 rt: 0
 Instrucao Anterior: 10 rs: 4 rt: 0
 
 
 
-Instrucao Atual: 10 rs: 4 rt: 4
+Instrucao Atual: 10 rs: 4 rs2 0 rt: 4
 Instrucao Anterior: 48 rs: 4 rt: 0
 
 chamou lw com 35 29 31 20
 lw com rt= 31 rs= 29 
 
 
-Instrucao Atual: 5 rs: 29 rt: 31
+Instrucao Atual: 5 rs: 29 rs2 0 rt: 31
 Instrucao Anterior: 10 rs: 4 rt: 4
 
 chamou lw com 35 29 16 16
 lw com rt= 16 rs= 29 
 
 
-Instrucao Atual: 5 rs: 29 rt: 16
+Instrucao Atual: 5 rs: 29 rs2 0 rt: 16
 Instrucao Anterior: 5 rs: 29 rt: 31
 
 Hazard
 
 
-Instrucao Atual: 48 rs: 29 rt: 16
+Instrucao Atual: 48 rs: 29 rs2 0 rt: 16
 Instrucao Anterior: 5 rs: 29 rt: 16
 
 decodificou addiu 9 29 29 24
 chamou addiu com 29 29 24
 
 
-Instrucao Atual: 14 rs: 29 rt: 29
+Instrucao Atual: 14 rs: 29 rs2 0 rt: 29
 Instrucao Anterior: 48 rs: 29 rt: 16
 
 
 
-Instrucao Atual: 46 rs: 29 rt: 29
+Instrucao Atual: 46 rs: 29 rs2 0 rt: 29
 Instrucao Anterior: 14 rs: 29 rt: 29
 
 
 
-Instrucao Atual: 31 rs: 29 rt: 29
+Instrucao Atual: 31 rs: 0 rs2 0 rt: 0
 Instrucao Anterior: 46 rs: 29 rt: 29
 
 chamou lw com 35 16 4 84
 lw com rt= 4 rs= 16 
 
 
-Instrucao Atual: 5 rs: 16 rt: 4
-Instrucao Anterior: 31 rs: 29 rt: 29
+Instrucao Atual: 5 rs: 16 rs2 0 rt: 4
+Instrucao Anterior: 31 rs: 0 rt: 0
 
-Hazard
+addu
 
 
-Instrucao Atual: 22 rs: 16 rt: 4
+Instrucao Atual: 22 rs: 16 rs2 0 rt: 5
 Instrucao Anterior: 5 rs: 16 rt: 4
 
+addu
 
 
-Instrucao Atual: 22 rs: 16 rt: 4
-Instrucao Anterior: 22 rs: 16 rt: 4
-
-
-
-Instrucao Atual: 47 rs: 16 rt: 4
-Instrucao Anterior: 22 rs: 16 rt: 4
+Instrucao Atual: 22 rs: 17 rs2 0 rt: 6
+Instrucao Anterior: 22 rs: 16 rt: 5
 
 
 
-Instrucao Atual: 22 rs: 16 rt: 4
-Instrucao Anterior: 47 rs: 16 rt: 4
+Instrucao Atual: 47 rs: 17 rs2 0 rt: 6
+Instrucao Anterior: 22 rs: 17 rt: 6
+
+addu
+
+
+Instrucao Atual: 22 rs: 18 rs2 0 rt: 7
+Instrucao Anterior: 47 rs: 17 rt: 6
 
 decodificou addiu 9 29 29 4294966696
 chamou addiu com 29 29 -600
 
 
-Instrucao Atual: 14 rs: 29 rt: 29
-Instrucao Anterior: 22 rs: 16 rt: 4
+Instrucao Atual: 14 rs: 29 rs2 0 rt: 29
+Instrucao Anterior: 22 rs: 18 rt: 7
 
 
 
-Instrucao Atual: 10 rs: 29 rt: 31
+Instrucao Atual: 10 rs: 29 rs2 0 rt: 31
 Instrucao Anterior: 14 rs: 29 rt: 29
 
 
 
-Instrucao Atual: 10 rs: 29 rt: 16
+Instrucao Atual: 10 rs: 29 rs2 0 rt: 16
 Instrucao Anterior: 10 rs: 29 rt: 31
 
 
 
-Instrucao Atual: 10 rs: 29 rt: 5
+Instrucao Atual: 10 rs: 29 rs2 0 rt: 5
 Instrucao Anterior: 10 rs: 29 rt: 16
 
 
 
-Instrucao Atual: 10 rs: 29 rt: 4
+Instrucao Atual: 10 rs: 29 rs2 0 rt: 4
 Instrucao Anterior: 10 rs: 29 rt: 5
 
+addu
 
 
-Instrucao Atual: 22 rs: 29 rt: 4
+Instrucao Atual: 22 rs: 6 rs2 0 rt: 16
 Instrucao Anterior: 10 rs: 29 rt: 4
 
 
 
-Instrucao Atual: 10 rs: 29 rt: 7
-Instrucao Anterior: 22 rs: 29 rt: 4
+Instrucao Atual: 10 rs: 29 rs2 0 rt: 7
+Instrucao Anterior: 22 rs: 6 rt: 16
 
 
 
-Instrucao Atual: 10 rs: 29 rt: 30
+Instrucao Atual: 10 rs: 29 rs2 0 rt: 30
 Instrucao Anterior: 10 rs: 29 rt: 7
 
 
 
-Instrucao Atual: 10 rs: 29 rt: 23
+Instrucao Atual: 10 rs: 29 rs2 0 rt: 23
 Instrucao Anterior: 10 rs: 29 rt: 30
 
 
 
-Instrucao Atual: 10 rs: 29 rt: 22
+Instrucao Atual: 10 rs: 29 rs2 0 rt: 22
 Instrucao Anterior: 10 rs: 29 rt: 23
 
 
 
-Instrucao Atual: 10 rs: 29 rt: 21
+Instrucao Atual: 10 rs: 29 rs2 0 rt: 21
 Instrucao Anterior: 10 rs: 29 rt: 22
 
 
 
-Instrucao Atual: 10 rs: 29 rt: 20
+Instrucao Atual: 10 rs: 29 rs2 0 rt: 20
 Instrucao Anterior: 10 rs: 29 rt: 21
 
 
 
-Instrucao Atual: 10 rs: 29 rt: 19
+Instrucao Atual: 10 rs: 29 rs2 0 rt: 19
 Instrucao Anterior: 10 rs: 29 rt: 20
 
 
 
-Instrucao Atual: 10 rs: 29 rt: 18
+Instrucao Atual: 10 rs: 29 rs2 0 rt: 18
 Instrucao Anterior: 10 rs: 29 rt: 19
 
 
 
-Instrucao Atual: 47 rs: 29 rt: 18
+Instrucao Atual: 47 rs: 29 rs2 0 rt: 18
 Instrucao Anterior: 10 rs: 29 rt: 18
 
 
 
-Instrucao Atual: 10 rs: 29 rt: 17
+Instrucao Atual: 10 rs: 29 rs2 0 rt: 17
 Instrucao Anterior: 47 rs: 29 rt: 18
 
 decodificou addiu 9 29 29 4294967272
 chamou addiu com 29 29 -24
 
 
-Instrucao Atual: 14 rs: 29 rt: 29
+Instrucao Atual: 14 rs: 29 rs2 0 rt: 29
 Instrucao Anterior: 10 rs: 29 rt: 17
 
 chamou lw com 35 28 4 4294934652
 lw com rt= 4 rs= 28 
 
 
-Instrucao Atual: 5 rs: 28 rt: 4
+Instrucao Atual: 5 rs: 28 rs2 0 rt: 4
 Instrucao Anterior: 14 rs: 29 rt: 29
 
 
 
-Instrucao Atual: 10 rs: 29 rt: 31
+Instrucao Atual: 10 rs: 29 rs2 0 rt: 31
 Instrucao Anterior: 5 rs: 28 rt: 4
 
 
 
-Instrucao Atual: 47 rs: 29 rt: 31
+Instrucao Atual: 47 rs: 29 rs2 0 rt: 31
 Instrucao Anterior: 10 rs: 29 rt: 31
 
 
 
-Instrucao Atual: 31 rs: 29 rt: 31
+Instrucao Atual: 31 rs: 0 rs2 0 rt: 0
 Instrucao Anterior: 47 rs: 29 rt: 31
 
 
 
-Instrucao Atual: 20 rs: 0 rt: 2
-Instrucao Anterior: 31 rs: 29 rt: 31
+Instrucao Atual: 20 rs: 0 rs2 0 rt: 2
+Instrucao Anterior: 31 rs: 0 rt: 0
 
 
 
-Instrucao Atual: 48 rs: 0 rt: 2
+Instrucao Atual: 48 rs: 0 rs2 0 rt: 2
 Instrucao Anterior: 20 rs: 0 rt: 2
 
 decodificou addiu 9 2 2 31892
 chamou addiu com 2 2 31892
 
 
-Instrucao Atual: 14 rs: 2 rt: 2
+Instrucao Atual: 14 rs: 2 rs2 0 rt: 2
 Instrucao Anterior: 48 rs: 0 rt: 2
 
 chamou lw com 35 29 31 16
 lw com rt= 31 rs= 29 
 
 
-Instrucao Atual: 5 rs: 29 rt: 31
+Instrucao Atual: 5 rs: 29 rs2 0 rt: 31
 Instrucao Anterior: 14 rs: 2 rt: 2
 
-Hazard
 
 
-Instrucao Atual: 31 rs: 29 rt: 31
+Instrucao Atual: 31 rs: 0 rs2 0 rt: 0
 Instrucao Anterior: 5 rs: 29 rt: 31
 
 
 
-Instrucao Atual: 48 rs: 29 rt: 31
-Instrucao Anterior: 31 rs: 29 rt: 31
+Instrucao Atual: 48 rs: 0 rs2 0 rt: 0
+Instrucao Anterior: 31 rs: 0 rt: 0
 
 decodificou addiu 9 29 29 24
 chamou addiu com 29 29 24
 
 
-Instrucao Atual: 14 rs: 29 rt: 29
-Instrucao Anterior: 48 rs: 29 rt: 31
+Instrucao Atual: 14 rs: 29 rs2 0 rt: 29
+Instrucao Anterior: 48 rs: 0 rt: 0
 
 chamou lw com 35 2 2 0
 lw com rt= 2 rs= 2 
 
 
-Instrucao Atual: 5 rs: 2 rt: 2
+Instrucao Atual: 5 rs: 2 rs2 0 rt: 2
 Instrucao Anterior: 14 rs: 29 rt: 29
 
 decodificou addiu 9 29 4 496
 chamou addiu com 4 29 496
 
 
-Instrucao Atual: 14 rs: 29 rt: 4
+Instrucao Atual: 14 rs: 29 rs2 0 rt: 4
 Instrucao Anterior: 5 rs: 2 rt: 2
 
+addu
 
 
-Instrucao Atual: 22 rs: 29 rt: 4
+Instrucao Atual: 22 rs: 0 rs2 0 rt: 5
 Instrucao Anterior: 14 rs: 29 rt: 4
 
 decodificou addiu 9 0 6 8
 chamou addiu com 6 0 8
 
 
-Instrucao Atual: 14 rs: 0 rt: 6
-Instrucao Anterior: 22 rs: 29 rt: 4
+Instrucao Atual: 14 rs: 0 rs2 0 rt: 6
+Instrucao Anterior: 22 rs: 0 rt: 5
 
 
 
-Instrucao Atual: 47 rs: 0 rt: 6
+Instrucao Atual: 47 rs: 0 rs2 0 rt: 6
 Instrucao Anterior: 14 rs: 0 rt: 6
 
 
 
-Instrucao Atual: 10 rs: 29 rt: 2
+Instrucao Atual: 10 rs: 29 rs2 0 rt: 2
 Instrucao Anterior: 47 rs: 0 rt: 6
 
 
 
-Instrucao Atual: 16 rs: 6 rt: 2
+Instrucao Atual: 16 rs: 6 rs2 0 rt: 2
 Instrucao Anterior: 10 rs: 29 rt: 2
 
 
 
-Instrucao Atual: 51 rs: 6 rt: 2
+Instrucao Atual: 51 rs: 6 rs2 0 rt: 2
 Instrucao Anterior: 16 rs: 6 rt: 2
 
+addu
 
 
-Instrucao Atual: 22 rs: 6 rt: 2
+Instrucao Atual: 22 rs: 4 rs2 0 rt: 3
 Instrucao Anterior: 51 rs: 6 rt: 2
 
 
 
-Instrucao Atual: 50 rs: 6 rt: 2
-Instrucao Anterior: 22 rs: 6 rt: 2
+Instrucao Atual: 50 rs: 4 rs2 0 rt: 3
+Instrucao Anterior: 22 rs: 4 rt: 3
 
 
 
-Instrucao Atual: 31 rs: 6 rt: 2
-Instrucao Anterior: 50 rs: 6 rt: 2
+Instrucao Atual: 31 rs: 0 rs2 0 rt: 0
+Instrucao Anterior: 50 rs: 4 rt: 3
 
 decodificou addiu 9 6 6 4294967295
 chamou addiu com 6 6 -1
 
 
-Instrucao Atual: 14 rs: 6 rt: 6
-Instrucao Anterior: 31 rs: 6 rt: 2
+Instrucao Atual: 14 rs: 6 rs2 0 rt: 6
+Instrucao Anterior: 31 rs: 0 rt: 0
 
 
 
-Instrucao Atual: 8 rs: 3 rt: 5
+Instrucao Atual: 8 rs: 3 rs2 0 rt: 5
 Instrucao Anterior: 14 rs: 6 rt: 6
 
 
 
-Instrucao Atual: 51 rs: 3 rt: 5
+Instrucao Atual: 51 rs: 3 rs2 0 rt: 5
 Instrucao Anterior: 8 rs: 3 rt: 5
 
 decodificou addiu 9 3 3 1
 chamou addiu com 3 3 1
 
 
-Instrucao Atual: 14 rs: 3 rt: 3
+Instrucao Atual: 14 rs: 3 rs2 0 rt: 3
 Instrucao Anterior: 51 rs: 3 rt: 5
 
 decodificou addiu 9 6 6 4294967295
 chamou addiu com 6 6 -1
 
 
-Instrucao Atual: 14 rs: 6 rt: 6
+Instrucao Atual: 14 rs: 6 rs2 0 rt: 6
 Instrucao Anterior: 14 rs: 3 rt: 3
 
 
 
-Instrucao Atual: 8 rs: 3 rt: 5
+Instrucao Atual: 8 rs: 3 rs2 0 rt: 5
 Instrucao Anterior: 14 rs: 6 rt: 6
 
 
 
-Instrucao Atual: 51 rs: 3 rt: 5
+Instrucao Atual: 51 rs: 3 rs2 0 rt: 5
 Instrucao Anterior: 8 rs: 3 rt: 5
 
 decodificou addiu 9 3 3 1
 chamou addiu com 3 3 1
 
 
-Instrucao Atual: 14 rs: 3 rt: 3
+Instrucao Atual: 14 rs: 3 rs2 0 rt: 3
 Instrucao Anterior: 51 rs: 3 rt: 5
 
 decodificou addiu 9 6 6 4294967295
 chamou addiu com 6 6 -1
 
 
-Instrucao Atual: 14 rs: 6 rt: 6
+Instrucao Atual: 14 rs: 6 rs2 0 rt: 6
 Instrucao Anterior: 14 rs: 3 rt: 3
 
 
 
-Instrucao Atual: 8 rs: 3 rt: 5
+Instrucao Atual: 8 rs: 3 rs2 0 rt: 5
 Instrucao Anterior: 14 rs: 6 rt: 6
 
 
 
-Instrucao Atual: 51 rs: 3 rt: 5
+Instrucao Atual: 51 rs: 3 rs2 0 rt: 5
 Instrucao Anterior: 8 rs: 3 rt: 5
 
 decodificou addiu 9 3 3 1
 chamou addiu com 3 3 1
 
 
-Instrucao Atual: 14 rs: 3 rt: 3
+Instrucao Atual: 14 rs: 3 rs2 0 rt: 3
 Instrucao Anterior: 51 rs: 3 rt: 5
 
 decodificou addiu 9 6 6 4294967295
 chamou addiu com 6 6 -1
 
 
-Instrucao Atual: 14 rs: 6 rt: 6
+Instrucao Atual: 14 rs: 6 rs2 0 rt: 6
 Instrucao Anterior: 14 rs: 3 rt: 3
 
 
 
-Instrucao Atual: 8 rs: 3 rt: 5
+Instrucao Atual: 8 rs: 3 rs2 0 rt: 5
 Instrucao Anterior: 14 rs: 6 rt: 6
 
 
 
-Instrucao Atual: 51 rs: 3 rt: 5
+Instrucao Atual: 51 rs: 3 rs2 0 rt: 5
 Instrucao Anterior: 8 rs: 3 rt: 5
 
 decodificou addiu 9 3 3 1
 chamou addiu com 3 3 1
 
 
-Instrucao Atual: 14 rs: 3 rt: 3
+Instrucao Atual: 14 rs: 3 rs2 0 rt: 3
 Instrucao Anterior: 51 rs: 3 rt: 5
 
 decodificou addiu 9 6 6 4294967295
 chamou addiu com 6 6 -1
 
 
-Instrucao Atual: 14 rs: 6 rt: 6
+Instrucao Atual: 14 rs: 6 rs2 0 rt: 6
 Instrucao Anterior: 14 rs: 3 rt: 3
 
 
 
-Instrucao Atual: 8 rs: 3 rt: 5
+Instrucao Atual: 8 rs: 3 rs2 0 rt: 5
 Instrucao Anterior: 14 rs: 6 rt: 6
 
 
 
-Instrucao Atual: 51 rs: 3 rt: 5
+Instrucao Atual: 51 rs: 3 rs2 0 rt: 5
 Instrucao Anterior: 8 rs: 3 rt: 5
 
 decodificou addiu 9 3 3 1
 chamou addiu com 3 3 1
 
 
-Instrucao Atual: 14 rs: 3 rt: 3
+Instrucao Atual: 14 rs: 3 rs2 0 rt: 3
 Instrucao Anterior: 51 rs: 3 rt: 5
 
 decodificou addiu 9 6 6 4294967295
 chamou addiu com 6 6 -1
 
 
-Instrucao Atual: 14 rs: 6 rt: 6
+Instrucao Atual: 14 rs: 6 rs2 0 rt: 6
 Instrucao Anterior: 14 rs: 3 rt: 3
 
 
 
-Instrucao Atual: 8 rs: 3 rt: 5
+Instrucao Atual: 8 rs: 3 rs2 0 rt: 5
 Instrucao Anterior: 14 rs: 6 rt: 6
 
 
 
-Instrucao Atual: 51 rs: 3 rt: 5
+Instrucao Atual: 51 rs: 3 rs2 0 rt: 5
 Instrucao Anterior: 8 rs: 3 rt: 5
 
 decodificou addiu 9 3 3 1
 chamou addiu com 3 3 1
 
 
-Instrucao Atual: 14 rs: 3 rt: 3
+Instrucao Atual: 14 rs: 3 rs2 0 rt: 3
 Instrucao Anterior: 51 rs: 3 rt: 5
 
 decodificou addiu 9 6 6 4294967295
 chamou addiu com 6 6 -1
 
 
-Instrucao Atual: 14 rs: 6 rt: 6
+Instrucao Atual: 14 rs: 6 rs2 0 rt: 6
 Instrucao Anterior: 14 rs: 3 rt: 3
 
 
 
-Instrucao Atual: 8 rs: 3 rt: 5
+Instrucao Atual: 8 rs: 3 rs2 0 rt: 5
 Instrucao Anterior: 14 rs: 6 rt: 6
 
 
 
-Instrucao Atual: 51 rs: 3 rt: 5
+Instrucao Atual: 51 rs: 3 rs2 0 rt: 5
 Instrucao Anterior: 8 rs: 3 rt: 5
 
 decodificou addiu 9 3 3 1
 chamou addiu com 3 3 1
 
 
-Instrucao Atual: 14 rs: 3 rt: 3
+Instrucao Atual: 14 rs: 3 rs2 0 rt: 3
 Instrucao Anterior: 51 rs: 3 rt: 5
 
 decodificou addiu 9 6 6 4294967295
 chamou addiu com 6 6 -1
 
 
-Instrucao Atual: 14 rs: 6 rt: 6
+Instrucao Atual: 14 rs: 6 rs2 0 rt: 6
 Instrucao Anterior: 14 rs: 3 rt: 3
 
 
 
-Instrucao Atual: 8 rs: 3 rt: 5
+Instrucao Atual: 8 rs: 3 rs2 0 rt: 5
 Instrucao Anterior: 14 rs: 6 rt: 6
 
 
 
-Instrucao Atual: 51 rs: 3 rt: 5
+Instrucao Atual: 51 rs: 3 rs2 0 rt: 5
 Instrucao Anterior: 8 rs: 3 rt: 5
 
 decodificou addiu 9 3 3 1
 chamou addiu com 3 3 1
 
 
-Instrucao Atual: 14 rs: 3 rt: 3
+Instrucao Atual: 14 rs: 3 rs2 0 rt: 3
 Instrucao Anterior: 51 rs: 3 rt: 5
 
 
 
-Instrucao Atual: 48 rs: 3 rt: 3
+Instrucao Atual: 48 rs: 3 rs2 0 rt: 3
 Instrucao Anterior: 14 rs: 3 rt: 3
 
+addu
 
 
-Instrucao Atual: 22 rs: 3 rt: 3
+Instrucao Atual: 22 rs: 4 rs2 0 rt: 2
 Instrucao Anterior: 48 rs: 3 rt: 3
 
 chamou lw com 35 29 2 604
 lw com rt= 2 rs= 29 
 
 
-Instrucao Atual: 5 rs: 29 rt: 2
-Instrucao Anterior: 22 rs: 3 rt: 3
+Instrucao Atual: 5 rs: 29 rs2 0 rt: 2
+Instrucao Anterior: 22 rs: 4 rt: 2
 
-Hazard
+addu
 
 
-Instrucao Atual: 22 rs: 29 rt: 2
+Instrucao Atual: 22 rs: 0 rs2 0 rt: 4
 Instrucao Anterior: 5 rs: 29 rt: 2
 
+addu
 
 
-Instrucao Atual: 22 rs: 29 rt: 2
-Instrucao Anterior: 22 rs: 29 rt: 2
-
-
-
-Instrucao Atual: 4 rs: 2 rt: 3
-Instrucao Anterior: 22 rs: 29 rt: 2
+Instrucao Atual: 22 rs: 0 rs2 0 rt: 5
+Instrucao Anterior: 22 rs: 0 rt: 4
 
 
 
-Instrucao Atual: 10 rs: 29 rt: 4
+Instrucao Atual: 4 rs: 2 rs2 0 rt: 3
+Instrucao Anterior: 22 rs: 0 rt: 5
+
+
+
+Instrucao Atual: 10 rs: 29 rs2 0 rt: 4
 Instrucao Anterior: 4 rs: 2 rt: 3
 
 
 
-Instrucao Atual: 10 rs: 29 rt: 5
+Instrucao Atual: 10 rs: 29 rs2 0 rt: 5
 Instrucao Anterior: 10 rs: 29 rt: 4
 
 
 
-Instrucao Atual: 17 rs: 3 rt: 2
+Instrucao Atual: 17 rs: 3 rs2 0 rt: 2
 Instrucao Anterior: 10 rs: 29 rt: 5
 
 
 
-Instrucao Atual: 10 rs: 29 rt: 0
+Instrucao Atual: 10 rs: 29 rs2 0 rt: 0
 Instrucao Anterior: 17 rs: 3 rt: 2
 
 
 
-Instrucao Atual: 50 rs: 29 rt: 0
+Instrucao Atual: 50 rs: 29 rs2 0 rt: 0
 Instrucao Anterior: 10 rs: 29 rt: 0
 
 
 
-Instrucao Atual: 10 rs: 29 rt: 0
+Instrucao Atual: 10 rs: 29 rs2 0 rt: 0
 Instrucao Anterior: 50 rs: 29 rt: 0
 
 chamou lw com 35 29 5 604
 lw com rt= 5 rs= 29 
 
 
-Instrucao Atual: 5 rs: 29 rt: 5
+Instrucao Atual: 5 rs: 29 rs2 0 rt: 5
 Instrucao Anterior: 10 rs: 29 rt: 0
 
-Hazard
 
 
-Instrucao Atual: 31 rs: 29 rt: 5
+Instrucao Atual: 31 rs: 0 rs2 0 rt: 0
 Instrucao Anterior: 5 rs: 29 rt: 5
 
 chamou lw com 35 5 2 16
 lw com rt= 2 rs= 5 
 
 
-Instrucao Atual: 5 rs: 5 rt: 2
-Instrucao Anterior: 31 rs: 29 rt: 5
-
-Hazard
+Instrucao Atual: 5 rs: 5 rs2 0 rt: 2
+Instrucao Anterior: 31 rs: 0 rt: 0
 
 
-Instrucao Atual: 31 rs: 5 rt: 2
+
+Instrucao Atual: 31 rs: 0 rs2 0 rt: 0
 Instrucao Anterior: 5 rs: 5 rt: 2
 
 
 
-Instrucao Atual: 51 rs: 5 rt: 2
-Instrucao Anterior: 31 rs: 5 rt: 2
+Instrucao Atual: 51 rs: 0 rs2 0 rt: 0
+Instrucao Anterior: 31 rs: 0 rt: 0
 
 
 
-Instrucao Atual: 17 rs: 3 rt: 3
-Instrucao Anterior: 51 rs: 5 rt: 2
+Instrucao Atual: 17 rs: 3 rs2 0 rt: 3
+Instrucao Anterior: 51 rs: 0 rt: 0
 
 chamou lw com 35 29 4 604
 lw com rt= 4 rs= 29 
 
 
-Instrucao Atual: 5 rs: 29 rt: 4
+Instrucao Atual: 5 rs: 29 rs2 0 rt: 4
 Instrucao Anterior: 17 rs: 3 rt: 3
 
 Hazard
 
 
-Instrucao Atual: 47 rs: 29 rt: 4
+Instrucao Atual: 47 rs: 29 rs2 0 rt: 4
 Instrucao Anterior: 5 rs: 29 rt: 4
 
 
 
-Instrucao Atual: 31 rs: 29 rt: 4
+Instrucao Atual: 31 rs: 0 rs2 0 rt: 0
 Instrucao Anterior: 47 rs: 29 rt: 4
 
 decodificou addiu 9 29 29 4294967272
 chamou addiu com 29 29 -24
 
 
-Instrucao Atual: 14 rs: 29 rt: 29
-Instrucao Anterior: 31 rs: 29 rt: 4
+Instrucao Atual: 14 rs: 29 rs2 0 rt: 29
+Instrucao Anterior: 31 rs: 0 rt: 0
 
 
 
-Instrucao Atual: 10 rs: 29 rt: 16
+Instrucao Atual: 10 rs: 29 rs2 0 rt: 16
 Instrucao Anterior: 14 rs: 29 rt: 29
 
 
 
-Instrucao Atual: 10 rs: 29 rt: 31
+Instrucao Atual: 10 rs: 29 rs2 0 rt: 31
 Instrucao Anterior: 10 rs: 29 rt: 16
 
+addu
 
 
-Instrucao Atual: 22 rs: 29 rt: 31
+Instrucao Atual: 22 rs: 4 rs2 0 rt: 16
 Instrucao Anterior: 10 rs: 29 rt: 31
 
 chamou lw com 35 4 4 84
 lw com rt= 4 rs= 4 
 
 
-Instrucao Atual: 5 rs: 4 rt: 4
-Instrucao Anterior: 22 rs: 29 rt: 31
-
-Hazard
+Instrucao Atual: 5 rs: 4 rs2 0 rt: 4
+Instrucao Anterior: 22 rs: 4 rt: 16
 
 
-Instrucao Atual: 31 rs: 4 rt: 4
+
+Instrucao Atual: 31 rs: 0 rs2 0 rt: 0
 Instrucao Anterior: 5 rs: 4 rt: 4
 
 
 
-Instrucao Atual: 51 rs: 4 rt: 4
-Instrucao Anterior: 31 rs: 4 rt: 4
+Instrucao Atual: 51 rs: 0 rs2 0 rt: 0
+Instrucao Anterior: 31 rs: 0 rt: 0
 
 
 
-Instrucao Atual: 31 rs: 4 rt: 4
-Instrucao Anterior: 51 rs: 4 rt: 4
+Instrucao Atual: 31 rs: 0 rs2 0 rt: 0
+Instrucao Anterior: 51 rs: 0 rt: 0
 
 chamou lw com 35 4 2 56
 lw com rt= 2 rs= 4 
 
 
-Instrucao Atual: 5 rs: 4 rt: 2
-Instrucao Anterior: 31 rs: 4 rt: 4
-
-Hazard
+Instrucao Atual: 5 rs: 4 rs2 0 rt: 2
+Instrucao Anterior: 31 rs: 0 rt: 0
 
 
-Instrucao Atual: 31 rs: 4 rt: 2
+
+Instrucao Atual: 31 rs: 0 rs2 0 rt: 0
 Instrucao Anterior: 5 rs: 4 rt: 2
 
 
 
-Instrucao Atual: 50 rs: 4 rt: 2
-Instrucao Anterior: 31 rs: 4 rt: 2
+Instrucao Atual: 50 rs: 0 rs2 0 rt: 0
+Instrucao Anterior: 31 rs: 0 rt: 0
 
 
 
-Instrucao Atual: 31 rs: 4 rt: 2
-Instrucao Anterior: 50 rs: 4 rt: 2
+Instrucao Atual: 31 rs: 0 rs2 0 rt: 0
+Instrucao Anterior: 50 rs: 0 rt: 0
 
 
 
-Instrucao Atual: 4 rs: 16 rt: 6
-Instrucao Anterior: 31 rs: 4 rt: 2
-
-Hazard
+Instrucao Atual: 4 rs: 16 rs2 0 rt: 6
+Instrucao Anterior: 31 rs: 0 rt: 0
 
 
-Instrucao Atual: 31 rs: 16 rt: 6
+
+Instrucao Atual: 31 rs: 0 rs2 0 rt: 0
 Instrucao Anterior: 4 rs: 16 rt: 6
 
 
 
-Instrucao Atual: 17 rs: 6 rt: 3
-Instrucao Anterior: 31 rs: 16 rt: 6
+Instrucao Atual: 17 rs: 6 rs2 0 rt: 3
+Instrucao Anterior: 31 rs: 0 rt: 0
 
 
 
-Instrucao Atual: 17 rs: 3 rt: 2
+Instrucao Atual: 17 rs: 3 rs2 0 rt: 2
 Instrucao Anterior: 17 rs: 6 rt: 3
 
 
 
-Instrucao Atual: 51 rs: 3 rt: 2
+Instrucao Atual: 51 rs: 3 rs2 0 rt: 2
 Instrucao Anterior: 17 rs: 3 rt: 2
 
 
 
-Instrucao Atual: 17 rs: 3 rt: 2
+Instrucao Atual: 17 rs: 3 rs2 0 rt: 2
 Instrucao Anterior: 51 rs: 3 rt: 2
 
 chamou lw com 35 16 3 16
 lw com rt= 3 rs= 16 
 
 
-Instrucao Atual: 5 rs: 16 rt: 3
+Instrucao Atual: 5 rs: 16 rs2 0 rt: 3
 Instrucao Anterior: 17 rs: 3 rt: 2
 
 Hazard
 
 
-Instrucao Atual: 46 rs: 16 rt: 3
+Instrucao Atual: 46 rs: 16 rs2 0 rt: 3
 Instrucao Anterior: 5 rs: 16 rt: 3
 
 
 
-Instrucao Atual: 31 rs: 16 rt: 3
+Instrucao Atual: 31 rs: 0 rs2 0 rt: 0
 Instrucao Anterior: 46 rs: 16 rt: 3
 
 
 
-Instrucao Atual: 50 rs: 16 rt: 3
-Instrucao Anterior: 31 rs: 16 rt: 3
+Instrucao Atual: 50 rs: 0 rs2 0 rt: 0
+Instrucao Anterior: 31 rs: 0 rt: 0
 
 
 
-Instrucao Atual: 31 rs: 16 rt: 3
-Instrucao Anterior: 50 rs: 16 rt: 3
+Instrucao Atual: 31 rs: 0 rs2 0 rt: 0
+Instrucao Anterior: 50 rs: 0 rt: 0
 
 
 
-Instrucao Atual: 47 rs: 16 rt: 3
-Instrucao Anterior: 31 rs: 16 rt: 3
+Instrucao Atual: 47 rs: 0 rs2 0 rt: 0
+Instrucao Anterior: 31 rs: 0 rt: 0
+
+addu
 
 
-
-Instrucao Atual: 22 rs: 16 rt: 3
-Instrucao Anterior: 47 rs: 16 rt: 3
+Instrucao Atual: 22 rs: 16 rs2 0 rt: 4
+Instrucao Anterior: 47 rs: 0 rt: 0
 
 decodificou addiu 9 29 29 4294967200
 chamou addiu com 29 29 -96
 
 
-Instrucao Atual: 14 rs: 29 rt: 29
-Instrucao Anterior: 22 rs: 16 rt: 3
+Instrucao Atual: 14 rs: 29 rs2 0 rt: 29
+Instrucao Anterior: 22 rs: 16 rt: 4
 
 
 
-Instrucao Atual: 10 rs: 29 rt: 16
+Instrucao Atual: 10 rs: 29 rs2 0 rt: 16
 Instrucao Anterior: 14 rs: 29 rt: 29
 
 
 
-Instrucao Atual: 10 rs: 29 rt: 31
+Instrucao Atual: 10 rs: 29 rs2 0 rt: 31
 Instrucao Anterior: 10 rs: 29 rt: 16
 
 
 
-Instrucao Atual: 10 rs: 29 rt: 18
+Instrucao Atual: 10 rs: 29 rs2 0 rt: 18
 Instrucao Anterior: 10 rs: 29 rt: 31
 
 
 
-Instrucao Atual: 10 rs: 29 rt: 17
+Instrucao Atual: 10 rs: 29 rs2 0 rt: 17
 Instrucao Anterior: 10 rs: 29 rt: 18
 
 
 
-Instrucao Atual: 4 rs: 4 rt: 3
+Instrucao Atual: 4 rs: 4 rs2 0 rt: 3
 Instrucao Anterior: 10 rs: 29 rt: 17
 
-Hazard
 
 
-Instrucao Atual: 31 rs: 4 rt: 3
+Instrucao Atual: 31 rs: 0 rs2 0 rt: 0
 Instrucao Anterior: 4 rs: 4 rt: 3
 
 
 
-Instrucao Atual: 17 rs: 3 rt: 2
-Instrucao Anterior: 31 rs: 4 rt: 3
+Instrucao Atual: 17 rs: 3 rs2 0 rt: 2
+Instrucao Anterior: 31 rs: 0 rt: 0
 
 
 
-Instrucao Atual: 50 rs: 3 rt: 2
+Instrucao Atual: 50 rs: 3 rs2 0 rt: 2
 Instrucao Anterior: 17 rs: 3 rt: 2
 
+addu
 
 
-Instrucao Atual: 22 rs: 3 rt: 2
+Instrucao Atual: 22 rs: 4 rs2 0 rt: 16
 Instrucao Anterior: 50 rs: 3 rt: 2
 
 
 
-Instrucao Atual: 3 rs: 4 rt: 5
-Instrucao Anterior: 22 rs: 3 rt: 2
-
-Hazard
+Instrucao Atual: 3 rs: 4 rs2 0 rt: 5
+Instrucao Anterior: 22 rs: 4 rt: 16
 
 
-Instrucao Atual: 31 rs: 4 rt: 5
+
+Instrucao Atual: 31 rs: 0 rs2 0 rt: 0
 Instrucao Anterior: 3 rs: 4 rt: 5
 
 
 
-Instrucao Atual: 54 rs: 4 rt: 5
-Instrucao Anterior: 31 rs: 4 rt: 5
+Instrucao Atual: 54 rs: 0 rs2 0 rt: 0
+Instrucao Anterior: 31 rs: 0 rt: 0
 
 
 
-Instrucao Atual: 18 rs: 3 rt: 2
-Instrucao Anterior: 54 rs: 4 rt: 5
+Instrucao Atual: 18 rs: 3 rs2 0 rt: 2
+Instrucao Anterior: 54 rs: 0 rt: 0
 
 chamou lw com 35 4 4 84
 lw com rt= 4 rs= 4 
 
 
-Instrucao Atual: 5 rs: 4 rt: 4
+Instrucao Atual: 5 rs: 4 rs2 0 rt: 4
 Instrucao Anterior: 18 rs: 3 rt: 2
 
 Hazard
 
 
-Instrucao Atual: 47 rs: 4 rt: 4
+Instrucao Atual: 47 rs: 4 rs2 0 rt: 4
 Instrucao Anterior: 5 rs: 4 rt: 4
 
 decodificou addiu 9 29 6 16
 chamou addiu com 6 29 16
 
 
-Instrucao Atual: 14 rs: 29 rt: 6
+Instrucao Atual: 14 rs: 29 rs2 0 rt: 6
 Instrucao Anterior: 47 rs: 4 rt: 4
 
 decodificou addiu 9 29 29 4294967272
 chamou addiu com 29 29 -24
 
 
-Instrucao Atual: 14 rs: 29 rt: 29
+Instrucao Atual: 14 rs: 29 rs2 0 rt: 29
 Instrucao Anterior: 14 rs: 29 rt: 6
 
+addu
 
 
-Instrucao Atual: 22 rs: 29 rt: 29
+Instrucao Atual: 22 rs: 5 rs2 0 rt: 2
 Instrucao Anterior: 14 rs: 29 rt: 29
 
 
 
-Instrucao Atual: 10 rs: 29 rt: 16
-Instrucao Anterior: 22 rs: 29 rt: 29
+Instrucao Atual: 10 rs: 29 rs2 0 rt: 16
+Instrucao Anterior: 22 rs: 5 rt: 2
+
+addu
 
 
-
-Instrucao Atual: 22 rs: 29 rt: 16
+Instrucao Atual: 22 rs: 6 rs2 0 rt: 5
 Instrucao Anterior: 10 rs: 29 rt: 16
 
+addu
 
 
-Instrucao Atual: 22 rs: 29 rt: 16
-Instrucao Anterior: 22 rs: 29 rt: 16
-
-
-
-Instrucao Atual: 10 rs: 29 rt: 31
-Instrucao Anterior: 22 rs: 29 rt: 16
+Instrucao Atual: 22 rs: 4 rs2 0 rt: 16
+Instrucao Anterior: 22 rs: 6 rt: 5
 
 
 
-Instrucao Atual: 10 rs: 28 rt: 0
+Instrucao Atual: 10 rs: 29 rs2 0 rt: 31
+Instrucao Anterior: 22 rs: 4 rt: 16
+
+
+
+Instrucao Atual: 10 rs: 28 rs2 0 rt: 0
 Instrucao Anterior: 10 rs: 29 rt: 31
 
 
 
-Instrucao Atual: 47 rs: 28 rt: 0
+Instrucao Atual: 47 rs: 28 rs2 0 rt: 0
 Instrucao Anterior: 10 rs: 28 rt: 0
 
+addu
 
 
-Instrucao Atual: 22 rs: 28 rt: 0
+Instrucao Atual: 22 rs: 2 rs2 0 rt: 4
 Instrucao Anterior: 47 rs: 28 rt: 0
 
 decodificou addiu 9 0 3 96
 chamou addiu com 3 0 96
 
 
-Instrucao Atual: 14 rs: 0 rt: 3
-Instrucao Anterior: 22 rs: 28 rt: 0
+Instrucao Atual: 14 rs: 0 rs2 0 rt: 3
+Instrucao Anterior: 22 rs: 2 rt: 4
 
 
 
-Instrucao Atual: 48 rs: 0 rt: 3
+Instrucao Atual: 48 rs: 0 rs2 0 rt: 3
 Instrucao Anterior: 14 rs: 0 rt: 3
 
 
 
-Instrucao Atual: 31 rs: 0 rt: 3
+Instrucao Atual: 31 rs: 0 rs2 0 rt: 0
 Instrucao Anterior: 48 rs: 0 rt: 3
 
 
 
-Instrucao Atual: 31 rs: 0 rt: 3
-Instrucao Anterior: 31 rs: 0 rt: 3
+Instrucao Atual: 31 rs: 0 rs2 0 rt: 0
+Instrucao Anterior: 31 rs: 0 rt: 0
+
+addu
 
 
-
-Instrucao Atual: 22 rs: 0 rt: 3
-Instrucao Anterior: 31 rs: 0 rt: 3
+Instrucao Atual: 22 rs: 2 rs2 0 rt: 3
+Instrucao Anterior: 31 rs: 0 rt: 0
 
 decodificou addiu 9 0 2 4294967295
 chamou addiu com 2 0 -1
 
 
-Instrucao Atual: 14 rs: 0 rt: 2
-Instrucao Anterior: 22 rs: 0 rt: 3
+Instrucao Atual: 14 rs: 0 rs2 0 rt: 2
+Instrucao Anterior: 22 rs: 2 rt: 3
 
 
 
-Instrucao Atual: 50 rs: 0 rt: 2
+Instrucao Atual: 50 rs: 0 rs2 0 rt: 2
 Instrucao Anterior: 14 rs: 0 rt: 2
 
 
 
-Instrucao Atual: 31 rs: 0 rt: 2
+Instrucao Atual: 31 rs: 0 rs2 0 rt: 0
 Instrucao Anterior: 50 rs: 0 rt: 2
 
 chamou lw com 35 29 31 20
 lw com rt= 31 rs= 29 
 
 
-Instrucao Atual: 5 rs: 29 rt: 31
-Instrucao Anterior: 31 rs: 0 rt: 2
+Instrucao Atual: 5 rs: 29 rs2 0 rt: 31
+Instrucao Anterior: 31 rs: 0 rt: 0
 
 chamou lw com 35 29 16 16
 lw com rt= 16 rs= 29 
 
 
-Instrucao Atual: 5 rs: 29 rt: 16
+Instrucao Atual: 5 rs: 29 rs2 0 rt: 16
 Instrucao Anterior: 5 rs: 29 rt: 31
 
-Hazard
+addu
 
 
-Instrucao Atual: 22 rs: 29 rt: 16
+Instrucao Atual: 22 rs: 3 rs2 0 rt: 2
 Instrucao Anterior: 5 rs: 29 rt: 16
 
 
 
-Instrucao Atual: 48 rs: 29 rt: 16
-Instrucao Anterior: 22 rs: 29 rt: 16
+Instrucao Atual: 48 rs: 3 rs2 0 rt: 2
+Instrucao Anterior: 22 rs: 3 rt: 2
 
 decodificou addiu 9 29 29 24
 chamou addiu com 29 29 24
 
 
-Instrucao Atual: 14 rs: 29 rt: 29
-Instrucao Anterior: 48 rs: 29 rt: 16
+Instrucao Atual: 14 rs: 29 rs2 0 rt: 29
+Instrucao Anterior: 48 rs: 3 rt: 2
 
 
 
-Instrucao Atual: 54 rs: 29 rt: 29
+Instrucao Atual: 54 rs: 29 rs2 0 rt: 29
 Instrucao Anterior: 14 rs: 29 rt: 29
 
 
 
-Instrucao Atual: 31 rs: 29 rt: 29
+Instrucao Atual: 31 rs: 0 rs2 0 rt: 0
 Instrucao Anterior: 54 rs: 29 rt: 29
 
 chamou lw com 35 29 2 20
 lw com rt= 2 rs= 29 
 
 
-Instrucao Atual: 5 rs: 29 rt: 2
-Instrucao Anterior: 31 rs: 29 rt: 29
-
-Hazard
+Instrucao Atual: 5 rs: 29 rs2 0 rt: 2
+Instrucao Anterior: 31 rs: 0 rt: 0
 
 
-Instrucao Atual: 31 rs: 29 rt: 2
+
+Instrucao Atual: 31 rs: 0 rs2 0 rt: 0
 Instrucao Anterior: 5 rs: 29 rt: 2
 
 
 
-Instrucao Atual: 17 rs: 2 rt: 2
-Instrucao Anterior: 31 rs: 29 rt: 2
+Instrucao Atual: 17 rs: 2 rs2 0 rt: 2
+Instrucao Anterior: 31 rs: 0 rt: 0
 
 
 
-Instrucao Atual: 19 rs: 2 rt: 3
+Instrucao Atual: 19 rs: 2 rs2 0 rt: 3
 Instrucao Anterior: 17 rs: 2 rt: 2
 
 
 
-Instrucao Atual: 16 rs: 3 rt: 18
+Instrucao Atual: 16 rs: 3 rs2 0 rt: 18
 Instrucao Anterior: 19 rs: 2 rt: 3
 
 
 
-Instrucao Atual: 18 rs: 0 rt: 3
+Instrucao Atual: 18 rs: 0 rs2 0 rt: 3
 Instrucao Anterior: 16 rs: 3 rt: 18
 
 
 
-Instrucao Atual: 50 rs: 0 rt: 3
+Instrucao Atual: 50 rs: 0 rs2 0 rt: 3
 Instrucao Anterior: 18 rs: 0 rt: 3
 
 decodificou addiu 9 0 17 1024
 chamou addiu com 17 0 1024
 
 
-Instrucao Atual: 14 rs: 0 rt: 17
+Instrucao Atual: 14 rs: 0 rs2 0 rt: 17
 Instrucao Anterior: 50 rs: 0 rt: 3
 
 
 
-Instrucao Atual: 4 rs: 16 rt: 2
+Instrucao Atual: 4 rs: 16 rs2 0 rt: 2
 Instrucao Anterior: 14 rs: 0 rt: 17
 
-Hazard
 
 
-Instrucao Atual: 31 rs: 16 rt: 2
+Instrucao Atual: 31 rs: 0 rs2 0 rt: 0
 Instrucao Anterior: 4 rs: 16 rt: 2
 
 
 
-Instrucao Atual: 18 rs: 2 rt: 2
-Instrucao Anterior: 31 rs: 16 rt: 2
+Instrucao Atual: 18 rs: 2 rs2 0 rt: 2
+Instrucao Anterior: 31 rs: 0 rt: 0
 
 chamou lw com 35 16 4 84
 lw com rt= 4 rs= 16 
 
 
-Instrucao Atual: 5 rs: 16 rt: 4
+Instrucao Atual: 5 rs: 16 rs2 0 rt: 4
 Instrucao Anterior: 18 rs: 2 rt: 2
 
 decodificou addiu 9 0 5 1024
 chamou addiu com 5 0 1024
 
 
-Instrucao Atual: 14 rs: 0 rt: 5
+Instrucao Atual: 14 rs: 0 rs2 0 rt: 5
 Instrucao Anterior: 5 rs: 16 rt: 4
 
 
 
-Instrucao Atual: 47 rs: 0 rt: 5
+Instrucao Atual: 47 rs: 0 rs2 0 rt: 5
 Instrucao Anterior: 14 rs: 0 rt: 5
 
 
 
-Instrucao Atual: 9 rs: 16 rt: 2
+Instrucao Atual: 9 rs: 16 rs2 0 rt: 2
 Instrucao Anterior: 47 rs: 0 rt: 5
 
 decodificou addiu 9 5 5 11
 chamou addiu com 5 5 11
 
 
-Instrucao Atual: 14 rs: 5 rt: 5
+Instrucao Atual: 14 rs: 5 rs2 0 rt: 5
 Instrucao Anterior: 9 rs: 16 rt: 2
 
 decodificou addiu 9 29 29 4294967256
 chamou addiu com 29 29 -40
 
 
-Instrucao Atual: 14 rs: 29 rt: 29
+Instrucao Atual: 14 rs: 29 rs2 0 rt: 29
 Instrucao Anterior: 14 rs: 5 rt: 5
 
 
 
-Instrucao Atual: 16 rs: 5 rt: 2
+Instrucao Atual: 16 rs: 5 rs2 0 rt: 2
 Instrucao Anterior: 14 rs: 29 rt: 29
 
 
 
-Instrucao Atual: 10 rs: 29 rt: 18
+Instrucao Atual: 10 rs: 29 rs2 0 rt: 18
 Instrucao Anterior: 16 rs: 5 rt: 2
 
 
 
-Instrucao Atual: 10 rs: 29 rt: 17
+Instrucao Atual: 10 rs: 29 rs2 0 rt: 17
 Instrucao Anterior: 10 rs: 29 rt: 18
 
 
 
-Instrucao Atual: 10 rs: 29 rt: 31
+Instrucao Atual: 10 rs: 29 rs2 0 rt: 31
 Instrucao Anterior: 10 rs: 29 rt: 17
 
 
 
-Instrucao Atual: 10 rs: 29 rt: 20
+Instrucao Atual: 10 rs: 29 rs2 0 rt: 20
 Instrucao Anterior: 10 rs: 29 rt: 31
 
 
 
-Instrucao Atual: 10 rs: 29 rt: 19
+Instrucao Atual: 10 rs: 29 rs2 0 rt: 19
 Instrucao Anterior: 10 rs: 29 rt: 20
 
 
 
-Instrucao Atual: 10 rs: 29 rt: 16
+Instrucao Atual: 10 rs: 29 rs2 0 rt: 16
 Instrucao Anterior: 10 rs: 29 rt: 19
 
+addu
 
 
-Instrucao Atual: 22 rs: 29 rt: 16
+Instrucao Atual: 22 rs: 4 rs2 0 rt: 18
 Instrucao Anterior: 10 rs: 29 rt: 16
 
 
 
-Instrucao Atual: 51 rs: 29 rt: 16
-Instrucao Anterior: 22 rs: 29 rt: 16
+Instrucao Atual: 51 rs: 4 rs2 0 rt: 18
+Instrucao Anterior: 22 rs: 4 rt: 18
 
 decodificou addiu 9 0 17 16
 chamou addiu com 17 0 16
 
 
-Instrucao Atual: 14 rs: 0 rt: 17
-Instrucao Anterior: 51 rs: 29 rt: 16
+Instrucao Atual: 14 rs: 0 rs2 0 rt: 17
+Instrucao Anterior: 51 rs: 4 rt: 18
 
 decodificou addiu 9 0 2 4294967288
 chamou addiu com 2 0 -8
 
 
-Instrucao Atual: 14 rs: 0 rt: 2
+Instrucao Atual: 14 rs: 0 rs2 0 rt: 2
 Instrucao Anterior: 14 rs: 0 rt: 17
 
 
 
-Instrucao Atual: 27 rs: 0 rt: 2
+Instrucao Atual: 27 rs: 5 rs2 2 rt: 17
 Instrucao Anterior: 14 rs: 0 rt: 2
 
 
 
-Instrucao Atual: 54 rs: 0 rt: 2
-Instrucao Anterior: 27 rs: 0 rt: 2
+Instrucao Atual: 54 rs: 5 rs2 2 rt: 17
+Instrucao Anterior: 27 rs: 5 rt: 17
+
+addu
+
+
+Instrucao Atual: 22 rs: 0 rs2 0 rt: 2
+Instrucao Anterior: 54 rs: 5 rt: 17
 
 
 
-Instrucao Atual: 22 rs: 0 rt: 2
-Instrucao Anterior: 54 rs: 0 rt: 2
-
-
-
-Instrucao Atual: 47 rs: 0 rt: 2
+Instrucao Atual: 47 rs: 0 rs2 0 rt: 2
 Instrucao Anterior: 22 rs: 0 rt: 2
 
+addu
 
 
-Instrucao Atual: 22 rs: 0 rt: 2
+Instrucao Atual: 22 rs: 18 rs2 0 rt: 4
 Instrucao Anterior: 47 rs: 0 rt: 2
 
 
 
-Instrucao Atual: 48 rs: 0 rt: 2
-Instrucao Anterior: 22 rs: 0 rt: 2
+Instrucao Atual: 48 rs: 18 rs2 0 rt: 4
+Instrucao Anterior: 22 rs: 18 rt: 4
 
 
 
-Instrucao Atual: 31 rs: 0 rt: 2
-Instrucao Anterior: 48 rs: 0 rt: 2
+Instrucao Atual: 31 rs: 0 rs2 0 rt: 0
+Instrucao Anterior: 48 rs: 18 rt: 4
 
 
 
-Instrucao Atual: 16 rs: 17 rt: 2
-Instrucao Anterior: 31 rs: 0 rt: 2
+Instrucao Atual: 16 rs: 17 rs2 0 rt: 2
+Instrucao Anterior: 31 rs: 0 rt: 0
 
 
 
-Instrucao Atual: 50 rs: 17 rt: 2
+Instrucao Atual: 50 rs: 17 rs2 0 rt: 2
 Instrucao Anterior: 16 rs: 17 rt: 2
 
 
 
-Instrucao Atual: 33 rs: 17 rt: 2
+Instrucao Atual: 33 rs: 0 rs2 17 rt: 3
 Instrucao Anterior: 50 rs: 17 rt: 2
 
 
 
-Instrucao Atual: 50 rs: 17 rt: 2
-Instrucao Anterior: 33 rs: 17 rt: 2
+Instrucao Atual: 50 rs: 0 rs2 17 rt: 3
+Instrucao Anterior: 33 rs: 0 rt: 3
 
 
 
-Instrucao Atual: 33 rs: 17 rt: 2
-Instrucao Anterior: 50 rs: 17 rt: 2
+Instrucao Atual: 33 rs: 0 rs2 17 rt: 10
+Instrucao Anterior: 50 rs: 0 rt: 3
 
 
 
-Instrucao Atual: 16 rs: 3 rt: 2
-Instrucao Anterior: 33 rs: 17 rt: 2
+Instrucao Atual: 16 rs: 3 rs2 17 rt: 2
+Instrucao Anterior: 33 rs: 0 rt: 10
 
 
 
-Instrucao Atual: 50 rs: 3 rt: 2
+Instrucao Atual: 50 rs: 3 rs2 17 rt: 2
 Instrucao Anterior: 16 rs: 3 rt: 2
 
 
 
-Instrucao Atual: 16 rs: 3 rt: 2
+Instrucao Atual: 16 rs: 3 rs2 17 rt: 2
 Instrucao Anterior: 50 rs: 3 rt: 2
 
 
 
-Instrucao Atual: 33 rs: 3 rt: 2
+Instrucao Atual: 33 rs: 0 rs2 17 rt: 2
 Instrucao Anterior: 16 rs: 3 rt: 2
 
 decodificou addiu 9 2 10 56
 chamou addiu com 10 2 56
 
 
-Instrucao Atual: 14 rs: 2 rt: 10
-Instrucao Anterior: 33 rs: 3 rt: 2
+Instrucao Atual: 14 rs: 2 rs2 17 rt: 10
+Instrucao Anterior: 33 rs: 0 rt: 2
 
 
 
-Instrucao Atual: 20 rs: 0 rt: 20
+Instrucao Atual: 20 rs: 0 rs2 17 rt: 20
 Instrucao Anterior: 14 rs: 2 rt: 10
 
 
 
-Instrucao Atual: 32 rs: 0 rt: 20
+Instrucao Atual: 32 rs: 0 rs2 10 rt: 3
 Instrucao Anterior: 20 rs: 0 rt: 20
 
 decodificou addiu 9 20 2 4294935172
 chamou addiu com 2 20 -32124
 
 
-Instrucao Atual: 14 rs: 20 rt: 2
-Instrucao Anterior: 32 rs: 0 rt: 20
+Instrucao Atual: 14 rs: 20 rs2 10 rt: 2
+Instrucao Anterior: 32 rs: 0 rt: 3
+
+addu
 
 
-
-Instrucao Atual: 22 rs: 20 rt: 2
+Instrucao Atual: 22 rs: 3 rs2 2 rt: 3
 Instrucao Anterior: 14 rs: 20 rt: 2
 
 chamou lw com 35 3 16 12
 lw com rt= 16 rs= 3 
 
 
-Instrucao Atual: 5 rs: 3 rt: 16
-Instrucao Anterior: 22 rs: 20 rt: 2
-
-Hazard
+Instrucao Atual: 5 rs: 3 rs2 2 rt: 16
+Instrucao Anterior: 22 rs: 3 rt: 3
 
 
-Instrucao Atual: 31 rs: 3 rt: 16
+
+Instrucao Atual: 31 rs: 0 rs2 0 rt: 0
 Instrucao Anterior: 5 rs: 3 rt: 16
 
 
 
-Instrucao Atual: 50 rs: 3 rt: 16
-Instrucao Anterior: 31 rs: 3 rt: 16
+Instrucao Atual: 50 rs: 0 rs2 0 rt: 0
+Instrucao Anterior: 31 rs: 0 rt: 0
 
 
 
-Instrucao Atual: 31 rs: 3 rt: 16
-Instrucao Anterior: 50 rs: 3 rt: 16
+Instrucao Atual: 31 rs: 0 rs2 0 rt: 0
+Instrucao Anterior: 50 rs: 0 rt: 0
 
 
 
-Instrucao Atual: 46 rs: 3 rt: 16
-Instrucao Anterior: 31 rs: 3 rt: 16
+Instrucao Atual: 46 rs: 0 rs2 0 rt: 0
+Instrucao Anterior: 31 rs: 0 rt: 0
 
 decodificou addiu 9 10 10 1
 chamou addiu com 10 10 1
 
 
-Instrucao Atual: 14 rs: 10 rt: 10
-Instrucao Anterior: 46 rs: 3 rt: 16
+Instrucao Atual: 14 rs: 10 rs2 0 rt: 10
+Instrucao Anterior: 46 rs: 0 rt: 0
 
 
 
-Instrucao Atual: 20 rs: 0 rt: 12
+Instrucao Atual: 20 rs: 0 rs2 0 rt: 12
 Instrucao Anterior: 14 rs: 10 rt: 10
 
 decodificou addiu 9 12 8 4294935180
 chamou addiu com 8 12 -32116
 
 
-Instrucao Atual: 14 rs: 12 rt: 8
+Instrucao Atual: 14 rs: 12 rs2 0 rt: 8
 Instrucao Anterior: 20 rs: 0 rt: 12
 
 chamou lw com 35 8 16 8
 lw com rt= 16 rs= 8 
 
 
-Instrucao Atual: 5 rs: 8 rt: 16
+Instrucao Atual: 5 rs: 8 rs2 0 rt: 16
 Instrucao Anterior: 14 rs: 12 rt: 8
 
-Hazard
 
 
-Instrucao Atual: 31 rs: 8 rt: 16
+Instrucao Atual: 31 rs: 0 rs2 0 rt: 0
 Instrucao Anterior: 5 rs: 8 rt: 16
 
 
 
-Instrucao Atual: 50 rs: 8 rt: 16
-Instrucao Anterior: 31 rs: 8 rt: 16
+Instrucao Atual: 50 rs: 0 rs2 0 rt: 0
+Instrucao Anterior: 31 rs: 0 rt: 0
 
 decodificou addiu 9 0 3 4294967292
 chamou addiu com 3 0 -4
 
 
-Instrucao Atual: 14 rs: 0 rt: 3
-Instrucao Anterior: 50 rs: 8 rt: 16
+Instrucao Atual: 14 rs: 0 rs2 0 rt: 3
+Instrucao Anterior: 50 rs: 0 rt: 0
 
 
 
-Instrucao Atual: 54 rs: 0 rt: 3
+Instrucao Atual: 54 rs: 0 rs2 0 rt: 3
 Instrucao Anterior: 14 rs: 0 rt: 3
 
+addu
 
 
-Instrucao Atual: 22 rs: 0 rt: 3
+Instrucao Atual: 22 rs: 10 rs2 0 rt: 4
 Instrucao Anterior: 54 rs: 0 rt: 3
 
 
 
-Instrucao Atual: 20 rs: 0 rt: 20
-Instrucao Anterior: 22 rs: 0 rt: 3
+Instrucao Atual: 20 rs: 0 rs2 0 rt: 20
+Instrucao Anterior: 22 rs: 10 rt: 4
 
 decodificou addiu 9 20 3 4294935172
 chamou addiu com 3 20 -32124
 
 
-Instrucao Atual: 14 rs: 20 rt: 3
+Instrucao Atual: 14 rs: 20 rs2 0 rt: 3
 Instrucao Anterior: 20 rs: 0 rt: 20
 
 
 
-Instrucao Atual: 34 rs: 20 rt: 3
+Instrucao Atual: 34 rs: 0 rs2 4 rt: 4
 Instrucao Anterior: 14 rs: 20 rt: 3
 
 chamou lw com 35 3 5 4
 lw com rt= 5 rs= 3 
 
 
-Instrucao Atual: 5 rs: 3 rt: 5
-Instrucao Anterior: 34 rs: 20 rt: 3
+Instrucao Atual: 5 rs: 3 rs2 4 rt: 5
+Instrucao Anterior: 34 rs: 0 rt: 4
 
 decodificou addiu 9 0 2 1
 chamou addiu com 2 0 1
 
 
-Instrucao Atual: 14 rs: 0 rt: 2
+Instrucao Atual: 14 rs: 0 rs2 4 rt: 2
 Instrucao Anterior: 5 rs: 3 rt: 5
 
 
 
-Instrucao Atual: 35 rs: 0 rt: 2
+Instrucao Atual: 35 rs: 4 rs2 2 rt: 4
 Instrucao Anterior: 14 rs: 0 rt: 2
 
 
 
-Instrucao Atual: 26 rs: 0 rt: 2
-Instrucao Anterior: 35 rs: 0 rt: 2
+Instrucao Atual: 26 rs: 5 rs2 4 rt: 3
+Instrucao Anterior: 35 rs: 4 rt: 4
 
 
 
-Instrucao Atual: 51 rs: 0 rt: 2
-Instrucao Anterior: 26 rs: 0 rt: 2
+Instrucao Atual: 51 rs: 5 rs2 4 rt: 3
+Instrucao Anterior: 26 rs: 5 rt: 3
 
 decodificou addiu 9 20 16 4294935172
 chamou addiu com 16 20 -32124
 
 
-Instrucao Atual: 14 rs: 20 rt: 16
-Instrucao Anterior: 51 rs: 0 rt: 2
+Instrucao Atual: 14 rs: 20 rs2 4 rt: 16
+Instrucao Anterior: 51 rs: 5 rt: 3
 
 chamou lw com 35 16 2 8
 lw com rt= 2 rs= 16 
 
 
-Instrucao Atual: 5 rs: 16 rt: 2
+Instrucao Atual: 5 rs: 16 rs2 4 rt: 2
 Instrucao Anterior: 14 rs: 20 rt: 16
 
 decodificou addiu 9 0 19 4294967292
 chamou addiu com 19 0 -4
 
 
-Instrucao Atual: 14 rs: 0 rt: 19
+Instrucao Atual: 14 rs: 0 rs2 4 rt: 19
 Instrucao Anterior: 5 rs: 16 rt: 2
 
 chamou lw com 35 2 3 4
 lw com rt= 3 rs= 2 
 
 
-Instrucao Atual: 5 rs: 2 rt: 3
+Instrucao Atual: 5 rs: 2 rs2 4 rt: 3
 Instrucao Anterior: 14 rs: 0 rt: 19
 
-Hazard
 
 
-Instrucao Atual: 31 rs: 2 rt: 3
+Instrucao Atual: 31 rs: 0 rs2 0 rt: 0
 Instrucao Anterior: 5 rs: 2 rt: 3
 
 
 
-Instrucao Atual: 27 rs: 2 rt: 3
-Instrucao Anterior: 31 rs: 2 rt: 3
+Instrucao Atual: 27 rs: 3 rs2 19 rt: 3
+Instrucao Anterior: 31 rs: 0 rt: 0
 
 
 
-Instrucao Atual: 26 rs: 2 rt: 3
-Instrucao Anterior: 27 rs: 2 rt: 3
+Instrucao Atual: 26 rs: 3 rs2 17 rt: 2
+Instrucao Anterior: 27 rs: 3 rt: 3
 
 
 
-Instrucao Atual: 51 rs: 2 rt: 3
-Instrucao Anterior: 26 rs: 2 rt: 3
+Instrucao Atual: 51 rs: 3 rs2 17 rt: 2
+Instrucao Anterior: 26 rs: 3 rt: 2
+
+subu com 0 3 17 6 0 35
+subu com rd 6 rs 3 rt 17 
+
+
+Instrucao Atual: 24 rs: 3 rs2 17 rt: 6
+Instrucao Anterior: 51 rs: 3 rt: 2
+
+addu
+
+
+Instrucao Atual: 22 rs: 18 rs2 0 rt: 4
+Instrucao Anterior: 24 rs: 3 rt: 6
 
 
 
-Instrucao Atual: 24 rs: 2 rt: 3
-Instrucao Anterior: 51 rs: 2 rt: 3
+Instrucao Atual: 47 rs: 18 rs2 0 rt: 4
+Instrucao Anterior: 22 rs: 18 rt: 4
+
+addu
 
 
-
-Instrucao Atual: 22 rs: 2 rt: 3
-Instrucao Anterior: 24 rs: 2 rt: 3
-
-
-
-Instrucao Atual: 47 rs: 2 rt: 3
-Instrucao Anterior: 22 rs: 2 rt: 3
-
-
-
-Instrucao Atual: 22 rs: 2 rt: 3
-Instrucao Anterior: 47 rs: 2 rt: 3
+Instrucao Atual: 22 rs: 17 rs2 0 rt: 5
+Instrucao Anterior: 47 rs: 18 rt: 4
 
 decodificou addiu 9 29 29 4294967240
 chamou addiu com 29 29 -56
 
 
-Instrucao Atual: 14 rs: 29 rt: 29
-Instrucao Anterior: 22 rs: 2 rt: 3
+Instrucao Atual: 14 rs: 29 rs2 0 rt: 29
+Instrucao Anterior: 22 rs: 17 rt: 5
 
 
 
-Instrucao Atual: 10 rs: 29 rt: 23
+Instrucao Atual: 10 rs: 29 rs2 0 rt: 23
 Instrucao Anterior: 14 rs: 29 rt: 29
 
 
 
-Instrucao Atual: 20 rs: 0 rt: 23
+Instrucao Atual: 20 rs: 0 rs2 0 rt: 23
 Instrucao Anterior: 10 rs: 29 rt: 23
 
 
 
-Instrucao Atual: 10 rs: 29 rt: 22
+Instrucao Atual: 10 rs: 29 rs2 0 rt: 22
 Instrucao Anterior: 20 rs: 0 rt: 23
 
 decodificou addiu 9 23 22 4294935172
 chamou addiu com 22 23 -32124
 
 
-Instrucao Atual: 14 rs: 23 rt: 22
+Instrucao Atual: 14 rs: 23 rs2 0 rt: 22
 Instrucao Anterior: 10 rs: 29 rt: 22
 
 
 
-Instrucao Atual: 10 rs: 29 rt: 19
+Instrucao Atual: 10 rs: 29 rs2 0 rt: 19
 Instrucao Anterior: 14 rs: 23 rt: 22
 
 chamou lw com 35 22 19 8
 lw com rt= 19 rs= 22 
 
 
-Instrucao Atual: 5 rs: 22 rt: 19
+Instrucao Atual: 5 rs: 22 rs2 0 rt: 19
 Instrucao Anterior: 10 rs: 29 rt: 19
 
 
 
-Instrucao Atual: 10 rs: 29 rt: 30
+Instrucao Atual: 10 rs: 29 rs2 0 rt: 30
 Instrucao Anterior: 5 rs: 22 rt: 19
 
 
 
-Instrucao Atual: 10 rs: 29 rt: 21
+Instrucao Atual: 10 rs: 29 rs2 0 rt: 21
 Instrucao Anterior: 10 rs: 29 rt: 30
 
 
 
-Instrucao Atual: 10 rs: 29 rt: 20
+Instrucao Atual: 10 rs: 29 rs2 0 rt: 20
 Instrucao Anterior: 10 rs: 29 rt: 21
 
 
 
-Instrucao Atual: 10 rs: 29 rt: 18
+Instrucao Atual: 10 rs: 29 rs2 0 rt: 18
 Instrucao Anterior: 10 rs: 29 rt: 20
 
 
 
-Instrucao Atual: 10 rs: 29 rt: 17
+Instrucao Atual: 10 rs: 29 rs2 0 rt: 17
 Instrucao Anterior: 10 rs: 29 rt: 18
 
 
 
-Instrucao Atual: 10 rs: 29 rt: 31
+Instrucao Atual: 10 rs: 29 rs2 0 rt: 31
 Instrucao Anterior: 10 rs: 29 rt: 17
 
 
 
-Instrucao Atual: 10 rs: 29 rt: 16
+Instrucao Atual: 10 rs: 29 rs2 0 rt: 16
 Instrucao Anterior: 10 rs: 29 rt: 31
 
 chamou lw com 35 19 6 4
 lw com rt= 6 rs= 19 
 
 
-Instrucao Atual: 5 rs: 19 rt: 6
+Instrucao Atual: 5 rs: 19 rs2 0 rt: 6
 Instrucao Anterior: 10 rs: 29 rt: 16
 
 decodificou addiu 9 0 2 4294967292
 chamou addiu com 2 0 -4
 
 
-Instrucao Atual: 14 rs: 0 rt: 2
+Instrucao Atual: 14 rs: 0 rs2 0 rt: 2
 Instrucao Anterior: 5 rs: 19 rt: 6
 
 chamou lw com 35 28 3 4294934716
 lw com rt= 3 rs= 28 
 
 
-Instrucao Atual: 5 rs: 28 rt: 3
+Instrucao Atual: 5 rs: 28 rs2 0 rt: 3
 Instrucao Anterior: 14 rs: 0 rt: 2
 
-Hazard
 
 
-Instrucao Atual: 27 rs: 28 rt: 3
+Instrucao Atual: 27 rs: 6 rs2 2 rt: 20
 Instrucao Anterior: 5 rs: 28 rt: 3
 
 chamou lw com 35 28 2 4294934680
 lw com rt= 2 rs= 28 
 
 
-Instrucao Atual: 5 rs: 28 rt: 2
-Instrucao Anterior: 27 rs: 28 rt: 3
+Instrucao Atual: 5 rs: 28 rs2 2 rt: 2
+Instrucao Anterior: 27 rs: 6 rt: 20
 
-Hazard
+addu
 
 
-Instrucao Atual: 22 rs: 28 rt: 2
+Instrucao Atual: 22 rs: 5 rs2 3 rt: 3
 Instrucao Anterior: 5 rs: 28 rt: 2
 
 decodificou addiu 9 0 21 4294967295
 chamou addiu com 21 0 -1
 
 
-Instrucao Atual: 14 rs: 0 rt: 21
-Instrucao Anterior: 22 rs: 28 rt: 2
+Instrucao Atual: 14 rs: 0 rs2 3 rt: 21
+Instrucao Anterior: 22 rs: 5 rt: 3
+
+addu
 
 
-
-Instrucao Atual: 22 rs: 0 rt: 21
+Instrucao Atual: 22 rs: 4 rs2 0 rt: 30
 Instrucao Anterior: 14 rs: 0 rt: 21
 
+addu
 
 
-Instrucao Atual: 22 rs: 0 rt: 21
-Instrucao Anterior: 22 rs: 0 rt: 21
+Instrucao Atual: 22 rs: 19 rs2 20 rt: 17
+Instrucao Anterior: 22 rs: 4 rt: 30
 
 
 
-Instrucao Atual: 50 rs: 0 rt: 21
-Instrucao Anterior: 22 rs: 0 rt: 21
+Instrucao Atual: 50 rs: 19 rs2 20 rt: 17
+Instrucao Anterior: 22 rs: 19 rt: 17
 
 decodificou addiu 9 3 18 16
 chamou addiu com 18 3 16
 
 
-Instrucao Atual: 14 rs: 3 rt: 18
-Instrucao Anterior: 50 rs: 0 rt: 21
+Instrucao Atual: 14 rs: 3 rs2 20 rt: 18
+Instrucao Anterior: 50 rs: 19 rt: 17
 
 
 
-Instrucao Atual: 47 rs: 3 rt: 18
+Instrucao Atual: 47 rs: 3 rs2 20 rt: 18
 Instrucao Anterior: 14 rs: 3 rt: 18
 
+addu
 
 
-Instrucao Atual: 22 rs: 3 rt: 18
+Instrucao Atual: 22 rs: 18 rs2 0 rt: 5
 Instrucao Anterior: 47 rs: 3 rt: 18
 
 decodificou addiu 9 29 29 4294967272
 chamou addiu com 29 29 -24
 
 
-Instrucao Atual: 14 rs: 29 rt: 29
-Instrucao Anterior: 22 rs: 3 rt: 18
+Instrucao Atual: 14 rs: 29 rs2 0 rt: 29
+Instrucao Anterior: 22 rs: 18 rt: 5
 
 
 
-Instrucao Atual: 10 rs: 29 rt: 16
+Instrucao Atual: 10 rs: 29 rs2 0 rt: 16
 Instrucao Anterior: 14 rs: 29 rt: 29
 
+addu
 
 
-Instrucao Atual: 22 rs: 29 rt: 16
+Instrucao Atual: 22 rs: 4 rs2 0 rt: 16
 Instrucao Anterior: 10 rs: 29 rt: 16
 
 
 
-Instrucao Atual: 10 rs: 29 rt: 31
-Instrucao Anterior: 22 rs: 29 rt: 16
+Instrucao Atual: 10 rs: 29 rs2 0 rt: 31
+Instrucao Anterior: 22 rs: 4 rt: 16
 
 
 
-Instrucao Atual: 10 rs: 28 rt: 0
+Instrucao Atual: 10 rs: 28 rs2 0 rt: 0
 Instrucao Anterior: 10 rs: 29 rt: 31
 
 
 
-Instrucao Atual: 47 rs: 28 rt: 0
+Instrucao Atual: 47 rs: 28 rs2 0 rt: 0
 Instrucao Anterior: 10 rs: 28 rt: 0
 
+addu
 
 
-Instrucao Atual: 22 rs: 28 rt: 0
+Instrucao Atual: 22 rs: 5 rs2 0 rt: 4
 Instrucao Anterior: 47 rs: 28 rt: 0
 
 decodificou addiu 9 0 3 88
 chamou addiu com 3 0 88
 
 
-Instrucao Atual: 14 rs: 0 rt: 3
-Instrucao Anterior: 22 rs: 28 rt: 0
+Instrucao Atual: 14 rs: 0 rs2 0 rt: 3
+Instrucao Anterior: 22 rs: 5 rt: 4
 
 
 
-Instrucao Atual: 48 rs: 0 rt: 3
+Instrucao Atual: 48 rs: 0 rs2 0 rt: 3
 Instrucao Anterior: 14 rs: 0 rt: 3
 
 
 
-Instrucao Atual: 31 rs: 0 rt: 3
+Instrucao Atual: 31 rs: 0 rs2 0 rt: 0
 Instrucao Anterior: 48 rs: 0 rt: 3
 
 
 
-Instrucao Atual: 31 rs: 0 rt: 3
-Instrucao Anterior: 31 rs: 0 rt: 3
+Instrucao Atual: 31 rs: 0 rs2 0 rt: 0
+Instrucao Anterior: 31 rs: 0 rt: 0
+
+addu
 
 
-
-Instrucao Atual: 22 rs: 0 rt: 3
-Instrucao Anterior: 31 rs: 0 rt: 3
+Instrucao Atual: 22 rs: 2 rs2 0 rt: 3
+Instrucao Anterior: 31 rs: 0 rt: 0
 
 decodificou addiu 9 0 2 4294967295
 chamou addiu com 2 0 -1
 
 
-Instrucao Atual: 14 rs: 0 rt: 2
-Instrucao Anterior: 22 rs: 0 rt: 3
+Instrucao Atual: 14 rs: 0 rs2 0 rt: 2
+Instrucao Anterior: 22 rs: 2 rt: 3
 
 
 
-Instrucao Atual: 50 rs: 0 rt: 2
+Instrucao Atual: 50 rs: 0 rs2 0 rt: 2
 Instrucao Anterior: 14 rs: 0 rt: 2
 
 
 
-Instrucao Atual: 31 rs: 0 rt: 2
+Instrucao Atual: 31 rs: 0 rs2 0 rt: 0
 Instrucao Anterior: 50 rs: 0 rt: 2
 
 chamou lw com 35 29 31 20
 lw com rt= 31 rs= 29 
 
 
-Instrucao Atual: 5 rs: 29 rt: 31
-Instrucao Anterior: 31 rs: 0 rt: 2
+Instrucao Atual: 5 rs: 29 rs2 0 rt: 31
+Instrucao Anterior: 31 rs: 0 rt: 0
 
 chamou lw com 35 29 16 16
 lw com rt= 16 rs= 29 
 
 
-Instrucao Atual: 5 rs: 29 rt: 16
+Instrucao Atual: 5 rs: 29 rs2 0 rt: 16
 Instrucao Anterior: 5 rs: 29 rt: 31
 
-Hazard
+addu
 
 
-Instrucao Atual: 22 rs: 29 rt: 16
+Instrucao Atual: 22 rs: 3 rs2 0 rt: 2
 Instrucao Anterior: 5 rs: 29 rt: 16
 
 
 
-Instrucao Atual: 48 rs: 29 rt: 16
-Instrucao Anterior: 22 rs: 29 rt: 16
+Instrucao Atual: 48 rs: 3 rs2 0 rt: 2
+Instrucao Anterior: 22 rs: 3 rt: 2
 
 decodificou addiu 9 29 29 24
 chamou addiu com 29 29 24
 
 
-Instrucao Atual: 14 rs: 29 rt: 29
-Instrucao Anterior: 48 rs: 29 rt: 16
+Instrucao Atual: 14 rs: 29 rs2 0 rt: 29
+Instrucao Anterior: 48 rs: 3 rt: 2
 
 
 
-Instrucao Atual: 50 rs: 29 rt: 29
+Instrucao Atual: 50 rs: 29 rs2 0 rt: 29
 Instrucao Anterior: 14 rs: 29 rt: 29
 
+addu
 
 
-Instrucao Atual: 22 rs: 29 rt: 29
+Instrucao Atual: 22 rs: 2 rs2 0 rt: 16
 Instrucao Anterior: 50 rs: 29 rt: 29
 
 
 
-Instrucao Atual: 26 rs: 29 rt: 29
-Instrucao Anterior: 22 rs: 29 rt: 29
+Instrucao Atual: 26 rs: 2 rs2 17 rt: 2
+Instrucao Anterior: 22 rs: 2 rt: 16
 
 
 
-Instrucao Atual: 50 rs: 29 rt: 29
-Instrucao Anterior: 26 rs: 29 rt: 29
+Instrucao Atual: 50 rs: 2 rs2 17 rt: 2
+Instrucao Anterior: 26 rs: 2 rt: 2
 
 
 
-Instrucao Atual: 20 rs: 0 rt: 21
-Instrucao Anterior: 50 rs: 29 rt: 29
+Instrucao Atual: 20 rs: 0 rs2 17 rt: 21
+Instrucao Anterior: 50 rs: 2 rt: 2
 
 chamou lw com 35 21 2 4294936492
 lw com rt= 2 rs= 21 
 
 
-Instrucao Atual: 5 rs: 21 rt: 2
+Instrucao Atual: 5 rs: 21 rs2 17 rt: 2
 Instrucao Anterior: 20 rs: 0 rt: 21
 
-Hazard
 
 
-Instrucao Atual: 31 rs: 21 rt: 2
+Instrucao Atual: 31 rs: 0 rs2 0 rt: 0
 Instrucao Anterior: 5 rs: 21 rt: 2
 
+addu
 
 
-Instrucao Atual: 22 rs: 21 rt: 2
-Instrucao Anterior: 31 rs: 21 rt: 2
-
-
-
-Instrucao Atual: 50 rs: 21 rt: 2
-Instrucao Anterior: 22 rs: 21 rt: 2
+Instrucao Atual: 22 rs: 2 rs2 18 rt: 2
+Instrucao Anterior: 31 rs: 0 rt: 0
 
 
 
-Instrucao Atual: 10 rs: 21 rt: 2
-Instrucao Anterior: 50 rs: 21 rt: 2
+Instrucao Atual: 50 rs: 2 rs2 18 rt: 2
+Instrucao Anterior: 22 rs: 2 rt: 2
+
+
+
+Instrucao Atual: 10 rs: 21 rs2 18 rt: 2
+Instrucao Anterior: 50 rs: 2 rt: 2
 
 chamou lw com 35 28 3 4294934680
 lw com rt= 3 rs= 28 
 
 
-Instrucao Atual: 5 rs: 28 rt: 3
+Instrucao Atual: 5 rs: 28 rs2 18 rt: 3
 Instrucao Anterior: 10 rs: 21 rt: 2
 
 decodificou addiu 9 0 2 4294967295
 chamou addiu com 2 0 -1
 
 
-Instrucao Atual: 14 rs: 0 rt: 2
+Instrucao Atual: 14 rs: 0 rs2 18 rt: 2
 Instrucao Anterior: 5 rs: 28 rt: 3
 
 
 
-Instrucao Atual: 50 rs: 0 rt: 2
+Instrucao Atual: 50 rs: 0 rs2 18 rt: 2
 Instrucao Anterior: 14 rs: 0 rt: 2
 
 
 
-Instrucao Atual: 31 rs: 0 rt: 2
+Instrucao Atual: 31 rs: 0 rs2 0 rt: 0
 Instrucao Anterior: 50 rs: 0 rt: 2
 
 
 
-Instrucao Atual: 10 rs: 28 rt: 16
-Instrucao Anterior: 31 rs: 0 rt: 2
+Instrucao Atual: 10 rs: 28 rs2 0 rt: 16
+Instrucao Anterior: 31 rs: 0 rt: 0
 
 
 
-Instrucao Atual: 46 rs: 28 rt: 16
+Instrucao Atual: 46 rs: 28 rs2 0 rt: 16
 Instrucao Anterior: 10 rs: 28 rt: 16
 
 
 
-Instrucao Atual: 17 rs: 16 rt: 3
+Instrucao Atual: 17 rs: 16 rs2 0 rt: 3
 Instrucao Anterior: 46 rs: 28 rt: 16
 
 
 
-Instrucao Atual: 50 rs: 16 rt: 3
+Instrucao Atual: 50 rs: 16 rs2 0 rt: 3
 Instrucao Anterior: 17 rs: 16 rt: 3
 
+addu
 
 
-Instrucao Atual: 22 rs: 16 rt: 3
+Instrucao Atual: 22 rs: 0 rs2 0 rt: 17
 Instrucao Anterior: 50 rs: 16 rt: 3
 
 decodificou addiu 9 0 2 8
 chamou addiu com 2 0 8
 
 
-Instrucao Atual: 14 rs: 0 rt: 2
-Instrucao Anterior: 22 rs: 16 rt: 3
+Instrucao Atual: 14 rs: 0 rs2 0 rt: 2
+Instrucao Anterior: 22 rs: 0 rt: 17
+
+subu com 0 2 3 17 0 35
+subu com rd 17 rs 2 rt 3 
 
 
-
-Instrucao Atual: 24 rs: 0 rt: 2
+Instrucao Atual: 24 rs: 2 rs2 3 rt: 17
 Instrucao Anterior: 14 rs: 0 rt: 2
 
+addu
 
 
-Instrucao Atual: 22 rs: 0 rt: 2
-Instrucao Anterior: 24 rs: 0 rt: 2
+Instrucao Atual: 22 rs: 16 rs2 17 rt: 16
+Instrucao Anterior: 24 rs: 2 rt: 17
+
+addu
+
+
+Instrucao Atual: 22 rs: 16 rs2 18 rt: 2
+Instrucao Anterior: 22 rs: 16 rt: 16
 
 
 
-Instrucao Atual: 22 rs: 0 rt: 2
-Instrucao Anterior: 22 rs: 0 rt: 2
-
-
-
-Instrucao Atual: 17 rs: 2 rt: 2
-Instrucao Anterior: 22 rs: 0 rt: 2
+Instrucao Atual: 17 rs: 2 rs2 18 rt: 2
+Instrucao Anterior: 22 rs: 16 rt: 2
 
 decodificou addiu 9 0 3 4096
 chamou addiu com 3 0 4096
 
 
-Instrucao Atual: 14 rs: 0 rt: 3
+Instrucao Atual: 14 rs: 0 rs2 18 rt: 3
 Instrucao Anterior: 17 rs: 2 rt: 2
 
+subu com 0 3 2 3 0 35
+subu com rd 3 rs 3 rt 2 
 
 
-Instrucao Atual: 24 rs: 0 rt: 3
+Instrucao Atual: 24 rs: 3 rs2 2 rt: 3
 Instrucao Anterior: 14 rs: 0 rt: 3
 
+addu
 
 
-Instrucao Atual: 22 rs: 0 rt: 3
-Instrucao Anterior: 24 rs: 0 rt: 3
+Instrucao Atual: 22 rs: 17 rs2 3 rt: 17
+Instrucao Anterior: 24 rs: 3 rt: 3
+
+addu
 
 
-
-Instrucao Atual: 22 rs: 0 rt: 3
-Instrucao Anterior: 22 rs: 0 rt: 3
-
-
-
-Instrucao Atual: 47 rs: 0 rt: 3
-Instrucao Anterior: 22 rs: 0 rt: 3
+Instrucao Atual: 22 rs: 30 rs2 0 rt: 4
+Instrucao Anterior: 22 rs: 17 rt: 17
 
 
 
-Instrucao Atual: 22 rs: 0 rt: 3
-Instrucao Anterior: 47 rs: 0 rt: 3
+Instrucao Atual: 47 rs: 30 rs2 0 rt: 4
+Instrucao Anterior: 22 rs: 30 rt: 4
+
+addu
+
+
+Instrucao Atual: 22 rs: 17 rs2 0 rt: 5
+Instrucao Anterior: 47 rs: 30 rt: 4
 
 decodificou addiu 9 29 29 4294967272
 chamou addiu com 29 29 -24
 
 
-Instrucao Atual: 14 rs: 29 rt: 29
-Instrucao Anterior: 22 rs: 0 rt: 3
+Instrucao Atual: 14 rs: 29 rs2 0 rt: 29
+Instrucao Anterior: 22 rs: 17 rt: 5
 
 
 
-Instrucao Atual: 10 rs: 29 rt: 16
+Instrucao Atual: 10 rs: 29 rs2 0 rt: 16
 Instrucao Anterior: 14 rs: 29 rt: 29
 
+addu
 
 
-Instrucao Atual: 22 rs: 29 rt: 16
+Instrucao Atual: 22 rs: 4 rs2 0 rt: 16
 Instrucao Anterior: 10 rs: 29 rt: 16
 
 
 
-Instrucao Atual: 10 rs: 29 rt: 31
-Instrucao Anterior: 22 rs: 29 rt: 16
+Instrucao Atual: 10 rs: 29 rs2 0 rt: 31
+Instrucao Anterior: 22 rs: 4 rt: 16
 
 
 
-Instrucao Atual: 10 rs: 28 rt: 0
+Instrucao Atual: 10 rs: 28 rs2 0 rt: 0
 Instrucao Anterior: 10 rs: 29 rt: 31
 
 
 
-Instrucao Atual: 47 rs: 28 rt: 0
+Instrucao Atual: 47 rs: 28 rs2 0 rt: 0
 Instrucao Anterior: 10 rs: 28 rt: 0
 
+addu
 
 
-Instrucao Atual: 22 rs: 28 rt: 0
+Instrucao Atual: 22 rs: 5 rs2 0 rt: 4
 Instrucao Anterior: 47 rs: 28 rt: 0
 
 decodificou addiu 9 0 3 88
 chamou addiu com 3 0 88
 
 
-Instrucao Atual: 14 rs: 0 rt: 3
-Instrucao Anterior: 22 rs: 28 rt: 0
+Instrucao Atual: 14 rs: 0 rs2 0 rt: 3
+Instrucao Anterior: 22 rs: 5 rt: 4
 
 
 
-Instrucao Atual: 48 rs: 0 rt: 3
+Instrucao Atual: 48 rs: 0 rs2 0 rt: 3
 Instrucao Anterior: 14 rs: 0 rt: 3
 
 
 
-Instrucao Atual: 31 rs: 0 rt: 3
+Instrucao Atual: 31 rs: 0 rs2 0 rt: 0
 Instrucao Anterior: 48 rs: 0 rt: 3
 
 
 
-Instrucao Atual: 31 rs: 0 rt: 3
-Instrucao Anterior: 31 rs: 0 rt: 3
+Instrucao Atual: 31 rs: 0 rs2 0 rt: 0
+Instrucao Anterior: 31 rs: 0 rt: 0
+
+addu
 
 
-
-Instrucao Atual: 22 rs: 0 rt: 3
-Instrucao Anterior: 31 rs: 0 rt: 3
+Instrucao Atual: 22 rs: 2 rs2 0 rt: 3
+Instrucao Anterior: 31 rs: 0 rt: 0
 
 decodificou addiu 9 0 2 4294967295
 chamou addiu com 2 0 -1
 
 
-Instrucao Atual: 14 rs: 0 rt: 2
-Instrucao Anterior: 22 rs: 0 rt: 3
+Instrucao Atual: 14 rs: 0 rs2 0 rt: 2
+Instrucao Anterior: 22 rs: 2 rt: 3
 
 
 
-Instrucao Atual: 50 rs: 0 rt: 2
+Instrucao Atual: 50 rs: 0 rs2 0 rt: 2
 Instrucao Anterior: 14 rs: 0 rt: 2
 
 
 
-Instrucao Atual: 31 rs: 0 rt: 2
+Instrucao Atual: 31 rs: 0 rs2 0 rt: 0
 Instrucao Anterior: 50 rs: 0 rt: 2
 
 chamou lw com 35 29 31 20
 lw com rt= 31 rs= 29 
 
 
-Instrucao Atual: 5 rs: 29 rt: 31
-Instrucao Anterior: 31 rs: 0 rt: 2
+Instrucao Atual: 5 rs: 29 rs2 0 rt: 31
+Instrucao Anterior: 31 rs: 0 rt: 0
 
 chamou lw com 35 29 16 16
 lw com rt= 16 rs= 29 
 
 
-Instrucao Atual: 5 rs: 29 rt: 16
+Instrucao Atual: 5 rs: 29 rs2 0 rt: 16
 Instrucao Anterior: 5 rs: 29 rt: 31
 
-Hazard
+addu
 
 
-Instrucao Atual: 22 rs: 29 rt: 16
+Instrucao Atual: 22 rs: 3 rs2 0 rt: 2
 Instrucao Anterior: 5 rs: 29 rt: 16
 
 
 
-Instrucao Atual: 48 rs: 29 rt: 16
-Instrucao Anterior: 22 rs: 29 rt: 16
+Instrucao Atual: 48 rs: 3 rs2 0 rt: 2
+Instrucao Anterior: 22 rs: 3 rt: 2
 
 decodificou addiu 9 29 29 24
 chamou addiu com 29 29 24
 
 
-Instrucao Atual: 14 rs: 29 rt: 29
-Instrucao Anterior: 48 rs: 29 rt: 16
+Instrucao Atual: 14 rs: 29 rs2 0 rt: 29
+Instrucao Anterior: 48 rs: 3 rt: 2
+
+addu
 
 
-
-Instrucao Atual: 22 rs: 29 rt: 29
+Instrucao Atual: 22 rs: 2 rs2 0 rt: 3
 Instrucao Anterior: 14 rs: 29 rt: 29
 
 decodificou addiu 9 0 2 4294967295
 chamou addiu com 2 0 -1
 
 
-Instrucao Atual: 14 rs: 0 rt: 2
-Instrucao Anterior: 22 rs: 29 rt: 29
+Instrucao Atual: 14 rs: 0 rs2 0 rt: 2
+Instrucao Anterior: 22 rs: 2 rt: 3
 
 
 
-Instrucao Atual: 50 rs: 0 rt: 2
+Instrucao Atual: 50 rs: 0 rs2 0 rt: 2
 Instrucao Anterior: 14 rs: 0 rt: 2
 
 
 
-Instrucao Atual: 31 rs: 0 rt: 2
+Instrucao Atual: 31 rs: 0 rs2 0 rt: 0
 Instrucao Anterior: 50 rs: 0 rt: 2
 
 chamou lw com 35 21 2 4294936492
 lw com rt= 2 rs= 21 
 
 
-Instrucao Atual: 5 rs: 21 rt: 2
-Instrucao Anterior: 31 rs: 0 rt: 2
+Instrucao Atual: 5 rs: 21 rs2 0 rt: 2
+Instrucao Anterior: 31 rs: 0 rt: 0
 
-Hazard
+subu com 0 3 16 3 0 35
+subu com rd 3 rs 3 rt 16 
 
 
-Instrucao Atual: 24 rs: 21 rt: 2
+Instrucao Atual: 24 rs: 3 rs2 16 rt: 3
 Instrucao Anterior: 5 rs: 21 rt: 2
 
+addu
 
 
-Instrucao Atual: 22 rs: 21 rt: 2
-Instrucao Anterior: 24 rs: 21 rt: 2
+Instrucao Atual: 22 rs: 3 rs2 17 rt: 5
+Instrucao Anterior: 24 rs: 3 rt: 3
+
+addu
 
 
-
-Instrucao Atual: 22 rs: 21 rt: 2
-Instrucao Anterior: 22 rs: 21 rt: 2
+Instrucao Atual: 22 rs: 2 rs2 17 rt: 2
+Instrucao Anterior: 22 rs: 3 rt: 5
 
 decodificou addiu 9 23 4 4294935172
 chamou addiu com 4 23 -32124
 
 
-Instrucao Atual: 14 rs: 23 rt: 4
-Instrucao Anterior: 22 rs: 21 rt: 2
+Instrucao Atual: 14 rs: 23 rs2 17 rt: 4
+Instrucao Anterior: 22 rs: 2 rt: 2
 
 
 
-Instrucao Atual: 18 rs: 5 rt: 3
+Instrucao Atual: 18 rs: 5 rs2 17 rt: 3
 Instrucao Anterior: 14 rs: 23 rt: 4
 
 
 
-Instrucao Atual: 10 rs: 21 rt: 2
+Instrucao Atual: 10 rs: 21 rs2 17 rt: 2
 Instrucao Anterior: 18 rs: 5 rt: 3
 
 
 
-Instrucao Atual: 10 rs: 4 rt: 16
+Instrucao Atual: 10 rs: 4 rs2 17 rt: 16
 Instrucao Anterior: 10 rs: 21 rt: 2
 
 
 
-Instrucao Atual: 50 rs: 4 rt: 16
+Instrucao Atual: 50 rs: 4 rs2 17 rt: 16
 Instrucao Anterior: 10 rs: 4 rt: 16
 
 
 
-Instrucao Atual: 10 rs: 16 rt: 3
+Instrucao Atual: 10 rs: 16 rs2 17 rt: 3
 Instrucao Anterior: 50 rs: 4 rt: 16
 
 chamou lw com 35 21 3 4294936492
 lw com rt= 3 rs= 21 
 
 
-Instrucao Atual: 5 rs: 21 rt: 3
+Instrucao Atual: 5 rs: 21 rs2 17 rt: 3
 Instrucao Anterior: 10 rs: 16 rt: 3
 
 chamou lw com 35 28 2 4294934720
 lw com rt= 2 rs= 28 
 
 
-Instrucao Atual: 5 rs: 28 rt: 2
+Instrucao Atual: 5 rs: 28 rs2 17 rt: 2
 Instrucao Anterior: 5 rs: 21 rt: 3
 
-Hazard
 
 
-Instrucao Atual: 31 rs: 28 rt: 2
+Instrucao Atual: 31 rs: 0 rs2 0 rt: 0
 Instrucao Anterior: 5 rs: 28 rt: 2
 
 
 
-Instrucao Atual: 26 rs: 28 rt: 2
-Instrucao Anterior: 31 rs: 28 rt: 2
+Instrucao Atual: 26 rs: 2 rs2 3 rt: 2
+Instrucao Anterior: 31 rs: 0 rt: 0
 
 
 
-Instrucao Atual: 50 rs: 28 rt: 2
-Instrucao Anterior: 26 rs: 28 rt: 2
+Instrucao Atual: 50 rs: 2 rs2 3 rt: 2
+Instrucao Anterior: 26 rs: 2 rt: 2
 
 
 
-Instrucao Atual: 31 rs: 28 rt: 2
-Instrucao Anterior: 50 rs: 28 rt: 2
+Instrucao Atual: 31 rs: 0 rs2 0 rt: 0
+Instrucao Anterior: 50 rs: 2 rt: 2
 
 
 
-Instrucao Atual: 10 rs: 28 rt: 3
-Instrucao Anterior: 31 rs: 28 rt: 2
+Instrucao Atual: 10 rs: 28 rs2 0 rt: 3
+Instrucao Anterior: 31 rs: 0 rt: 0
 
 chamou lw com 35 28 2 4294934724
 lw com rt= 2 rs= 28 
 
 
-Instrucao Atual: 5 rs: 28 rt: 2
+Instrucao Atual: 5 rs: 28 rs2 0 rt: 2
 Instrucao Anterior: 10 rs: 28 rt: 3
 
-Hazard
 
 
-Instrucao Atual: 31 rs: 28 rt: 2
+Instrucao Atual: 31 rs: 0 rs2 0 rt: 0
 Instrucao Anterior: 5 rs: 28 rt: 2
 
 
 
-Instrucao Atual: 26 rs: 28 rt: 2
-Instrucao Anterior: 31 rs: 28 rt: 2
+Instrucao Atual: 26 rs: 2 rs2 3 rt: 2
+Instrucao Anterior: 31 rs: 0 rt: 0
 
 
 
-Instrucao Atual: 50 rs: 28 rt: 2
-Instrucao Anterior: 26 rs: 28 rt: 2
+Instrucao Atual: 50 rs: 2 rs2 3 rt: 2
+Instrucao Anterior: 26 rs: 2 rt: 2
 
 
 
-Instrucao Atual: 31 rs: 28 rt: 2
-Instrucao Anterior: 50 rs: 28 rt: 2
+Instrucao Atual: 31 rs: 0 rs2 0 rt: 0
+Instrucao Anterior: 50 rs: 2 rt: 2
 
 
 
-Instrucao Atual: 10 rs: 28 rt: 3
-Instrucao Anterior: 31 rs: 28 rt: 2
+Instrucao Atual: 10 rs: 28 rs2 0 rt: 3
+Instrucao Anterior: 31 rs: 0 rt: 0
 
 
 
-Instrucao Atual: 46 rs: 28 rt: 3
+Instrucao Atual: 46 rs: 28 rs2 0 rt: 3
 Instrucao Anterior: 10 rs: 28 rt: 3
 
 
 
-Instrucao Atual: 31 rs: 28 rt: 3
+Instrucao Atual: 31 rs: 0 rs2 0 rt: 0
 Instrucao Anterior: 46 rs: 28 rt: 3
 
 chamou lw com 35 29 31 52
 lw com rt= 31 rs= 29 
 
 
-Instrucao Atual: 5 rs: 29 rt: 31
-Instrucao Anterior: 31 rs: 28 rt: 3
+Instrucao Atual: 5 rs: 29 rs2 0 rt: 31
+Instrucao Anterior: 31 rs: 0 rt: 0
 
 chamou lw com 35 29 30 48
 lw com rt= 30 rs= 29 
 
 
-Instrucao Atual: 5 rs: 29 rt: 30
+Instrucao Atual: 5 rs: 29 rs2 0 rt: 30
 Instrucao Anterior: 5 rs: 29 rt: 31
 
 chamou lw com 35 29 23 44
 lw com rt= 23 rs= 29 
 
 
-Instrucao Atual: 5 rs: 29 rt: 23
+Instrucao Atual: 5 rs: 29 rs2 0 rt: 23
 Instrucao Anterior: 5 rs: 29 rt: 30
 
 chamou lw com 35 29 22 40
 lw com rt= 22 rs= 29 
 
 
-Instrucao Atual: 5 rs: 29 rt: 22
+Instrucao Atual: 5 rs: 29 rs2 0 rt: 22
 Instrucao Anterior: 5 rs: 29 rt: 23
 
 chamou lw com 35 29 21 36
 lw com rt= 21 rs= 29 
 
 
-Instrucao Atual: 5 rs: 29 rt: 21
+Instrucao Atual: 5 rs: 29 rs2 0 rt: 21
 Instrucao Anterior: 5 rs: 29 rt: 22
 
 chamou lw com 35 29 20 32
 lw com rt= 20 rs= 29 
 
 
-Instrucao Atual: 5 rs: 29 rt: 20
+Instrucao Atual: 5 rs: 29 rs2 0 rt: 20
 Instrucao Anterior: 5 rs: 29 rt: 21
 
 chamou lw com 35 29 19 28
 lw com rt= 19 rs= 29 
 
 
-Instrucao Atual: 5 rs: 29 rt: 19
+Instrucao Atual: 5 rs: 29 rs2 0 rt: 19
 Instrucao Anterior: 5 rs: 29 rt: 20
 
 chamou lw com 35 29 18 24
 lw com rt= 18 rs= 29 
 
 
-Instrucao Atual: 5 rs: 29 rt: 18
+Instrucao Atual: 5 rs: 29 rs2 0 rt: 18
 Instrucao Anterior: 5 rs: 29 rt: 19
 
 chamou lw com 35 29 17 20
 lw com rt= 17 rs= 29 
 
 
-Instrucao Atual: 5 rs: 29 rt: 17
+Instrucao Atual: 5 rs: 29 rs2 0 rt: 17
 Instrucao Anterior: 5 rs: 29 rt: 18
 
 chamou lw com 35 29 16 16
 lw com rt= 16 rs= 29 
 
 
-Instrucao Atual: 5 rs: 29 rt: 16
+Instrucao Atual: 5 rs: 29 rs2 0 rt: 16
 Instrucao Anterior: 5 rs: 29 rt: 17
 
 Hazard
 
 
-Instrucao Atual: 48 rs: 29 rt: 16
+Instrucao Atual: 48 rs: 29 rs2 0 rt: 16
 Instrucao Anterior: 5 rs: 29 rt: 16
 
 decodificou addiu 9 29 29 56
 chamou addiu com 29 29 56
 
 
-Instrucao Atual: 14 rs: 29 rt: 29
+Instrucao Atual: 14 rs: 29 rs2 0 rt: 29
 Instrucao Anterior: 48 rs: 29 rt: 16
 
 chamou lw com 35 16 2 8
 lw com rt= 2 rs= 16 
 
 
-Instrucao Atual: 5 rs: 16 rt: 2
+Instrucao Atual: 5 rs: 16 rs2 0 rt: 2
 Instrucao Anterior: 14 rs: 29 rt: 29
 
-Hazard
 
 
-Instrucao Atual: 31 rs: 16 rt: 2
+Instrucao Atual: 31 rs: 0 rs2 0 rt: 0
 Instrucao Anterior: 5 rs: 16 rt: 2
 
 chamou lw com 35 2 3 4
 lw com rt= 3 rs= 2 
 
 
-Instrucao Atual: 5 rs: 2 rt: 3
-Instrucao Anterior: 31 rs: 16 rt: 2
-
-Hazard
+Instrucao Atual: 5 rs: 2 rs2 0 rt: 3
+Instrucao Anterior: 31 rs: 0 rt: 0
 
 
-Instrucao Atual: 31 rs: 2 rt: 3
+
+Instrucao Atual: 31 rs: 0 rs2 0 rt: 0
 Instrucao Anterior: 5 rs: 2 rt: 3
 
 
 
-Instrucao Atual: 27 rs: 2 rt: 3
-Instrucao Anterior: 31 rs: 2 rt: 3
+Instrucao Atual: 27 rs: 3 rs2 19 rt: 3
+Instrucao Anterior: 31 rs: 0 rt: 0
 
 
 
-Instrucao Atual: 26 rs: 2 rt: 3
-Instrucao Anterior: 27 rs: 2 rt: 3
+Instrucao Atual: 26 rs: 3 rs2 17 rt: 2
+Instrucao Anterior: 27 rs: 3 rt: 3
 
 
 
-Instrucao Atual: 51 rs: 2 rt: 3
-Instrucao Anterior: 26 rs: 2 rt: 3
+Instrucao Atual: 51 rs: 3 rs2 17 rt: 2
+Instrucao Anterior: 26 rs: 3 rt: 2
+
+subu com 0 3 17 6 0 35
+subu com rd 6 rs 3 rt 17 
+
+
+Instrucao Atual: 24 rs: 3 rs2 17 rt: 6
+Instrucao Anterior: 51 rs: 3 rt: 2
 
 
 
-Instrucao Atual: 24 rs: 2 rt: 3
-Instrucao Anterior: 51 rs: 2 rt: 3
+Instrucao Atual: 15 rs: 6 rs2 17 rt: 2
+Instrucao Anterior: 24 rs: 3 rt: 6
 
 
 
-Instrucao Atual: 15 rs: 6 rt: 2
-Instrucao Anterior: 24 rs: 2 rt: 3
-
-
-
-Instrucao Atual: 50 rs: 6 rt: 2
+Instrucao Atual: 50 rs: 6 rs2 17 rt: 2
 Instrucao Anterior: 15 rs: 6 rt: 2
 
 decodificou addiu 9 20 5 4294935172
 chamou addiu com 5 20 -32124
 
 
-Instrucao Atual: 14 rs: 20 rt: 5
+Instrucao Atual: 14 rs: 20 rs2 17 rt: 5
 Instrucao Anterior: 50 rs: 6 rt: 2
 
 chamou lw com 35 5 16 8
 lw com rt= 16 rs= 5 
 
 
-Instrucao Atual: 5 rs: 5 rt: 16
+Instrucao Atual: 5 rs: 5 rs2 17 rt: 16
 Instrucao Anterior: 14 rs: 20 rt: 5
 
 
 
-Instrucao Atual: 18 rs: 6 rt: 4
+Instrucao Atual: 18 rs: 6 rs2 17 rt: 4
 Instrucao Anterior: 5 rs: 5 rt: 16
 
+addu
 
 
-Instrucao Atual: 22 rs: 6 rt: 4
+Instrucao Atual: 22 rs: 16 rs2 17 rt: 3
 Instrucao Anterior: 18 rs: 6 rt: 4
 
 
 
-Instrucao Atual: 18 rs: 17 rt: 2
-Instrucao Anterior: 22 rs: 6 rt: 4
+Instrucao Atual: 18 rs: 17 rs2 17 rt: 2
+Instrucao Anterior: 22 rs: 16 rt: 3
 
 
 
-Instrucao Atual: 10 rs: 16 rt: 2
+Instrucao Atual: 10 rs: 16 rs2 17 rt: 2
 Instrucao Anterior: 18 rs: 17 rt: 2
 
 
 
-Instrucao Atual: 10 rs: 5 rt: 3
+Instrucao Atual: 10 rs: 5 rs2 17 rt: 3
 Instrucao Anterior: 10 rs: 16 rt: 2
 
 
 
-Instrucao Atual: 46 rs: 5 rt: 3
+Instrucao Atual: 46 rs: 5 rs2 17 rt: 3
 Instrucao Anterior: 10 rs: 5 rt: 3
 
 
 
-Instrucao Atual: 10 rs: 3 rt: 4
+Instrucao Atual: 10 rs: 3 rs2 17 rt: 4
 Instrucao Anterior: 46 rs: 5 rt: 3
 
+addu
 
 
-Instrucao Atual: 22 rs: 3 rt: 4
+Instrucao Atual: 22 rs: 18 rs2 0 rt: 4
 Instrucao Anterior: 10 rs: 3 rt: 4
 
 
 
-Instrucao Atual: 47 rs: 3 rt: 4
-Instrucao Anterior: 22 rs: 3 rt: 4
+Instrucao Atual: 47 rs: 18 rs2 0 rt: 4
+Instrucao Anterior: 22 rs: 18 rt: 4
 
 
 
-Instrucao Atual: 31 rs: 3 rt: 4
-Instrucao Anterior: 47 rs: 3 rt: 4
+Instrucao Atual: 31 rs: 0 rs2 0 rt: 0
+Instrucao Anterior: 47 rs: 18 rt: 4
 
 
 
-Instrucao Atual: 48 rs: 3 rt: 4
-Instrucao Anterior: 31 rs: 3 rt: 4
+Instrucao Atual: 48 rs: 0 rs2 0 rt: 0
+Instrucao Anterior: 31 rs: 0 rt: 0
 
 
 
-Instrucao Atual: 31 rs: 3 rt: 4
-Instrucao Anterior: 48 rs: 3 rt: 4
+Instrucao Atual: 31 rs: 0 rs2 0 rt: 0
+Instrucao Anterior: 48 rs: 0 rt: 0
 
 decodificou addiu 9 16 2 8
 chamou addiu com 2 16 8
 
 
-Instrucao Atual: 14 rs: 16 rt: 2
-Instrucao Anterior: 31 rs: 3 rt: 4
+Instrucao Atual: 14 rs: 16 rs2 0 rt: 2
+Instrucao Anterior: 31 rs: 0 rt: 0
 
 chamou lw com 35 29 31 36
 lw com rt= 31 rs= 29 
 
 
-Instrucao Atual: 5 rs: 29 rt: 31
+Instrucao Atual: 5 rs: 29 rs2 0 rt: 31
 Instrucao Anterior: 14 rs: 16 rt: 2
 
 chamou lw com 35 29 20 32
 lw com rt= 20 rs= 29 
 
 
-Instrucao Atual: 5 rs: 29 rt: 20
+Instrucao Atual: 5 rs: 29 rs2 0 rt: 20
 Instrucao Anterior: 5 rs: 29 rt: 31
 
 chamou lw com 35 29 19 28
 lw com rt= 19 rs= 29 
 
 
-Instrucao Atual: 5 rs: 29 rt: 19
+Instrucao Atual: 5 rs: 29 rs2 0 rt: 19
 Instrucao Anterior: 5 rs: 29 rt: 20
 
 chamou lw com 35 29 18 24
 lw com rt= 18 rs= 29 
 
 
-Instrucao Atual: 5 rs: 29 rt: 18
+Instrucao Atual: 5 rs: 29 rs2 0 rt: 18
 Instrucao Anterior: 5 rs: 29 rt: 19
 
 chamou lw com 35 29 17 20
 lw com rt= 17 rs= 29 
 
 
-Instrucao Atual: 5 rs: 29 rt: 17
+Instrucao Atual: 5 rs: 29 rs2 0 rt: 17
 Instrucao Anterior: 5 rs: 29 rt: 18
 
 chamou lw com 35 29 16 16
 lw com rt= 16 rs= 29 
 
 
-Instrucao Atual: 5 rs: 29 rt: 16
+Instrucao Atual: 5 rs: 29 rs2 0 rt: 16
 Instrucao Anterior: 5 rs: 29 rt: 17
 
 Hazard
 
 
-Instrucao Atual: 48 rs: 29 rt: 16
+Instrucao Atual: 48 rs: 29 rs2 0 rt: 16
 Instrucao Anterior: 5 rs: 29 rt: 16
 
 decodificou addiu 9 29 29 40
 chamou addiu com 29 29 40
 
 
-Instrucao Atual: 14 rs: 29 rt: 29
+Instrucao Atual: 14 rs: 29 rs2 0 rt: 29
 Instrucao Anterior: 48 rs: 29 rt: 16
 
 
 
-Instrucao Atual: 50 rs: 29 rt: 29
+Instrucao Atual: 50 rs: 29 rs2 0 rt: 29
 Instrucao Anterior: 14 rs: 29 rt: 29
 
+addu
 
 
-Instrucao Atual: 22 rs: 29 rt: 29
+Instrucao Atual: 22 rs: 2 rs2 0 rt: 5
 Instrucao Anterior: 50 rs: 29 rt: 29
 
 
 
-Instrucao Atual: 4 rs: 16 rt: 2
-Instrucao Anterior: 22 rs: 29 rt: 29
+Instrucao Atual: 4 rs: 16 rs2 0 rt: 2
+Instrucao Anterior: 22 rs: 2 rt: 5
 
 chamou lw com 35 16 4 84
 lw com rt= 4 rs= 16 
 
 
-Instrucao Atual: 5 rs: 16 rt: 4
+Instrucao Atual: 5 rs: 16 rs2 0 rt: 4
 Instrucao Anterior: 4 rs: 16 rt: 2
 
 
 
-Instrucao Atual: 20 rs: 0 rt: 3
+Instrucao Atual: 20 rs: 0 rs2 0 rt: 3
 Instrucao Anterior: 5 rs: 16 rt: 4
 
 
 
-Instrucao Atual: 18 rs: 2 rt: 2
+Instrucao Atual: 18 rs: 2 rs2 0 rt: 2
 Instrucao Anterior: 20 rs: 0 rt: 3
 
 decodificou addiu 9 3 3 14580
 chamou addiu com 3 3 14580
 
 
-Instrucao Atual: 14 rs: 3 rt: 3
+Instrucao Atual: 14 rs: 3 rs2 0 rt: 3
 Instrucao Anterior: 18 rs: 2 rt: 2
 
 
 
-Instrucao Atual: 10 rs: 4 rt: 3
+Instrucao Atual: 10 rs: 4 rs2 0 rt: 3
 Instrucao Anterior: 14 rs: 3 rt: 3
 
 
 
-Instrucao Atual: 9 rs: 16 rt: 2
+Instrucao Atual: 9 rs: 16 rs2 0 rt: 2
 Instrucao Anterior: 10 rs: 4 rt: 3
 
 
 
-Instrucao Atual: 10 rs: 16 rt: 5
+Instrucao Atual: 10 rs: 16 rs2 0 rt: 5
 Instrucao Anterior: 9 rs: 16 rt: 2
 
 
 
-Instrucao Atual: 10 rs: 16 rt: 17
+Instrucao Atual: 10 rs: 16 rs2 0 rt: 17
 Instrucao Anterior: 10 rs: 16 rt: 5
 
 
 
-Instrucao Atual: 50 rs: 16 rt: 17
+Instrucao Atual: 50 rs: 16 rs2 0 rt: 17
 Instrucao Anterior: 10 rs: 16 rt: 17
 
 
 
-Instrucao Atual: 10 rs: 16 rt: 5
+Instrucao Atual: 10 rs: 16 rs2 0 rt: 5
 Instrucao Anterior: 50 rs: 16 rt: 17
 
 chamou lw com 35 29 31 92
 lw com rt= 31 rs= 29 
 
 
-Instrucao Atual: 5 rs: 29 rt: 31
+Instrucao Atual: 5 rs: 29 rs2 0 rt: 31
 Instrucao Anterior: 10 rs: 16 rt: 5
 
 chamou lw com 35 29 18 88
 lw com rt= 18 rs= 29 
 
 
-Instrucao Atual: 5 rs: 29 rt: 18
+Instrucao Atual: 5 rs: 29 rs2 0 rt: 18
 Instrucao Anterior: 5 rs: 29 rt: 31
 
 chamou lw com 35 29 17 84
 lw com rt= 17 rs= 29 
 
 
-Instrucao Atual: 5 rs: 29 rt: 17
+Instrucao Atual: 5 rs: 29 rs2 0 rt: 17
 Instrucao Anterior: 5 rs: 29 rt: 18
 
 chamou lw com 35 29 16 80
 lw com rt= 16 rs= 29 
 
 
-Instrucao Atual: 5 rs: 29 rt: 16
+Instrucao Atual: 5 rs: 29 rs2 0 rt: 16
 Instrucao Anterior: 5 rs: 29 rt: 17
 
 Hazard
 
 
-Instrucao Atual: 48 rs: 29 rt: 16
+Instrucao Atual: 48 rs: 29 rs2 0 rt: 16
 Instrucao Anterior: 5 rs: 29 rt: 16
 
 decodificou addiu 9 29 29 96
 chamou addiu com 29 29 96
 
 
-Instrucao Atual: 14 rs: 29 rt: 29
+Instrucao Atual: 14 rs: 29 rs2 0 rt: 29
 Instrucao Anterior: 48 rs: 29 rt: 16
 
 
 
-Instrucao Atual: 46 rs: 29 rt: 29
+Instrucao Atual: 46 rs: 29 rs2 0 rt: 29
 Instrucao Anterior: 14 rs: 29 rt: 29
 
 
 
-Instrucao Atual: 31 rs: 29 rt: 29
+Instrucao Atual: 31 rs: 0 rs2 0 rt: 0
 Instrucao Anterior: 46 rs: 29 rt: 29
 
 
 
-Instrucao Atual: 4 rs: 16 rt: 3
-Instrucao Anterior: 31 rs: 29 rt: 29
-
-Hazard
+Instrucao Atual: 4 rs: 16 rs2 0 rt: 3
+Instrucao Anterior: 31 rs: 0 rt: 0
 
 
-Instrucao Atual: 31 rs: 16 rt: 3
+
+Instrucao Atual: 31 rs: 0 rs2 0 rt: 0
 Instrucao Anterior: 4 rs: 16 rt: 3
 
 
 
-Instrucao Atual: 17 rs: 3 rt: 2
-Instrucao Anterior: 31 rs: 16 rt: 3
+Instrucao Atual: 17 rs: 3 rs2 0 rt: 2
+Instrucao Anterior: 31 rs: 0 rt: 0
 
 
 
-Instrucao Atual: 50 rs: 3 rt: 2
+Instrucao Atual: 50 rs: 3 rs2 0 rt: 2
 Instrucao Anterior: 17 rs: 3 rt: 2
 
 
 
-Instrucao Atual: 17 rs: 3 rt: 2
+Instrucao Atual: 17 rs: 3 rs2 0 rt: 2
 Instrucao Anterior: 50 rs: 3 rt: 2
 
 chamou lw com 35 16 2 20
 lw com rt= 2 rs= 16 
 
 
-Instrucao Atual: 5 rs: 16 rt: 2
+Instrucao Atual: 5 rs: 16 rs2 0 rt: 2
 Instrucao Anterior: 17 rs: 3 rt: 2
 
 
 
-Instrucao Atual: 10 rs: 16 rt: 0
+Instrucao Atual: 10 rs: 16 rs2 0 rt: 0
 Instrucao Anterior: 5 rs: 16 rt: 2
 
+subu com 0 0 2 2 0 35
+subu com rd 2 rs 0 rt 2 
 
 
-Instrucao Atual: 24 rs: 16 rt: 0
+Instrucao Atual: 24 rs: 0 rs2 2 rt: 2
 Instrucao Anterior: 10 rs: 16 rt: 0
 
 
 
-Instrucao Atual: 10 rs: 16 rt: 2
-Instrucao Anterior: 24 rs: 16 rt: 0
+Instrucao Atual: 10 rs: 16 rs2 2 rt: 2
+Instrucao Anterior: 24 rs: 0 rt: 2
+
+addu
 
 
-
-Instrucao Atual: 22 rs: 16 rt: 2
+Instrucao Atual: 22 rs: 0 rs2 0 rt: 4
 Instrucao Anterior: 10 rs: 16 rt: 2
 
 chamou lw com 35 29 31 20
 lw com rt= 31 rs= 29 
 
 
-Instrucao Atual: 5 rs: 29 rt: 31
-Instrucao Anterior: 22 rs: 16 rt: 2
+Instrucao Atual: 5 rs: 29 rs2 0 rt: 31
+Instrucao Anterior: 22 rs: 0 rt: 4
 
 chamou lw com 35 29 16 16
 lw com rt= 16 rs= 29 
 
 
-Instrucao Atual: 5 rs: 29 rt: 16
+Instrucao Atual: 5 rs: 29 rs2 0 rt: 16
 Instrucao Anterior: 5 rs: 29 rt: 31
 
-Hazard
+addu
 
 
-Instrucao Atual: 22 rs: 29 rt: 16
+Instrucao Atual: 22 rs: 4 rs2 0 rt: 2
 Instrucao Anterior: 5 rs: 29 rt: 16
 
 
 
-Instrucao Atual: 48 rs: 29 rt: 16
-Instrucao Anterior: 22 rs: 29 rt: 16
+Instrucao Atual: 48 rs: 4 rs2 0 rt: 2
+Instrucao Anterior: 22 rs: 4 rt: 2
 
 decodificou addiu 9 29 29 24
 chamou addiu com 29 29 24
 
 
-Instrucao Atual: 14 rs: 29 rt: 29
-Instrucao Anterior: 48 rs: 29 rt: 16
+Instrucao Atual: 14 rs: 29 rs2 0 rt: 29
+Instrucao Anterior: 48 rs: 4 rt: 2
 
 
 
-Instrucao Atual: 51 rs: 29 rt: 29
+Instrucao Atual: 51 rs: 29 rs2 0 rt: 29
 Instrucao Anterior: 14 rs: 29 rt: 29
 
 decodificou addiu 9 0 3 4294967295
 chamou addiu com 3 0 -1
 
 
-Instrucao Atual: 14 rs: 0 rt: 3
+Instrucao Atual: 14 rs: 0 rs2 0 rt: 3
 Instrucao Anterior: 51 rs: 29 rt: 29
 
 chamou lw com 35 29 2 604
 lw com rt= 2 rs= 29 
 
 
-Instrucao Atual: 5 rs: 29 rt: 2
+Instrucao Atual: 5 rs: 29 rs2 0 rt: 2
 Instrucao Anterior: 14 rs: 0 rt: 3
 
-Hazard
 
 
-Instrucao Atual: 31 rs: 29 rt: 2
+Instrucao Atual: 31 rs: 0 rs2 0 rt: 0
 Instrucao Anterior: 5 rs: 29 rt: 2
 
 
 
-Instrucao Atual: 4 rs: 2 rt: 3
-Instrucao Anterior: 31 rs: 29 rt: 2
-
-Hazard
+Instrucao Atual: 4 rs: 2 rs2 0 rt: 3
+Instrucao Anterior: 31 rs: 0 rt: 0
 
 
-Instrucao Atual: 31 rs: 2 rt: 3
+
+Instrucao Atual: 31 rs: 0 rs2 0 rt: 0
 Instrucao Anterior: 4 rs: 2 rt: 3
 
 
 
-Instrucao Atual: 17 rs: 3 rt: 3
-Instrucao Anterior: 31 rs: 2 rt: 3
+Instrucao Atual: 17 rs: 3 rs2 0 rt: 3
+Instrucao Anterior: 31 rs: 0 rt: 0
 
 decodificou addiu 9 0 2 10
 chamou addiu com 2 0 10
 
 
-Instrucao Atual: 14 rs: 0 rt: 2
+Instrucao Atual: 14 rs: 0 rs2 0 rt: 2
 Instrucao Anterior: 17 rs: 3 rt: 3
 
 
 
-Instrucao Atual: 50 rs: 0 rt: 2
+Instrucao Atual: 50 rs: 0 rs2 0 rt: 2
 Instrucao Anterior: 14 rs: 0 rt: 2
 
 
 
-Instrucao Atual: 31 rs: 0 rt: 2
+Instrucao Atual: 31 rs: 0 rs2 0 rt: 0
 Instrucao Anterior: 50 rs: 0 rt: 2
 
 decodificou addiu 9 29 18 72
 chamou addiu com 18 29 72
 
 
-Instrucao Atual: 14 rs: 29 rt: 18
-Instrucao Anterior: 31 rs: 0 rt: 2
+Instrucao Atual: 14 rs: 29 rs2 0 rt: 18
+Instrucao Anterior: 31 rs: 0 rt: 0
+
+addu
 
 
-
-Instrucao Atual: 22 rs: 29 rt: 18
+Instrucao Atual: 22 rs: 16 rs2 0 rt: 20
 Instrucao Anterior: 14 rs: 29 rt: 18
 
 
 
-Instrucao Atual: 10 rs: 29 rt: 18
-Instrucao Anterior: 22 rs: 29 rt: 18
+Instrucao Atual: 10 rs: 29 rs2 0 rt: 18
+Instrucao Anterior: 22 rs: 16 rt: 20
 
 
 
-Instrucao Atual: 10 rs: 29 rt: 0
+Instrucao Atual: 10 rs: 29 rs2 0 rt: 0
 Instrucao Anterior: 10 rs: 29 rt: 18
 
 
 
-Instrucao Atual: 10 rs: 29 rt: 0
+Instrucao Atual: 10 rs: 29 rs2 0 rt: 0
 Instrucao Anterior: 10 rs: 29 rt: 0
 
 
 
-Instrucao Atual: 10 rs: 29 rt: 0
+Instrucao Atual: 10 rs: 29 rs2 0 rt: 0
 Instrucao Anterior: 10 rs: 29 rt: 0
 
+addu
 
 
-Instrucao Atual: 22 rs: 29 rt: 0
+Instrucao Atual: 22 rs: 20 rs2 0 rt: 19
 Instrucao Anterior: 10 rs: 29 rt: 0
 
 decodificou addiu 9 0 17 37
 chamou addiu com 17 0 37
 
 
-Instrucao Atual: 14 rs: 0 rt: 17
-Instrucao Anterior: 22 rs: 29 rt: 0
+Instrucao Atual: 14 rs: 0 rs2 0 rt: 17
+Instrucao Anterior: 22 rs: 20 rt: 19
 
 chamou lw com 35 28 4 4294934652
 lw com rt= 4 rs= 28 
 
 
-Instrucao Atual: 5 rs: 28 rt: 4
+Instrucao Atual: 5 rs: 28 rs2 0 rt: 4
 Instrucao Anterior: 14 rs: 0 rt: 17
 
 chamou lw com 35 28 7 4294934656
 lw com rt= 7 rs= 28 
 
 
-Instrucao Atual: 5 rs: 28 rt: 7
+Instrucao Atual: 5 rs: 28 rs2 0 rt: 7
 Instrucao Anterior: 5 rs: 28 rt: 4
 
 decodificou addiu 9 29 2 496
 chamou addiu com 2 29 496
 
 
-Instrucao Atual: 14 rs: 29 rt: 2
+Instrucao Atual: 14 rs: 29 rs2 0 rt: 2
 Instrucao Anterior: 5 rs: 28 rt: 7
 
 decodificou addiu 9 29 5 504
 chamou addiu com 5 29 504
 
 
-Instrucao Atual: 14 rs: 29 rt: 5
+Instrucao Atual: 14 rs: 29 rs2 0 rt: 5
 Instrucao Anterior: 14 rs: 29 rt: 2
 
+addu
 
 
-Instrucao Atual: 22 rs: 29 rt: 5
+Instrucao Atual: 22 rs: 20 rs2 0 rt: 6
 Instrucao Anterior: 14 rs: 29 rt: 5
 
 
 
-Instrucao Atual: 47 rs: 29 rt: 5
-Instrucao Anterior: 22 rs: 29 rt: 5
+Instrucao Atual: 47 rs: 20 rs2 0 rt: 6
+Instrucao Anterior: 22 rs: 20 rt: 6
 
 
 
-Instrucao Atual: 10 rs: 29 rt: 2
-Instrucao Anterior: 47 rs: 29 rt: 5
+Instrucao Atual: 10 rs: 29 rs2 0 rt: 2
+Instrucao Anterior: 47 rs: 20 rt: 6
 
 
 
-Instrucao Atual: 50 rs: 29 rt: 2
+Instrucao Atual: 50 rs: 29 rs2 0 rt: 2
 Instrucao Anterior: 10 rs: 29 rt: 2
 
 decodificou addiu 9 29 29 4294967288
 chamou addiu com 29 29 -8
 
 
-Instrucao Atual: 14 rs: 29 rt: 29
+Instrucao Atual: 14 rs: 29 rs2 0 rt: 29
 Instrucao Anterior: 50 rs: 29 rt: 2
 
 
 
-Instrucao Atual: 50 rs: 29 rt: 29
+Instrucao Atual: 50 rs: 29 rs2 0 rt: 29
 Instrucao Anterior: 14 rs: 29 rt: 29
 
+addu
 
 
-Instrucao Atual: 22 rs: 29 rt: 29
+Instrucao Atual: 22 rs: 0 rs2 0 rt: 2
 Instrucao Anterior: 50 rs: 29 rt: 29
 
 
 
-Instrucao Atual: 50 rs: 29 rt: 29
-Instrucao Anterior: 22 rs: 29 rt: 29
+Instrucao Atual: 50 rs: 0 rs2 0 rt: 2
+Instrucao Anterior: 22 rs: 0 rt: 2
 
 decodificou addiu 9 0 2 4294967294
 chamou addiu com 2 0 -2
 
 
-Instrucao Atual: 14 rs: 0 rt: 2
-Instrucao Anterior: 50 rs: 29 rt: 29
+Instrucao Atual: 14 rs: 0 rs2 0 rt: 2
+Instrucao Anterior: 50 rs: 0 rt: 2
 
 
 
-Instrucao Atual: 2 rs: 6 rt: 2
+Instrucao Atual: 2 rs: 6 rs2 0 rt: 2
 Instrucao Anterior: 14 rs: 0 rt: 2
 
-Hazard
 
 
-Instrucao Atual: 31 rs: 6 rt: 2
+Instrucao Atual: 31 rs: 0 rs2 0 rt: 0
 Instrucao Anterior: 2 rs: 6 rt: 2
 
 
 
-Instrucao Atual: 10 rs: 5 rt: 2
-Instrucao Anterior: 31 rs: 6 rt: 2
+Instrucao Atual: 10 rs: 5 rs2 0 rt: 2
+Instrucao Anterior: 31 rs: 0 rt: 0
 
 
 
-Instrucao Atual: 2 rs: 6 rt: 3
+Instrucao Atual: 2 rs: 6 rs2 0 rt: 3
 Instrucao Anterior: 10 rs: 5 rt: 2
 
-Hazard
 
 
-Instrucao Atual: 31 rs: 6 rt: 3
+Instrucao Atual: 31 rs: 0 rs2 0 rt: 0
 Instrucao Anterior: 2 rs: 6 rt: 3
 
 
 
-Instrucao Atual: 26 rs: 6 rt: 3
-Instrucao Anterior: 31 rs: 6 rt: 3
+Instrucao Atual: 26 rs: 0 rs2 3 rt: 2
+Instrucao Anterior: 31 rs: 0 rt: 0
 
 
 
-Instrucao Atual: 48 rs: 6 rt: 3
-Instrucao Anterior: 26 rs: 6 rt: 3
+Instrucao Atual: 48 rs: 0 rs2 3 rt: 2
+Instrucao Anterior: 26 rs: 0 rt: 2
 
 decodificou addiu 9 29 29 8
 chamou addiu com 29 29 8
 
 
-Instrucao Atual: 14 rs: 29 rt: 29
-Instrucao Anterior: 48 rs: 6 rt: 3
+Instrucao Atual: 14 rs: 29 rs2 3 rt: 29
+Instrucao Anterior: 48 rs: 0 rt: 2
 
 
 
-Instrucao Atual: 52 rs: 29 rt: 29
+Instrucao Atual: 52 rs: 29 rs2 3 rt: 29
 Instrucao Anterior: 14 rs: 29 rt: 29
 
+addu
 
 
-Instrucao Atual: 22 rs: 29 rt: 29
+Instrucao Atual: 22 rs: 2 rs2 0 rt: 16
 Instrucao Anterior: 52 rs: 29 rt: 29
 
 chamou lw com 35 29 2 504
 lw com rt= 2 rs= 29 
 
 
-Instrucao Atual: 5 rs: 29 rt: 2
-Instrucao Anterior: 22 rs: 29 rt: 29
-
-Hazard
+Instrucao Atual: 5 rs: 29 rs2 0 rt: 2
+Instrucao Anterior: 22 rs: 2 rt: 16
 
 
-Instrucao Atual: 31 rs: 29 rt: 2
+
+Instrucao Atual: 31 rs: 0 rs2 0 rt: 0
 Instrucao Anterior: 5 rs: 29 rt: 2
 
 
 
-Instrucao Atual: 51 rs: 29 rt: 2
-Instrucao Anterior: 31 rs: 29 rt: 2
+Instrucao Atual: 51 rs: 0 rs2 0 rt: 0
+Instrucao Anterior: 31 rs: 0 rt: 0
+
+addu
 
 
-
-Instrucao Atual: 22 rs: 29 rt: 2
-Instrucao Anterior: 51 rs: 29 rt: 2
+Instrucao Atual: 22 rs: 20 rs2 16 rt: 20
+Instrucao Anterior: 51 rs: 0 rt: 0
 
 chamou lw com 35 28 4 4294934652
 lw com rt= 4 rs= 28 
 
 
-Instrucao Atual: 5 rs: 28 rt: 4
-Instrucao Anterior: 22 rs: 29 rt: 2
+Instrucao Atual: 5 rs: 28 rs2 16 rt: 4
+Instrucao Anterior: 22 rs: 20 rt: 20
 
 chamou lw com 35 28 7 4294934656
 lw com rt= 7 rs= 28 
 
 
-Instrucao Atual: 5 rs: 28 rt: 7
+Instrucao Atual: 5 rs: 28 rs2 16 rt: 7
 Instrucao Anterior: 5 rs: 28 rt: 4
 
 decodificou addiu 9 29 2 496
 chamou addiu com 2 29 496
 
 
-Instrucao Atual: 14 rs: 29 rt: 2
+Instrucao Atual: 14 rs: 29 rs2 16 rt: 2
 Instrucao Anterior: 5 rs: 28 rt: 7
 
 decodificou addiu 9 29 5 504
 chamou addiu com 5 29 504
 
 
-Instrucao Atual: 14 rs: 29 rt: 5
+Instrucao Atual: 14 rs: 29 rs2 16 rt: 5
 Instrucao Anterior: 14 rs: 29 rt: 2
 
+addu
 
 
-Instrucao Atual: 22 rs: 29 rt: 5
+Instrucao Atual: 22 rs: 20 rs2 0 rt: 6
 Instrucao Anterior: 14 rs: 29 rt: 5
 
 
 
-Instrucao Atual: 47 rs: 29 rt: 5
-Instrucao Anterior: 22 rs: 29 rt: 5
+Instrucao Atual: 47 rs: 20 rs2 0 rt: 6
+Instrucao Anterior: 22 rs: 20 rt: 6
 
 
 
-Instrucao Atual: 10 rs: 29 rt: 2
-Instrucao Anterior: 47 rs: 29 rt: 5
+Instrucao Atual: 10 rs: 29 rs2 0 rt: 2
+Instrucao Anterior: 47 rs: 20 rt: 6
 
 
 
-Instrucao Atual: 50 rs: 29 rt: 2
+Instrucao Atual: 50 rs: 29 rs2 0 rt: 2
 Instrucao Anterior: 10 rs: 29 rt: 2
 
 decodificou addiu 9 29 29 4294967288
 chamou addiu com 29 29 -8
 
 
-Instrucao Atual: 14 rs: 29 rt: 29
+Instrucao Atual: 14 rs: 29 rs2 0 rt: 29
 Instrucao Anterior: 50 rs: 29 rt: 2
 
 
 
-Instrucao Atual: 50 rs: 29 rt: 29
+Instrucao Atual: 50 rs: 29 rs2 0 rt: 29
 Instrucao Anterior: 14 rs: 29 rt: 29
 
+addu
 
 
-Instrucao Atual: 22 rs: 29 rt: 29
+Instrucao Atual: 22 rs: 0 rs2 0 rt: 2
 Instrucao Anterior: 50 rs: 29 rt: 29
 
 
 
-Instrucao Atual: 50 rs: 29 rt: 29
-Instrucao Anterior: 22 rs: 29 rt: 29
+Instrucao Atual: 50 rs: 0 rs2 0 rt: 2
+Instrucao Anterior: 22 rs: 0 rt: 2
 
 decodificou addiu 9 0 2 4294967294
 chamou addiu com 2 0 -2
 
 
-Instrucao Atual: 14 rs: 0 rt: 2
-Instrucao Anterior: 50 rs: 29 rt: 29
+Instrucao Atual: 14 rs: 0 rs2 0 rt: 2
+Instrucao Anterior: 50 rs: 0 rt: 2
 
 
 
-Instrucao Atual: 2 rs: 6 rt: 2
+Instrucao Atual: 2 rs: 6 rs2 0 rt: 2
 Instrucao Anterior: 14 rs: 0 rt: 2
 
-Hazard
 
 
-Instrucao Atual: 31 rs: 6 rt: 2
+Instrucao Atual: 31 rs: 0 rs2 0 rt: 0
 Instrucao Anterior: 2 rs: 6 rt: 2
 
 
 
-Instrucao Atual: 10 rs: 5 rt: 2
-Instrucao Anterior: 31 rs: 6 rt: 2
+Instrucao Atual: 10 rs: 5 rs2 0 rt: 2
+Instrucao Anterior: 31 rs: 0 rt: 0
 
 
 
-Instrucao Atual: 2 rs: 6 rt: 3
+Instrucao Atual: 2 rs: 6 rs2 0 rt: 3
 Instrucao Anterior: 10 rs: 5 rt: 2
 
-Hazard
 
 
-Instrucao Atual: 31 rs: 6 rt: 3
+Instrucao Atual: 31 rs: 0 rs2 0 rt: 0
 Instrucao Anterior: 2 rs: 6 rt: 3
 
 
 
-Instrucao Atual: 26 rs: 6 rt: 3
-Instrucao Anterior: 31 rs: 6 rt: 3
+Instrucao Atual: 26 rs: 0 rs2 3 rt: 2
+Instrucao Anterior: 31 rs: 0 rt: 0
 
 
 
-Instrucao Atual: 48 rs: 6 rt: 3
-Instrucao Anterior: 26 rs: 6 rt: 3
+Instrucao Atual: 48 rs: 0 rs2 3 rt: 2
+Instrucao Anterior: 26 rs: 0 rt: 2
 
 decodificou addiu 9 29 29 8
 chamou addiu com 29 29 8
 
 
-Instrucao Atual: 14 rs: 29 rt: 29
-Instrucao Anterior: 48 rs: 6 rt: 3
+Instrucao Atual: 14 rs: 29 rs2 3 rt: 29
+Instrucao Anterior: 48 rs: 0 rt: 2
 
 
 
-Instrucao Atual: 52 rs: 29 rt: 29
+Instrucao Atual: 52 rs: 29 rs2 3 rt: 29
 Instrucao Anterior: 14 rs: 29 rt: 29
 
+addu
 
 
-Instrucao Atual: 22 rs: 29 rt: 29
+Instrucao Atual: 22 rs: 2 rs2 0 rt: 16
 Instrucao Anterior: 52 rs: 29 rt: 29
 
 chamou lw com 35 29 2 504
 lw com rt= 2 rs= 29 
 
 
-Instrucao Atual: 5 rs: 29 rt: 2
-Instrucao Anterior: 22 rs: 29 rt: 29
-
-Hazard
+Instrucao Atual: 5 rs: 29 rs2 0 rt: 2
+Instrucao Anterior: 22 rs: 2 rt: 16
 
 
-Instrucao Atual: 31 rs: 29 rt: 2
+
+Instrucao Atual: 31 rs: 0 rs2 0 rt: 0
 Instrucao Anterior: 5 rs: 29 rt: 2
 
 
 
-Instrucao Atual: 51 rs: 29 rt: 2
-Instrucao Anterior: 31 rs: 29 rt: 2
+Instrucao Atual: 51 rs: 0 rs2 0 rt: 0
+Instrucao Anterior: 31 rs: 0 rt: 0
+
+addu
 
 
-
-Instrucao Atual: 22 rs: 29 rt: 2
-Instrucao Anterior: 51 rs: 29 rt: 2
+Instrucao Atual: 22 rs: 20 rs2 16 rt: 20
+Instrucao Anterior: 51 rs: 0 rt: 0
 
 chamou lw com 35 28 4 4294934652
 lw com rt= 4 rs= 28 
 
 
-Instrucao Atual: 5 rs: 28 rt: 4
-Instrucao Anterior: 22 rs: 29 rt: 2
+Instrucao Atual: 5 rs: 28 rs2 16 rt: 4
+Instrucao Anterior: 22 rs: 20 rt: 20
 
 chamou lw com 35 28 7 4294934656
 lw com rt= 7 rs= 28 
 
 
-Instrucao Atual: 5 rs: 28 rt: 7
+Instrucao Atual: 5 rs: 28 rs2 16 rt: 7
 Instrucao Anterior: 5 rs: 28 rt: 4
 
 decodificou addiu 9 29 2 496
 chamou addiu com 2 29 496
 
 
-Instrucao Atual: 14 rs: 29 rt: 2
+Instrucao Atual: 14 rs: 29 rs2 16 rt: 2
 Instrucao Anterior: 5 rs: 28 rt: 7
 
 decodificou addiu 9 29 5 504
 chamou addiu com 5 29 504
 
 
-Instrucao Atual: 14 rs: 29 rt: 5
+Instrucao Atual: 14 rs: 29 rs2 16 rt: 5
 Instrucao Anterior: 14 rs: 29 rt: 2
 
+addu
 
 
-Instrucao Atual: 22 rs: 29 rt: 5
+Instrucao Atual: 22 rs: 20 rs2 0 rt: 6
 Instrucao Anterior: 14 rs: 29 rt: 5
 
 
 
-Instrucao Atual: 47 rs: 29 rt: 5
-Instrucao Anterior: 22 rs: 29 rt: 5
+Instrucao Atual: 47 rs: 20 rs2 0 rt: 6
+Instrucao Anterior: 22 rs: 20 rt: 6
 
 
 
-Instrucao Atual: 10 rs: 29 rt: 2
-Instrucao Anterior: 47 rs: 29 rt: 5
+Instrucao Atual: 10 rs: 29 rs2 0 rt: 2
+Instrucao Anterior: 47 rs: 20 rt: 6
 
 
 
-Instrucao Atual: 50 rs: 29 rt: 2
+Instrucao Atual: 50 rs: 29 rs2 0 rt: 2
 Instrucao Anterior: 10 rs: 29 rt: 2
 
 decodificou addiu 9 29 29 4294967288
 chamou addiu com 29 29 -8
 
 
-Instrucao Atual: 14 rs: 29 rt: 29
+Instrucao Atual: 14 rs: 29 rs2 0 rt: 29
 Instrucao Anterior: 50 rs: 29 rt: 2
 
 
 
-Instrucao Atual: 50 rs: 29 rt: 29
+Instrucao Atual: 50 rs: 29 rs2 0 rt: 29
 Instrucao Anterior: 14 rs: 29 rt: 29
 
+addu
 
 
-Instrucao Atual: 22 rs: 29 rt: 29
+Instrucao Atual: 22 rs: 0 rs2 0 rt: 2
 Instrucao Anterior: 50 rs: 29 rt: 29
 
 
 
-Instrucao Atual: 50 rs: 29 rt: 29
-Instrucao Anterior: 22 rs: 29 rt: 29
+Instrucao Atual: 50 rs: 0 rs2 0 rt: 2
+Instrucao Anterior: 22 rs: 0 rt: 2
 
 decodificou addiu 9 0 2 4294967294
 chamou addiu com 2 0 -2
 
 
-Instrucao Atual: 14 rs: 0 rt: 2
-Instrucao Anterior: 50 rs: 29 rt: 29
+Instrucao Atual: 14 rs: 0 rs2 0 rt: 2
+Instrucao Anterior: 50 rs: 0 rt: 2
 
 
 
-Instrucao Atual: 2 rs: 6 rt: 2
+Instrucao Atual: 2 rs: 6 rs2 0 rt: 2
 Instrucao Anterior: 14 rs: 0 rt: 2
 
-Hazard
 
 
-Instrucao Atual: 31 rs: 6 rt: 2
+Instrucao Atual: 31 rs: 0 rs2 0 rt: 0
 Instrucao Anterior: 2 rs: 6 rt: 2
 
 
 
-Instrucao Atual: 10 rs: 5 rt: 2
-Instrucao Anterior: 31 rs: 6 rt: 2
+Instrucao Atual: 10 rs: 5 rs2 0 rt: 2
+Instrucao Anterior: 31 rs: 0 rt: 0
 
 
 
-Instrucao Atual: 2 rs: 6 rt: 3
+Instrucao Atual: 2 rs: 6 rs2 0 rt: 3
 Instrucao Anterior: 10 rs: 5 rt: 2
 
-Hazard
 
 
-Instrucao Atual: 31 rs: 6 rt: 3
+Instrucao Atual: 31 rs: 0 rs2 0 rt: 0
 Instrucao Anterior: 2 rs: 6 rt: 3
 
 
 
-Instrucao Atual: 26 rs: 6 rt: 3
-Instrucao Anterior: 31 rs: 6 rt: 3
+Instrucao Atual: 26 rs: 0 rs2 3 rt: 2
+Instrucao Anterior: 31 rs: 0 rt: 0
 
 
 
-Instrucao Atual: 48 rs: 6 rt: 3
-Instrucao Anterior: 26 rs: 6 rt: 3
+Instrucao Atual: 48 rs: 0 rs2 3 rt: 2
+Instrucao Anterior: 26 rs: 0 rt: 2
 
 decodificou addiu 9 29 29 8
 chamou addiu com 29 29 8
 
 
-Instrucao Atual: 14 rs: 29 rt: 29
-Instrucao Anterior: 48 rs: 6 rt: 3
+Instrucao Atual: 14 rs: 29 rs2 3 rt: 29
+Instrucao Anterior: 48 rs: 0 rt: 2
 
 
 
-Instrucao Atual: 52 rs: 29 rt: 29
+Instrucao Atual: 52 rs: 29 rs2 3 rt: 29
 Instrucao Anterior: 14 rs: 29 rt: 29
 
+addu
 
 
-Instrucao Atual: 22 rs: 29 rt: 29
+Instrucao Atual: 22 rs: 2 rs2 0 rt: 16
 Instrucao Anterior: 52 rs: 29 rt: 29
 
 chamou lw com 35 29 2 504
 lw com rt= 2 rs= 29 
 
 
-Instrucao Atual: 5 rs: 29 rt: 2
-Instrucao Anterior: 22 rs: 29 rt: 29
-
-Hazard
+Instrucao Atual: 5 rs: 29 rs2 0 rt: 2
+Instrucao Anterior: 22 rs: 2 rt: 16
 
 
-Instrucao Atual: 31 rs: 29 rt: 2
+
+Instrucao Atual: 31 rs: 0 rs2 0 rt: 0
 Instrucao Anterior: 5 rs: 29 rt: 2
 
 
 
-Instrucao Atual: 51 rs: 29 rt: 2
-Instrucao Anterior: 31 rs: 29 rt: 2
+Instrucao Atual: 51 rs: 0 rs2 0 rt: 0
+Instrucao Anterior: 31 rs: 0 rt: 0
+
+addu
 
 
-
-Instrucao Atual: 22 rs: 29 rt: 2
-Instrucao Anterior: 51 rs: 29 rt: 2
+Instrucao Atual: 22 rs: 20 rs2 16 rt: 20
+Instrucao Anterior: 51 rs: 0 rt: 0
 
 chamou lw com 35 28 4 4294934652
 lw com rt= 4 rs= 28 
 
 
-Instrucao Atual: 5 rs: 28 rt: 4
-Instrucao Anterior: 22 rs: 29 rt: 2
+Instrucao Atual: 5 rs: 28 rs2 16 rt: 4
+Instrucao Anterior: 22 rs: 20 rt: 20
 
 chamou lw com 35 28 7 4294934656
 lw com rt= 7 rs= 28 
 
 
-Instrucao Atual: 5 rs: 28 rt: 7
+Instrucao Atual: 5 rs: 28 rs2 16 rt: 7
 Instrucao Anterior: 5 rs: 28 rt: 4
 
 decodificou addiu 9 29 2 496
 chamou addiu com 2 29 496
 
 
-Instrucao Atual: 14 rs: 29 rt: 2
+Instrucao Atual: 14 rs: 29 rs2 16 rt: 2
 Instrucao Anterior: 5 rs: 28 rt: 7
 
 decodificou addiu 9 29 5 504
 chamou addiu com 5 29 504
 
 
-Instrucao Atual: 14 rs: 29 rt: 5
+Instrucao Atual: 14 rs: 29 rs2 16 rt: 5
 Instrucao Anterior: 14 rs: 29 rt: 2
 
+addu
 
 
-Instrucao Atual: 22 rs: 29 rt: 5
+Instrucao Atual: 22 rs: 20 rs2 0 rt: 6
 Instrucao Anterior: 14 rs: 29 rt: 5
 
 
 
-Instrucao Atual: 47 rs: 29 rt: 5
-Instrucao Anterior: 22 rs: 29 rt: 5
+Instrucao Atual: 47 rs: 20 rs2 0 rt: 6
+Instrucao Anterior: 22 rs: 20 rt: 6
 
 
 
-Instrucao Atual: 10 rs: 29 rt: 2
-Instrucao Anterior: 47 rs: 29 rt: 5
+Instrucao Atual: 10 rs: 29 rs2 0 rt: 2
+Instrucao Anterior: 47 rs: 20 rt: 6
 
 
 
-Instrucao Atual: 50 rs: 29 rt: 2
+Instrucao Atual: 50 rs: 29 rs2 0 rt: 2
 Instrucao Anterior: 10 rs: 29 rt: 2
 
 decodificou addiu 9 29 29 4294967288
 chamou addiu com 29 29 -8
 
 
-Instrucao Atual: 14 rs: 29 rt: 29
+Instrucao Atual: 14 rs: 29 rs2 0 rt: 29
 Instrucao Anterior: 50 rs: 29 rt: 2
 
 
 
-Instrucao Atual: 50 rs: 29 rt: 29
+Instrucao Atual: 50 rs: 29 rs2 0 rt: 29
 Instrucao Anterior: 14 rs: 29 rt: 29
 
+addu
 
 
-Instrucao Atual: 22 rs: 29 rt: 29
+Instrucao Atual: 22 rs: 0 rs2 0 rt: 2
 Instrucao Anterior: 50 rs: 29 rt: 29
 
 
 
-Instrucao Atual: 50 rs: 29 rt: 29
-Instrucao Anterior: 22 rs: 29 rt: 29
+Instrucao Atual: 50 rs: 0 rs2 0 rt: 2
+Instrucao Anterior: 22 rs: 0 rt: 2
 
 decodificou addiu 9 0 2 4294967294
 chamou addiu com 2 0 -2
 
 
-Instrucao Atual: 14 rs: 0 rt: 2
-Instrucao Anterior: 50 rs: 29 rt: 29
+Instrucao Atual: 14 rs: 0 rs2 0 rt: 2
+Instrucao Anterior: 50 rs: 0 rt: 2
 
 
 
-Instrucao Atual: 2 rs: 6 rt: 2
+Instrucao Atual: 2 rs: 6 rs2 0 rt: 2
 Instrucao Anterior: 14 rs: 0 rt: 2
 
-Hazard
 
 
-Instrucao Atual: 31 rs: 6 rt: 2
+Instrucao Atual: 31 rs: 0 rs2 0 rt: 0
 Instrucao Anterior: 2 rs: 6 rt: 2
 
 
 
-Instrucao Atual: 10 rs: 5 rt: 2
-Instrucao Anterior: 31 rs: 6 rt: 2
+Instrucao Atual: 10 rs: 5 rs2 0 rt: 2
+Instrucao Anterior: 31 rs: 0 rt: 0
 
 
 
-Instrucao Atual: 2 rs: 6 rt: 3
+Instrucao Atual: 2 rs: 6 rs2 0 rt: 3
 Instrucao Anterior: 10 rs: 5 rt: 2
 
-Hazard
 
 
-Instrucao Atual: 31 rs: 6 rt: 3
+Instrucao Atual: 31 rs: 0 rs2 0 rt: 0
 Instrucao Anterior: 2 rs: 6 rt: 3
 
 
 
-Instrucao Atual: 26 rs: 6 rt: 3
-Instrucao Anterior: 31 rs: 6 rt: 3
+Instrucao Atual: 26 rs: 0 rs2 3 rt: 2
+Instrucao Anterior: 31 rs: 0 rt: 0
 
 
 
-Instrucao Atual: 48 rs: 6 rt: 3
-Instrucao Anterior: 26 rs: 6 rt: 3
+Instrucao Atual: 48 rs: 0 rs2 3 rt: 2
+Instrucao Anterior: 26 rs: 0 rt: 2
 
 decodificou addiu 9 29 29 8
 chamou addiu com 29 29 8
 
 
-Instrucao Atual: 14 rs: 29 rt: 29
-Instrucao Anterior: 48 rs: 6 rt: 3
+Instrucao Atual: 14 rs: 29 rs2 3 rt: 29
+Instrucao Anterior: 48 rs: 0 rt: 2
 
 
 
-Instrucao Atual: 52 rs: 29 rt: 29
+Instrucao Atual: 52 rs: 29 rs2 3 rt: 29
 Instrucao Anterior: 14 rs: 29 rt: 29
 
+addu
 
 
-Instrucao Atual: 22 rs: 29 rt: 29
+Instrucao Atual: 22 rs: 2 rs2 0 rt: 16
 Instrucao Anterior: 52 rs: 29 rt: 29
 
 chamou lw com 35 29 2 504
 lw com rt= 2 rs= 29 
 
 
-Instrucao Atual: 5 rs: 29 rt: 2
-Instrucao Anterior: 22 rs: 29 rt: 29
-
-Hazard
+Instrucao Atual: 5 rs: 29 rs2 0 rt: 2
+Instrucao Anterior: 22 rs: 2 rt: 16
 
 
-Instrucao Atual: 31 rs: 29 rt: 2
+
+Instrucao Atual: 31 rs: 0 rs2 0 rt: 0
 Instrucao Anterior: 5 rs: 29 rt: 2
 
 
 
-Instrucao Atual: 51 rs: 29 rt: 2
-Instrucao Anterior: 31 rs: 29 rt: 2
+Instrucao Atual: 51 rs: 0 rs2 0 rt: 0
+Instrucao Anterior: 31 rs: 0 rt: 0
+
+addu
 
 
-
-Instrucao Atual: 22 rs: 29 rt: 2
-Instrucao Anterior: 51 rs: 29 rt: 2
+Instrucao Atual: 22 rs: 20 rs2 16 rt: 20
+Instrucao Anterior: 51 rs: 0 rt: 0
 
 chamou lw com 35 28 4 4294934652
 lw com rt= 4 rs= 28 
 
 
-Instrucao Atual: 5 rs: 28 rt: 4
-Instrucao Anterior: 22 rs: 29 rt: 2
+Instrucao Atual: 5 rs: 28 rs2 16 rt: 4
+Instrucao Anterior: 22 rs: 20 rt: 20
 
 chamou lw com 35 28 7 4294934656
 lw com rt= 7 rs= 28 
 
 
-Instrucao Atual: 5 rs: 28 rt: 7
+Instrucao Atual: 5 rs: 28 rs2 16 rt: 7
 Instrucao Anterior: 5 rs: 28 rt: 4
 
 decodificou addiu 9 29 2 496
 chamou addiu com 2 29 496
 
 
-Instrucao Atual: 14 rs: 29 rt: 2
+Instrucao Atual: 14 rs: 29 rs2 16 rt: 2
 Instrucao Anterior: 5 rs: 28 rt: 7
 
 decodificou addiu 9 29 5 504
 chamou addiu com 5 29 504
 
 
-Instrucao Atual: 14 rs: 29 rt: 5
+Instrucao Atual: 14 rs: 29 rs2 16 rt: 5
 Instrucao Anterior: 14 rs: 29 rt: 2
 
+addu
 
 
-Instrucao Atual: 22 rs: 29 rt: 5
+Instrucao Atual: 22 rs: 20 rs2 0 rt: 6
 Instrucao Anterior: 14 rs: 29 rt: 5
 
 
 
-Instrucao Atual: 47 rs: 29 rt: 5
-Instrucao Anterior: 22 rs: 29 rt: 5
+Instrucao Atual: 47 rs: 20 rs2 0 rt: 6
+Instrucao Anterior: 22 rs: 20 rt: 6
 
 
 
-Instrucao Atual: 10 rs: 29 rt: 2
-Instrucao Anterior: 47 rs: 29 rt: 5
+Instrucao Atual: 10 rs: 29 rs2 0 rt: 2
+Instrucao Anterior: 47 rs: 20 rt: 6
 
 
 
-Instrucao Atual: 50 rs: 29 rt: 2
+Instrucao Atual: 50 rs: 29 rs2 0 rt: 2
 Instrucao Anterior: 10 rs: 29 rt: 2
 
 decodificou addiu 9 29 29 4294967288
 chamou addiu com 29 29 -8
 
 
-Instrucao Atual: 14 rs: 29 rt: 29
+Instrucao Atual: 14 rs: 29 rs2 0 rt: 29
 Instrucao Anterior: 50 rs: 29 rt: 2
 
 
 
-Instrucao Atual: 50 rs: 29 rt: 29
+Instrucao Atual: 50 rs: 29 rs2 0 rt: 29
 Instrucao Anterior: 14 rs: 29 rt: 29
 
+addu
 
 
-Instrucao Atual: 22 rs: 29 rt: 29
+Instrucao Atual: 22 rs: 0 rs2 0 rt: 2
 Instrucao Anterior: 50 rs: 29 rt: 29
 
 
 
-Instrucao Atual: 50 rs: 29 rt: 29
-Instrucao Anterior: 22 rs: 29 rt: 29
+Instrucao Atual: 50 rs: 0 rs2 0 rt: 2
+Instrucao Anterior: 22 rs: 0 rt: 2
 
 decodificou addiu 9 0 2 4294967294
 chamou addiu com 2 0 -2
 
 
-Instrucao Atual: 14 rs: 0 rt: 2
-Instrucao Anterior: 50 rs: 29 rt: 29
+Instrucao Atual: 14 rs: 0 rs2 0 rt: 2
+Instrucao Anterior: 50 rs: 0 rt: 2
 
 
 
-Instrucao Atual: 2 rs: 6 rt: 2
+Instrucao Atual: 2 rs: 6 rs2 0 rt: 2
 Instrucao Anterior: 14 rs: 0 rt: 2
 
-Hazard
 
 
-Instrucao Atual: 31 rs: 6 rt: 2
+Instrucao Atual: 31 rs: 0 rs2 0 rt: 0
 Instrucao Anterior: 2 rs: 6 rt: 2
 
 
 
-Instrucao Atual: 10 rs: 5 rt: 2
-Instrucao Anterior: 31 rs: 6 rt: 2
+Instrucao Atual: 10 rs: 5 rs2 0 rt: 2
+Instrucao Anterior: 31 rs: 0 rt: 0
 
 
 
-Instrucao Atual: 2 rs: 6 rt: 3
+Instrucao Atual: 2 rs: 6 rs2 0 rt: 3
 Instrucao Anterior: 10 rs: 5 rt: 2
 
-Hazard
 
 
-Instrucao Atual: 31 rs: 6 rt: 3
+Instrucao Atual: 31 rs: 0 rs2 0 rt: 0
 Instrucao Anterior: 2 rs: 6 rt: 3
 
 
 
-Instrucao Atual: 26 rs: 6 rt: 3
-Instrucao Anterior: 31 rs: 6 rt: 3
+Instrucao Atual: 26 rs: 0 rs2 3 rt: 2
+Instrucao Anterior: 31 rs: 0 rt: 0
 
 
 
-Instrucao Atual: 48 rs: 6 rt: 3
-Instrucao Anterior: 26 rs: 6 rt: 3
+Instrucao Atual: 48 rs: 0 rs2 3 rt: 2
+Instrucao Anterior: 26 rs: 0 rt: 2
 
 decodificou addiu 9 29 29 8
 chamou addiu com 29 29 8
 
 
-Instrucao Atual: 14 rs: 29 rt: 29
-Instrucao Anterior: 48 rs: 6 rt: 3
+Instrucao Atual: 14 rs: 29 rs2 3 rt: 29
+Instrucao Anterior: 48 rs: 0 rt: 2
 
 
 
-Instrucao Atual: 52 rs: 29 rt: 29
+Instrucao Atual: 52 rs: 29 rs2 3 rt: 29
 Instrucao Anterior: 14 rs: 29 rt: 29
 
+addu
 
 
-Instrucao Atual: 22 rs: 29 rt: 29
+Instrucao Atual: 22 rs: 2 rs2 0 rt: 16
 Instrucao Anterior: 52 rs: 29 rt: 29
 
 chamou lw com 35 29 2 504
 lw com rt= 2 rs= 29 
 
 
-Instrucao Atual: 5 rs: 29 rt: 2
-Instrucao Anterior: 22 rs: 29 rt: 29
-
-Hazard
+Instrucao Atual: 5 rs: 29 rs2 0 rt: 2
+Instrucao Anterior: 22 rs: 2 rt: 16
 
 
-Instrucao Atual: 31 rs: 29 rt: 2
+
+Instrucao Atual: 31 rs: 0 rs2 0 rt: 0
 Instrucao Anterior: 5 rs: 29 rt: 2
 
 
 
-Instrucao Atual: 51 rs: 29 rt: 2
-Instrucao Anterior: 31 rs: 29 rt: 2
+Instrucao Atual: 51 rs: 0 rs2 0 rt: 0
+Instrucao Anterior: 31 rs: 0 rt: 0
+
+addu
 
 
-
-Instrucao Atual: 22 rs: 29 rt: 2
-Instrucao Anterior: 51 rs: 29 rt: 2
+Instrucao Atual: 22 rs: 20 rs2 16 rt: 20
+Instrucao Anterior: 51 rs: 0 rt: 0
 
 chamou lw com 35 28 4 4294934652
 lw com rt= 4 rs= 28 
 
 
-Instrucao Atual: 5 rs: 28 rt: 4
-Instrucao Anterior: 22 rs: 29 rt: 2
+Instrucao Atual: 5 rs: 28 rs2 16 rt: 4
+Instrucao Anterior: 22 rs: 20 rt: 20
 
 chamou lw com 35 28 7 4294934656
 lw com rt= 7 rs= 28 
 
 
-Instrucao Atual: 5 rs: 28 rt: 7
+Instrucao Atual: 5 rs: 28 rs2 16 rt: 7
 Instrucao Anterior: 5 rs: 28 rt: 4
 
 decodificou addiu 9 29 2 496
 chamou addiu com 2 29 496
 
 
-Instrucao Atual: 14 rs: 29 rt: 2
+Instrucao Atual: 14 rs: 29 rs2 16 rt: 2
 Instrucao Anterior: 5 rs: 28 rt: 7
 
 decodificou addiu 9 29 5 504
 chamou addiu com 5 29 504
 
 
-Instrucao Atual: 14 rs: 29 rt: 5
+Instrucao Atual: 14 rs: 29 rs2 16 rt: 5
 Instrucao Anterior: 14 rs: 29 rt: 2
 
+addu
 
 
-Instrucao Atual: 22 rs: 29 rt: 5
+Instrucao Atual: 22 rs: 20 rs2 0 rt: 6
 Instrucao Anterior: 14 rs: 29 rt: 5
 
 
 
-Instrucao Atual: 47 rs: 29 rt: 5
-Instrucao Anterior: 22 rs: 29 rt: 5
+Instrucao Atual: 47 rs: 20 rs2 0 rt: 6
+Instrucao Anterior: 22 rs: 20 rt: 6
 
 
 
-Instrucao Atual: 10 rs: 29 rt: 2
-Instrucao Anterior: 47 rs: 29 rt: 5
+Instrucao Atual: 10 rs: 29 rs2 0 rt: 2
+Instrucao Anterior: 47 rs: 20 rt: 6
 
 
 
-Instrucao Atual: 50 rs: 29 rt: 2
+Instrucao Atual: 50 rs: 29 rs2 0 rt: 2
 Instrucao Anterior: 10 rs: 29 rt: 2
 
 decodificou addiu 9 29 29 4294967288
 chamou addiu com 29 29 -8
 
 
-Instrucao Atual: 14 rs: 29 rt: 29
+Instrucao Atual: 14 rs: 29 rs2 0 rt: 29
 Instrucao Anterior: 50 rs: 29 rt: 2
 
 
 
-Instrucao Atual: 50 rs: 29 rt: 29
+Instrucao Atual: 50 rs: 29 rs2 0 rt: 29
 Instrucao Anterior: 14 rs: 29 rt: 29
 
+addu
 
 
-Instrucao Atual: 22 rs: 29 rt: 29
+Instrucao Atual: 22 rs: 0 rs2 0 rt: 2
 Instrucao Anterior: 50 rs: 29 rt: 29
 
 
 
-Instrucao Atual: 50 rs: 29 rt: 29
-Instrucao Anterior: 22 rs: 29 rt: 29
+Instrucao Atual: 50 rs: 0 rs2 0 rt: 2
+Instrucao Anterior: 22 rs: 0 rt: 2
 
 decodificou addiu 9 0 2 4294967294
 chamou addiu com 2 0 -2
 
 
-Instrucao Atual: 14 rs: 0 rt: 2
-Instrucao Anterior: 50 rs: 29 rt: 29
+Instrucao Atual: 14 rs: 0 rs2 0 rt: 2
+Instrucao Anterior: 50 rs: 0 rt: 2
 
 
 
-Instrucao Atual: 2 rs: 6 rt: 2
+Instrucao Atual: 2 rs: 6 rs2 0 rt: 2
 Instrucao Anterior: 14 rs: 0 rt: 2
 
-Hazard
 
 
-Instrucao Atual: 31 rs: 6 rt: 2
+Instrucao Atual: 31 rs: 0 rs2 0 rt: 0
 Instrucao Anterior: 2 rs: 6 rt: 2
 
 
 
-Instrucao Atual: 10 rs: 5 rt: 2
-Instrucao Anterior: 31 rs: 6 rt: 2
+Instrucao Atual: 10 rs: 5 rs2 0 rt: 2
+Instrucao Anterior: 31 rs: 0 rt: 0
 
 
 
-Instrucao Atual: 2 rs: 6 rt: 3
+Instrucao Atual: 2 rs: 6 rs2 0 rt: 3
 Instrucao Anterior: 10 rs: 5 rt: 2
 
-Hazard
 
 
-Instrucao Atual: 31 rs: 6 rt: 3
+Instrucao Atual: 31 rs: 0 rs2 0 rt: 0
 Instrucao Anterior: 2 rs: 6 rt: 3
 
 
 
-Instrucao Atual: 26 rs: 6 rt: 3
-Instrucao Anterior: 31 rs: 6 rt: 3
+Instrucao Atual: 26 rs: 0 rs2 3 rt: 2
+Instrucao Anterior: 31 rs: 0 rt: 0
 
 
 
-Instrucao Atual: 48 rs: 6 rt: 3
-Instrucao Anterior: 26 rs: 6 rt: 3
+Instrucao Atual: 48 rs: 0 rs2 3 rt: 2
+Instrucao Anterior: 26 rs: 0 rt: 2
 
 decodificou addiu 9 29 29 8
 chamou addiu com 29 29 8
 
 
-Instrucao Atual: 14 rs: 29 rt: 29
-Instrucao Anterior: 48 rs: 6 rt: 3
+Instrucao Atual: 14 rs: 29 rs2 3 rt: 29
+Instrucao Anterior: 48 rs: 0 rt: 2
 
 
 
-Instrucao Atual: 52 rs: 29 rt: 29
+Instrucao Atual: 52 rs: 29 rs2 3 rt: 29
 Instrucao Anterior: 14 rs: 29 rt: 29
 
+addu
 
 
-Instrucao Atual: 22 rs: 29 rt: 29
+Instrucao Atual: 22 rs: 2 rs2 0 rt: 16
 Instrucao Anterior: 52 rs: 29 rt: 29
 
 chamou lw com 35 29 2 504
 lw com rt= 2 rs= 29 
 
 
-Instrucao Atual: 5 rs: 29 rt: 2
-Instrucao Anterior: 22 rs: 29 rt: 29
-
-Hazard
+Instrucao Atual: 5 rs: 29 rs2 0 rt: 2
+Instrucao Anterior: 22 rs: 2 rt: 16
 
 
-Instrucao Atual: 31 rs: 29 rt: 2
+
+Instrucao Atual: 31 rs: 0 rs2 0 rt: 0
 Instrucao Anterior: 5 rs: 29 rt: 2
 
 
 
-Instrucao Atual: 51 rs: 29 rt: 2
-Instrucao Anterior: 31 rs: 29 rt: 2
+Instrucao Atual: 51 rs: 0 rs2 0 rt: 0
+Instrucao Anterior: 31 rs: 0 rt: 0
+
+addu
 
 
-
-Instrucao Atual: 22 rs: 29 rt: 2
-Instrucao Anterior: 51 rs: 29 rt: 2
+Instrucao Atual: 22 rs: 20 rs2 16 rt: 20
+Instrucao Anterior: 51 rs: 0 rt: 0
 
 chamou lw com 35 28 4 4294934652
 lw com rt= 4 rs= 28 
 
 
-Instrucao Atual: 5 rs: 28 rt: 4
-Instrucao Anterior: 22 rs: 29 rt: 2
+Instrucao Atual: 5 rs: 28 rs2 16 rt: 4
+Instrucao Anterior: 22 rs: 20 rt: 20
 
 chamou lw com 35 28 7 4294934656
 lw com rt= 7 rs= 28 
 
 
-Instrucao Atual: 5 rs: 28 rt: 7
+Instrucao Atual: 5 rs: 28 rs2 16 rt: 7
 Instrucao Anterior: 5 rs: 28 rt: 4
 
 decodificou addiu 9 29 2 496
 chamou addiu com 2 29 496
 
 
-Instrucao Atual: 14 rs: 29 rt: 2
+Instrucao Atual: 14 rs: 29 rs2 16 rt: 2
 Instrucao Anterior: 5 rs: 28 rt: 7
 
 decodificou addiu 9 29 5 504
 chamou addiu com 5 29 504
 
 
-Instrucao Atual: 14 rs: 29 rt: 5
+Instrucao Atual: 14 rs: 29 rs2 16 rt: 5
 Instrucao Anterior: 14 rs: 29 rt: 2
 
+addu
 
 
-Instrucao Atual: 22 rs: 29 rt: 5
+Instrucao Atual: 22 rs: 20 rs2 0 rt: 6
 Instrucao Anterior: 14 rs: 29 rt: 5
 
 
 
-Instrucao Atual: 47 rs: 29 rt: 5
-Instrucao Anterior: 22 rs: 29 rt: 5
+Instrucao Atual: 47 rs: 20 rs2 0 rt: 6
+Instrucao Anterior: 22 rs: 20 rt: 6
 
 
 
-Instrucao Atual: 10 rs: 29 rt: 2
-Instrucao Anterior: 47 rs: 29 rt: 5
+Instrucao Atual: 10 rs: 29 rs2 0 rt: 2
+Instrucao Anterior: 47 rs: 20 rt: 6
 
 
 
-Instrucao Atual: 50 rs: 29 rt: 2
+Instrucao Atual: 50 rs: 29 rs2 0 rt: 2
 Instrucao Anterior: 10 rs: 29 rt: 2
 
 decodificou addiu 9 29 29 4294967288
 chamou addiu com 29 29 -8
 
 
-Instrucao Atual: 14 rs: 29 rt: 29
+Instrucao Atual: 14 rs: 29 rs2 0 rt: 29
 Instrucao Anterior: 50 rs: 29 rt: 2
 
 
 
-Instrucao Atual: 50 rs: 29 rt: 29
+Instrucao Atual: 50 rs: 29 rs2 0 rt: 29
 Instrucao Anterior: 14 rs: 29 rt: 29
 
+addu
 
 
-Instrucao Atual: 22 rs: 29 rt: 29
+Instrucao Atual: 22 rs: 0 rs2 0 rt: 2
 Instrucao Anterior: 50 rs: 29 rt: 29
 
 
 
-Instrucao Atual: 50 rs: 29 rt: 29
-Instrucao Anterior: 22 rs: 29 rt: 29
+Instrucao Atual: 50 rs: 0 rs2 0 rt: 2
+Instrucao Anterior: 22 rs: 0 rt: 2
 
 decodificou addiu 9 0 2 4294967294
 chamou addiu com 2 0 -2
 
 
-Instrucao Atual: 14 rs: 0 rt: 2
-Instrucao Anterior: 50 rs: 29 rt: 29
+Instrucao Atual: 14 rs: 0 rs2 0 rt: 2
+Instrucao Anterior: 50 rs: 0 rt: 2
 
 
 
-Instrucao Atual: 2 rs: 6 rt: 2
+Instrucao Atual: 2 rs: 6 rs2 0 rt: 2
 Instrucao Anterior: 14 rs: 0 rt: 2
 
-Hazard
 
 
-Instrucao Atual: 31 rs: 6 rt: 2
+Instrucao Atual: 31 rs: 0 rs2 0 rt: 0
 Instrucao Anterior: 2 rs: 6 rt: 2
 
 
 
-Instrucao Atual: 10 rs: 5 rt: 2
-Instrucao Anterior: 31 rs: 6 rt: 2
+Instrucao Atual: 10 rs: 5 rs2 0 rt: 2
+Instrucao Anterior: 31 rs: 0 rt: 0
 
 
 
-Instrucao Atual: 2 rs: 6 rt: 3
+Instrucao Atual: 2 rs: 6 rs2 0 rt: 3
 Instrucao Anterior: 10 rs: 5 rt: 2
 
-Hazard
 
 
-Instrucao Atual: 31 rs: 6 rt: 3
+Instrucao Atual: 31 rs: 0 rs2 0 rt: 0
 Instrucao Anterior: 2 rs: 6 rt: 3
 
 
 
-Instrucao Atual: 26 rs: 6 rt: 3
-Instrucao Anterior: 31 rs: 6 rt: 3
+Instrucao Atual: 26 rs: 0 rs2 3 rt: 2
+Instrucao Anterior: 31 rs: 0 rt: 0
 
 
 
-Instrucao Atual: 48 rs: 6 rt: 3
-Instrucao Anterior: 26 rs: 6 rt: 3
+Instrucao Atual: 48 rs: 0 rs2 3 rt: 2
+Instrucao Anterior: 26 rs: 0 rt: 2
 
 decodificou addiu 9 29 29 8
 chamou addiu com 29 29 8
 
 
-Instrucao Atual: 14 rs: 29 rt: 29
-Instrucao Anterior: 48 rs: 6 rt: 3
+Instrucao Atual: 14 rs: 29 rs2 3 rt: 29
+Instrucao Anterior: 48 rs: 0 rt: 2
 
 
 
-Instrucao Atual: 52 rs: 29 rt: 29
+Instrucao Atual: 52 rs: 29 rs2 3 rt: 29
 Instrucao Anterior: 14 rs: 29 rt: 29
 
+addu
 
 
-Instrucao Atual: 22 rs: 29 rt: 29
+Instrucao Atual: 22 rs: 2 rs2 0 rt: 16
 Instrucao Anterior: 52 rs: 29 rt: 29
 
 chamou lw com 35 29 2 504
 lw com rt= 2 rs= 29 
 
 
-Instrucao Atual: 5 rs: 29 rt: 2
-Instrucao Anterior: 22 rs: 29 rt: 29
-
-Hazard
+Instrucao Atual: 5 rs: 29 rs2 0 rt: 2
+Instrucao Anterior: 22 rs: 2 rt: 16
 
 
-Instrucao Atual: 31 rs: 29 rt: 2
+
+Instrucao Atual: 31 rs: 0 rs2 0 rt: 0
 Instrucao Anterior: 5 rs: 29 rt: 2
 
 
 
-Instrucao Atual: 51 rs: 29 rt: 2
-Instrucao Anterior: 31 rs: 29 rt: 2
+Instrucao Atual: 51 rs: 0 rs2 0 rt: 0
+Instrucao Anterior: 31 rs: 0 rt: 0
+
+addu
 
 
-
-Instrucao Atual: 22 rs: 29 rt: 2
-Instrucao Anterior: 51 rs: 29 rt: 2
+Instrucao Atual: 22 rs: 20 rs2 16 rt: 20
+Instrucao Anterior: 51 rs: 0 rt: 0
 
 chamou lw com 35 28 4 4294934652
 lw com rt= 4 rs= 28 
 
 
-Instrucao Atual: 5 rs: 28 rt: 4
-Instrucao Anterior: 22 rs: 29 rt: 2
+Instrucao Atual: 5 rs: 28 rs2 16 rt: 4
+Instrucao Anterior: 22 rs: 20 rt: 20
 
 chamou lw com 35 28 7 4294934656
 lw com rt= 7 rs= 28 
 
 
-Instrucao Atual: 5 rs: 28 rt: 7
+Instrucao Atual: 5 rs: 28 rs2 16 rt: 7
 Instrucao Anterior: 5 rs: 28 rt: 4
 
 decodificou addiu 9 29 2 496
 chamou addiu com 2 29 496
 
 
-Instrucao Atual: 14 rs: 29 rt: 2
+Instrucao Atual: 14 rs: 29 rs2 16 rt: 2
 Instrucao Anterior: 5 rs: 28 rt: 7
 
 decodificou addiu 9 29 5 504
 chamou addiu com 5 29 504
 
 
-Instrucao Atual: 14 rs: 29 rt: 5
+Instrucao Atual: 14 rs: 29 rs2 16 rt: 5
 Instrucao Anterior: 14 rs: 29 rt: 2
 
+addu
 
 
-Instrucao Atual: 22 rs: 29 rt: 5
+Instrucao Atual: 22 rs: 20 rs2 0 rt: 6
 Instrucao Anterior: 14 rs: 29 rt: 5
 
 
 
-Instrucao Atual: 47 rs: 29 rt: 5
-Instrucao Anterior: 22 rs: 29 rt: 5
+Instrucao Atual: 47 rs: 20 rs2 0 rt: 6
+Instrucao Anterior: 22 rs: 20 rt: 6
 
 
 
-Instrucao Atual: 10 rs: 29 rt: 2
-Instrucao Anterior: 47 rs: 29 rt: 5
+Instrucao Atual: 10 rs: 29 rs2 0 rt: 2
+Instrucao Anterior: 47 rs: 20 rt: 6
 
 
 
-Instrucao Atual: 50 rs: 29 rt: 2
+Instrucao Atual: 50 rs: 29 rs2 0 rt: 2
 Instrucao Anterior: 10 rs: 29 rt: 2
 
 decodificou addiu 9 29 29 4294967288
 chamou addiu com 29 29 -8
 
 
-Instrucao Atual: 14 rs: 29 rt: 29
+Instrucao Atual: 14 rs: 29 rs2 0 rt: 29
 Instrucao Anterior: 50 rs: 29 rt: 2
 
 
 
-Instrucao Atual: 50 rs: 29 rt: 29
+Instrucao Atual: 50 rs: 29 rs2 0 rt: 29
 Instrucao Anterior: 14 rs: 29 rt: 29
 
+addu
 
 
-Instrucao Atual: 22 rs: 29 rt: 29
+Instrucao Atual: 22 rs: 0 rs2 0 rt: 2
 Instrucao Anterior: 50 rs: 29 rt: 29
 
 
 
-Instrucao Atual: 50 rs: 29 rt: 29
-Instrucao Anterior: 22 rs: 29 rt: 29
+Instrucao Atual: 50 rs: 0 rs2 0 rt: 2
+Instrucao Anterior: 22 rs: 0 rt: 2
 
 decodificou addiu 9 0 2 4294967294
 chamou addiu com 2 0 -2
 
 
-Instrucao Atual: 14 rs: 0 rt: 2
-Instrucao Anterior: 50 rs: 29 rt: 29
+Instrucao Atual: 14 rs: 0 rs2 0 rt: 2
+Instrucao Anterior: 50 rs: 0 rt: 2
 
 
 
-Instrucao Atual: 2 rs: 6 rt: 2
+Instrucao Atual: 2 rs: 6 rs2 0 rt: 2
 Instrucao Anterior: 14 rs: 0 rt: 2
 
-Hazard
 
 
-Instrucao Atual: 31 rs: 6 rt: 2
+Instrucao Atual: 31 rs: 0 rs2 0 rt: 0
 Instrucao Anterior: 2 rs: 6 rt: 2
 
 
 
-Instrucao Atual: 10 rs: 5 rt: 2
-Instrucao Anterior: 31 rs: 6 rt: 2
+Instrucao Atual: 10 rs: 5 rs2 0 rt: 2
+Instrucao Anterior: 31 rs: 0 rt: 0
 
 
 
-Instrucao Atual: 2 rs: 6 rt: 3
+Instrucao Atual: 2 rs: 6 rs2 0 rt: 3
 Instrucao Anterior: 10 rs: 5 rt: 2
 
-Hazard
 
 
-Instrucao Atual: 31 rs: 6 rt: 3
+Instrucao Atual: 31 rs: 0 rs2 0 rt: 0
 Instrucao Anterior: 2 rs: 6 rt: 3
 
 
 
-Instrucao Atual: 26 rs: 6 rt: 3
-Instrucao Anterior: 31 rs: 6 rt: 3
+Instrucao Atual: 26 rs: 0 rs2 3 rt: 2
+Instrucao Anterior: 31 rs: 0 rt: 0
 
 
 
-Instrucao Atual: 48 rs: 6 rt: 3
-Instrucao Anterior: 26 rs: 6 rt: 3
+Instrucao Atual: 48 rs: 0 rs2 3 rt: 2
+Instrucao Anterior: 26 rs: 0 rt: 2
 
 decodificou addiu 9 29 29 8
 chamou addiu com 29 29 8
 
 
-Instrucao Atual: 14 rs: 29 rt: 29
-Instrucao Anterior: 48 rs: 6 rt: 3
+Instrucao Atual: 14 rs: 29 rs2 3 rt: 29
+Instrucao Anterior: 48 rs: 0 rt: 2
 
 
 
-Instrucao Atual: 52 rs: 29 rt: 29
+Instrucao Atual: 52 rs: 29 rs2 3 rt: 29
 Instrucao Anterior: 14 rs: 29 rt: 29
 
+addu
 
 
-Instrucao Atual: 22 rs: 29 rt: 29
+Instrucao Atual: 22 rs: 2 rs2 0 rt: 16
 Instrucao Anterior: 52 rs: 29 rt: 29
 
 chamou lw com 35 29 2 504
 lw com rt= 2 rs= 29 
 
 
-Instrucao Atual: 5 rs: 29 rt: 2
-Instrucao Anterior: 22 rs: 29 rt: 29
-
-Hazard
+Instrucao Atual: 5 rs: 29 rs2 0 rt: 2
+Instrucao Anterior: 22 rs: 2 rt: 16
 
 
-Instrucao Atual: 31 rs: 29 rt: 2
+
+Instrucao Atual: 31 rs: 0 rs2 0 rt: 0
 Instrucao Anterior: 5 rs: 29 rt: 2
 
 
 
-Instrucao Atual: 51 rs: 29 rt: 2
-Instrucao Anterior: 31 rs: 29 rt: 2
+Instrucao Atual: 51 rs: 0 rs2 0 rt: 0
+Instrucao Anterior: 31 rs: 0 rt: 0
+
+addu
 
 
-
-Instrucao Atual: 22 rs: 29 rt: 2
-Instrucao Anterior: 51 rs: 29 rt: 2
+Instrucao Atual: 22 rs: 20 rs2 16 rt: 20
+Instrucao Anterior: 51 rs: 0 rt: 0
 
 chamou lw com 35 28 4 4294934652
 lw com rt= 4 rs= 28 
 
 
-Instrucao Atual: 5 rs: 28 rt: 4
-Instrucao Anterior: 22 rs: 29 rt: 2
+Instrucao Atual: 5 rs: 28 rs2 16 rt: 4
+Instrucao Anterior: 22 rs: 20 rt: 20
 
 chamou lw com 35 28 7 4294934656
 lw com rt= 7 rs= 28 
 
 
-Instrucao Atual: 5 rs: 28 rt: 7
+Instrucao Atual: 5 rs: 28 rs2 16 rt: 7
 Instrucao Anterior: 5 rs: 28 rt: 4
 
 decodificou addiu 9 29 2 496
 chamou addiu com 2 29 496
 
 
-Instrucao Atual: 14 rs: 29 rt: 2
+Instrucao Atual: 14 rs: 29 rs2 16 rt: 2
 Instrucao Anterior: 5 rs: 28 rt: 7
 
 decodificou addiu 9 29 5 504
 chamou addiu com 5 29 504
 
 
-Instrucao Atual: 14 rs: 29 rt: 5
+Instrucao Atual: 14 rs: 29 rs2 16 rt: 5
 Instrucao Anterior: 14 rs: 29 rt: 2
 
+addu
 
 
-Instrucao Atual: 22 rs: 29 rt: 5
+Instrucao Atual: 22 rs: 20 rs2 0 rt: 6
 Instrucao Anterior: 14 rs: 29 rt: 5
 
 
 
-Instrucao Atual: 47 rs: 29 rt: 5
-Instrucao Anterior: 22 rs: 29 rt: 5
+Instrucao Atual: 47 rs: 20 rs2 0 rt: 6
+Instrucao Anterior: 22 rs: 20 rt: 6
 
 
 
-Instrucao Atual: 10 rs: 29 rt: 2
-Instrucao Anterior: 47 rs: 29 rt: 5
+Instrucao Atual: 10 rs: 29 rs2 0 rt: 2
+Instrucao Anterior: 47 rs: 20 rt: 6
 
 
 
-Instrucao Atual: 50 rs: 29 rt: 2
+Instrucao Atual: 50 rs: 29 rs2 0 rt: 2
 Instrucao Anterior: 10 rs: 29 rt: 2
 
 decodificou addiu 9 29 29 4294967288
 chamou addiu com 29 29 -8
 
 
-Instrucao Atual: 14 rs: 29 rt: 29
+Instrucao Atual: 14 rs: 29 rs2 0 rt: 29
 Instrucao Anterior: 50 rs: 29 rt: 2
 
 
 
-Instrucao Atual: 50 rs: 29 rt: 29
+Instrucao Atual: 50 rs: 29 rs2 0 rt: 29
 Instrucao Anterior: 14 rs: 29 rt: 29
 
+addu
 
 
-Instrucao Atual: 22 rs: 29 rt: 29
+Instrucao Atual: 22 rs: 0 rs2 0 rt: 2
 Instrucao Anterior: 50 rs: 29 rt: 29
 
 
 
-Instrucao Atual: 50 rs: 29 rt: 29
-Instrucao Anterior: 22 rs: 29 rt: 29
+Instrucao Atual: 50 rs: 0 rs2 0 rt: 2
+Instrucao Anterior: 22 rs: 0 rt: 2
 
 decodificou addiu 9 0 2 4294967294
 chamou addiu com 2 0 -2
 
 
-Instrucao Atual: 14 rs: 0 rt: 2
-Instrucao Anterior: 50 rs: 29 rt: 29
+Instrucao Atual: 14 rs: 0 rs2 0 rt: 2
+Instrucao Anterior: 50 rs: 0 rt: 2
 
 
 
-Instrucao Atual: 2 rs: 6 rt: 2
+Instrucao Atual: 2 rs: 6 rs2 0 rt: 2
 Instrucao Anterior: 14 rs: 0 rt: 2
 
-Hazard
 
 
-Instrucao Atual: 31 rs: 6 rt: 2
+Instrucao Atual: 31 rs: 0 rs2 0 rt: 0
 Instrucao Anterior: 2 rs: 6 rt: 2
 
 
 
-Instrucao Atual: 10 rs: 5 rt: 2
-Instrucao Anterior: 31 rs: 6 rt: 2
+Instrucao Atual: 10 rs: 5 rs2 0 rt: 2
+Instrucao Anterior: 31 rs: 0 rt: 0
 
 
 
-Instrucao Atual: 2 rs: 6 rt: 3
+Instrucao Atual: 2 rs: 6 rs2 0 rt: 3
 Instrucao Anterior: 10 rs: 5 rt: 2
 
-Hazard
 
 
-Instrucao Atual: 31 rs: 6 rt: 3
+Instrucao Atual: 31 rs: 0 rs2 0 rt: 0
 Instrucao Anterior: 2 rs: 6 rt: 3
 
 
 
-Instrucao Atual: 26 rs: 6 rt: 3
-Instrucao Anterior: 31 rs: 6 rt: 3
+Instrucao Atual: 26 rs: 0 rs2 3 rt: 2
+Instrucao Anterior: 31 rs: 0 rt: 0
 
 
 
-Instrucao Atual: 48 rs: 6 rt: 3
-Instrucao Anterior: 26 rs: 6 rt: 3
+Instrucao Atual: 48 rs: 0 rs2 3 rt: 2
+Instrucao Anterior: 26 rs: 0 rt: 2
 
 decodificou addiu 9 29 29 8
 chamou addiu com 29 29 8
 
 
-Instrucao Atual: 14 rs: 29 rt: 29
-Instrucao Anterior: 48 rs: 6 rt: 3
+Instrucao Atual: 14 rs: 29 rs2 3 rt: 29
+Instrucao Anterior: 48 rs: 0 rt: 2
 
 
 
-Instrucao Atual: 52 rs: 29 rt: 29
+Instrucao Atual: 52 rs: 29 rs2 3 rt: 29
 Instrucao Anterior: 14 rs: 29 rt: 29
 
+addu
 
 
-Instrucao Atual: 22 rs: 29 rt: 29
+Instrucao Atual: 22 rs: 2 rs2 0 rt: 16
 Instrucao Anterior: 52 rs: 29 rt: 29
 
 chamou lw com 35 29 2 504
 lw com rt= 2 rs= 29 
 
 
-Instrucao Atual: 5 rs: 29 rt: 2
-Instrucao Anterior: 22 rs: 29 rt: 29
-
-Hazard
+Instrucao Atual: 5 rs: 29 rs2 0 rt: 2
+Instrucao Anterior: 22 rs: 2 rt: 16
 
 
-Instrucao Atual: 31 rs: 29 rt: 2
+
+Instrucao Atual: 31 rs: 0 rs2 0 rt: 0
 Instrucao Anterior: 5 rs: 29 rt: 2
 
 
 
-Instrucao Atual: 51 rs: 29 rt: 2
-Instrucao Anterior: 31 rs: 29 rt: 2
+Instrucao Atual: 51 rs: 0 rs2 0 rt: 0
+Instrucao Anterior: 31 rs: 0 rt: 0
+
+addu
 
 
-
-Instrucao Atual: 22 rs: 29 rt: 2
-Instrucao Anterior: 51 rs: 29 rt: 2
+Instrucao Atual: 22 rs: 20 rs2 16 rt: 20
+Instrucao Anterior: 51 rs: 0 rt: 0
 
 chamou lw com 35 28 4 4294934652
 lw com rt= 4 rs= 28 
 
 
-Instrucao Atual: 5 rs: 28 rt: 4
-Instrucao Anterior: 22 rs: 29 rt: 2
+Instrucao Atual: 5 rs: 28 rs2 16 rt: 4
+Instrucao Anterior: 22 rs: 20 rt: 20
 
 chamou lw com 35 28 7 4294934656
 lw com rt= 7 rs= 28 
 
 
-Instrucao Atual: 5 rs: 28 rt: 7
+Instrucao Atual: 5 rs: 28 rs2 16 rt: 7
 Instrucao Anterior: 5 rs: 28 rt: 4
 
 decodificou addiu 9 29 2 496
 chamou addiu com 2 29 496
 
 
-Instrucao Atual: 14 rs: 29 rt: 2
+Instrucao Atual: 14 rs: 29 rs2 16 rt: 2
 Instrucao Anterior: 5 rs: 28 rt: 7
 
 decodificou addiu 9 29 5 504
 chamou addiu com 5 29 504
 
 
-Instrucao Atual: 14 rs: 29 rt: 5
+Instrucao Atual: 14 rs: 29 rs2 16 rt: 5
 Instrucao Anterior: 14 rs: 29 rt: 2
 
+addu
 
 
-Instrucao Atual: 22 rs: 29 rt: 5
+Instrucao Atual: 22 rs: 20 rs2 0 rt: 6
 Instrucao Anterior: 14 rs: 29 rt: 5
 
 
 
-Instrucao Atual: 47 rs: 29 rt: 5
-Instrucao Anterior: 22 rs: 29 rt: 5
+Instrucao Atual: 47 rs: 20 rs2 0 rt: 6
+Instrucao Anterior: 22 rs: 20 rt: 6
 
 
 
-Instrucao Atual: 10 rs: 29 rt: 2
-Instrucao Anterior: 47 rs: 29 rt: 5
+Instrucao Atual: 10 rs: 29 rs2 0 rt: 2
+Instrucao Anterior: 47 rs: 20 rt: 6
 
 
 
-Instrucao Atual: 50 rs: 29 rt: 2
+Instrucao Atual: 50 rs: 29 rs2 0 rt: 2
 Instrucao Anterior: 10 rs: 29 rt: 2
 
 decodificou addiu 9 29 29 4294967288
 chamou addiu com 29 29 -8
 
 
-Instrucao Atual: 14 rs: 29 rt: 29
+Instrucao Atual: 14 rs: 29 rs2 0 rt: 29
 Instrucao Anterior: 50 rs: 29 rt: 2
 
 
 
-Instrucao Atual: 50 rs: 29 rt: 29
+Instrucao Atual: 50 rs: 29 rs2 0 rt: 29
 Instrucao Anterior: 14 rs: 29 rt: 29
 
+addu
 
 
-Instrucao Atual: 22 rs: 29 rt: 29
+Instrucao Atual: 22 rs: 0 rs2 0 rt: 2
 Instrucao Anterior: 50 rs: 29 rt: 29
 
 
 
-Instrucao Atual: 50 rs: 29 rt: 29
-Instrucao Anterior: 22 rs: 29 rt: 29
+Instrucao Atual: 50 rs: 0 rs2 0 rt: 2
+Instrucao Anterior: 22 rs: 0 rt: 2
 
 decodificou addiu 9 0 2 4294967294
 chamou addiu com 2 0 -2
 
 
-Instrucao Atual: 14 rs: 0 rt: 2
-Instrucao Anterior: 50 rs: 29 rt: 29
+Instrucao Atual: 14 rs: 0 rs2 0 rt: 2
+Instrucao Anterior: 50 rs: 0 rt: 2
 
 
 
-Instrucao Atual: 2 rs: 6 rt: 2
+Instrucao Atual: 2 rs: 6 rs2 0 rt: 2
 Instrucao Anterior: 14 rs: 0 rt: 2
 
-Hazard
 
 
-Instrucao Atual: 31 rs: 6 rt: 2
+Instrucao Atual: 31 rs: 0 rs2 0 rt: 0
 Instrucao Anterior: 2 rs: 6 rt: 2
 
 
 
-Instrucao Atual: 10 rs: 5 rt: 2
-Instrucao Anterior: 31 rs: 6 rt: 2
+Instrucao Atual: 10 rs: 5 rs2 0 rt: 2
+Instrucao Anterior: 31 rs: 0 rt: 0
 
 
 
-Instrucao Atual: 2 rs: 6 rt: 3
+Instrucao Atual: 2 rs: 6 rs2 0 rt: 3
 Instrucao Anterior: 10 rs: 5 rt: 2
 
-Hazard
 
 
-Instrucao Atual: 31 rs: 6 rt: 3
+Instrucao Atual: 31 rs: 0 rs2 0 rt: 0
 Instrucao Anterior: 2 rs: 6 rt: 3
 
 
 
-Instrucao Atual: 26 rs: 6 rt: 3
-Instrucao Anterior: 31 rs: 6 rt: 3
+Instrucao Atual: 26 rs: 0 rs2 3 rt: 2
+Instrucao Anterior: 31 rs: 0 rt: 0
 
 
 
-Instrucao Atual: 48 rs: 6 rt: 3
-Instrucao Anterior: 26 rs: 6 rt: 3
+Instrucao Atual: 48 rs: 0 rs2 3 rt: 2
+Instrucao Anterior: 26 rs: 0 rt: 2
 
 decodificou addiu 9 29 29 8
 chamou addiu com 29 29 8
 
 
-Instrucao Atual: 14 rs: 29 rt: 29
-Instrucao Anterior: 48 rs: 6 rt: 3
+Instrucao Atual: 14 rs: 29 rs2 3 rt: 29
+Instrucao Anterior: 48 rs: 0 rt: 2
 
 
 
-Instrucao Atual: 52 rs: 29 rt: 29
+Instrucao Atual: 52 rs: 29 rs2 3 rt: 29
 Instrucao Anterior: 14 rs: 29 rt: 29
 
+addu
 
 
-Instrucao Atual: 22 rs: 29 rt: 29
+Instrucao Atual: 22 rs: 2 rs2 0 rt: 16
 Instrucao Anterior: 52 rs: 29 rt: 29
 
 chamou lw com 35 29 2 504
 lw com rt= 2 rs= 29 
 
 
-Instrucao Atual: 5 rs: 29 rt: 2
-Instrucao Anterior: 22 rs: 29 rt: 29
-
-Hazard
+Instrucao Atual: 5 rs: 29 rs2 0 rt: 2
+Instrucao Anterior: 22 rs: 2 rt: 16
 
 
-Instrucao Atual: 31 rs: 29 rt: 2
+
+Instrucao Atual: 31 rs: 0 rs2 0 rt: 0
 Instrucao Anterior: 5 rs: 29 rt: 2
 
 
 
-Instrucao Atual: 51 rs: 29 rt: 2
-Instrucao Anterior: 31 rs: 29 rt: 2
+Instrucao Atual: 51 rs: 0 rs2 0 rt: 0
+Instrucao Anterior: 31 rs: 0 rt: 0
+
+addu
 
 
-
-Instrucao Atual: 22 rs: 29 rt: 2
-Instrucao Anterior: 51 rs: 29 rt: 2
+Instrucao Atual: 22 rs: 20 rs2 16 rt: 20
+Instrucao Anterior: 51 rs: 0 rt: 0
 
 chamou lw com 35 28 4 4294934652
 lw com rt= 4 rs= 28 
 
 
-Instrucao Atual: 5 rs: 28 rt: 4
-Instrucao Anterior: 22 rs: 29 rt: 2
+Instrucao Atual: 5 rs: 28 rs2 16 rt: 4
+Instrucao Anterior: 22 rs: 20 rt: 20
 
 chamou lw com 35 28 7 4294934656
 lw com rt= 7 rs= 28 
 
 
-Instrucao Atual: 5 rs: 28 rt: 7
+Instrucao Atual: 5 rs: 28 rs2 16 rt: 7
 Instrucao Anterior: 5 rs: 28 rt: 4
 
 decodificou addiu 9 29 2 496
 chamou addiu com 2 29 496
 
 
-Instrucao Atual: 14 rs: 29 rt: 2
+Instrucao Atual: 14 rs: 29 rs2 16 rt: 2
 Instrucao Anterior: 5 rs: 28 rt: 7
 
 decodificou addiu 9 29 5 504
 chamou addiu com 5 29 504
 
 
-Instrucao Atual: 14 rs: 29 rt: 5
+Instrucao Atual: 14 rs: 29 rs2 16 rt: 5
 Instrucao Anterior: 14 rs: 29 rt: 2
 
+addu
 
 
-Instrucao Atual: 22 rs: 29 rt: 5
+Instrucao Atual: 22 rs: 20 rs2 0 rt: 6
 Instrucao Anterior: 14 rs: 29 rt: 5
 
 
 
-Instrucao Atual: 47 rs: 29 rt: 5
-Instrucao Anterior: 22 rs: 29 rt: 5
+Instrucao Atual: 47 rs: 20 rs2 0 rt: 6
+Instrucao Anterior: 22 rs: 20 rt: 6
 
 
 
-Instrucao Atual: 10 rs: 29 rt: 2
-Instrucao Anterior: 47 rs: 29 rt: 5
+Instrucao Atual: 10 rs: 29 rs2 0 rt: 2
+Instrucao Anterior: 47 rs: 20 rt: 6
 
 
 
-Instrucao Atual: 50 rs: 29 rt: 2
+Instrucao Atual: 50 rs: 29 rs2 0 rt: 2
 Instrucao Anterior: 10 rs: 29 rt: 2
 
 decodificou addiu 9 29 29 4294967288
 chamou addiu com 29 29 -8
 
 
-Instrucao Atual: 14 rs: 29 rt: 29
+Instrucao Atual: 14 rs: 29 rs2 0 rt: 29
 Instrucao Anterior: 50 rs: 29 rt: 2
 
 
 
-Instrucao Atual: 50 rs: 29 rt: 29
+Instrucao Atual: 50 rs: 29 rs2 0 rt: 29
 Instrucao Anterior: 14 rs: 29 rt: 29
 
+addu
 
 
-Instrucao Atual: 22 rs: 29 rt: 29
+Instrucao Atual: 22 rs: 0 rs2 0 rt: 2
 Instrucao Anterior: 50 rs: 29 rt: 29
 
 
 
-Instrucao Atual: 50 rs: 29 rt: 29
-Instrucao Anterior: 22 rs: 29 rt: 29
+Instrucao Atual: 50 rs: 0 rs2 0 rt: 2
+Instrucao Anterior: 22 rs: 0 rt: 2
 
 decodificou addiu 9 0 2 4294967294
 chamou addiu com 2 0 -2
 
 
-Instrucao Atual: 14 rs: 0 rt: 2
-Instrucao Anterior: 50 rs: 29 rt: 29
+Instrucao Atual: 14 rs: 0 rs2 0 rt: 2
+Instrucao Anterior: 50 rs: 0 rt: 2
 
 
 
-Instrucao Atual: 2 rs: 6 rt: 2
+Instrucao Atual: 2 rs: 6 rs2 0 rt: 2
 Instrucao Anterior: 14 rs: 0 rt: 2
 
-Hazard
 
 
-Instrucao Atual: 31 rs: 6 rt: 2
+Instrucao Atual: 31 rs: 0 rs2 0 rt: 0
 Instrucao Anterior: 2 rs: 6 rt: 2
 
 
 
-Instrucao Atual: 10 rs: 5 rt: 2
-Instrucao Anterior: 31 rs: 6 rt: 2
+Instrucao Atual: 10 rs: 5 rs2 0 rt: 2
+Instrucao Anterior: 31 rs: 0 rt: 0
 
 
 
-Instrucao Atual: 2 rs: 6 rt: 3
+Instrucao Atual: 2 rs: 6 rs2 0 rt: 3
 Instrucao Anterior: 10 rs: 5 rt: 2
 
-Hazard
 
 
-Instrucao Atual: 31 rs: 6 rt: 3
+Instrucao Atual: 31 rs: 0 rs2 0 rt: 0
 Instrucao Anterior: 2 rs: 6 rt: 3
 
 
 
-Instrucao Atual: 26 rs: 6 rt: 3
-Instrucao Anterior: 31 rs: 6 rt: 3
+Instrucao Atual: 26 rs: 0 rs2 3 rt: 2
+Instrucao Anterior: 31 rs: 0 rt: 0
 
 
 
-Instrucao Atual: 48 rs: 6 rt: 3
-Instrucao Anterior: 26 rs: 6 rt: 3
+Instrucao Atual: 48 rs: 0 rs2 3 rt: 2
+Instrucao Anterior: 26 rs: 0 rt: 2
 
 decodificou addiu 9 29 29 8
 chamou addiu com 29 29 8
 
 
-Instrucao Atual: 14 rs: 29 rt: 29
-Instrucao Anterior: 48 rs: 6 rt: 3
+Instrucao Atual: 14 rs: 29 rs2 3 rt: 29
+Instrucao Anterior: 48 rs: 0 rt: 2
 
 
 
-Instrucao Atual: 52 rs: 29 rt: 29
+Instrucao Atual: 52 rs: 29 rs2 3 rt: 29
 Instrucao Anterior: 14 rs: 29 rt: 29
 
+addu
 
 
-Instrucao Atual: 22 rs: 29 rt: 29
+Instrucao Atual: 22 rs: 2 rs2 0 rt: 16
 Instrucao Anterior: 52 rs: 29 rt: 29
 
 chamou lw com 35 29 2 504
 lw com rt= 2 rs= 29 
 
 
-Instrucao Atual: 5 rs: 29 rt: 2
-Instrucao Anterior: 22 rs: 29 rt: 29
-
-Hazard
+Instrucao Atual: 5 rs: 29 rs2 0 rt: 2
+Instrucao Anterior: 22 rs: 2 rt: 16
 
 
-Instrucao Atual: 31 rs: 29 rt: 2
+
+Instrucao Atual: 31 rs: 0 rs2 0 rt: 0
 Instrucao Anterior: 5 rs: 29 rt: 2
 
 
 
-Instrucao Atual: 51 rs: 29 rt: 2
-Instrucao Anterior: 31 rs: 29 rt: 2
+Instrucao Atual: 51 rs: 0 rs2 0 rt: 0
+Instrucao Anterior: 31 rs: 0 rt: 0
+
+addu
 
 
-
-Instrucao Atual: 22 rs: 29 rt: 2
-Instrucao Anterior: 51 rs: 29 rt: 2
+Instrucao Atual: 22 rs: 20 rs2 16 rt: 20
+Instrucao Anterior: 51 rs: 0 rt: 0
 
 chamou lw com 35 28 4 4294934652
 lw com rt= 4 rs= 28 
 
 
-Instrucao Atual: 5 rs: 28 rt: 4
-Instrucao Anterior: 22 rs: 29 rt: 2
+Instrucao Atual: 5 rs: 28 rs2 16 rt: 4
+Instrucao Anterior: 22 rs: 20 rt: 20
 
 chamou lw com 35 28 7 4294934656
 lw com rt= 7 rs= 28 
 
 
-Instrucao Atual: 5 rs: 28 rt: 7
+Instrucao Atual: 5 rs: 28 rs2 16 rt: 7
 Instrucao Anterior: 5 rs: 28 rt: 4
 
 decodificou addiu 9 29 2 496
 chamou addiu com 2 29 496
 
 
-Instrucao Atual: 14 rs: 29 rt: 2
+Instrucao Atual: 14 rs: 29 rs2 16 rt: 2
 Instrucao Anterior: 5 rs: 28 rt: 7
 
 decodificou addiu 9 29 5 504
 chamou addiu com 5 29 504
 
 
-Instrucao Atual: 14 rs: 29 rt: 5
+Instrucao Atual: 14 rs: 29 rs2 16 rt: 5
 Instrucao Anterior: 14 rs: 29 rt: 2
 
+addu
 
 
-Instrucao Atual: 22 rs: 29 rt: 5
+Instrucao Atual: 22 rs: 20 rs2 0 rt: 6
 Instrucao Anterior: 14 rs: 29 rt: 5
 
 
 
-Instrucao Atual: 47 rs: 29 rt: 5
-Instrucao Anterior: 22 rs: 29 rt: 5
+Instrucao Atual: 47 rs: 20 rs2 0 rt: 6
+Instrucao Anterior: 22 rs: 20 rt: 6
 
 
 
-Instrucao Atual: 10 rs: 29 rt: 2
-Instrucao Anterior: 47 rs: 29 rt: 5
+Instrucao Atual: 10 rs: 29 rs2 0 rt: 2
+Instrucao Anterior: 47 rs: 20 rt: 6
 
 
 
-Instrucao Atual: 50 rs: 29 rt: 2
+Instrucao Atual: 50 rs: 29 rs2 0 rt: 2
 Instrucao Anterior: 10 rs: 29 rt: 2
 
 decodificou addiu 9 29 29 4294967288
 chamou addiu com 29 29 -8
 
 
-Instrucao Atual: 14 rs: 29 rt: 29
+Instrucao Atual: 14 rs: 29 rs2 0 rt: 29
 Instrucao Anterior: 50 rs: 29 rt: 2
 
 
 
-Instrucao Atual: 50 rs: 29 rt: 29
+Instrucao Atual: 50 rs: 29 rs2 0 rt: 29
 Instrucao Anterior: 14 rs: 29 rt: 29
 
+addu
 
 
-Instrucao Atual: 22 rs: 29 rt: 29
+Instrucao Atual: 22 rs: 0 rs2 0 rt: 2
 Instrucao Anterior: 50 rs: 29 rt: 29
 
 
 
-Instrucao Atual: 50 rs: 29 rt: 29
-Instrucao Anterior: 22 rs: 29 rt: 29
+Instrucao Atual: 50 rs: 0 rs2 0 rt: 2
+Instrucao Anterior: 22 rs: 0 rt: 2
 
 decodificou addiu 9 0 2 4294967294
 chamou addiu com 2 0 -2
 
 
-Instrucao Atual: 14 rs: 0 rt: 2
-Instrucao Anterior: 50 rs: 29 rt: 29
+Instrucao Atual: 14 rs: 0 rs2 0 rt: 2
+Instrucao Anterior: 50 rs: 0 rt: 2
 
 
 
-Instrucao Atual: 2 rs: 6 rt: 2
+Instrucao Atual: 2 rs: 6 rs2 0 rt: 2
 Instrucao Anterior: 14 rs: 0 rt: 2
 
-Hazard
 
 
-Instrucao Atual: 31 rs: 6 rt: 2
+Instrucao Atual: 31 rs: 0 rs2 0 rt: 0
 Instrucao Anterior: 2 rs: 6 rt: 2
 
 
 
-Instrucao Atual: 10 rs: 5 rt: 2
-Instrucao Anterior: 31 rs: 6 rt: 2
+Instrucao Atual: 10 rs: 5 rs2 0 rt: 2
+Instrucao Anterior: 31 rs: 0 rt: 0
 
 
 
-Instrucao Atual: 2 rs: 6 rt: 3
+Instrucao Atual: 2 rs: 6 rs2 0 rt: 3
 Instrucao Anterior: 10 rs: 5 rt: 2
 
-Hazard
 
 
-Instrucao Atual: 31 rs: 6 rt: 3
+Instrucao Atual: 31 rs: 0 rs2 0 rt: 0
 Instrucao Anterior: 2 rs: 6 rt: 3
 
 
 
-Instrucao Atual: 26 rs: 6 rt: 3
-Instrucao Anterior: 31 rs: 6 rt: 3
+Instrucao Atual: 26 rs: 0 rs2 3 rt: 2
+Instrucao Anterior: 31 rs: 0 rt: 0
 
 
 
-Instrucao Atual: 48 rs: 6 rt: 3
-Instrucao Anterior: 26 rs: 6 rt: 3
+Instrucao Atual: 48 rs: 0 rs2 3 rt: 2
+Instrucao Anterior: 26 rs: 0 rt: 2
 
 decodificou addiu 9 29 29 8
 chamou addiu com 29 29 8
 
 
-Instrucao Atual: 14 rs: 29 rt: 29
-Instrucao Anterior: 48 rs: 6 rt: 3
+Instrucao Atual: 14 rs: 29 rs2 3 rt: 29
+Instrucao Anterior: 48 rs: 0 rt: 2
 
 
 
-Instrucao Atual: 52 rs: 29 rt: 29
+Instrucao Atual: 52 rs: 29 rs2 3 rt: 29
 Instrucao Anterior: 14 rs: 29 rt: 29
 
+addu
 
 
-Instrucao Atual: 22 rs: 29 rt: 29
+Instrucao Atual: 22 rs: 2 rs2 0 rt: 16
 Instrucao Anterior: 52 rs: 29 rt: 29
 
 chamou lw com 35 29 2 504
 lw com rt= 2 rs= 29 
 
 
-Instrucao Atual: 5 rs: 29 rt: 2
-Instrucao Anterior: 22 rs: 29 rt: 29
-
-Hazard
+Instrucao Atual: 5 rs: 29 rs2 0 rt: 2
+Instrucao Anterior: 22 rs: 2 rt: 16
 
 
-Instrucao Atual: 31 rs: 29 rt: 2
+
+Instrucao Atual: 31 rs: 0 rs2 0 rt: 0
 Instrucao Anterior: 5 rs: 29 rt: 2
 
 
 
-Instrucao Atual: 51 rs: 29 rt: 2
-Instrucao Anterior: 31 rs: 29 rt: 2
+Instrucao Atual: 51 rs: 0 rs2 0 rt: 0
+Instrucao Anterior: 31 rs: 0 rt: 0
+
+addu
 
 
-
-Instrucao Atual: 22 rs: 29 rt: 2
-Instrucao Anterior: 51 rs: 29 rt: 2
+Instrucao Atual: 22 rs: 20 rs2 16 rt: 20
+Instrucao Anterior: 51 rs: 0 rt: 0
 
 chamou lw com 35 28 4 4294934652
 lw com rt= 4 rs= 28 
 
 
-Instrucao Atual: 5 rs: 28 rt: 4
-Instrucao Anterior: 22 rs: 29 rt: 2
+Instrucao Atual: 5 rs: 28 rs2 16 rt: 4
+Instrucao Anterior: 22 rs: 20 rt: 20
 
 chamou lw com 35 28 7 4294934656
 lw com rt= 7 rs= 28 
 
 
-Instrucao Atual: 5 rs: 28 rt: 7
+Instrucao Atual: 5 rs: 28 rs2 16 rt: 7
 Instrucao Anterior: 5 rs: 28 rt: 4
 
 decodificou addiu 9 29 2 496
 chamou addiu com 2 29 496
 
 
-Instrucao Atual: 14 rs: 29 rt: 2
+Instrucao Atual: 14 rs: 29 rs2 16 rt: 2
 Instrucao Anterior: 5 rs: 28 rt: 7
 
 decodificou addiu 9 29 5 504
 chamou addiu com 5 29 504
 
 
-Instrucao Atual: 14 rs: 29 rt: 5
+Instrucao Atual: 14 rs: 29 rs2 16 rt: 5
 Instrucao Anterior: 14 rs: 29 rt: 2
 
+addu
 
 
-Instrucao Atual: 22 rs: 29 rt: 5
+Instrucao Atual: 22 rs: 20 rs2 0 rt: 6
 Instrucao Anterior: 14 rs: 29 rt: 5
 
 
 
-Instrucao Atual: 47 rs: 29 rt: 5
-Instrucao Anterior: 22 rs: 29 rt: 5
+Instrucao Atual: 47 rs: 20 rs2 0 rt: 6
+Instrucao Anterior: 22 rs: 20 rt: 6
 
 
 
-Instrucao Atual: 10 rs: 29 rt: 2
-Instrucao Anterior: 47 rs: 29 rt: 5
+Instrucao Atual: 10 rs: 29 rs2 0 rt: 2
+Instrucao Anterior: 47 rs: 20 rt: 6
 
 
 
-Instrucao Atual: 50 rs: 29 rt: 2
+Instrucao Atual: 50 rs: 29 rs2 0 rt: 2
 Instrucao Anterior: 10 rs: 29 rt: 2
 
 decodificou addiu 9 29 29 4294967288
 chamou addiu com 29 29 -8
 
 
-Instrucao Atual: 14 rs: 29 rt: 29
+Instrucao Atual: 14 rs: 29 rs2 0 rt: 29
 Instrucao Anterior: 50 rs: 29 rt: 2
 
 
 
-Instrucao Atual: 50 rs: 29 rt: 29
+Instrucao Atual: 50 rs: 29 rs2 0 rt: 29
 Instrucao Anterior: 14 rs: 29 rt: 29
 
+addu
 
 
-Instrucao Atual: 22 rs: 29 rt: 29
+Instrucao Atual: 22 rs: 0 rs2 0 rt: 2
 Instrucao Anterior: 50 rs: 29 rt: 29
 
 
 
-Instrucao Atual: 50 rs: 29 rt: 29
-Instrucao Anterior: 22 rs: 29 rt: 29
+Instrucao Atual: 50 rs: 0 rs2 0 rt: 2
+Instrucao Anterior: 22 rs: 0 rt: 2
 
 decodificou addiu 9 0 2 4294967294
 chamou addiu com 2 0 -2
 
 
-Instrucao Atual: 14 rs: 0 rt: 2
-Instrucao Anterior: 50 rs: 29 rt: 29
+Instrucao Atual: 14 rs: 0 rs2 0 rt: 2
+Instrucao Anterior: 50 rs: 0 rt: 2
 
 
 
-Instrucao Atual: 2 rs: 6 rt: 2
+Instrucao Atual: 2 rs: 6 rs2 0 rt: 2
 Instrucao Anterior: 14 rs: 0 rt: 2
 
-Hazard
 
 
-Instrucao Atual: 31 rs: 6 rt: 2
+Instrucao Atual: 31 rs: 0 rs2 0 rt: 0
 Instrucao Anterior: 2 rs: 6 rt: 2
 
 
 
-Instrucao Atual: 10 rs: 5 rt: 2
-Instrucao Anterior: 31 rs: 6 rt: 2
+Instrucao Atual: 10 rs: 5 rs2 0 rt: 2
+Instrucao Anterior: 31 rs: 0 rt: 0
 
 
 
-Instrucao Atual: 2 rs: 6 rt: 3
+Instrucao Atual: 2 rs: 6 rs2 0 rt: 3
 Instrucao Anterior: 10 rs: 5 rt: 2
 
-Hazard
 
 
-Instrucao Atual: 31 rs: 6 rt: 3
+Instrucao Atual: 31 rs: 0 rs2 0 rt: 0
 Instrucao Anterior: 2 rs: 6 rt: 3
 
 
 
-Instrucao Atual: 26 rs: 6 rt: 3
-Instrucao Anterior: 31 rs: 6 rt: 3
+Instrucao Atual: 26 rs: 0 rs2 3 rt: 2
+Instrucao Anterior: 31 rs: 0 rt: 0
 
 
 
-Instrucao Atual: 48 rs: 6 rt: 3
-Instrucao Anterior: 26 rs: 6 rt: 3
+Instrucao Atual: 48 rs: 0 rs2 3 rt: 2
+Instrucao Anterior: 26 rs: 0 rt: 2
 
 decodificou addiu 9 29 29 8
 chamou addiu com 29 29 8
 
 
-Instrucao Atual: 14 rs: 29 rt: 29
-Instrucao Anterior: 48 rs: 6 rt: 3
+Instrucao Atual: 14 rs: 29 rs2 3 rt: 29
+Instrucao Anterior: 48 rs: 0 rt: 2
 
 
 
-Instrucao Atual: 52 rs: 29 rt: 29
+Instrucao Atual: 52 rs: 29 rs2 3 rt: 29
 Instrucao Anterior: 14 rs: 29 rt: 29
 
+addu
 
 
-Instrucao Atual: 22 rs: 29 rt: 29
+Instrucao Atual: 22 rs: 2 rs2 0 rt: 16
 Instrucao Anterior: 52 rs: 29 rt: 29
 
+subu com 0 20 19 17 0 35
+subu com rd 17 rs 20 rt 19 
 
 
-Instrucao Atual: 24 rs: 29 rt: 29
-Instrucao Anterior: 22 rs: 29 rt: 29
-
-
-
-Instrucao Atual: 50 rs: 29 rt: 29
-Instrucao Anterior: 24 rs: 29 rt: 29
+Instrucao Atual: 24 rs: 20 rs2 19 rt: 17
+Instrucao Anterior: 22 rs: 2 rt: 16
 
 
 
-Instrucao Atual: 31 rs: 29 rt: 29
-Instrucao Anterior: 50 rs: 29 rt: 29
+Instrucao Atual: 50 rs: 20 rs2 19 rt: 17
+Instrucao Anterior: 24 rs: 20 rt: 17
 
 
 
-Instrucao Atual: 10 rs: 18 rt: 17
-Instrucao Anterior: 31 rs: 29 rt: 29
+Instrucao Atual: 31 rs: 0 rs2 0 rt: 0
+Instrucao Anterior: 50 rs: 20 rt: 17
+
+
+
+Instrucao Atual: 10 rs: 18 rs2 0 rt: 17
+Instrucao Anterior: 31 rs: 0 rt: 0
 
 chamou lw com 35 29 2 60
 lw com rt= 2 rs= 29 
 
 
-Instrucao Atual: 5 rs: 29 rt: 2
+Instrucao Atual: 5 rs: 29 rs2 0 rt: 2
 Instrucao Anterior: 10 rs: 18 rt: 17
 
 chamou lw com 35 29 3 64
 lw com rt= 3 rs= 29 
 
 
-Instrucao Atual: 5 rs: 29 rt: 3
+Instrucao Atual: 5 rs: 29 rs2 0 rt: 3
 Instrucao Anterior: 5 rs: 29 rt: 2
 
 decodificou addiu 9 2 2 1
 chamou addiu com 2 2 1
 
 
-Instrucao Atual: 14 rs: 2 rt: 2
+Instrucao Atual: 14 rs: 2 rs2 0 rt: 2
 Instrucao Anterior: 5 rs: 29 rt: 3
 
+addu
 
 
-Instrucao Atual: 22 rs: 2 rt: 2
+Instrucao Atual: 22 rs: 3 rs2 17 rt: 3
 Instrucao Anterior: 14 rs: 2 rt: 2
 
 
 
-Instrucao Atual: 15 rs: 2 rt: 4
-Instrucao Anterior: 22 rs: 2 rt: 2
+Instrucao Atual: 15 rs: 2 rs2 17 rt: 4
+Instrucao Anterior: 22 rs: 3 rt: 3
 
 
 
-Instrucao Atual: 10 rs: 18 rt: 19
+Instrucao Atual: 10 rs: 18 rs2 17 rt: 19
 Instrucao Anterior: 15 rs: 2 rt: 4
 
 
 
-Instrucao Atual: 10 rs: 29 rt: 3
+Instrucao Atual: 10 rs: 29 rs2 17 rt: 3
 Instrucao Anterior: 10 rs: 18 rt: 19
 
 
 
-Instrucao Atual: 10 rs: 29 rt: 2
+Instrucao Atual: 10 rs: 29 rs2 17 rt: 2
 Instrucao Anterior: 10 rs: 29 rt: 3
 
 
 
-Instrucao Atual: 50 rs: 29 rt: 2
+Instrucao Atual: 50 rs: 29 rs2 17 rt: 2
 Instrucao Anterior: 10 rs: 29 rt: 2
 
 decodificou addiu 9 18 18 8
 chamou addiu com 18 18 8
 
 
-Instrucao Atual: 14 rs: 18 rt: 18
+Instrucao Atual: 14 rs: 18 rs2 17 rt: 18
 Instrucao Anterior: 50 rs: 29 rt: 2
 
 chamou lw com 35 29 3 520
 lw com rt= 3 rs= 29 
 
 
-Instrucao Atual: 5 rs: 29 rt: 3
+Instrucao Atual: 5 rs: 29 rs2 17 rt: 3
 Instrucao Anterior: 14 rs: 18 rt: 18
 
-Hazard
 
 
-Instrucao Atual: 31 rs: 29 rt: 3
+Instrucao Atual: 31 rs: 0 rs2 0 rt: 0
 Instrucao Anterior: 5 rs: 29 rt: 3
 
+addu
 
 
-Instrucao Atual: 22 rs: 29 rt: 3
-Instrucao Anterior: 31 rs: 29 rt: 3
-
-
-
-Instrucao Atual: 10 rs: 29 rt: 3
-Instrucao Anterior: 22 rs: 29 rt: 3
+Instrucao Atual: 22 rs: 3 rs2 17 rt: 3
+Instrucao Anterior: 31 rs: 0 rt: 0
 
 
 
-Instrucao Atual: 52 rs: 29 rt: 3
+Instrucao Atual: 10 rs: 29 rs2 17 rt: 3
+Instrucao Anterior: 22 rs: 3 rt: 3
+
+
+
+Instrucao Atual: 52 rs: 29 rs2 17 rt: 3
 Instrucao Anterior: 10 rs: 29 rt: 3
 
 decodificou addiu 9 20 20 1
 chamou addiu com 20 20 1
 
 
-Instrucao Atual: 14 rs: 20 rt: 20
+Instrucao Atual: 14 rs: 20 rs2 17 rt: 20
 Instrucao Anterior: 52 rs: 29 rt: 3
 
 chamou lw com 35 29 2 64
 lw com rt= 2 rs= 29 
 
 
-Instrucao Atual: 5 rs: 29 rt: 2
+Instrucao Atual: 5 rs: 29 rs2 17 rt: 2
 Instrucao Anterior: 14 rs: 20 rt: 20
 
-Hazard
 
 
-Instrucao Atual: 31 rs: 29 rt: 2
+Instrucao Atual: 31 rs: 0 rs2 0 rt: 0
 Instrucao Anterior: 5 rs: 29 rt: 2
 
 
 
-Instrucao Atual: 51 rs: 29 rt: 2
-Instrucao Anterior: 31 rs: 29 rt: 2
+Instrucao Atual: 51 rs: 0 rs2 0 rt: 0
+Instrucao Anterior: 31 rs: 0 rt: 0
 
 
 
-Instrucao Atual: 31 rs: 29 rt: 2
-Instrucao Anterior: 51 rs: 29 rt: 2
+Instrucao Atual: 31 rs: 0 rs2 0 rt: 0
+Instrucao Anterior: 51 rs: 0 rt: 0
 
 chamou lw com 35 29 4 604
 lw com rt= 4 rs= 29 
 
 
-Instrucao Atual: 5 rs: 29 rt: 4
-Instrucao Anterior: 31 rs: 29 rt: 2
+Instrucao Atual: 5 rs: 29 rs2 0 rt: 4
+Instrucao Anterior: 31 rs: 0 rt: 0
 
 Hazard
 
 
-Instrucao Atual: 47 rs: 29 rt: 4
+Instrucao Atual: 47 rs: 29 rs2 0 rt: 4
 Instrucao Anterior: 5 rs: 29 rt: 4
 
 decodificou addiu 9 29 5 56
 chamou addiu com 5 29 56
 
 
-Instrucao Atual: 14 rs: 29 rt: 5
+Instrucao Atual: 14 rs: 29 rs2 0 rt: 5
 Instrucao Anterior: 47 rs: 29 rt: 4
 
 decodificou addiu 9 29 29 4294967272
 chamou addiu com 29 29 -24
 
 
-Instrucao Atual: 14 rs: 29 rt: 29
+Instrucao Atual: 14 rs: 29 rs2 0 rt: 29
 Instrucao Anterior: 14 rs: 29 rt: 5
 
 
 
-Instrucao Atual: 10 rs: 29 rt: 16
+Instrucao Atual: 10 rs: 29 rs2 0 rt: 16
 Instrucao Anterior: 14 rs: 29 rt: 29
 
 
 
-Instrucao Atual: 10 rs: 29 rt: 31
+Instrucao Atual: 10 rs: 29 rs2 0 rt: 31
 Instrucao Anterior: 10 rs: 29 rt: 16
 
 chamou lw com 35 5 2 8
 lw com rt= 2 rs= 5 
 
 
-Instrucao Atual: 5 rs: 5 rt: 2
+Instrucao Atual: 5 rs: 5 rs2 0 rt: 2
 Instrucao Anterior: 10 rs: 29 rt: 31
 
-Hazard
+addu
 
 
-Instrucao Atual: 22 rs: 5 rt: 2
+Instrucao Atual: 22 rs: 5 rs2 0 rt: 16
 Instrucao Anterior: 5 rs: 5 rt: 2
 
 
 
-Instrucao Atual: 51 rs: 5 rt: 2
-Instrucao Anterior: 22 rs: 5 rt: 2
+Instrucao Atual: 51 rs: 5 rs2 0 rt: 16
+Instrucao Anterior: 22 rs: 5 rt: 16
+
+addu
+
+
+Instrucao Atual: 22 rs: 0 rs2 0 rt: 3
+Instrucao Anterior: 51 rs: 5 rt: 16
 
 
 
-Instrucao Atual: 22 rs: 5 rt: 2
-Instrucao Anterior: 51 rs: 5 rt: 2
+Instrucao Atual: 47 rs: 0 rs2 0 rt: 3
+Instrucao Anterior: 22 rs: 0 rt: 3
 
 
 
-Instrucao Atual: 47 rs: 5 rt: 2
-Instrucao Anterior: 22 rs: 5 rt: 2
-
-
-
-Instrucao Atual: 31 rs: 5 rt: 2
-Instrucao Anterior: 47 rs: 5 rt: 2
+Instrucao Atual: 31 rs: 0 rs2 0 rt: 0
+Instrucao Anterior: 47 rs: 0 rt: 3
 
 decodificou addiu 9 29 29 4294967240
 chamou addiu com 29 29 -56
 
 
-Instrucao Atual: 14 rs: 29 rt: 29
-Instrucao Anterior: 31 rs: 5 rt: 2
+Instrucao Atual: 14 rs: 29 rs2 0 rt: 29
+Instrucao Anterior: 31 rs: 0 rt: 0
 
 
 
-Instrucao Atual: 10 rs: 29 rt: 21
+Instrucao Atual: 10 rs: 29 rs2 0 rt: 21
 Instrucao Anterior: 14 rs: 29 rt: 29
 
 
 
-Instrucao Atual: 10 rs: 29 rt: 20
+Instrucao Atual: 10 rs: 29 rs2 0 rt: 20
 Instrucao Anterior: 10 rs: 29 rt: 21
 
 
 
-Instrucao Atual: 10 rs: 29 rt: 31
+Instrucao Atual: 10 rs: 29 rs2 0 rt: 31
 Instrucao Anterior: 10 rs: 29 rt: 20
 
 
 
-Instrucao Atual: 10 rs: 29 rt: 23
+Instrucao Atual: 10 rs: 29 rs2 0 rt: 23
 Instrucao Anterior: 10 rs: 29 rt: 31
 
 
 
-Instrucao Atual: 10 rs: 29 rt: 22
+Instrucao Atual: 10 rs: 29 rs2 0 rt: 22
 Instrucao Anterior: 10 rs: 29 rt: 23
 
 
 
-Instrucao Atual: 10 rs: 29 rt: 19
+Instrucao Atual: 10 rs: 29 rs2 0 rt: 19
 Instrucao Anterior: 10 rs: 29 rt: 22
 
 
 
-Instrucao Atual: 10 rs: 29 rt: 18
+Instrucao Atual: 10 rs: 29 rs2 0 rt: 18
 Instrucao Anterior: 10 rs: 29 rt: 19
 
 
 
-Instrucao Atual: 10 rs: 29 rt: 17
+Instrucao Atual: 10 rs: 29 rs2 0 rt: 17
 Instrucao Anterior: 10 rs: 29 rt: 18
 
 
 
-Instrucao Atual: 10 rs: 29 rt: 16
+Instrucao Atual: 10 rs: 29 rs2 0 rt: 16
 Instrucao Anterior: 10 rs: 29 rt: 17
 
 chamou lw com 35 5 17 8
 lw com rt= 17 rs= 5 
 
 
-Instrucao Atual: 5 rs: 5 rt: 17
+Instrucao Atual: 5 rs: 5 rs2 0 rt: 17
 Instrucao Anterior: 10 rs: 29 rt: 16
 
-Hazard
+addu
 
 
-Instrucao Atual: 22 rs: 5 rt: 17
+Instrucao Atual: 22 rs: 5 rs2 0 rt: 21
 Instrucao Anterior: 5 rs: 5 rt: 17
 
+addu
 
 
-Instrucao Atual: 22 rs: 5 rt: 17
-Instrucao Anterior: 22 rs: 5 rt: 17
-
-
-
-Instrucao Atual: 50 rs: 5 rt: 17
-Instrucao Anterior: 22 rs: 5 rt: 17
+Instrucao Atual: 22 rs: 4 rs2 0 rt: 20
+Instrucao Anterior: 22 rs: 5 rt: 21
 
 
 
-Instrucao Atual: 22 rs: 5 rt: 17
-Instrucao Anterior: 50 rs: 5 rt: 17
+Instrucao Atual: 50 rs: 4 rs2 0 rt: 20
+Instrucao Anterior: 22 rs: 4 rt: 20
+
+addu
+
+
+Instrucao Atual: 22 rs: 0 rs2 0 rt: 3
+Instrucao Anterior: 50 rs: 4 rt: 20
 
 
 
-Instrucao Atual: 4 rs: 4 rt: 3
-Instrucao Anterior: 22 rs: 5 rt: 17
-
-Hazard
+Instrucao Atual: 4 rs: 4 rs2 0 rt: 3
+Instrucao Anterior: 22 rs: 0 rt: 3
 
 
-Instrucao Atual: 31 rs: 4 rt: 3
+
+Instrucao Atual: 31 rs: 0 rs2 0 rt: 0
 Instrucao Anterior: 4 rs: 4 rt: 3
 
 
 
-Instrucao Atual: 17 rs: 3 rt: 2
-Instrucao Anterior: 31 rs: 4 rt: 3
+Instrucao Atual: 17 rs: 3 rs2 0 rt: 2
+Instrucao Anterior: 31 rs: 0 rt: 0
 
 
 
-Instrucao Atual: 50 rs: 3 rt: 2
+Instrucao Atual: 50 rs: 3 rs2 0 rt: 2
 Instrucao Anterior: 17 rs: 3 rt: 2
 
 
 
-Instrucao Atual: 31 rs: 3 rt: 2
+Instrucao Atual: 31 rs: 0 rs2 0 rt: 0
 Instrucao Anterior: 50 rs: 3 rt: 2
 
 chamou lw com 35 4 2 16
 lw com rt= 2 rs= 4 
 
 
-Instrucao Atual: 5 rs: 4 rt: 2
-Instrucao Anterior: 31 rs: 3 rt: 2
-
-Hazard
+Instrucao Atual: 5 rs: 4 rs2 0 rt: 2
+Instrucao Anterior: 31 rs: 0 rt: 0
 
 
-Instrucao Atual: 31 rs: 4 rt: 2
+
+Instrucao Atual: 31 rs: 0 rs2 0 rt: 0
 Instrucao Anterior: 5 rs: 4 rt: 2
 
 
 
-Instrucao Atual: 51 rs: 4 rt: 2
-Instrucao Anterior: 31 rs: 4 rt: 2
+Instrucao Atual: 51 rs: 0 rs2 0 rt: 0
+Instrucao Anterior: 31 rs: 0 rt: 0
 
 
 
-Instrucao Atual: 31 rs: 4 rt: 2
-Instrucao Anterior: 51 rs: 4 rt: 2
+Instrucao Atual: 31 rs: 0 rs2 0 rt: 0
+Instrucao Anterior: 51 rs: 0 rt: 0
 
 
 
-Instrucao Atual: 17 rs: 3 rt: 4
-Instrucao Anterior: 31 rs: 4 rt: 2
+Instrucao Atual: 17 rs: 3 rs2 0 rt: 4
+Instrucao Anterior: 31 rs: 0 rt: 0
 
 
 
-Instrucao Atual: 17 rs: 4 rt: 2
+Instrucao Atual: 17 rs: 4 rs2 0 rt: 2
 Instrucao Anterior: 17 rs: 3 rt: 4
 
 chamou lw com 35 21 18 0
 lw com rt= 18 rs= 21 
 
 
-Instrucao Atual: 5 rs: 21 rt: 18
+Instrucao Atual: 5 rs: 21 rs2 0 rt: 18
 Instrucao Anterior: 17 rs: 4 rt: 2
 
 Hazard
 
 
-Instrucao Atual: 50 rs: 21 rt: 18
+Instrucao Atual: 50 rs: 21 rs2 0 rt: 18
 Instrucao Anterior: 5 rs: 21 rt: 18
 
+addu
 
 
-Instrucao Atual: 22 rs: 21 rt: 18
+Instrucao Atual: 22 rs: 0 rs2 0 rt: 17
 Instrucao Anterior: 50 rs: 21 rt: 18
 
 
 
-Instrucao Atual: 17 rs: 4 rt: 2
-Instrucao Anterior: 22 rs: 21 rt: 18
+Instrucao Atual: 17 rs: 4 rs2 0 rt: 2
+Instrucao Anterior: 22 rs: 0 rt: 17
 
 
 
-Instrucao Atual: 51 rs: 4 rt: 2
+Instrucao Atual: 51 rs: 4 rs2 0 rt: 2
 Instrucao Anterior: 17 rs: 4 rt: 2
 
+addu
 
 
-Instrucao Atual: 22 rs: 4 rt: 2
+Instrucao Atual: 22 rs: 0 rs2 0 rt: 23
 Instrucao Anterior: 51 rs: 4 rt: 2
 
 
 
-Instrucao Atual: 51 rs: 4 rt: 2
-Instrucao Anterior: 22 rs: 4 rt: 2
+Instrucao Atual: 51 rs: 0 rs2 0 rt: 23
+Instrucao Anterior: 22 rs: 0 rt: 23
 
 
 
-Instrucao Atual: 31 rs: 4 rt: 2
-Instrucao Anterior: 51 rs: 4 rt: 2
+Instrucao Atual: 31 rs: 0 rs2 0 rt: 0
+Instrucao Anterior: 51 rs: 0 rt: 23
+
+addu
 
 
-
-Instrucao Atual: 22 rs: 4 rt: 2
-Instrucao Anterior: 31 rs: 4 rt: 2
+Instrucao Atual: 22 rs: 0 rs2 0 rt: 23
+Instrucao Anterior: 31 rs: 0 rt: 0
 
 chamou lw com 35 18 17 4
 lw com rt= 17 rs= 18 
 
 
-Instrucao Atual: 5 rs: 18 rt: 17
-Instrucao Anterior: 22 rs: 4 rt: 2
+Instrucao Atual: 5 rs: 18 rs2 0 rt: 17
+Instrucao Anterior: 22 rs: 0 rt: 23
 
 chamou lw com 35 18 19 0
 lw com rt= 19 rs= 18 
 
 
-Instrucao Atual: 5 rs: 18 rt: 19
+Instrucao Atual: 5 rs: 18 rs2 0 rt: 19
 Instrucao Anterior: 5 rs: 18 rt: 17
 
 Hazard
 
 
-Instrucao Atual: 50 rs: 18 rt: 19
+Instrucao Atual: 50 rs: 18 rs2 0 rt: 19
 Instrucao Anterior: 5 rs: 18 rt: 19
 
 decodificou addiu 9 18 18 8
 chamou addiu com 18 18 8
 
 
-Instrucao Atual: 14 rs: 18 rt: 18
+Instrucao Atual: 14 rs: 18 rs2 0 rt: 18
 Instrucao Anterior: 50 rs: 18 rt: 19
 
 
 
-Instrucao Atual: 50 rs: 18 rt: 18
+Instrucao Atual: 50 rs: 18 rs2 0 rt: 18
 Instrucao Anterior: 14 rs: 18 rt: 18
 
+addu
 
 
-Instrucao Atual: 22 rs: 18 rt: 18
+Instrucao Atual: 22 rs: 19 rs2 0 rt: 4
 Instrucao Anterior: 50 rs: 18 rt: 18
 
 decodificou addiu 9 0 5 10
 chamou addiu com 5 0 10
 
 
-Instrucao Atual: 14 rs: 0 rt: 5
-Instrucao Anterior: 22 rs: 18 rt: 18
+Instrucao Atual: 14 rs: 0 rs2 0 rt: 5
+Instrucao Anterior: 22 rs: 19 rt: 4
 
 
 
-Instrucao Atual: 47 rs: 0 rt: 5
+Instrucao Atual: 47 rs: 0 rs2 0 rt: 5
 Instrucao Anterior: 14 rs: 0 rt: 5
 
+addu
 
 
-Instrucao Atual: 22 rs: 0 rt: 5
+Instrucao Atual: 22 rs: 17 rs2 0 rt: 6
 Instrucao Anterior: 47 rs: 0 rt: 5
 
 
 
-Instrucao Atual: 16 rs: 6 rt: 7
-Instrucao Anterior: 22 rs: 0 rt: 5
+Instrucao Atual: 16 rs: 6 rs2 0 rt: 7
+Instrucao Anterior: 22 rs: 17 rt: 6
 
 
 
-Instrucao Atual: 51 rs: 6 rt: 7
+Instrucao Atual: 51 rs: 6 rs2 0 rt: 7
 Instrucao Anterior: 16 rs: 6 rt: 7
 
 
 
-Instrucao Atual: 17 rs: 5 rt: 5
+Instrucao Atual: 17 rs: 5 rs2 0 rt: 5
 Instrucao Anterior: 51 rs: 6 rt: 7
 
 
 
-Instrucao Atual: 17 rs: 4 rt: 2
+Instrucao Atual: 17 rs: 4 rs2 0 rt: 2
 Instrucao Anterior: 17 rs: 5 rt: 5
 
 
 
-Instrucao Atual: 51 rs: 4 rt: 2
+Instrucao Atual: 51 rs: 4 rs2 0 rt: 2
 Instrucao Anterior: 17 rs: 4 rt: 2
 
+addu
 
 
-Instrucao Atual: 22 rs: 4 rt: 2
+Instrucao Atual: 22 rs: 4 rs2 0 rt: 9
 Instrucao Anterior: 51 rs: 4 rt: 2
 
+addu
 
 
-Instrucao Atual: 22 rs: 4 rt: 2
-Instrucao Anterior: 22 rs: 4 rt: 2
+Instrucao Atual: 22 rs: 0 rs2 0 rt: 10
+Instrucao Anterior: 22 rs: 4 rt: 9
+
+addu
 
 
-
-Instrucao Atual: 22 rs: 4 rt: 2
-Instrucao Anterior: 22 rs: 4 rt: 2
-
-decodificou addiu 9 4 4 1
-chamou addiu com 4 4 1
-
-
-Instrucao Atual: 14 rs: 4 rt: 4
-Instrucao Anterior: 22 rs: 4 rt: 2
-
-
-
-Instrucao Atual: 32 rs: 4 rt: 4
-Instrucao Anterior: 14 rs: 4 rt: 4
-
-
-
-Instrucao Atual: 16 rs: 4 rt: 3
-Instrucao Anterior: 32 rs: 4 rt: 4
-
-
-
-Instrucao Atual: 51 rs: 4 rt: 3
-Instrucao Anterior: 16 rs: 4 rt: 3
-
-
-
-Instrucao Atual: 22 rs: 4 rt: 3
-Instrucao Anterior: 51 rs: 4 rt: 3
+Instrucao Atual: 22 rs: 0 rs2 0 rt: 4
+Instrucao Anterior: 22 rs: 0 rt: 10
 
 decodificou addiu 9 4 4 1
 chamou addiu com 4 4 1
 
 
-Instrucao Atual: 14 rs: 4 rt: 4
-Instrucao Anterior: 22 rs: 4 rt: 3
+Instrucao Atual: 14 rs: 4 rs2 0 rt: 4
+Instrucao Anterior: 22 rs: 0 rt: 4
 
 
 
-Instrucao Atual: 32 rs: 4 rt: 4
+Instrucao Atual: 32 rs: 0 rs2 10 rt: 2
 Instrucao Anterior: 14 rs: 4 rt: 4
 
 
 
-Instrucao Atual: 16 rs: 4 rt: 3
-Instrucao Anterior: 32 rs: 4 rt: 4
+Instrucao Atual: 16 rs: 4 rs2 10 rt: 3
+Instrucao Anterior: 32 rs: 0 rt: 2
 
 
 
-Instrucao Atual: 51 rs: 4 rt: 3
+Instrucao Atual: 51 rs: 4 rs2 10 rt: 3
 Instrucao Anterior: 16 rs: 4 rt: 3
 
+addu
 
 
-Instrucao Atual: 22 rs: 4 rt: 3
+Instrucao Atual: 22 rs: 2 rs2 5 rt: 10
 Instrucao Anterior: 51 rs: 4 rt: 3
 
 decodificou addiu 9 4 4 1
 chamou addiu com 4 4 1
 
 
-Instrucao Atual: 14 rs: 4 rt: 4
-Instrucao Anterior: 22 rs: 4 rt: 3
+Instrucao Atual: 14 rs: 4 rs2 5 rt: 4
+Instrucao Anterior: 22 rs: 2 rt: 10
 
 
 
-Instrucao Atual: 32 rs: 4 rt: 4
-Instrucao Anterior: 14 rs: 4 rt: 4
+Instrucao Atual: 32 rs: 0 rs2 10 rt: 2
+InstrHello World
+ucao Anterior: 14 rs: 4 rt: 4
 
 
 
-Instrucao Atual: 16 rs: 4 rt: 3
-Instrucao Anterior: 32 rs: 4 rt: 4
+Instrucao Atual: 16 rs: 4 rs2 10 rt: 3
+Instrucao Anterior: 32 rs: 0 rt: 2
 
 
 
-Instrucao Atual: 51 rs: 4 rt: 3
+Instrucao Atual: 51 rs: 4 rs2 10 rt: 3
 Instrucao Anterior: 16 rs: 4 rt: 3
 
+addu
 
 
-Instrucao Atual: 22 rs: 4 rt: 3
+Instrucao Atual: 22 rs: 2 rs2 5 rt: 10
 Instrucao Anterior: 51 rs: 4 rt: 3
 
 decodificou addiu 9 4 4 1
 chamou addiu com 4 4 1
 
 
-Instrucao Atual: 14 rs: 4 rt: 4
-Instrucao Anterior: 22 rs: 4 rt: 3
+Instrucao Atual: 14 rs: 4 rs2 5 rt: 4
+Instrucao Anterior: 22 rs: 2 rt: 10
 
 
 
-Instrucao Atual: 32 rs: 4 rt: 4
+Instrucao Atual: 32 rs: 0 rs2 10 rt: 2
 Instrucao Anterior: 14 rs: 4 rt: 4
 
 
 
-Instrucao Atual: 16 rs: 4 rt: 3
-Instrucao Anterior: 32 rs: 4 rt: 4
+Instrucao Atual: 16 rs: 4 rs2 10 rt: 3
+Instrucao Anterior: 32 rs: 0 rt: 2
 
 
 
-Instrucao Atual: 51 rs: 4 rt: 3
+Instrucao Atual: 51 rs: 4 rs2 10 rt: 3
 Instrucao Anterior: 16 rs: 4 rt: 3
 
+addu
 
 
-Instrucao Atual: 22 rs: 4 rt: 3
+Instrucao Atual: 22 rs: 2 rs2 5 rt: 10
+Instrucao Anterior: 51 rs: 4 rt: 3
+
+decodificou addiu 9 4 4 1
+chamou addiu com 4 4 1
+
+
+Instrucao Atual: 14 rs: 4 rs2 5 rt: 4
+Instrucao Anterior: 22 rs: 2 rt: 10
+
+
+
+Instrucao Atual: 32 rs: 0 rs2 10 rt: 2
+Instrucao Anterior: 14 rs: 4 rt: 4
+
+
+
+Instrucao Atual: 16 rs: 4 rs2 10 rt: 3
+Instrucao Anterior: 32 rs: 0 rt: 2
+
+
+
+Instrucao Atual: 51 rs: 4 rs2 10 rt: 3
+Instrucao Anterior: 16 rs: 4 rt: 3
+
+addu
+
+
+Instrucao Atual: 22 rs: 2 rs2 5 rt: 10
 Instrucao Anterior: 51 rs: 4 rt: 3
 
 
 
-Instrucao Atual: 51 rs: 4 rt: 3
-Instrucao Anterior: 22 rs: 4 rt: 3
+Instrucao Atual: 51 rs: 2 rs2 5 rt: 10
+Instrucao Anterior: 22 rs: 2 rt: 10
 
 
 
-Instrucao Atual: 31 rs: 4 rt: 3
-Instrucao Anterior: 51 rs: 4 rt: 3
+Instrucao Atual: 31 rs: 0 rs2 0 rt: 0
+Instrucao Anterior: 51 rs: 2 rt: 10
 
 
 
-Instrucao Atual: 20 rs: 0 rt: 12
-Instrucao Anterior: 31 rs: 4 rt: 3
+Instrucao Atual: 20 rs: 0 rs2 0 rt: 12
+Instrucao Anterior: 31 rs: 0 rt: 0
 
 
 
-Instrucao Atual: 20 rs: 0 rt: 11
+Instrucao Atual: 20 rs: 0 rs2 0 rt: 11
 Instrucao Anterior: 20 rs: 0 rt: 12
 
 
 
-Instrucao Atual: 18 rs: 12 rt: 12
+Instrucao Atual: 18 rs: 12 rs2 0 rt: 12
 Instrucao Anterior: 20 rs: 0 rt: 11
 
 
 
-Instrucao Atual: 18 rs: 11 rt: 11
+Instrucao Atual: 18 rs: 11 rs2 0 rt: 11
 Instrucao Anterior: 18 rs: 12 rt: 12
 
 chamou lw com 35 9 2 0
 lw com rt= 2 rs= 9 
 
 
-Instrucao Atual: 5 rs: 9 rt: 2
+Instrucao Atual: 5 rs: 9 rs2 0 rt: 2
 Instrucao Anterior: 18 rs: 11 rt: 11
 
-Hazard
 
 
-Instrucao Atual: 31 rs: 9 rt: 2
+Instrucao Atual: 31 rs: 0 rs2 0 rt: 0
 Instrucao Anterior: 5 rs: 9 rt: 2
 
 
 
-Instrucao Atual: 29 rs: 9 rt: 2
-Instrucao Anterior: 31 rs: 9 rt: 2
+Instrucao Atual: 29 rs: 2 rs2 10 rt: 2
+Instrucao Anterior: 31 rs: 0 rt: 0
 
 
 
-Instrucao Atual: 30 rs: 9 rt: 2
-Instrucao Anterior: 29 rs: 9 rt: 2
+Instrucao Atual: 30 rs: 0 rs2 2 rt: 3
+Instrucao Anterior: 29 rs: 2 rt: 2
+
+addu
+
+
+Instrucao Atual: 22 rs: 2 rs2 12 rt: 2
+Instrucao Anterior: 30 rs: 0 rt: 3
 
 
 
-Instrucao Atual: 22 rs: 9 rt: 2
-Instrucao Anterior: 30 rs: 9 rt: 2
+Instrucao Atual: 27 rs: 2 rs2 3 rt: 2
+Instrucao Anterior: 22 rs: 2 rt: 2
 
 
 
-Instrucao Atual: 27 rs: 9 rt: 2
-Instrucao Anterior: 22 rs: 9 rt: 2
+Instrucao Atual: 27 rs: 2 rs2 11 rt: 2
+Instrucao Anterior: 27 rs: 2 rt: 2
 
 
 
-Instrucao Atual: 27 rs: 9 rt: 2
-Instrucao Anterior: 27 rs: 9 rt: 2
+Instrucao Atual: 50 rs: 2 rs2 11 rt: 2
+Instrucao Anterior: 27 rs: 2 rt: 2
 
 
 
-Instrucao Atual: 50 rs: 9 rt: 2
-Instrucao Anterior: 27 rs: 9 rt: 2
-
-
-
-Instrucao Atual: 31 rs: 9 rt: 2
-Instrucao Anterior: 50 rs: 9 rt: 2
+Instrucao Atual: 31 rs: 0 rs2 0 rt: 0
+Instrucao Anterior: 50 rs: 2 rt: 2
 
 decodificou addiu 9 6 6 4294967292
 chamou addiu com 6 6 -4
 
 
-Instrucao Atual: 14 rs: 6 rt: 6
-Instrucao Anterior: 31 rs: 9 rt: 2
+Instrucao Atual: 14 rs: 6 rs2 0 rt: 6
+Instrucao Anterior: 31 rs: 0 rt: 0
 
 
 
-Instrucao Atual: 16 rs: 6 rt: 2
+Instrucao Atual: 16 rs: 6 rs2 0 rt: 2
 Instrucao Anterior: 14 rs: 6 rt: 6
 
 
 
-Instrucao Atual: 50 rs: 6 rt: 2
+Instrucao Atual: 50 rs: 6 rs2 0 rt: 2
 Instrucao Anterior: 16 rs: 6 rt: 2
 
 decodificou addiu 9 9 9 4
 chamou addiu com 9 9 4
 
 
-Instrucao Atual: 14 rs: 9 rt: 9
+Instrucao Atual: 14 rs: 9 rs2 0 rt: 9
 Instrucao Anterior: 50 rs: 6 rt: 2
 
 chamou lw com 35 9 2 0
 lw com rt= 2 rs= 9 
 
 
-Instrucao Atual: 5 rs: 9 rt: 2
+Instrucao Atual: 5 rs: 9 rs2 0 rt: 2
 Instrucao Anterior: 14 rs: 9 rt: 9
 
-Hazard
 
 
-Instrucao Atual: 31 rs: 9 rt: 2
+Instrucao Atual: 31 rs: 0 rs2 0 rt: 0
 Instrucao Anterior: 5 rs: 9 rt: 2
 
 
 
-Instrucao Atual: 29 rs: 9 rt: 2
-Instrucao Anterior: 31 rs: 9 rt: 2
+Instrucao Atual: 29 rs: 2 rs2 10 rt: 2
+Instrucao Anterior: 31 rs: 0 rt: 0
 
 
 
-Instrucao Atual: 30 rs: 9 rt: 2
-Instrucao Anterior: 29 rs: 9 rt: 2
+Instrucao Atual: 30 rs: 0 rs2 2 rt: 3
+Instrucao Anterior: 29 rs: 2 rt: 2
+
+addu
+
+
+Instrucao Atual: 22 rs: 2 rs2 12 rt: 2
+Instrucao Anterior: 30 rs: 0 rt: 3
 
 
 
-Instrucao Atual: 22 rs: 9 rt: 2
-Instrucao Anterior: 30 rs: 9 rt: 2
+Instrucao Atual: 27 rs: 2 rs2 3 rt: 2
+Instrucao Anterior: 22 rs: 2 rt: 2
 
 
 
-Instrucao Atual: 27 rs: 9 rt: 2
-Instrucao Anterior: 22 rs: 9 rt: 2
+Instrucao Atual: 27 rs: 2 rs2 11 rt: 2
+Instrucao Anterior: 27 rs: 2 rt: 2
 
 
 
-Instrucao Atual: 27 rs: 9 rt: 2
-Instrucao Anterior: 27 rs: 9 rt: 2
+Instrucao Atual: 50 rs: 2 rs2 11 rt: 2
+Instrucao Anterior: 27 rs: 2 rt: 2
 
 
 
-Instrucao Atual: 50 rs: 9 rt: 2
-Instrucao Anterior: 27 rs: 9 rt: 2
-
-
-
-Instrucao Atual: 31 rs: 9 rt: 2
-Instrucao Anterior: 50 rs: 9 rt: 2
+Instrucao Atual: 31 rs: 0 rs2 0 rt: 0
+Instrucao Anterior: 50 rs: 2 rt: 2
 
 decodificou addiu 9 6 6 4294967292
 chamou addiu com 6 6 -4
 
 
-Instrucao Atual: 14 rs: 6 rt: 6
-Instrucao Anterior: 31 rs: 9 rt: 2
+Instrucao Atual: 14 rs: 6 rs2 0 rt: 6
+Instrucao Anterior: 31 rs: 0 rt: 0
 
 
 
-Instrucao Atual: 16 rs: 6 rt: 2
+Instrucao Atual: 16 rs: 6 rs2 0 rt: 2
 Instrucao Anterior: 14 rs: 6 rt: 6
 
 
 
-Instrucao Atual: 50 rs: 6 rt: 2
+Instrucao Atual: 50 rs: 6 rs2 0 rt: 2
 Instrucao Anterior: 16 rs: 6 rt: 2
 
 decodificou addiu 9 9 9 4
 chamou addiu com 9 9 4
 
 
-Instrucao Atual: 14 rs: 9 rt: 9
+Instrucao Atual: 14 rs: 9 rs2 0 rt: 9
 Instrucao Anterior: 50 rs: 6 rt: 2
 
 chamou lw com 35 9 2 0
 lw com rt= 2 rs= 9 
 
 
-Instrucao Atual: 5 rs: 9 rt: 2
+Instrucao Atual: 5 rs: 9 rs2 0 rt: 2
 Instrucao Anterior: 14 rs: 9 rt: 9
 
-Hazard
 
 
-Instrucao Atual: 31 rs: 9 rt: 2
+Instrucao Atual: 31 rs: 0 rs2 0 rt: 0
 Instrucao Anterior: 5 rs: 9 rt: 2
 
 
 
-Instrucao Atual: 29 rs: 9 rt: 2
-Instrucao Anterior: 31 rs: 9 rt: 2
+Instrucao Atual: 29 rs: 2 rs2 10 rt: 2
+Instrucao Anterior: 31 rs: 0 rt: 0
 
 
 
-Instrucao Atual: 30 rs: 9 rt: 2
-Instrucao Anterior: 29 rs: 9 rt: 2
+Instrucao Atual: 30 rs: 0 rs2 2 rt: 3
+Instrucao Anterior: 29 rs: 2 rt: 2
+
+addu
+
+
+Instrucao Atual: 22 rs: 2 rs2 12 rt: 2
+Instrucao Anterior: 30 rs: 0 rt: 3
 
 
 
-Instrucao Atual: 22 rs: 9 rt: 2
-Instrucao Anterior: 30 rs: 9 rt: 2
+Instrucao Atual: 27 rs: 2 rs2 3 rt: 2
+Instrucao Anterior: 22 rs: 2 rt: 2
 
 
 
-Instrucao Atual: 27 rs: 9 rt: 2
-Instrucao Anterior: 22 rs: 9 rt: 2
+Instrucao Atual: 27 rs: 2 rs2 11 rt: 2
+Instrucao Anterior: 27 rs: 2 rt: 2
 
 
 
-Instrucao Atual: 27 rs: 9 rt: 2
-Instrucao Anterior: 27 rs: 9 rt: 2
+Instrucao Atual: 50 rs: 2 rs2 11 rt: 2
+Instrucao Anterior: 27 rs: 2 rt: 2
 
 
 
-Instrucao Atual: 50 rs: 9 rt: 2
-Instrucao Anterior: 27 rs: 9 rt: 2
+Instrucao Atual: 31 rs: 0 rs2 0 rt: 0
+Instrucao Anterior: 50 rs: 2 rt: 2
+
+addu
+
+
+Instrucao Atual: 22 rs: 9 rs2 0 rt: 4
+Instrucao Anterior: 31 rs: 0 rt: 0
+
+addu
+
+
+Instrucao Atual: 22 rs: 0 rs2 0 rt: 8
+Instrucao Anterior: 22 rs: 9 rt: 4
 
 
 
-Instrucao Atual: 31 rs: 9 rt: 2
-Instrucao Anterior: 50 rs: 9 rt: 2
-
-
-
-Instrucao Atual: 22 rs: 9 rt: 2
-Instrucao Anterior: 31 rs: 9 rt: 2
-
-
-
-Instrucao Atual: 22 rs: 9 rt: 2
-Instrucao Anterior: 22 rs: 9 rt: 2
-
-
-
-Instrucao Atual: 2 rs: 4 rt: 2
-Instrucao Anterior: 22 rs: 9 rt: 2
+Instrucao Atual: 2 rs: 4 rs2 0 rt: 2
+Instrucao Anterior: 22 rs: 0 rt: 8
 
 decodificou addiu 9 8 8 1
 chamou addiu com 8 8 1
 
 
-Instrucao Atual: 14 rs: 8 rt: 8
+Instrucao Atual: 14 rs: 8 rs2 0 rt: 8
 Instrucao Anterior: 2 rs: 4 rt: 2
 
+addu
 
 
-Instrucao Atual: 22 rs: 8 rt: 8
+Instrucao Atual: 22 rs: 4 rs2 0 rt: 3
 Instrucao Anterior: 14 rs: 8 rt: 8
 
 
 
-Instrucao Atual: 16 rs: 8 rt: 7
-Instrucao Anterior: 22 rs: 8 rt: 8
+Instrucao Atual: 16 rs: 8 rs2 0 rt: 7
+Instrucao Anterior: 22 rs: 4 rt: 3
 
 
 
-Instrucao Atual: 50 rs: 8 rt: 7
+Instrucao Atual: 50 rs: 8 rs2 0 rt: 7
 Instrucao Anterior: 16 rs: 8 rt: 7
 
 decodificou addiu 9 4 4 1
 chamou addiu com 4 4 1
 
 
-Instrucao Atual: 14 rs: 4 rt: 4
+Instrucao Atual: 14 rs: 4 rs2 0 rt: 4
 Instrucao Anterior: 50 rs: 8 rt: 7
 
 
 
-Instrucao Atual: 51 rs: 4 rt: 4
+Instrucao Atual: 51 rs: 4 rs2 0 rt: 4
 Instrucao Anterior: 14 rs: 4 rt: 4
 
 
 
-Instrucao Atual: 31 rs: 4 rt: 4
+Instrucao Atual: 31 rs: 0 rs2 0 rt: 0
 Instrucao Anterior: 51 rs: 4 rt: 4
 
 
 
-Instrucao Atual: 2 rs: 4 rt: 2
-Instrucao Anterior: 31 rs: 4 rt: 4
+Instrucao Atual: 2 rs: 4 rs2 0 rt: 2
+Instrucao Anterior: 31 rs: 0 rt: 0
 
 decodificou addiu 9 8 8 1
 chamou addiu com 8 8 1
 
 
-Instrucao Atual: 14 rs: 8 rt: 8
+Instrucao Atual: 14 rs: 8 rs2 0 rt: 8
 Instrucao Anterior: 2 rs: 4 rt: 2
 
+addu
 
 
-Instrucao Atual: 22 rs: 8 rt: 8
+Instrucao Atual: 22 rs: 4 rs2 0 rt: 3
 Instrucao Anterior: 14 rs: 8 rt: 8
 
 
 
-Instrucao Atual: 16 rs: 8 rt: 7
-Instrucao Anterior: 22 rs: 8 rt: 8
+Instrucao Atual: 16 rs: 8 rs2 0 rt: 7
+Instrucao Anterior: 22 rs: 4 rt: 3
 
 
 
-Instrucao Atual: 50 rs: 8 rt: 7
+Instrucao Atual: 50 rs: 8 rs2 0 rt: 7
 Instrucao Anterior: 16 rs: 8 rt: 7
 
 decodificou addiu 9 4 4 1
 chamou addiu com 4 4 1
 
 
-Instrucao Atual: 14 rs: 4 rt: 4
+Instrucao Atual: 14 rs: 4 rs2 0 rt: 4
 Instrucao Anterior: 50 rs: 8 rt: 7
 
 
 
-Instrucao Atual: 51 rs: 4 rt: 4
+Instrucao Atual: 51 rs: 4 rs2 0 rt: 4
 Instrucao Anterior: 14 rs: 4 rt: 4
 
 
 
-Instrucao Atual: 31 rs: 4 rt: 4
+Instrucao Atual: 31 rs: 0 rs2 0 rt: 0
 Instrucao Anterior: 51 rs: 4 rt: 4
 
 
 
-Instrucao Atual: 2 rs: 4 rt: 2
-Instrucao Anterior: 31 rs: 4 rt: 4
+Instrucao Atual: 2 rs: 4 rs2 0 rt: 2
+Instrucao Anterior: 31 rs: 0 rt: 0
 
 decodificou addiu 9 8 8 1
 chamou addiu com 8 8 1
 
 
-Instrucao Atual: 14 rs: 8 rt: 8
+Instrucao Atual: 14 rs: 8 rs2 0 rt: 8
 Instrucao Anterior: 2 rs: 4 rt: 2
 
+addu
 
 
-Instrucao Atual: 22 rs: 8 rt: 8
+Instrucao Atual: 22 rs: 4 rs2 0 rt: 3
 Instrucao Anterior: 14 rs: 8 rt: 8
 
 
 
-Instrucao Atual: 16 rs: 8 rt: 7
-Instrucao Anterior: 22 rs: 8 rt: 8
+Instrucao Atual: 16 rs: 8 rs2 0 rt: 7
+Instrucao Anterior: 22 rs: 4 rt: 3
 
 
 
-Instrucao Atual: 50 rs: 8 rt: 7
+Instrucao Atual: 50 rs: 8 rs2 0 rt: 7
 Instrucao Anterior: 16 rs: 8 rt: 7
 
 decodificou addiu 9 4 4 1
 chamou addiu com 4 4 1
 
 
-Instrucao Atual: 14 rs: 4 rt: 4
+Instrucao Atual: 14 rs: 4 rs2 0 rt: 4
 Instrucao Anterior: 50 rs: 8 rt: 7
 
 
 
-Instrucao Atual: 51 rs: 4 rt: 4
+Instrucao Atual: 51 rs: 4 rs2 0 rt: 4
 Instrucao Anterior: 14 rs: 4 rt: 4
 
 
 
-Instrucao Atual: 31 rs: 4 rt: 4
+Instrucao Atual: 31 rs: 0 rs2 0 rt: 0
 Instrucao Anterior: 51 rs: 4 rt: 4
 
 
 
-Instrucao Atual: 2 rs: 4 rt: 2
-Instrucao Anterior: 31 rs: 4 rt: 4
+Instrucao Atual: 2 rs: 4 rs2 0 rt: 2
+Instrucao Anterior: 31 rs: 0 rt: 0
 
 decodificou addiu 9 8 8 1
 chamou addiu com 8 8 1
 
 
-Instrucao Atual: 14 rs: 8 rt: 8
+Instrucao Atual: 14 rs: 8 rs2 0 rt: 8
 Instrucao Anterior: 2 rs: 4 rt: 2
 
+addu
 
 
-Instrucao Atual: 22 rs: 8 rt: 8
-InstrucHello World
+Instrucao Atual: 22 rs: 4 rs2 0 rt: 3
+Instrucao Anterior: 14 rs: 8 rt: 8
+
+
+
+Instrucao Atual: 16 rs: 8 rs2 0 rt: 7
+Instrucao Anterior: 22 rs: 4 rt: 3
+
+
+
+Instrucao Atual: 50 rs: 8 rs2 0 rt: 7
+Instrucao Anterior: 16 rs: 8 rt: 7
+
+decodificou addiu 9 4 4 1
+chamou addiu com 4 4 1
+
+
+Instrucao Atual: 14 rs: 4 rs2 0 rt: 4
+Instrucao Anterior: 50 rs: 8 rt: 7
+
+
+
+Instrucao Atual: 48 rs: 4 rs2 0 rt: 4
+Instrucao Anterior: 14 rs: 4 rt: 4
+
+addu
+
+
+Instrucao Atual: 22 rs: 3 rs2 0 rt: 2
+Instrucao Anterior: 48 rs: 4 rt: 4
+
+
+
+Instrucao Atual: 50 rs: 3 rs2 0 rt: 2
+Instrucao Anterior: 22 rs: 3 rt: 2
+
+decodificou addiu 9 17 22 1
+chamou addiu com 22 17 1
+
+
+Instrucao Atual: 14 rs: 17 rs2 0 rt: 22
+Instrucao Anterior: 50 rs: 3 rt: 2
+
+subu com 0 2 19 2 0 35
+subu com rd 2 rs 2 rt 19 
+
+
+Instrucao Atual: 24 rs: 2 rs2 19 rt: 2
+Instrucao Anterior: 14 rs: 17 rt: 22
+
+decodificou addiu 9 2 22 1
+chamou addiu com 22 2 1
+
+
+Instrucao Atual: 14 rs: 2 rs2 19 rt: 22
+Instrucao Anterior: 24 rs: 2 rt: 2
+
+
+
+Instrucao Atual: 46 rs: 2 rs2 19 rt: 22
+Instrucao Anterior: 14 rs: 2 rt: 22
+
+decodificou addiu 9 0 23 1
+chamou addiu com 23 0 1
+
+
+Instrucao Atual: 14 rs: 0 rs2 19 rt: 23
+Instrucao Anterior: 46 rs: 2 rt: 22
+
+
+
+Instrucao Atual: 26 rs: 17 rs2 22 rt: 2
+Instrucao Anterior: 14 rs: 0 rt: 23
+
+
+
+Instrucao Atual: 50 rs: 17 rs2 22 rt: 2
+Instrucao Anterior: 26 rs: 17 rt: 2
+
+addu
+
+
+Instrucao Atual: 22 rs: 22 rs2 0 rt: 5
+Instrucao Anterior: 50 rs: 17 rt: 2
+
+chamou lw com 35 20 4 0
+lw com rt= 4 rs= 20 
+
+
+Instrucao Atual: 5 rs: 20 rs2 0 rt: 4
+Instrucao Anterior: 22 rs: 22 rt: 5
+
+chamou lw com 35 20 2 16
+lw com rt= 2 rs= 20 
+
+
+Instrucao Atual: 5 rs: 20 rs2 0 rt: 2
+Instrucao Anterior: 5 rs: 20 rt: 4
+
+chamou lw com 35 20 3 8
+lw com rt= 3 rs= 20 
+
+
+Instrucao Atual: 5 rs: 20 rs2 0 rt: 3
+Instrucao Anterior: 5 rs: 20 rt: 2
+
+chamou lw com 35 20 7 20
+lw com rt= 7 rs= 20 
+
+
+Instrucao Atual: 5 rs: 20 rs2 0 rt: 7
+Instrucao Anterior: 5 rs: 20 rt: 3
+
+
+
+Instrucao Atual: 26 rs: 2 rs2 4 rt: 2
+Instrucao Anterior: 5 rs: 20 rt: 7
+
+
+
+Instrucao Atual: 50 rs: 2 rs2 4 rt: 2
+Instrucao Anterior: 26 rs: 2 rt: 2
+
+addu
+
+
+Instrucao Atual: 22 rs: 3 rs2 7 rt: 16
+Instrucao Anterior: 50 rs: 2 rt: 2
+
+
+
+Instrucao Atual: 25 rs: 5 rs2 7 rt: 2
+Instrucao Anterior: 22 rs: 3 rt: 16
+
+
+
+Instrucao Atual: 51 rs: 5 rs2 7 rt: 2
+Instrucao Anterior: 25 rs: 5 rt: 2
+
+addu
+
+
+Instrucao Atual: 22 rs: 5 rs2 0 rt: 16
+Instrucao Anterior: 51 rs: 5 rt: 2
+
+chamou lw com 35 20 4 0
+lw com rt= 4 rs= 20 
+
+
+Instrucao Atual: 5 rs: 20 rs2 0 rt: 4
+Instrucao Anterior: 22 rs: 5 rt: 16
+
+addu
+
+
+Instrucao Atual: 22 rs: 19 rs2 0 rt: 5
+Instrucao Anterior: 5 rs: 20 rt: 4
+
+
+
+Instrucao Atual: 47 rs: 19 rs2 0 rt: 5
+Instrucao Anterior: 22 rs: 19 rt: 5
+
+addu
+
+
+Instrucao Atual: 22 rs: 16 rs2 0 rt: 6
+Instrucao Anterior: 47 rs: 19 rt: 5
+
+
+
+Instrucao Atual: 26 rs: 5 rs2 4 rt: 2
+Instrucao Anterior: 22 rs: 16 rt: 6
+
+addu
+
+
+Instrucao Atual: 22 rs: 5 rs2 0 rt: 3
+Instrucao Anterior: 26 rs: 5 rt: 2
+
+addu
+
+
+Instrucao Atual: 22 rs: 4 rs2 0 rt: 8
+Instrucao Anterior: 22 rs: 5 rt: 3
+
+
+
+Instrucao Atual: 50 rs: 4 rs2 0 rt: 8
+Instrucao Anterior: 22 rs: 4 rt: 8
+
+addu
+
+
+Instrucao Atual: 22 rs: 6 rs2 0 rt: 7
+Instrucao Anterior: 50 rs: 4 rt: 8
+
+addu
+
+
+Instrucao Atual: 22 rs: 5 rs2 6 rt: 9
+Instrucao Anterior: 22 rs: 6 rt: 7
+
+
+
+Instrucao Atual: 26 rs: 4 rs2 9 rt: 2
+Instrucao Anterior: 22 rs: 5 rt: 9
+
+
+
+Instrucao Atual: 50 rs: 4 rs2 9 rt: 2
+Instrucao Anterior: 26 rs: 4 rt: 2
+
+
+
+Instrucao Atual: 16 rs: 6 rs2 9 rt: 2
+Instrucao Anterior: 50 rs: 4 rt: 2
+
+
+
+Instrucao Atual: 51 rs: 6 rs2 9 rt: 2
+Instrucao Anterior: 16 rs: 6 rt: 2
+
+
+
+Instrucao Atual: 28 rs: 3 rs2 4 rt: 2
+Instrucao Anterior: 51 rs: 6 rt: 2
+
+decodificou addiu 9 7 7 4294967295
+chamou addiu com 7 7 -1
+
+
+Instrucao Atual: 14 rs: 7 rs2 4 rt: 7
+Instrucao Anterior: 28 rs: 3 rt: 2
+
+decodificou addiu 9 0 2 4294967295
+chamou addiu com 2 0 -1
+
+
+Instrucao Atual: 14 rs: 0 rs2 4 rt: 2
+Instrucao Anterior: 14 rs: 7 rt: 7
+
+
+
+Instrucao Atual: 50 rs: 0 rs2 4 rt: 2
+Instrucao Anterior: 14 rs: 0 rt: 2
+
+
+
+Instrucao Atual: 31 rs: 0 rs2 0 rt: 0
+Instrucao Anterior: 50 rs: 0 rt: 2
+
+decodificou addiu 9 0 3 4294967295
+chamou addiu com 3 0 -1
+
+
+Instrucao Atual: 14 rs: 0 rs2 0 rt: 3
+Instrucao Anterior: 31 rs: 0 rt: 0
+
+
+
+Instrucao Atual: 2 rs: 5 rs2 0 rt: 2
+Instrucao Anterior: 14 rs: 0 rt: 3
+
+decodificou addiu 9 7 7 4294967295
+chamou addiu com 7 7 -1
+
+
+Instrucao Atual: 14 rs: 7 rs2 0 rt: 7
+Instrucao Anterior: 2 rs: 5 rt: 2
+
+
+
+Instrucao Atual: 8 rs: 8 rs2 0 rt: 2
+Instrucao Anterior: 14 rs: 7 rt: 7
+
+decodificou addiu 9 5 5 1
+chamou addiu com 5 5 1
+
+
+Instrucao Atual: 14 rs: 5 rs2 0 rt: 5
+Instrucao Anterior: 8 rs: 8 rt: 2
+
+
+
+Instrucao Atual: 51 rs: 5 rs2 0 rt: 5
+Instrucao Anterior: 14 rs: 5 rt: 5
+
+decodificou addiu 9 8 8 1
+chamou addiu com 8 8 1
+
+
+Instrucao Atual: 14 rs: 8 rs2 0 rt: 8
+Instrucao Anterior: 51 rs: 5 rt: 5
+
+
+
+Instrucao Atual: 2 rs: 5 rs2 0 rt: 2
+Instrucao Anterior: 14 rs: 8 rt: 8
+
+decodificou addiu 9 7 7 4294967295
+chamou addiu com 7 7 -1
+
+
+Instrucao Atual: 14 rs: 7 rs2 0 rt: 7
+Instrucao Anterior: 2 rs: 5 rt: 2
+
+
+
+Instrucao Atual: 8 rs: 8 rs2 0 rt: 2
+Instrucao Anterior: 14 rs: 7 rt: 7
+
+decodificou addiu 9 5 5 1
+chamou addiu com 5 5 1
+
+
+Instrucao Atual: 14 rs: 5 rs2 0 rt: 5
+Instrucao Anterior: 8 rs: 8 rt: 2
+
+
+
+Instrucao Atual: 51 rs: 5 rs2 0 rt: 5
+Instrucao Anterior: 14 rs: 5 rt: 5
+
+decodificou addiu 9 8 8 1
+chamou addiu com 8 8 1
+
+
+Instrucao Atual: 14 rs: 8 rs2 0 rt: 8
+Instrucao Anterior: 51 rs: 5 rt: 5
+
+
+
+Instrucao Atual: 2 rs: 5 rs2 0 rt: 2
+Instrucao Anterior: 14 rs: 8 rt: 8
+
+decodificou addiu 9 7 7 4294967295
+chamou addiu com 7 7 -1
+
+
+Instrucao Atual: 14 rs: 7 rs2 0 rt: 7
+Instrucao Anterior: 2 rs: 5 rt: 2
+
+
+
+Instrucao Atual: 8 rs: 8 rs2 0 rt: 2
+Instrucao Anterior: 14 rs: 7 rt: 7
+
+decodificou addiu 9 5 5 1
+chamou addiu com 5 5 1
+
+
+Instrucao Atual: 14 rs: 5 rs2 0 rt: 5
+Instrucao Anterior: 8 rs: 8 rt: 2
+
+
+
+Instrucao Atual: 51 rs: 5 rs2 0 rt: 5
+Instrucao Anterior: 14 rs: 5 rt: 5
+
+decodificou addiu 9 8 8 1
+chamou addiu com 8 8 1
+
+
+Instrucao Atual: 14 rs: 8 rs2 0 rt: 8
+Instrucao Anterior: 51 rs: 5 rt: 5
+
+
+
+Instrucao Atual: 2 rs: 5 rs2 0 rt: 2
+Instrucao Anterior: 14 rs: 8 rt: 8
+
+decodificou addiu 9 7 7 4294967295
+chamou addiu com 7 7 -1
+
+
+Instrucao Atual: 14 rs: 7 rs2 0 rt: 7
+Instrucao Anterior: 2 rs: 5 rt: 2
+
+
+
+Instrucao Atual: 8 rs: 8 rs2 0 rt: 2
+Instrucao Anterior: 14 rs: 7 rt: 7
+
+decodificou addiu 9 5 5 1
+chamou addiu com 5 5 1
+
+
+Instrucao Atual: 14 rs: 5 rs2 0 rt: 5
+Instrucao Anterior: 8 rs: 8 rt: 2
+
+
+
+Instrucao Atual: 51 rs: 5 rs2 0 rt: 5
+Instrucao Anterior: 14 rs: 5 rt: 5
+
+decodificou addiu 9 8 8 1
+chamou addiu com 8 8 1
+
+
+Instrucao Atual: 14 rs: 8 rs2 0 rt: 8
+Instrucao Anterior: 51 rs: 5 rt: 5
+
+
+
+Instrucao Atual: 2 rs: 5 rs2 0 rt: 2
+Instrucao Anterior: 14 rs: 8 rt: 8
+
+decodificou addiu 9 7 7 4294967295
+chamou addiu com 7 7 -1
+
+
+Instrucao Atual: 14 rs: 7 rs2 0 rt: 7
+Instrucao Anterior: 2 rs: 5 rt: 2
+
+
+
+Instrucao Atual: 8 rs: 8 rs2 0 rt: 2
+Instrucao Anterior: 14 rs: 7 rt: 7
+
+decodificou addiu 9 5 5 1
+chamou addiu com 5 5 1
+
+
+Instrucao Atual: 14 rs: 5 rs2 0 rt: 5
+Instrucao Anterior: 8 rs: 8 rt: 2
+
+
+
+Instrucao Atual: 51 rs: 5 rs2 0 rt: 5
+Instrucao Anterior: 14 rs: 5 rt: 5
+
+decodificou addiu 9 8 8 1
+chamou addiu com 8 8 1
+
+
+Instrucao Atual: 14 rs: 8 rs2 0 rt: 8
+Instrucao Anterior: 51 rs: 5 rt: 5
+
+
+
+Instrucao Atual: 2 rs: 5 rs2 0 rt: 2
+Instrucao Anterior: 14 rs: 8 rt: 8
+
+decodificou addiu 9 7 7 4294967295
+chamou addiu com 7 7 -1
+
+
+Instrucao Atual: 14 rs: 7 rs2 0 rt: 7
+Instrucao Anterior: 2 rs: 5 rt: 2
+
+
+
+Instrucao Atual: 8 rs: 8 rs2 0 rt: 2
+Instrucao Anterior: 14 rs: 7 rt: 7
+
+decodificou addiu 9 5 5 1
+chamou addiu com 5 5 1
+
+
+Instrucao Atual: 14 rs: 5 rs2 0 rt: 5
+Instrucao Anterior: 8 rs: 8 rt: 2
+
+
+
+Instrucao Atual: 51 rs: 5 rs2 0 rt: 5
+Instrucao Anterior: 14 rs: 5 rt: 5
+
+decodificou addiu 9 8 8 1
+chamou addiu com 8 8 1
+
+
+Instrucao Atual: 14 rs: 8 rs2 0 rt: 8
+Instrucao Anterior: 51 rs: 5 rt: 5
+
+
+
+Instrucao Atual: 2 rs: 5 rs2 0 rt: 2
+Instrucao Anterior: 14 rs: 8 rt: 8
+
+decodificou addiu 9 7 7 4294967295
+chamou addiu com 7 7 -1
+
+
+Instrucao Atual: 14 rs: 7 rs2 0 rt: 7
+Instrucao Anterior: 2 rs: 5 rt: 2
+
+
+
+Instrucao Atual: 8 rs: 8 rs2 0 rt: 2
+Instrucao Anterior: 14 rs: 7 rt: 7
+
+decodificou addiu 9 5 5 1
+chamou addiu com 5 5 1
+
+
+Instrucao Atual: 14 rs: 5 rs2 0 rt: 5
+Instrucao Anterior: 8 rs: 8 rt: 2
+
+
+
+Instrucao Atual: 51 rs: 5 rs2 0 rt: 5
+Instrucao Anterior: 14 rs: 5 rt: 5
+
+decodificou addiu 9 8 8 1
+chamou addiu com 8 8 1
+
+
+Instrucao Atual: 14 rs: 8 rs2 0 rt: 8
+Instrucao Anterior: 51 rs: 5 rt: 5
+
+
+
+Instrucao Atual: 2 rs: 5 rs2 0 rt: 2
+Instrucao Anterior: 14 rs: 8 rt: 8
+
+decodificou addiu 9 7 7 4294967295
+chamou addiu com 7 7 -1
+
+
+Instrucao Atual: 14 rs: 7 rs2 0 rt: 7
+Instrucao Anterior: 2 rs: 5 rt: 2
+
+
+
+Instrucao Atual: 8 rs: 8 rs2 0 rt: 2
+Instrucao Anterior: 14 rs: 7 rt: 7
+
+decodificou addiu 9 5 5 1
+chamou addiu com 5 5 1
+
+
+Instrucao Atual: 14 rs: 5 rs2 0 rt: 5
+Instrucao Anterior: 8 rs: 8 rt: 2
+
+
+
+Instrucao Atual: 51 rs: 5 rs2 0 rt: 5
+Instrucao Anterior: 14 rs: 5 rt: 5
+
+decodificou addiu 9 8 8 1
+chamou addiu com 8 8 1
+
+
+Instrucao Atual: 14 rs: 8 rs2 0 rt: 8
+Instrucao Anterior: 51 rs: 5 rt: 5
+
+
+
+Instrucao Atual: 2 rs: 5 rs2 0 rt: 2
+Instrucao Anterior: 14 rs: 8 rt: 8
+
+decodificou addiu 9 7 7 4294967295
+chamou addiu com 7 7 -1
+
+
+Instrucao Atual: 14 rs: 7 rs2 0 rt: 7
+Instrucao Anterior: 2 rs: 5 rt: 2
+
+
+
+Instrucao Atual: 8 rs: 8 rs2 0 rt: 2
+Instrucao Anterior: 14 rs: 7 rt: 7
+
+decodificou addiu 9 5 5 1
+chamou addiu com 5 5 1
+
+
+Instrucao Atual: 14 rs: 5 rs2 0 rt: 5
+Instrucao Anterior: 8 rs: 8 rt: 2
+
+
+
+Instrucao Atual: 51 rs: 5 rs2 0 rt: 5
+Instrucao Anterior: 14 rs: 5 rt: 5
+
+decodificou addiu 9 8 8 1
+chamou addiu com 8 8 1
+
+
+Instrucao Atual: 14 rs: 8 rs2 0 rt: 8
+Instrucao Anterior: 51 rs: 5 rt: 5
+
+
+
+Instrucao Atual: 2 rs: 5 rs2 0 rt: 2
+Instrucao Anterior: 14 rs: 8 rt: 8
+
+decodificou addiu 9 7 7 4294967295
+chamou addiu com 7 7 -1
+
+
+Instrucao Atual: 14 rs: 7 rs2 0 rt: 7
+Instrucao Anterior: 2 rs: 5 rt: 2
+
+
+
+Instrucao Atual: 8 rs: 8 rs2 0 rt: 2
+Instrucao Anterior: 14 rs: 7 rt: 7
+
+decodificou addiu 9 5 5 1
+chamou addiu com 5 5 1
+
+
+Instrucao Atual: 14 rs: 5 rs2 0 rt: 5
+Instrucao Anterior: 8 rs: 8 rt: 2
+
+
+
+Instrucao Atual: 51 rs: 5 rs2 0 rt: 5
+Instrucao Anterior: 14 rs: 5 rt: 5
+
+decodificou addiu 9 8 8 1
+chamou addiu com 8 8 1
+
+
+Instrucao Atual: 14 rs: 8 rs2 0 rt: 8
+Instrucao Anterior: 51 rs: 5 rt: 5
+
+
+
+Instrucao Atual: 2 rs: 5 rs2 0 rt: 2
+Instrucao Anterior: 14 rs: 8 rt: 8
+
+decodificou addiu 9 7 7 4294967295
+chamou addiu com 7 7 -1
+
+
+Instrucao Atual: 14 rs: 7 rs2 0 rt: 7
+Instrucao Anterior: 2 rs: 5 rt: 2
+
+
+
+Instrucao Atual: 8 rs: 8 rs2 0 rt: 2
+Instrucao Anterior: 14 rs: 7 rt: 7
+
+decodificou addiu 9 5 5 1
+chamou addiu com 5 5 1
+
+
+Instrucao Atual: 14 rs: 5 rs2 0 rt: 5
+Instrucao Anterior: 8 rs: 8 rt: 2
+
+
+
+Instrucao Atual: 51 rs: 5 rs2 0 rt: 5
+Instrucao Anterior: 14 rs: 5 rt: 5
+
+decodificou addiu 9 8 8 1
+chamou addiu com 8 8 1
+
+
+Instrucao Atual: 14 rs: 8 rs2 0 rt: 8
+Instrucao Anterior: 51 rs: 5 rt: 5
+
+
+
+Instrucao Atual: 2 rs: 5 rs2 0 rt: 2
+Instrucao Anterior: 14 rs: 8 rt: 8
+
+decodificou addiu 9 7 7 4294967295
+chamou addiu com 7 7 -1
+
+
+Instrucao Atual: 14 rs: 7 rs2 0 rt: 7
+Instrucao Anterior: 2 rs: 5 rt: 2
+
+
+
+Instrucao Atual: 8 rs: 8 rs2 0 rt: 2
+Instrucao Anterior: 14 rs: 7 rt: 7
+
+decodificou addiu 9 5 5 1
+chamou addiu com 5 5 1
+
+
+Instrucao Atual: 14 rs: 5 rs2 0 rt: 5
+Instrucao Anterior: 8 rs: 8 rt: 2
+
+
+
+Instrucao Atual: 51 rs: 5 rs2 0 rt: 5
+Instrucao Anterior: 14 rs: 5 rt: 5
+
+decodificou addiu 9 8 8 1
+chamou addiu com 8 8 1
+
+
+Instrucao Atual: 14 rs: 8 rs2 0 rt: 8
+Instrucao Anterior: 51 rs: 5 rt: 5
+
+
+
+Instrucao Atual: 46 rs: 8 rs2 0 rt: 8
+Instrucao Anterior: 14 rs: 8 rt: 8
+
+
+
+Instrucao Atual: 31 rs: 0 rs2 0 rt: 0
+Instrucao Anterior: 46 rs: 8 rt: 8
+
+
+
+Instrucao Atual: 48 rs: 0 rs2 0 rt: 0
+Instrucao Anterior: 31 rs: 0 rt: 0
+
+addu
+
+
+Instrucao Atual: 22 rs: 4 rs2 0 rt: 2
+Instrucao Anterior: 48 rs: 0 rt: 0
+
+chamou lw com 35 20 3 8
+lw com rt= 3 rs= 20 
+
+
+Instrucao Atual: 5 rs: 20 rs2 0 rt: 3
+Instrucao Anterior: 22 rs: 4 rt: 2
+
+chamou lw com 35 20 2 0
+lw com rt= 2 rs= 20 
+
+
+Instrucao Atual: 5 rs: 20 rs2 0 rt: 2
+Instrucao Anterior: 5 rs: 20 rt: 3
+
+subu com 0 3 16 3 0 35
+subu com rd 3 rs 3 rt 16 
+
+
+Instrucao Atual: 24 rs: 3 rs2 16 rt: 3
+Instrucao Anterior: 5 rs: 20 rt: 2
+
+addu
+
+
+Instrucao Atual: 22 rs: 2 rs2 16 rt: 2
+Instrucao Anterior: 24 rs: 3 rt: 3
+
+
+
+Instrucao Atual: 10 rs: 20 rs2 16 rt: 3
+Instrucao Anterior: 22 rs: 2 rt: 2
+
+
+
+Instrucao Atual: 46 rs: 20 rs2 16 rt: 3
+Instrucao Anterior: 10 rs: 20 rt: 3
+
+
+
+Instrucao Atual: 10 rs: 20 rs2 16 rt: 2
+Instrucao Anterior: 46 rs: 20 rt: 3
+
+subu com 0 22 16 22 0 35
+subu com rd 22 rs 22 rt 16 
+
+
+Instrucao Atual: 24 rs: 22 rs2 16 rt: 22
+Instrucao Anterior: 10 rs: 20 rt: 2
+
+
+
+Instrucao Atual: 50 rs: 22 rs2 16 rt: 22
+Instrucao Anterior: 24 rs: 22 rt: 22
+
+
+
+Instrucao Atual: 31 rs: 0 rs2 0 rt: 0
+Instrucao Anterior: 50 rs: 22 rt: 22
+
+
+
+Instrucao Atual: 47 rs: 0 rs2 0 rt: 0
+Instrucao Anterior: 31 rs: 0 rt: 0
+
+addu
+
+
+Instrucao Atual: 22 rs: 20 rs2 0 rt: 4
+Instrucao Anterior: 47 rs: 0 rt: 0
+
+decodificou addiu 9 29 29 4294967264
+chamou addiu com 29 29 -32
+
+
+Instrucao Atual: 14 rs: 29 rs2 0 rt: 29
+Instrucao Anterior: 22 rs: 20 rt: 4
+
+
+
+Instrucao Atual: 10 rs: 29 rs2 0 rt: 18
+Instrucao Anterior: 14 rs: 29 rt: 29
+
+
+
+Instrucao Atual: 10 rs: 29 rs2 0 rt: 31
+Instrucao Anterior: 10 rs: 29 rt: 18
+
+
+
+Instrucao Atual: 10 rs: 29 rs2 0 rt: 17
+Instrucao Anterior: 10 rs: 29 rt: 31
+
+
+
+Instrucao Atual: 10 rs: 29 rs2 0 rt: 16
+Instrucao Anterior: 10 rs: 29 rt: 17
+
+
+
+Instrucao Atual: 50 rs: 29 rs2 0 rt: 16
+Instrucao Anterior: 10 rs: 29 rt: 16
+
+addu
+
+
+Instrucao Atual: 22 rs: 4 rs2 0 rt: 18
+Instrucao Anterior: 50 rs: 29 rt: 16
+
+chamou lw com 35 4 4 84
+lw com rt= 4 rs= 4 
+
+
+Instrucao Atual: 5 rs: 4 rs2 0 rt: 4
+Instrucao Anterior: 22 rs: 4 rt: 18
+
+
+
+Instrucao Atual: 31 rs: 0 rs2 0 rt: 0
+Instrucao Anterior: 5 rs: 4 rt: 4
+
+
+
+Instrucao Atual: 51 rs: 0 rs2 0 rt: 0
+Instrucao Anterior: 31 rs: 0 rt: 0
+
+
+
+Instrucao Atual: 31 rs: 0 rs2 0 rt: 0
+Instrucao Anterior: 51 rs: 0 rt: 0
+
+chamou lw com 35 4 2 56
+lw com rt= 2 rs= 4 
+
+
+Instrucao Atual: 5 rs: 4 rs2 0 rt: 2
+Instrucao Anterior: 31 rs: 0 rt: 0
+
+
+
+Instrucao Atual: 31 rs: 0 rs2 0 rt: 0
+Instrucao Anterior: 5 rs: 4 rt: 2
+
+
+
+Instrucao Atual: 50 rs: 0 rs2 0 rt: 0
+Instrucao Anterior: 31 rs: 0 rt: 0
+
+
+
+Instrucao Atual: 31 rs: 0 rs2 0 rt: 0
+Instrucao Anterior: 50 rs: 0 rt: 0
+
+
+
+Instrucao Atual: 3 rs: 18 rs2 0 rt: 3
+Instrucao Anterior: 31 rs: 0 rt: 0
+
+
+
+Instrucao Atual: 31 rs: 0 rs2 0 rt: 0
+Instrucao Anterior: 3 rs: 18 rt: 3
+
+
+
+Instrucao Atual: 17 rs: 3 rs2 0 rt: 2
+Instrucao Anterior: 31 rs: 0 rt: 0
+
+
+
+Instrucao Atual: 50 rs: 3 rs2 0 rt: 2
+Instrucao Anterior: 17 rs: 3 rt: 2
+
+
+
+Instrucao Atual: 31 rs: 0 rs2 0 rt: 0
+Instrucao Anterior: 50 rs: 3 rt: 2
+
+chamou lw com 35 18 17 16
+lw com rt= 17 rs= 18 
+
+
+Instrucao Atual: 5 rs: 18 rs2 0 rt: 17
+Instrucao Anterior: 31 rs: 0 rt: 0
+
+
+
+Instrucao Atual: 31 rs: 0 rs2 0 rt: 0
+Instrucao Anterior: 5 rs: 18 rt: 17
+
+
+
+Instrucao Atual: 50 rs: 0 rs2 0 rt: 0
+Instrucao Anterior: 31 rs: 0 rt: 0
+
+
+
+Instrucao Atual: 17 rs: 3 rs2 0 rt: 3
+Instrucao Anterior: 50 rs: 0 rt: 0
+
+chamou lw com 35 18 2 0
+lw com rt= 2 rs= 18 
+
+
+Instrucao Atual: 5 rs: 18 rs2 0 rt: 2
+Instrucao Anterior: 17 rs: 3 rt: 3
+
+
+
+Instrucao Atual: 31 rs: 0 rs2 0 rt: 0
+Instrucao Anterior: 5 rs: 18 rt: 2
+
+subu com 0 2 17 16 0 35
+subu com rd 16 rs 2 rt 17 
+
+
+Instrucao Atual: 24 rs: 2 rs2 17 rt: 16
+Instrucao Anterior: 31 rs: 0 rt: 0
+
+
+
+Instrucao Atual: 10 rs: 18 rs2 17 rt: 17
+Instrucao Anterior: 24 rs: 2 rt: 16
+
+
+
+Instrucao Atual: 51 rs: 18 rs2 17 rt: 17
+Instrucao Anterior: 10 rs: 18 rt: 17
+
+addu
+
+
+Instrucao Atual: 22 rs: 0 rs2 0 rt: 2
+Instrucao Anterior: 51 rs: 18 rt: 17
+
+
+
+Instrucao Atual: 52 rs: 0 rs2 0 rt: 2
+Instrucao Anterior: 22 rs: 0 rt: 2
+
+
+
+Instrucao Atual: 10 rs: 18 rs2 0 rt: 2
+Instrucao Anterior: 52 rs: 0 rt: 2
+
+chamou lw com 35 18 2 36
+lw com rt= 2 rs= 18 
+
+
+Instrucao Atual: 5 rs: 18 rs2 0 rt: 2
+Instrucao Anterior: 10 rs: 18 rt: 2
+
+chamou lw com 35 18 4 28
+lw com rt= 4 rs= 18 
+
+
+Instrucao Atual: 5 rs: 18 rs2 0 rt: 4
+Instrucao Anterior: 5 rs: 18 rt: 2
+
+addu
+
+
+Instrucao Atual: 22 rs: 17 rs2 0 rt: 5
+Instrucao Anterior: 5 rs: 18 rt: 4
+
+
+
+Instrucao Atual: 49 rs: 17 rs2 0 rt: 5
+Instrucao Anterior: 22 rs: 17 rt: 5
+
+addu
+
+
+Instrucao Atual: 22 rs: 16 rs2 0 rt: 6
+Instrucao Anterior: 49 rs: 17 rt: 5
+
+decodificou addiu 9 29 29 4294967264
+chamou addiu com 29 29 -32
+
+
+Instrucao Atual: 14 rs: 29 rs2 0 rt: 29
+Instrucao Anterior: 22 rs: 16 rt: 6
+
+
+
+Instrucao Atual: 10 rs: 29 rs2 0 rt: 18
+Instrucao Anterior: 14 rs: 29 rt: 29
+
+
+
+Instrucao Atual: 10 rs: 29 rs2 0 rt: 17
+Instrucao Anterior: 10 rs: 29 rt: 18
+
+
+
+Instrucao Atual: 10 rs: 29 rs2 0 rt: 16
+Instrucao Anterior: 10 rs: 29 rt: 17
+
+
+
+Instrucao Atual: 10 rs: 29 rs2 0 rt: 31
+Instrucao Anterior: 10 rs: 29 rt: 16
+
+
+
+Instrucao Atual: 4 rs: 4 rs2 0 rt: 2
+Instrucao Anterior: 10 rs: 29 rt: 31
+
+addu
+
+
+Instrucao Atual: 22 rs: 6 rs2 0 rt: 18
+Instrucao Anterior: 4 rs: 4 rt: 2
+
+
+
+Instrucao Atual: 17 rs: 2 rs2 0 rt: 2
+Instrucao Anterior: 22 rs: 6 rt: 18
+
+addu
+
+
+Instrucao Atual: 22 rs: 4 rs2 0 rt: 16
+Instrucao Anterior: 17 rs: 2 rt: 2
+
+decodificou addiu 9 0 7 2
+chamou addiu com 7 0 2
+
+
+Instrucao Atual: 14 rs: 0 rs2 0 rt: 7
+Instrucao Anterior: 22 rs: 4 rt: 16
+
+addu
+
+
+Instrucao Atual: 22 rs: 5 rs2 0 rt: 17
+Instrucao Anterior: 14 rs: 0 rt: 7
+
+
+
+Instrucao Atual: 51 rs: 5 rs2 0 rt: 17
+Instrucao Anterior: 22 rs: 5 rt: 17
+
+addu
+
+
+Instrucao Atual: 22 rs: 0 rs2 0 rt: 6
+Instrucao Anterior: 51 rs: 5 rt: 17
+
+
+
+Instrucao Atual: 4 rs: 16 rs2 0 rt: 2
+Instrucao Anterior: 22 rs: 0 rt: 6
+
+
+
+Instrucao Atual: 3 rs: 16 rs2 0 rt: 5
+Instrucao Anterior: 4 rs: 16 rt: 2
+
+chamou lw com 35 16 4 84
+lw com rt= 4 rs= 16 
+
+
+Instrucao Atual: 5 rs: 16 rs2 0 rt: 4
+Instrucao Anterior: 3 rs: 16 rt: 5
+
+
+
+Instrucao Atual: 17 rs: 2 rs2 0 rt: 2
+Instrucao Anterior: 5 rs: 16 rt: 4
+
+addu
+
+
+Instrucao Atual: 22 rs: 17 rs2 0 rt: 6
+Instrucao Anterior: 17 rs: 2 rt: 2
+
+addu
+
+
+Instrucao Atual: 22 rs: 18 rs2 0 rt: 7
+Instrucao Anterior: 22 rs: 17 rt: 6
+
+
+
+Instrucao Atual: 47 rs: 18 rs2 0 rt: 7
+Instrucao Anterior: 22 rs: 18 rt: 7
+
+
+
+Instrucao Atual: 9 rs: 16 rs2 0 rt: 2
+Instrucao Anterior: 47 rs: 18 rt: 7
+
+decodificou addiu 9 29 29 4294967272
+chamou addiu com 29 29 -24
+
+
+Instrucao Atual: 14 rs: 29 rs2 0 rt: 29
+Instrucao Anterior: 9 rs: 16 rt: 2
+
+addu
+
+
+Instrucao Atual: 22 rs: 5 rs2 0 rt: 2
+Instrucao Anterior: 14 rs: 29 rt: 29
+
+
+
+Instrucao Atual: 10 rs: 29 rs2 0 rt: 16
+Instrucao Anterior: 22 rs: 5 rt: 2
+
+addu
+
+
+Instrucao Atual: 22 rs: 6 rs2 0 rt: 5
+Instrucao Anterior: 10 rs: 29 rt: 16
+
+addu
+
+
+Instrucao Atual: 22 rs: 4 rs2 0 rt: 16
+Instrucao Anterior: 22 rs: 6 rt: 5
+
+addu
+
+
+Instrucao Atual: 22 rs: 7 rs2 0 rt: 6
+Instrucao Anterior: 22 rs: 4 rt: 16
+
+
+
+Instrucao Atual: 10 rs: 29 rs2 0 rt: 31
+Instrucao Anterior: 22 rs: 7 rt: 6
+
+
+
+Instrucao Atual: 10 rs: 28 rs2 0 rt: 0
+Instrucao Anterior: 10 rs: 29 rt: 31
+
+
+
+Instrucao Atual: 47 rs: 28 rs2 0 rt: 0
+Instrucao Anterior: 10 rs: 28 rt: 0
+
+addu
+
+
+Instrucao Atual: 22 rs: 2 rs2 0 rt: 4
+Instrucao Anterior: 47 rs: 28 rt: 0
+
+decodificou addiu 9 0 3 80
+chamou addiu com 3 0 80
+
+
+Instrucao Atual: 14 rs: 0 rs2 0 rt: 3
+Instrucao Anterior: 22 rs: 2 rt: 4
+
+
+
+Instrucao Atual: 48 rs: 0 rs2 0 rt: 3
+Instrucao Anterior: 14 rs: 0 rt: 3
+
+
+
+Instrucao Atual: 31 rs: 0 rs2 0 rt: 0
+Instrucao Anterior: 48 rs: 0 rt: 3
+
+
+
+Instrucao Atual: 31 rs: 0 rs2 0 rt: 0
+Instrucao Anterior: 31 rs: 0 rt: 0
+
+addu
+
+
+Instrucao Atual: 22 rs: 2 rs2 0 rt: 3
+Instrucao Anterior: 31 rs: 0 rt: 0
+
+decodificou addiu 9 0 2 4294967295
+chamou addiu com 2 0 -1
+
+
+Instrucao Atual: 14 rs: 0 rs2 0 rt: 2
+Instrucao Anterior: 22 rs: 2 rt: 3
+
+
+
+Instrucao Atual: 50 rs: 0 rs2 0 rt: 2
+Instrucao Anterior: 14 rs: 0 rt: 2
+
+
+
+Instrucao Atual: 31 rs: 0 rs2 0 rt: 0
+Instrucao Anterior: 50 rs: 0 rt: 2
+
+chamou lw com 35 29 31 20
+lw com rt= 31 rs= 29 
+
+
+Instrucao Atual: 5 rs: 29 rs2 0 rt: 31
+Instrucao Anterior: 31 rs: 0 rt: 0
+
+chamou lw com 35 29 16 16
+lw com rt= 16 rs= 29 
+
+
+Instrucao Atual: 5 rs: 29 rs2 0 rt: 16
+Instrucao Anterior: 5 rs: 29 rt: 31
+
+addu
+
+
+Instrucao Atual: 22 rs: 3 rs2 0 rt: 2
+Instrucao Anterior: 5 rs: 29 rt: 16
+
+
+
+Instrucao Atual: 48 rs: 3 rs2 0 rt: 2
+Instrucao Anterior: 22 rs: 3 rt: 2
+
+decodificou addiu 9 29 29 24
+chamou addiu com 29 29 24
+
+
+Instrucao Atual: 14 rs: 29 rs2 0 rt: 29
+Instrucao Anterior: 48 rs: 3 rt: 2
+
+chamou lw com 35 29 31 28
+lw com rt= 31 rs= 29 
+
+
+Instrucao Atual: 5 rs: 29 rs2 0 rt: 31
+Instrucao Anterior: 14 rs: 29 rt: 29
+
+chamou lw com 35 29 18 24
+lw com rt= 18 rs= 29 
+
+
+Instrucao Atual: 5 rs: 29 rs2 0 rt: 18
+Instrucao Anterior: 5 rs: 29 rt: 31
+
+chamou lw com 35 29 17 20
+lw com rt= 17 rs= 29 
+
+
+Instrucao Atual: 5 rs: 29 rs2 0 rt: 17
+Instrucao Anterior: 5 rs: 29 rt: 18
+
+chamou lw com 35 29 16 16
+lw com rt= 16 rs= 29 
+
+
+Instrucao Atual: 5 rs: 29 rs2 0 rt: 16
+Instrucao Anterior: 5 rs: 29 rt: 17
+
+Hazard
+
+
+Instrucao Atual: 48 rs: 29 rs2 0 rt: 16
+Instrucao Anterior: 5 rs: 29 rt: 16
+
+decodificou addiu 9 29 29 32
+chamou addiu com 29 29 32
+
+
+Instrucao Atual: 14 rs: 29 rs2 0 rt: 29
+Instrucao Anterior: 48 rs: 29 rt: 16
+
+subu com 0 16 2 16 0 35
+subu com rd 16 rs 16 rt 2 
+
+
+Instrucao Atual: 24 rs: 16 rs2 2 rt: 16
+Instrucao Anterior: 14 rs: 29 rt: 29
+
+
+
+Instrucao Atual: 52 rs: 16 rs2 2 rt: 16
+Instrucao Anterior: 24 rs: 16 rt: 16
+
+addu
+
+
+Instrucao Atual: 22 rs: 17 rs2 2 rt: 17
+Instrucao Anterior: 52 rs: 16 rt: 16
+
+
+
+Instrucao Atual: 53 rs: 17 rs2 2 rt: 17
+Instrucao Anterior: 22 rs: 17 rt: 17
+
+
+
+Instrucao Atual: 31 rs: 0 rs2 0 rt: 0
+Instrucao Anterior: 53 rs: 17 rt: 17
+
+addu
+
+
+Instrucao Atual: 22 rs: 0 rs2 0 rt: 3
+Instrucao Anterior: 31 rs: 0 rt: 0
+
+chamou lw com 35 29 31 28
+lw com rt= 31 rs= 29 
+
+
+Instrucao Atual: 5 rs: 29 rs2 0 rt: 31
+Instrucao Anterior: 22 rs: 0 rt: 3
+
+chamou lw com 35 29 18 24
+lw com rt= 18 rs= 29 
+
+
+Instrucao Atual: 5 rs: 29 rs2 0 rt: 18
+Instrucao Anterior: 5 rs: 29 rt: 31
+
+chamou lw com 35 29 17 20
+lw com rt= 17 rs= 29 
+
+
+Instrucao Atual: 5 rs: 29 rs2 0 rt: 17
+Instrucao Anterior: 5 rs: 29 rt: 18
+
+chamou lw com 35 29 16 16
+lw com rt= 16 rs= 29 
+
+
+Instrucao Atual: 5 rs: 29 rs2 0 rt: 16
+Instrucao Anterior: 5 rs: 29 rt: 17
+
+addu
+
+
+Instrucao Atual: 22 rs: 3 rs2 0 rt: 2
+Instrucao Anterior: 5 rs: 29 rt: 16
+
+
+
+Instrucao Atual: 48 rs: 3 rs2 0 rt: 2
+Instrucao Anterior: 22 rs: 3 rt: 2
+
+decodificou addiu 9 29 29 32
+chamou addiu com 29 29 32
+
+
+Instrucao Atual: 14 rs: 29 rs2 0 rt: 29
+Instrucao Anterior: 48 rs: 3 rt: 2
+
+
+
+Instrucao Atual: 51 rs: 29 rs2 0 rt: 29
+Instrucao Anterior: 14 rs: 29 rt: 29
+
+addu
+
+
+Instrucao Atual: 22 rs: 0 rs2 0 rt: 23
+Instrucao Anterior: 51 rs: 29 rt: 29
+
+
+
+Instrucao Atual: 46 rs: 0 rs2 0 rt: 23
+Instrucao Anterior: 22 rs: 0 rt: 23
+
+
+
+Instrucao Atual: 31 rs: 0 rs2 0 rt: 0
+Instrucao Anterior: 46 rs: 0 rt: 23
+
+chamou lw com 35 21 2 8
+lw com rt= 2 rs= 21 
+
+
+Instrucao Atual: 5 rs: 21 rs2 0 rt: 2
+Instrucao Anterior: 31 rs: 0 rt: 0
+
+addu
+
+
+Instrucao Atual: 22 rs: 19 rs2 16 rt: 19
+Instrucao Anterior: 5 rs: 21 rt: 2
+
+subu com 0 2 16 2 0 35
+subu com rd 2 rs 2 rt 16 
+
+
+Instrucao Atual: 24 rs: 2 rs2 16 rt: 2
+Instrucao Anterior: 22 rs: 19 rt: 19
+
+
+
+Instrucao Atual: 10 rs: 21 rs2 16 rt: 2
+Instrucao Anterior: 24 rs: 2 rt: 2
+
+
+
+Instrucao Atual: 51 rs: 21 rs2 16 rt: 2
+Instrucao Anterior: 10 rs: 21 rt: 2
+
+subu com 0 17 16 17 0 35
+subu com rd 17 rs 17 rt 16 
+
+
+Instrucao Atual: 24 rs: 17 rs2 16 rt: 17
+Instrucao Anterior: 51 rs: 21 rt: 2
+
+
+
+Instrucao Atual: 46 rs: 17 rs2 16 rt: 17
+Instrucao Anterior: 24 rs: 17 rt: 17
+
+addu
+
+
+Instrucao Atual: 22 rs: 0 rs2 0 rt: 3
+Instrucao Anterior: 46 rs: 17 rt: 17
+
+chamou lw com 35 29 31 48
+lw com rt= 31 rs= 29 
+
+
+Instrucao Atual: 5 rs: 29 rs2 0 rt: 31
+Instrucao Anterior: 22 rs: 0 rt: 3
+
+chamou lw com 35 29 23 44
+lw com rt= 23 rs= 29 
+
+
+Instrucao Atual: 5 rs: 29 rs2 0 rt: 23
+Instrucao Anterior: 5 rs: 29 rt: 31
+
+chamou lw com 35 29 22 40
+lw com rt= 22 rs= 29 
+
+
+Instrucao Atual: 5 rs: 29 rs2 0 rt: 22
+Instrucao Anterior: 5 rs: 29 rt: 23
+
+chamou lw com 35 29 21 36
+lw com rt= 21 rs= 29 
+
+
+Instrucao Atual: 5 rs: 29 rs2 0 rt: 21
+Instrucao Anterior: 5 rs: 29 rt: 22
+
+chamou lw com 35 29 20 32
+lw com rt= 20 rs= 29 
+
+
+Instrucao Atual: 5 rs: 29 rs2 0 rt: 20
+Instrucao Anterior: 5 rs: 29 rt: 21
+
+chamou lw com 35 29 19 28
+lw com rt= 19 rs= 29 
+
+
+Instrucao Atual: 5 rs: 29 rs2 0 rt: 19
+Instrucao Anterior: 5 rs: 29 rt: 20
+
+chamou lw com 35 29 18 24
+lw com rt= 18 rs= 29 
+
+
+Instrucao Atual: 5 rs: 29 rs2 0 rt: 18
+Instrucao Anterior: 5 rs: 29 rt: 19
+
+chamou lw com 35 29 17 20
+lw com rt= 17 rs= 29 
+
+
+Instrucao Atual: 5 rs: 29 rs2 0 rt: 17
+Instrucao Anterior: 5 rs: 29 rt: 18
+
+chamou lw com 35 29 16 16
+lw com rt= 16 rs= 29 
+
+
+Instrucao Atual: 5 rs: 29 rs2 0 rt: 16
+Instrucao Anterior: 5 rs: 29 rt: 17
+
+addu
+
+
+Instrucao Atual: 22 rs: 3 rs2 0 rt: 2
+Instrucao Anterior: 5 rs: 29 rt: 16
+
+
+
+Instrucao Atual: 48 rs: 3 rs2 0 rt: 2
+Instrucao Anterior: 22 rs: 3 rt: 2
+
+decodificou addiu 9 29 29 56
+chamou addiu com 29 29 56
+
+
+Instrucao Atual: 14 rs: 29 rs2 0 rt: 29
+Instrucao Anterior: 48 rs: 3 rt: 2
+
+addu
+
+
+Instrucao Atual: 22 rs: 2 rs2 0 rt: 3
+Instrucao Anterior: 14 rs: 29 rt: 29
+
+
+
+Instrucao Atual: 10 rs: 16 rs2 0 rt: 0
+Instrucao Anterior: 22 rs: 2 rt: 3
+
+
+
+Instrucao Atual: 46 rs: 16 rs2 0 rt: 0
+Instrucao Anterior: 10 rs: 16 rt: 0
+
+
+
+Instrucao Atual: 10 rs: 16 rs2 0 rt: 0
+Instrucao Anterior: 46 rs: 16 rt: 0
+
+chamou lw com 35 29 31 20
+lw com rt= 31 rs= 29 
+
+
+Instrucao Atual: 5 rs: 29 rs2 0 rt: 31
+Instrucao Anterior: 10 rs: 16 rt: 0
+
+chamou lw com 35 29 16 16
+lw com rt= 16 rs= 29 
+
+
+Instrucao Atual: 5 rs: 29 rs2 0 rt: 16
+Instrucao Anterior: 5 rs: 29 rt: 31
+
+addu
+
+
+Instrucao Atual: 22 rs: 3 rs2 0 rt: 2
+Instrucao Anterior: 5 rs: 29 rt: 16
+
+
+
+Instrucao Atual: 48 rs: 3 rs2 0 rt: 2
+Instrucao Anterior: 22 rs: 3 rt: 2
+
+decodificou addiu 9 29 29 24
+chamou addiu com 29 29 24
+
+
+Instrucao Atual: 14 rs: 29 rs2 0 rt: 29
+Instrucao Anterior: 48 rs: 3 rt: 2
+
+
+
+Instrucao Atual: 50 rs: 29 rs2 0 rt: 29
+Instrucao Anterior: 
