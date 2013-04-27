@@ -596,6 +596,7 @@ void ac_behavior( jal )
 //!Instruction jr behavior method.
 void ac_behavior( jr )
 {
+  cout<<"RS "<<rs<<"\n";
   dbg_printf("jr r%d\n", rs);
   // Jump to the address stored on the register reg[RS]
   // It must also flush the instructions that were loaded into the pipeline
@@ -608,6 +609,7 @@ void ac_behavior( jr )
 //!Instruction jalr behavior method.
 void ac_behavior( jalr )
 {
+  cout<<"jalr com rs "<<rs<<"\n";
   dbg_printf("jalr r%d, r%d\n", rd, rs);
   // Save the value of PC + 8(return address) in rd and
   // jump to the address given by [rs]
@@ -626,6 +628,7 @@ void ac_behavior( jalr )
 //!Instruction beq behavior method.
 void ac_behavior( beq )
 {
+  cout<<"beq rs "<<rs<<" rt "<<rt<<"\n";
   dbg_printf("beq r%d, r%d, %d\n", rt, rs, imm & 0xFFFF);
   if( RB[rs] == RB[rt] ){
 #ifndef NO_NEED_PC_UPDATE
