@@ -36,17 +36,14 @@ struct branch_pred_t {
   // states:
   //  0,1 = predict taken
   //  2,3 = predict not taken
-  int state = rand() % 4;
+  int state;
+
+  branch_pred_t(): state(0) {}
 
   // good guess!
-  void good() {
-    state = std::max(0, state-1);
-  }
-
+  void good() { state = std::max(0, state-1); }
   // meh, bad guess
-  void bad() {
-    state = std::min(3, state+1);
-  }
+  void bad() { state = std::min(3, state+1); }
 
   bool guess() {
     if(state == 0 || state == 1) return true;
@@ -422,6 +419,7 @@ void mips1::behavior() {
 		     instr_vec->get(4));
     if (checkHazard() != NO_HAZARD)
       hazard_count++;
+    printf("> %d\n", ac_pc.read() / 4);
 
     if ((!ac_wait_sig) && (!ac_annul_sig)) ac_instr_counter+=1;
     ac_annul_sig = 0;
