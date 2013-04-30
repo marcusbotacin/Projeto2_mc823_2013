@@ -43,7 +43,6 @@
 //#define DEBUG_MODEL
 #include "ac_debug_model.H"
 
-
 //!User defined macros to reference registers.
 #define Ra 31
 #define Sp 29
@@ -51,6 +50,11 @@
 // 'using namespace' statement to allow access to all
 // mips1-specific datatypes
 using namespace mips1_parms;
+
+#include "library.h"
+const int N = 64;
+branch_pred_t bp_hash[N];
+int hazard_count;
 
 //!Generic instruction behavior method.
 void ac_behavior( instruction )
@@ -625,6 +629,20 @@ void ac_behavior( jalr )
   dbg_printf("Return = %#x\n", ac_pc+4);
 };
 
+bool checkBranchPred(bool branch_res, int ac_pc, int npc = 0) {
+  if (bp_hash[(ac_pc / 4) % N].guess() == branch_res &&
+      (!branch_res || bp_hash[(ac_pc / 4) % N].jump_pc == npc)) {
+    // PURE AWESOMENESS! I BELIEVE IN UNICORNS, RAINBOWS AND CANDY MOUNTAINS
+  } else {
+    hazard_count++;
+  }
+
+  // fprintf(stderr, "> %d %d\n", (ac_pc / 4) % N, bp_hash[(ac_pc / 4) % N].state);
+
+  if(branch_res) bp_hash[(ac_pc / 4) % N].taken(npc);
+  else bp_hash[(ac_pc / 4) % N].notTaken();
+}
+
 //!Instruction beq behavior method.
 void ac_behavior( beq )
 {
@@ -635,7 +653,11 @@ void ac_behavior( beq )
     npc = ac_pc + (imm<<2);
 #endif 
     dbg_printf("Taken to %#x\n", ac_pc + (imm<<2));
-  }	
+
+    checkBranchPred(true, ac_pc, ac_pc + (imm<<2));
+  } else {
+    checkBranchPred(false, ac_pc);
+  }
 };
 
 //!Instruction bne behavior method.
@@ -647,7 +669,11 @@ void ac_behavior( bne )
     npc = ac_pc + (imm<<2);
 #endif 
     dbg_printf("Taken to %#x\n", ac_pc + (imm<<2));
-  }	
+
+    checkBranchPred(true, ac_pc, ac_pc + (imm<<2));
+  } else {
+    checkBranchPred(false, ac_pc);
+  }
 };
 
 //!Instruction blez behavior method.
@@ -659,7 +685,11 @@ void ac_behavior( blez )
     npc = ac_pc + (imm<<2), 1;
 #endif 
     dbg_printf("Taken to %#x\n", ac_pc + (imm<<2));
-  }	
+
+    checkBranchPred(true, ac_pc, ac_pc + (imm<<2));
+  } else {
+    checkBranchPred(false, ac_pc);
+  }
 };
 
 //!Instruction bgtz behavior method.
@@ -671,7 +701,11 @@ void ac_behavior( bgtz )
     npc = ac_pc + (imm<<2);
 #endif 
     dbg_printf("Taken to %#x\n", ac_pc + (imm<<2));
-  }	
+
+    checkBranchPred(true, ac_pc, ac_pc + (imm<<2));
+  } else {
+    checkBranchPred(false, ac_pc);
+  }
 };
 
 //!Instruction bltz behavior method.
@@ -683,7 +717,11 @@ void ac_behavior( bltz )
     npc = ac_pc + (imm<<2);
 #endif 
     dbg_printf("Taken to %#x\n", ac_pc + (imm<<2));
-  }	
+
+    checkBranchPred(true, ac_pc, ac_pc + (imm<<2));
+  } else {
+    checkBranchPred(false, ac_pc);
+  }
 };
 
 //!Instruction bgez behavior method.
@@ -695,7 +733,11 @@ void ac_behavior( bgez )
     npc = ac_pc + (imm<<2);
 #endif 
     dbg_printf("Taken to %#x\n", ac_pc + (imm<<2));
-  }	
+
+    checkBranchPred(true, ac_pc, ac_pc + (imm<<2));
+  } else {
+    checkBranchPred(false, ac_pc);
+  }
 };
 
 //!Instruction bltzal behavior method.
@@ -708,7 +750,12 @@ void ac_behavior( bltzal )
     npc = ac_pc + (imm<<2);
 #endif 
     dbg_printf("Taken to %#x\n", ac_pc + (imm<<2));
-  }	
+
+    checkBranchPred(true, ac_pc, ac_pc + (imm<<2));
+  } else {
+    checkBranchPred(false, ac_pc);
+  }
+
   dbg_printf("Return = %#x\n", ac_pc+4);
 };
 
@@ -722,7 +769,12 @@ void ac_behavior( bgezal )
     npc = ac_pc + (imm<<2);
 #endif 
     dbg_printf("Taken to %#x\n", ac_pc + (imm<<2));
-  }	
+
+    checkBranchPred(true, ac_pc, ac_pc + (imm<<2));
+  } else {
+    checkBranchPred(false, ac_pc);
+  }
+
   dbg_printf("Return = %#x\n", ac_pc+4);
 };
 

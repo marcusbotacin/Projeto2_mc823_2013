@@ -18,48 +18,11 @@
 
 #include  "mips1_syscall.H"
 
-struct control_t {
-  int rs, rt, rd;
-  bool regwrite, memread;
-  int ins_id;
-
-  control_t(int rs=-1, int rt=-1, int rd=-1,
-	    bool regwrite=false, bool memread=false):
-    rs(rs), rt(rt), rd(rd),
-    regwrite(regwrite), memread(memread),
-    ins_id(-1) {}
-};
-
-struct branch_pred_t {
-  // 2-bit branch prediction
-
-  // states:
-  //  0,1 = predict taken
-  //  2,3 = predict not taken
-  int state;
-
-  branch_pred_t(): state(0) {}
-
-  // good guess!
-  void good() { state = std::max(0, state-1); }
-  // meh, bad guess
-  void bad() { state = std::min(3, state+1); }
-
-  bool guess() {
-    if(state == 0 || state == 1) return true;
-    else return false;
-  }
-};
-
 control_t IF, ID, EX, MEM, WB;
-int hazard_count;
 
 // testa se a instrucao faz read da memoria
 bool useMemory(unsigned ins_id) {
-  if (ins_id >= 1 && ins_id <= 7) // intervalo dos loads
-    return true;
-  else
-    return false;
+  return (ins_id >= 1 && ins_id <= 7); // intervalo dos loads
 }
 
 void storeInstruction(int ins_id, int rs, int rt, int rd) {
@@ -97,9 +60,13 @@ void storeInstruction(int ins_id, int rs, int rt, int rd) {
   IF.ins_id = ins_id;
 }
 
-enum hazard_t {NO_HAZARD=0, DATA_HAZARD, CONTROL_HAZARD};
-
 hazard_t checkHazard() {
+  // if (!(IF.ins_id >= 50 && IF.ins_id <= 57) &&
+  //     bp_hash[(mips1::ac_pc.read() / 4) % N].guess() &&
+  //     bp_hash[(mips1::ac_pc.read() / 4) % N].jump_pc != mips1::ac_pc.read() + 4) {
+  //   // CONTROL_HAZARD;
+  // }
+
   if (ID.memread &&
       (ID.rt == IF.rs || ID.rt == IF.rt))
     return DATA_HAZARD;
@@ -419,7 +386,7 @@ void mips1::behavior() {
 		     instr_vec->get(4));
     if (checkHazard() != NO_HAZARD)
       hazard_count++;
-    printf("> %d\n", ac_pc.read() / 4);
+    // printf("> %d\n", ac_pc.read() / 4);
 
     if ((!ac_wait_sig) && (!ac_annul_sig)) ac_instr_counter+=1;
     ac_annul_sig = 0;
