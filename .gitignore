@@ -1,0 +1,3 @@
+# Ignore compiled source #
+*.o
+mips1.x

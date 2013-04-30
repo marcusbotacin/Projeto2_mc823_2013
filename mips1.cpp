@@ -18,58 +18,98 @@
 
 #include  "mips1_syscall.H"
 
-//todas as variaveis sao globais
-//inicio indica numero da execucao
-//hazard_count e o contador de hazards
-int inicio=0,hazard_count=0;
-//IF e o estagio de Fetch
-//IE e o estagio de execucao
-//RT e RS sao os registradores origem e destino
-int IF_rs,IF_rt,IE_rs,IE_rt;
-int IF_rs2,IE_rs2;
-//instrucoes executadas na rodada passada e nessa
-unsigned instr_atual,instr_anterior;
+struct control_t {
+  int rs, rt, rd;
+  bool regwrite, memread;
+  int ins_id;
 
-//esta funcao testa se usou memoria na ultima execucao
-int useMemory(unsigned instr_anterior)
-{
-	//considerando load de memoria entre 1 e 7
-	if(instr_anterior>=1 && instr_anterior<=7) //intervalo dos loads
-	{
-	return 1;
-	}else{
-	return 0;
-	}
-}
-//checa se coincide os registradores
-int checkRegister(){
-	if((instr_atual>=1 && instr_atual<=20) || (instr_atual>=48 && instr_atual<58)   ) //tipo I
-	{
-	if(IE_rt==IF_rs || IE_rt==IF_rt) //condicao de hazard
-					//so le 1 registrador
-					//o outro e destino
-	{
-	return 1;
-	}else{
-	return 0;
-	}
-	}
-	else if(instr_atual==46 || instr_atual==47 || instr_atual==58 || instr_atual==59){ //branch incondicional ou syscal/break
-		//nao geram hazards
-		return 0;
-	}else{ //tipo R 
-		//cout<<"tipo R "<<instr_atual<<"\n";
-		if(IE_rt==IF_rs || IE_rt==IF_rt || IE_rt==IF_rs2)
-		//leem 2 registradores + destino
-		{
-			return 1;
-		}else{
-		return 0;
-		}
-		//ainda falta colocar as condicoes dos branches
-	}
+  control_t(int rs=-1, int rt=-1, int rd=-1,
+	    bool regwrite=false, bool memread=false):
+    rs(rs), rt(rt), rd(rd),
+    regwrite(regwrite), memread(memread),
+    ins_id(-1) {}
+};
+
+struct branch_pred_t {
+  // 2-bit branch prediction
+
+  // states:
+  //  0,1 = predict taken
+  //  2,3 = predict not taken
+  int state = rand() % 4;
+
+  // good guess!
+  void good() {
+    state = std::max(0, state-1);
+  }
+
+  // meh, bad guess
+  void bad() {
+    state = std::min(3, state+1);
+  }
+
+  bool guess() {
+    if(state == 0 || state == 1) return true;
+    else return false;
+  }
+};
+
+control_t IF, ID, EX, MEM, WB;
+int hazard_count;
+
+// testa se a instrucao faz read da memoria
+bool useMemory(unsigned ins_id) {
+  if (ins_id >= 1 && ins_id <= 7) // intervalo dos loads
+    return true;
+  else
+    return false;
 }
 
+void storeInstruction(int ins_id, int rs, int rt, int rd) {
+  WB = MEM;
+  MEM = EX;
+  EX = ID;
+  ID = IF;
+
+  if ((ins_id >= 1 && ins_id <= 20) || (ins_id >= 50 && ins_id <= 57)) {
+    // load-store
+    //  1-7   load
+    //  8-12  store
+    //  13-20 operations with imediate
+    IF = control_t(rs, rt);
+  } else if (ins_id >= 21 && ins_id <= 45) {
+    // R-type
+    //  21-45
+    IF = control_t(rs, rt, rd);
+  } else if (ins_id >= 48 && ins_id <= 49) {
+    // jump
+    //  48-49
+    IF = control_t(rs);
+  } else if (ins_id >= 50 && ins_id <= 57) {
+    // branch
+    //  50-57
+    IF = control_t(rs, rt);
+  } else {
+    // jump to imediate
+    //  46-47
+    // syscall, instr_break
+    //  58-59
+    IF = control_t();
+  }
+
+  IF.memread = useMemory(ins_id);
+  IF.ins_id = ins_id;
+}
+
+enum hazard_t {NO_HAZARD=0, DATA_HAZARD, CONTROL_HAZARD};
+
+hazard_t checkHazard() {
+  if (ID.memread &&
+      (ID.rt == IF.rs || ID.rt == IF.rt))
+    return DATA_HAZARD;
+  else
+    return NO_HAZARD;
+}
 
 void mips1::behavior() {
 
@@ -135,404 +175,241 @@ void mips1::behavior() {
 
       ISA.cur_instr_id = ins_id;
       if (!ac_annul_sig) ISA._behavior_instruction(instr_vec->get(1));
+
       switch (ins_id) {
       case 1: // Instruction lb
-
-	cout<<"chamou lb com "<<instr_vec->get(1)<<" "<<instr_vec->get(2)<<" "<<instr_vec->get(3)<<" "<<instr_vec->get(7)<<"\n";
-	IF_rt=instr_vec->get(3);
-	IF_rs=instr_vec->get(2);
         if (!ac_annul_sig) ISA._behavior_mips1_Type_I(instr_vec->get(1), instr_vec->get(2), instr_vec->get(3), instr_vec->get(7));
         if (!ac_annul_sig) ISA.behavior_lb(instr_vec->get(1), instr_vec->get(2), instr_vec->get(3), instr_vec->get(7));
         break;
       case 2: // Instruction lbu
-	IF_rt=instr_vec->get(3);
-        IF_rs=instr_vec->get(2);
         if (!ac_annul_sig) ISA._behavior_mips1_Type_I(instr_vec->get(1), instr_vec->get(2), instr_vec->get(3), instr_vec->get(7));
         if (!ac_annul_sig) ISA.behavior_lbu(instr_vec->get(1), instr_vec->get(2), instr_vec->get(3), instr_vec->get(7));
         break;
       case 3: // Instruction lh
-	IF_rt=instr_vec->get(3);
-        IF_rs=instr_vec->get(2);
         if (!ac_annul_sig) ISA._behavior_mips1_Type_I(instr_vec->get(1), instr_vec->get(2), instr_vec->get(3), instr_vec->get(7));
         if (!ac_annul_sig) ISA.behavior_lh(instr_vec->get(1), instr_vec->get(2), instr_vec->get(3), instr_vec->get(7));
         break;
       case 4: // Instruction lhu
-	IF_rt=instr_vec->get(3);
-        IF_rs=instr_vec->get(2);
         if (!ac_annul_sig) ISA._behavior_mips1_Type_I(instr_vec->get(1), instr_vec->get(2), instr_vec->get(3), instr_vec->get(7));
         if (!ac_annul_sig) ISA.behavior_lhu(instr_vec->get(1), instr_vec->get(2), instr_vec->get(3), instr_vec->get(7));
         break;
       case 5: // Instruction lw
-	IF_rt=instr_vec->get(3);
-        IF_rs=instr_vec->get(2);
-	cout<<"chamou lw com "<<instr_vec->get(1)<<" "<<instr_vec->get(2)<<" "<<instr_vec->get(3)<<" "<<instr_vec->get(7)<<"\n";
         if (!ac_annul_sig) ISA._behavior_mips1_Type_I(instr_vec->get(1), instr_vec->get(2), instr_vec->get(3), instr_vec->get(7));
         if (!ac_annul_sig) ISA.behavior_lw(instr_vec->get(1), instr_vec->get(2), instr_vec->get(3), instr_vec->get(7));
         break;
       case 6: // Instruction lwl
-	IF_rt=instr_vec->get(3);
-        IF_rs=instr_vec->get(2);
         if (!ac_annul_sig) ISA._behavior_mips1_Type_I(instr_vec->get(1), instr_vec->get(2), instr_vec->get(3), instr_vec->get(7));
         if (!ac_annul_sig) ISA.behavior_lwl(instr_vec->get(1), instr_vec->get(2), instr_vec->get(3), instr_vec->get(7));
         break;
       case 7: // Instruction lwr
-	IF_rt=instr_vec->get(3);
-        IF_rs=instr_vec->get(2);
         if (!ac_annul_sig) ISA._behavior_mips1_Type_I(instr_vec->get(1), instr_vec->get(2), instr_vec->get(3), instr_vec->get(7));
         if (!ac_annul_sig) ISA.behavior_lwr(instr_vec->get(1), instr_vec->get(2), instr_vec->get(3), instr_vec->get(7));
         break;
       case 8: // Instruction sb
-	IF_rt=instr_vec->get(3);
-        IF_rs=instr_vec->get(2);
         if (!ac_annul_sig) ISA._behavior_mips1_Type_I(instr_vec->get(1), instr_vec->get(2), instr_vec->get(3), instr_vec->get(7));
         if (!ac_annul_sig) ISA.behavior_sb(instr_vec->get(1), instr_vec->get(2), instr_vec->get(3), instr_vec->get(7));
         break;
       case 9: // Instruction sh
-	IF_rt=instr_vec->get(3);
-        IF_rs=instr_vec->get(2);
         if (!ac_annul_sig) ISA._behavior_mips1_Type_I(instr_vec->get(1), instr_vec->get(2), instr_vec->get(3), instr_vec->get(7));
         if (!ac_annul_sig) ISA.behavior_sh(instr_vec->get(1), instr_vec->get(2), instr_vec->get(3), instr_vec->get(7));
         break;
       case 10: // Instruction sw
-	IF_rt=instr_vec->get(3);
-        IF_rs=instr_vec->get(2);
         if (!ac_annul_sig) ISA._behavior_mips1_Type_I(instr_vec->get(1), instr_vec->get(2), instr_vec->get(3), instr_vec->get(7));
         if (!ac_annul_sig) ISA.behavior_sw(instr_vec->get(1), instr_vec->get(2), instr_vec->get(3), instr_vec->get(7));
         break;
       case 11: // Instruction swl
-	IF_rt=instr_vec->get(3);
-        IF_rs=instr_vec->get(2);
         if (!ac_annul_sig) ISA._behavior_mips1_Type_I(instr_vec->get(1), instr_vec->get(2), instr_vec->get(3), instr_vec->get(7));
         if (!ac_annul_sig) ISA.behavior_swl(instr_vec->get(1), instr_vec->get(2), instr_vec->get(3), instr_vec->get(7));
         break;
       case 12: // Instruction swr
-	IF_rt=instr_vec->get(3);
-        IF_rs=instr_vec->get(2);
         if (!ac_annul_sig) ISA._behavior_mips1_Type_I(instr_vec->get(1), instr_vec->get(2), instr_vec->get(3), instr_vec->get(7));
         if (!ac_annul_sig) ISA.behavior_swr(instr_vec->get(1), instr_vec->get(2), instr_vec->get(3), instr_vec->get(7));
         break;
       case 13: // Instruction addi
-	IF_rt=instr_vec->get(3);
-        IF_rs=instr_vec->get(2);
         if (!ac_annul_sig) ISA._behavior_mips1_Type_I(instr_vec->get(1), instr_vec->get(2), instr_vec->get(3), instr_vec->get(7));
         if (!ac_annul_sig) ISA.behavior_addi(instr_vec->get(1), instr_vec->get(2), instr_vec->get(3), instr_vec->get(7));
         break;
       case 14: // Instruction addiu
-	//cout<<"global "<<global++;
-	IF_rt=instr_vec->get(3);
-        IF_rs=instr_vec->get(2);
-	cout<<"decodificou addiu "<<instr_vec->get(1)<<" "<<instr_vec->get(2)<<" "<<instr_vec->get(3)<<" "<<instr_vec->get(7)<<"\n";
         if (!ac_annul_sig) ISA._behavior_mips1_Type_I(instr_vec->get(1), instr_vec->get(2), instr_vec->get(3), instr_vec->get(7));
         if (!ac_annul_sig) ISA.behavior_addiu(instr_vec->get(1), instr_vec->get(2), instr_vec->get(3), instr_vec->get(7));
         break;
       case 15: // Instruction slti
-	IF_rt=instr_vec->get(3);
-        IF_rs=instr_vec->get(2);
         if (!ac_annul_sig) ISA._behavior_mips1_Type_I(instr_vec->get(1), instr_vec->get(2), instr_vec->get(3), instr_vec->get(7));
         if (!ac_annul_sig) ISA.behavior_slti(instr_vec->get(1), instr_vec->get(2), instr_vec->get(3), instr_vec->get(7));
         break;
       case 16: // Instruction sltiu
-	IF_rt=instr_vec->get(3);
-        IF_rs=instr_vec->get(2);
         if (!ac_annul_sig) ISA._behavior_mips1_Type_I(instr_vec->get(1), instr_vec->get(2), instr_vec->get(3), instr_vec->get(7));
         if (!ac_annul_sig) ISA.behavior_sltiu(instr_vec->get(1), instr_vec->get(2), instr_vec->get(3), instr_vec->get(7));
         break;
       case 17: // Instruction andi
-	IF_rt=instr_vec->get(3);
-        IF_rs=instr_vec->get(2);
         if (!ac_annul_sig) ISA._behavior_mips1_Type_I(instr_vec->get(1), instr_vec->get(2), instr_vec->get(3), instr_vec->get(7));
         if (!ac_annul_sig) ISA.behavior_andi(instr_vec->get(1), instr_vec->get(2), instr_vec->get(3), instr_vec->get(7));
         break;
       case 18: // Instruction ori
-	IF_rt=instr_vec->get(3);
-        IF_rs=instr_vec->get(2);
         if (!ac_annul_sig) ISA._behavior_mips1_Type_I(instr_vec->get(1), instr_vec->get(2), instr_vec->get(3), instr_vec->get(7));
         if (!ac_annul_sig) ISA.behavior_ori(instr_vec->get(1), instr_vec->get(2), instr_vec->get(3), instr_vec->get(7));
         break;
       case 19: // Instruction xori
-	IF_rt=instr_vec->get(3);
-        IF_rs=instr_vec->get(2);
         if (!ac_annul_sig) ISA._behavior_mips1_Type_I(instr_vec->get(1), instr_vec->get(2), instr_vec->get(3), instr_vec->get(7));
         if (!ac_annul_sig) ISA.behavior_xori(instr_vec->get(1), instr_vec->get(2), instr_vec->get(3), instr_vec->get(7));
         break;
       case 20: // Instruction lui
-	IF_rt=instr_vec->get(3);
-        IF_rs=instr_vec->get(2);
         if (!ac_annul_sig) ISA._behavior_mips1_Type_I(instr_vec->get(1), instr_vec->get(2), instr_vec->get(3), instr_vec->get(7));
         if (!ac_annul_sig) ISA.behavior_lui(instr_vec->get(1), instr_vec->get(2), instr_vec->get(3), instr_vec->get(7));
         break;
       case 21: // Instruction add
-	IF_rt=instr_vec->get(4);
-	IF_rs=instr_vec->get(2);
-	IF_rs2=instr_vec->get(3);
-	cout<<"add com "<<instr_vec->get(1)<<" "<<instr_vec->get(2)<<" "<<instr_vec->get(3)<<" "<<instr_vec->get(4)<<" "<<instr_vec->get(5)<<" "<<instr_vec->get(6)<<"\n";
         if (!ac_annul_sig) ISA._behavior_mips1_Type_R(instr_vec->get(1), instr_vec->get(2), instr_vec->get(3), instr_vec->get(4), instr_vec->get(5), instr_vec->get(6));
         if (!ac_annul_sig) ISA.behavior_add(instr_vec->get(1), instr_vec->get(2), instr_vec->get(3), instr_vec->get(4), instr_vec->get(5), instr_vec->get(6));
         break;
       case 22: // Instruction addu
-	cout<<"addu\n";
-	IF_rt=instr_vec->get(4);
-	IF_rs=instr_vec->get(2);
-	IF_rs2=instr_vec->get(3);
-
         if (!ac_annul_sig) ISA._behavior_mips1_Type_R(instr_vec->get(1), instr_vec->get(2), instr_vec->get(3), instr_vec->get(4), instr_vec->get(5), instr_vec->get(6));
         if (!ac_annul_sig) ISA.behavior_addu(instr_vec->get(1), instr_vec->get(2), instr_vec->get(3), instr_vec->get(4), instr_vec->get(5), instr_vec->get(6));
         break;
       case 23: // Instruction sub
-	cout<<"sub\n";
-	IF_rt=instr_vec->get(4);
-	IF_rs=instr_vec->get(2);
-	IF_rs2=instr_vec->get(3);
-
         if (!ac_annul_sig) ISA._behavior_mips1_Type_R(instr_vec->get(1), instr_vec->get(2), instr_vec->get(3), instr_vec->get(4), instr_vec->get(5), instr_vec->get(6));
         if (!ac_annul_sig) ISA.behavior_sub(instr_vec->get(1), instr_vec->get(2), instr_vec->get(3), instr_vec->get(4), instr_vec->get(5), instr_vec->get(6));
         break;
       case 24: // Instruction subu
-	IF_rt=instr_vec->get(4);
-	IF_rs=instr_vec->get(2);
-	IF_rs2=instr_vec->get(3);
-
-	cout<<"subu com "<<instr_vec->get(1)<<" "<<instr_vec->get(2)<<" "<<instr_vec->get(3)<<" "<<instr_vec->get(4)<<" "<<instr_vec->get(5)<<" "<<instr_vec->get(6)<<"\n";
         if (!ac_annul_sig) ISA._behavior_mips1_Type_R(instr_vec->get(1), instr_vec->get(2), instr_vec->get(3), instr_vec->get(4), instr_vec->get(5), instr_vec->get(6));
         if (!ac_annul_sig) ISA.behavior_subu(instr_vec->get(1), instr_vec->get(2), instr_vec->get(3), instr_vec->get(4), instr_vec->get(5), instr_vec->get(6));
         break;
       case 25: // Instruction slt
-	IF_rt=instr_vec->get(4);
-        IF_rs=instr_vec->get(2);
-        IF_rs2=instr_vec->get(3);
         if (!ac_annul_sig) ISA._behavior_mips1_Type_R(instr_vec->get(1), instr_vec->get(2), instr_vec->get(3), instr_vec->get(4), instr_vec->get(5), instr_vec->get(6));
         if (!ac_annul_sig) ISA.behavior_slt(instr_vec->get(1), instr_vec->get(2), instr_vec->get(3), instr_vec->get(4), instr_vec->get(5), instr_vec->get(6));
         break;
       case 26: // Instruction sltu
-	IF_rt=instr_vec->get(4);
-        IF_rs=instr_vec->get(2);
-        IF_rs2=instr_vec->get(3);
         if (!ac_annul_sig) ISA._behavior_mips1_Type_R(instr_vec->get(1), instr_vec->get(2), instr_vec->get(3), instr_vec->get(4), instr_vec->get(5), instr_vec->get(6));
         if (!ac_annul_sig) ISA.behavior_sltu(instr_vec->get(1), instr_vec->get(2), instr_vec->get(3), instr_vec->get(4), instr_vec->get(5), instr_vec->get(6));
         break;
       case 27: // Instruction instr_and
-	IF_rt=instr_vec->get(4);
-        IF_rs=instr_vec->get(2);
-        IF_rs2=instr_vec->get(3);
         if (!ac_annul_sig) ISA._behavior_mips1_Type_R(instr_vec->get(1), instr_vec->get(2), instr_vec->get(3), instr_vec->get(4), instr_vec->get(5), instr_vec->get(6));
         if (!ac_annul_sig) ISA.behavior_instr_and(instr_vec->get(1), instr_vec->get(2), instr_vec->get(3), instr_vec->get(4), instr_vec->get(5), instr_vec->get(6));
         break;
       case 28: // Instruction instr_or
-	IF_rt=instr_vec->get(4);
-        IF_rs=instr_vec->get(2);
-        IF_rs2=instr_vec->get(3);
         if (!ac_annul_sig) ISA._behavior_mips1_Type_R(instr_vec->get(1), instr_vec->get(2), instr_vec->get(3), instr_vec->get(4), instr_vec->get(5), instr_vec->get(6));
         if (!ac_annul_sig) ISA.behavior_instr_or(instr_vec->get(1), instr_vec->get(2), instr_vec->get(3), instr_vec->get(4), instr_vec->get(5), instr_vec->get(6));
         break;
       case 29: // Instruction instr_xor
-	IF_rt=instr_vec->get(4);
-        IF_rs=instr_vec->get(2);
-        IF_rs2=instr_vec->get(3);
         if (!ac_annul_sig) ISA._behavior_mips1_Type_R(instr_vec->get(1), instr_vec->get(2), instr_vec->get(3), instr_vec->get(4), instr_vec->get(5), instr_vec->get(6));
         if (!ac_annul_sig) ISA.behavior_instr_xor(instr_vec->get(1), instr_vec->get(2), instr_vec->get(3), instr_vec->get(4), instr_vec->get(5), instr_vec->get(6));
         break;
       case 30: // Instruction instr_nor
-	IF_rt=instr_vec->get(4);
-        IF_rs=instr_vec->get(2);
-        IF_rs2=instr_vec->get(3);
         if (!ac_annul_sig) ISA._behavior_mips1_Type_R(instr_vec->get(1), instr_vec->get(2), instr_vec->get(3), instr_vec->get(4), instr_vec->get(5), instr_vec->get(6));
         if (!ac_annul_sig) ISA.behavior_instr_nor(instr_vec->get(1), instr_vec->get(2), instr_vec->get(3), instr_vec->get(4), instr_vec->get(5), instr_vec->get(6));
         break;
       case 31: // Instruction nop
-		IF_rt=instr_vec->get(4);
-        IF_rs=instr_vec->get(2);
-        IF_rs2=instr_vec->get(3);
         if (!ac_annul_sig) ISA._behavior_mips1_Type_R(instr_vec->get(1), instr_vec->get(2), instr_vec->get(3), instr_vec->get(4), instr_vec->get(5), instr_vec->get(6));
         if (!ac_annul_sig) ISA.behavior_nop(instr_vec->get(1), instr_vec->get(2), instr_vec->get(3), instr_vec->get(4), instr_vec->get(5), instr_vec->get(6));
         break;
       case 32: // Instruction sll
-	IF_rt=instr_vec->get(4);
-        IF_rs=instr_vec->get(2);
-        IF_rs2=instr_vec->get(3);
         if (!ac_annul_sig) ISA._behavior_mips1_Type_R(instr_vec->get(1), instr_vec->get(2), instr_vec->get(3), instr_vec->get(4), instr_vec->get(5), instr_vec->get(6));
         if (!ac_annul_sig) ISA.behavior_sll(instr_vec->get(1), instr_vec->get(2), instr_vec->get(3), instr_vec->get(4), instr_vec->get(5), instr_vec->get(6));
         break;
       case 33: // Instruction srl
-	IF_rt=instr_vec->get(4);
-        IF_rs=instr_vec->get(2);
-        IF_rs2=instr_vec->get(3);
         if (!ac_annul_sig) ISA._behavior_mips1_Type_R(instr_vec->get(1), instr_vec->get(2), instr_vec->get(3), instr_vec->get(4), instr_vec->get(5), instr_vec->get(6));
         if (!ac_annul_sig) ISA.behavior_srl(instr_vec->get(1), instr_vec->get(2), instr_vec->get(3), instr_vec->get(4), instr_vec->get(5), instr_vec->get(6));
         break;
       case 34: // Instruction sra
-	IF_rt=instr_vec->get(4);
-        IF_rs=instr_vec->get(2);
-        IF_rs2=instr_vec->get(3);
         if (!ac_annul_sig) ISA._behavior_mips1_Type_R(instr_vec->get(1), instr_vec->get(2), instr_vec->get(3), instr_vec->get(4), instr_vec->get(5), instr_vec->get(6));
         if (!ac_annul_sig) ISA.behavior_sra(instr_vec->get(1), instr_vec->get(2), instr_vec->get(3), instr_vec->get(4), instr_vec->get(5), instr_vec->get(6));
         break;
       case 35: // Instruction sllv
-	IF_rt=instr_vec->get(4);
-        IF_rs=instr_vec->get(2);
-        IF_rs2=instr_vec->get(3);
         if (!ac_annul_sig) ISA._behavior_mips1_Type_R(instr_vec->get(1), instr_vec->get(2), instr_vec->get(3), instr_vec->get(4), instr_vec->get(5), instr_vec->get(6));
         if (!ac_annul_sig) ISA.behavior_sllv(instr_vec->get(1), instr_vec->get(2), instr_vec->get(3), instr_vec->get(4), instr_vec->get(5), instr_vec->get(6));
         break;
       case 36: // Instruction srlv
-	IF_rt=instr_vec->get(4);
-        IF_rs=instr_vec->get(2);
-        IF_rs2=instr_vec->get(3);
         if (!ac_annul_sig) ISA._behavior_mips1_Type_R(instr_vec->get(1), instr_vec->get(2), instr_vec->get(3), instr_vec->get(4), instr_vec->get(5), instr_vec->get(6));
         if (!ac_annul_sig) ISA.behavior_srlv(instr_vec->get(1), instr_vec->get(2), instr_vec->get(3), instr_vec->get(4), instr_vec->get(5), instr_vec->get(6));
         break;
       case 37: // Instruction srav
-	IF_rt=instr_vec->get(4);
-        IF_rs=instr_vec->get(2);
-        IF_rs2=instr_vec->get(3);
         if (!ac_annul_sig) ISA._behavior_mips1_Type_R(instr_vec->get(1), instr_vec->get(2), instr_vec->get(3), instr_vec->get(4), instr_vec->get(5), instr_vec->get(6));
         if (!ac_annul_sig) ISA.behavior_srav(instr_vec->get(1), instr_vec->get(2), instr_vec->get(3), instr_vec->get(4), instr_vec->get(5), instr_vec->get(6));
         break;
       case 38: // Instruction mult
-	IF_rt=instr_vec->get(4);
-        IF_rs=instr_vec->get(2);
-        IF_rs2=instr_vec->get(3);
         if (!ac_annul_sig) ISA._behavior_mips1_Type_R(instr_vec->get(1), instr_vec->get(2), instr_vec->get(3), instr_vec->get(4), instr_vec->get(5), instr_vec->get(6));
         if (!ac_annul_sig) ISA.behavior_mult(instr_vec->get(1), instr_vec->get(2), instr_vec->get(3), instr_vec->get(4), instr_vec->get(5), instr_vec->get(6));
         break;
       case 39: // Instruction multu
-	IF_rt=instr_vec->get(4);
-        IF_rs=instr_vec->get(2);
-        IF_rs2=instr_vec->get(3);
         if (!ac_annul_sig) ISA._behavior_mips1_Type_R(instr_vec->get(1), instr_vec->get(2), instr_vec->get(3), instr_vec->get(4), instr_vec->get(5), instr_vec->get(6));
         if (!ac_annul_sig) ISA.behavior_multu(instr_vec->get(1), instr_vec->get(2), instr_vec->get(3), instr_vec->get(4), instr_vec->get(5), instr_vec->get(6));
         break;
       case 40: // Instruction div
-	IF_rt=instr_vec->get(4);
-        IF_rs=instr_vec->get(2);
-        IF_rs2=instr_vec->get(3);
         if (!ac_annul_sig) ISA._behavior_mips1_Type_R(instr_vec->get(1), instr_vec->get(2), instr_vec->get(3), instr_vec->get(4), instr_vec->get(5), instr_vec->get(6));
         if (!ac_annul_sig) ISA.behavior_div(instr_vec->get(1), instr_vec->get(2), instr_vec->get(3), instr_vec->get(4), instr_vec->get(5), instr_vec->get(6));
         break;
       case 41: // Instruction divu
-	IF_rt=instr_vec->get(4);
-        IF_rs=instr_vec->get(2);
-        IF_rs2=instr_vec->get(3);
         if (!ac_annul_sig) ISA._behavior_mips1_Type_R(instr_vec->get(1), instr_vec->get(2), instr_vec->get(3), instr_vec->get(4), instr_vec->get(5), instr_vec->get(6));
         if (!ac_annul_sig) ISA.behavior_divu(instr_vec->get(1), instr_vec->get(2), instr_vec->get(3), instr_vec->get(4), instr_vec->get(5), instr_vec->get(6));
         break;
       case 42: // Instruction mfhi
-	IF_rt=instr_vec->get(4);
-        IF_rs=instr_vec->get(2);
-        IF_rs2=instr_vec->get(3);
         if (!ac_annul_sig) ISA._behavior_mips1_Type_R(instr_vec->get(1), instr_vec->get(2), instr_vec->get(3), instr_vec->get(4), instr_vec->get(5), instr_vec->get(6));
         if (!ac_annul_sig) ISA.behavior_mfhi(instr_vec->get(1), instr_vec->get(2), instr_vec->get(3), instr_vec->get(4), instr_vec->get(5), instr_vec->get(6));
         break;
       case 43: // Instruction mthi
-	IF_rt=instr_vec->get(4);
-        IF_rs=instr_vec->get(2);
-        IF_rs2=instr_vec->get(3);
         if (!ac_annul_sig) ISA._behavior_mips1_Type_R(instr_vec->get(1), instr_vec->get(2), instr_vec->get(3), instr_vec->get(4), instr_vec->get(5), instr_vec->get(6));
         if (!ac_annul_sig) ISA.behavior_mthi(instr_vec->get(1), instr_vec->get(2), instr_vec->get(3), instr_vec->get(4), instr_vec->get(5), instr_vec->get(6));
         break;
       case 44: // Instruction mflo
-	IF_rt=instr_vec->get(4);
-        IF_rs=instr_vec->get(2);
-        IF_rs2=instr_vec->get(3);
         if (!ac_annul_sig) ISA._behavior_mips1_Type_R(instr_vec->get(1), instr_vec->get(2), instr_vec->get(3), instr_vec->get(4), instr_vec->get(5), instr_vec->get(6));
         if (!ac_annul_sig) ISA.behavior_mflo(instr_vec->get(1), instr_vec->get(2), instr_vec->get(3), instr_vec->get(4), instr_vec->get(5), instr_vec->get(6));
         break;
       case 45: // Instruction mtlo
-	IF_rt=instr_vec->get(4);
-        IF_rs=instr_vec->get(2);
-        IF_rs2=instr_vec->get(3);
         if (!ac_annul_sig) ISA._behavior_mips1_Type_R(instr_vec->get(1), instr_vec->get(2), instr_vec->get(3), instr_vec->get(4), instr_vec->get(5), instr_vec->get(6));
         if (!ac_annul_sig) ISA.behavior_mtlo(instr_vec->get(1), instr_vec->get(2), instr_vec->get(3), instr_vec->get(4), instr_vec->get(5), instr_vec->get(6));
         break;
       case 46: // Instruction j
-	//nao tem hazard, so usa imediato
         if (!ac_annul_sig) ISA._behavior_mips1_Type_J(instr_vec->get(1), instr_vec->get(8));
         if (!ac_annul_sig) ISA.behavior_j(instr_vec->get(1), instr_vec->get(8));
         break;
       case 47: // Instruction jal
-	//nao tem hazard, so imediato
         if (!ac_annul_sig) ISA._behavior_mips1_Type_J(instr_vec->get(1), instr_vec->get(8));
         if (!ac_annul_sig) ISA.behavior_jal(instr_vec->get(1), instr_vec->get(8));
         break;
       case 48: // Instruction jr
-	IF_rs=instr_vec->get(2);
-	IF_rs2=99; //so pra garantir que nao vai dar conflito
-	IF_rt=99; //garantia de nao-conflito
-	cout<<"JR com "<<instr_vec->get(1)<<" "<<instr_vec->get(2)<<" "<<instr_vec->get(3)<<" "<<instr_vec->get(4)<<" "<<instr_vec->get(5)<<" "<<instr_vec->get(6)<<"\n";
         if (!ac_annul_sig) ISA._behavior_mips1_Type_R(instr_vec->get(1), instr_vec->get(2), instr_vec->get(3), instr_vec->get(4), instr_vec->get(5), instr_vec->get(6));
         if (!ac_annul_sig) ISA.behavior_jr(instr_vec->get(1), instr_vec->get(2), instr_vec->get(3), instr_vec->get(4), instr_vec->get(5), instr_vec->get(6));
         break;
       case 49: // Instruction jalr
-	IF_rs=instr_vec->get(2);
-	IF_rs2=99;
-	IF_rt=99;	
-	cout<<"JALR com "<<instr_vec->get(1)<<" "<<instr_vec->get(2)<<" "<<instr_vec->get(3)<<" "<<instr_vec->get(4)<<" "<<instr_vec->get(5)<<" "<<instr_vec->get(6)<<"\n";
         if (!ac_annul_sig) ISA._behavior_mips1_Type_R(instr_vec->get(1), instr_vec->get(2), instr_vec->get(3), instr_vec->get(4), instr_vec->get(5), instr_vec->get(6));
         if (!ac_annul_sig) ISA.behavior_jalr(instr_vec->get(1), instr_vec->get(2), instr_vec->get(3), instr_vec->get(4), instr_vec->get(5), instr_vec->get(6));
         break;
       case 50: // Instruction beq
-	IF_rs=instr_vec->get(2);
-	IF_rt=instr_vec->get(3);
-	cout<<"rs "<<IF_rs<<" rt "<<IF_rt<<"\n";
-	cout<<"beq com "<<instr_vec->get(1)<<" "<<instr_vec->get(2)<<" "<<instr_vec->get(3)<<" "<<instr_vec->get(7)<<"\n";
         if (!ac_annul_sig) ISA._behavior_mips1_Type_I(instr_vec->get(1), instr_vec->get(2), instr_vec->get(3), instr_vec->get(7));
         if (!ac_annul_sig) ISA.behavior_beq(instr_vec->get(1), instr_vec->get(2), instr_vec->get(3), instr_vec->get(7));
         break;
       case 51: // Instruction bne
-	IF_rs=instr_vec->get(2);
-	IF_rt=instr_vec->get(3);
-
         if (!ac_annul_sig) ISA._behavior_mips1_Type_I(instr_vec->get(1), instr_vec->get(2), instr_vec->get(3), instr_vec->get(7));
         if (!ac_annul_sig) ISA.behavior_bne(instr_vec->get(1), instr_vec->get(2), instr_vec->get(3), instr_vec->get(7));
         break;
       case 52: // Instruction blez
-        IF_rs=instr_vec->get(2);
-	IF_rt=instr_vec->get(3);
-
 	if (!ac_annul_sig) ISA._behavior_mips1_Type_I(instr_vec->get(1), instr_vec->get(2), instr_vec->get(3), instr_vec->get(7));
         if (!ac_annul_sig) ISA.behavior_blez(instr_vec->get(1), instr_vec->get(2), instr_vec->get(3), instr_vec->get(7));
         break;
       case 53: // Instruction bgtz
-        IF_rs=instr_vec->get(2);
-	IF_rt=instr_vec->get(3);
-
 	if (!ac_annul_sig) ISA._behavior_mips1_Type_I(instr_vec->get(1), instr_vec->get(2), instr_vec->get(3), instr_vec->get(7));
         if (!ac_annul_sig) ISA.behavior_bgtz(instr_vec->get(1), instr_vec->get(2), instr_vec->get(3), instr_vec->get(7));
         break;
       case 54: // Instruction bltz
-        IF_rs=instr_vec->get(2);
-	IF_rt=instr_vec->get(3);
-
 	if (!ac_annul_sig) ISA._behavior_mips1_Type_I(instr_vec->get(1), instr_vec->get(2), instr_vec->get(3), instr_vec->get(7));
         if (!ac_annul_sig) ISA.behavior_bltz(instr_vec->get(1), instr_vec->get(2), instr_vec->get(3), instr_vec->get(7));
         break;
       case 55: // Instruction bgez
-        IF_rs=instr_vec->get(2);
-	IF_rt=instr_vec->get(3);
-
 	if (!ac_annul_sig) ISA._behavior_mips1_Type_I(instr_vec->get(1), instr_vec->get(2), instr_vec->get(3), instr_vec->get(7));
         if (!ac_annul_sig) ISA.behavior_bgez(instr_vec->get(1), instr_vec->get(2), instr_vec->get(3), instr_vec->get(7));
         break;
       case 56: // Instruction bltzal
-        IF_rs=instr_vec->get(2);
-	IF_rt=instr_vec->get(3);
-
 	if (!ac_annul_sig) ISA._behavior_mips1_Type_I(instr_vec->get(1), instr_vec->get(2), instr_vec->get(3), instr_vec->get(7));
         if (!ac_annul_sig) ISA.behavior_bltzal(instr_vec->get(1), instr_vec->get(2), instr_vec->get(3), instr_vec->get(7));
         break;
       case 57: // Instruction bgezal
-        IF_rs=instr_vec->get(2);
-	IF_rt=instr_vec->get(3);
-
 	if (!ac_annul_sig) ISA._behavior_mips1_Type_I(instr_vec->get(1), instr_vec->get(2), instr_vec->get(3), instr_vec->get(7));
         if (!ac_annul_sig) ISA.behavior_bgezal(instr_vec->get(1), instr_vec->get(2), instr_vec->get(3), instr_vec->get(7));
         break;
       case 58: // Instruction sys_call
-	//nao gera hazard
         if (!ac_annul_sig) ISA._behavior_mips1_Type_R(instr_vec->get(1), instr_vec->get(2), instr_vec->get(3), instr_vec->get(4), instr_vec->get(5), instr_vec->get(6));
         if (!ac_annul_sig) ISA.behavior_sys_call(instr_vec->get(1), instr_vec->get(2), instr_vec->get(3), instr_vec->get(4), instr_vec->get(5), instr_vec->get(6));
         break;
       case 59: // Instruction instr_break
-	//nao gera hazard
         if (!ac_annul_sig) ISA._behavior_mips1_Type_R(instr_vec->get(1), instr_vec->get(2), instr_vec->get(3), instr_vec->get(4), instr_vec->get(5), instr_vec->get(6));
         if (!ac_annul_sig) ISA.behavior_instr_break(instr_vec->get(1), instr_vec->get(2), instr_vec->get(3), instr_vec->get(4), instr_vec->get(5), instr_vec->get(6));
         break;
@@ -540,33 +417,12 @@ void mips1::behavior() {
       break;
     }
 
-	if(inicio==0) /* primeira execucao, nao vai ter hazard */
-	{
-	cout<<"primeira execução, sem hazard\n";
-	inicio++; //indica que a partir de agora esta valendo
-	instr_anterior=ins_id; //ja coloca como anterior
-	IE_rt=IF_rt; /* atual vai virar anterior na proxima */
-	IE_rs=IF_rs; // igual acima
-	}else{
-
-	instr_atual=ins_id; //seta atual para fazer teste
-	
-	if(useMemory(instr_anterior) && checkRegister()) //hazard se anterior foi memoria e registrador coincide
-		{
-			cout<<"Hazard\n";
-			hazard_count++; //hazard identificado
-		}
-
-	cout<<"\n\nInstrucao Atual: "<<instr_atual<<" rs: "<<IF_rs<<" rs2 "<<IF_rs2<<" rt: "<<IF_rt<<"\nInstrucao Anterior: "<<instr_anterior<<" rs: "<<IE_rs<<" rs2 "<<IE_rs2<<" rt: "<<IE_rt<<"\n\n";
-
-
-	instr_anterior=instr_atual; //independente de hazard, o que e atual vira anterior
-	IE_rt=IF_rt;
-	IE_rs=IF_rs;
-	IE_rs2=IF_rs2;
-
-	}
-
+    storeInstruction(ins_id,
+		     instr_vec->get(2),
+		     instr_vec->get(3),
+		     instr_vec->get(4));
+    if (checkHazard() != NO_HAZARD)
+      hazard_count++;
 
     if ((!ac_wait_sig) && (!ac_annul_sig)) ac_instr_counter+=1;
     ac_annul_sig = 0;
@@ -590,8 +446,6 @@ void mips1::behavior() {
 
 } // for (;;)
 
-
-
 } // behavior()
 
  
@@ -607,6 +461,8 @@ void mips1::init() {
   ISA._behavior_begin();
   cerr << "ArchC: -------------------- Starting Simulation --------------------" << endl;
   InitStat();
+
+  hazard_count = 0;
 
   signal(SIGINT, sigint_handler);
   signal(SIGTERM, sigint_handler);
@@ -638,6 +494,8 @@ void mips1::init(int ac, char *av[]) {
   cerr << "ArchC: -------------------- Starting Simulation --------------------" << endl;
   InitStat();
 
+  hazard_count = 0;
+
   signal(SIGINT, sigint_handler);
   signal(SIGTERM, sigint_handler);
   signal(SIGSEGV, sigsegv_handler);
@@ -662,7 +520,7 @@ void mips1::stop(int status) {
 #ifndef AC_COMPSIM
   set_stopped();
 #endif
-  cout<<"Hazards: "<<hazard_count<<"\n";
+  cout << "Hazards: " << hazard_count << endl;
 }
 
 void mips1::load(char* program) {

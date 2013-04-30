@@ -131,7 +131,7 @@ void ac_behavior( lhu )
 //!Instruction lw behavior method.
 void ac_behavior( lw )
 {
-  cout<<"lw com rt= "<<rt<<" rs= "<<rs<<" \n";
+  // cout<<"lw com rt= "<<rt<<" rs= "<<rs<<" \n";
   dbg_printf("lw r%d, %d(r%d)\n", rt, imm & 0xFFFF, rs);
   RB[rt] = DM.read(RB[rs]+ imm);
   dbg_printf("Result = %#x\n", RB[rt]);
@@ -245,7 +245,7 @@ void ac_behavior( addi )
 //!Instruction addiu behavior method.
 void ac_behavior( addiu )
 {
-  cout<<"chamou addiu com "<<rt<<" "<<rs<<" "<<imm<<"\n";
+  // cout<<"chamou addiu com "<<rt<<" "<<rs<<" "<<imm<<"\n";
   dbg_printf("addiu r%d, r%d, %d\n", rt, rs, imm & 0xFFFF);
   RB[rt] = RB[rs] + imm;
   dbg_printf("Result = %#x\n", RB[rt]);
@@ -316,7 +316,7 @@ void ac_behavior( lui )
 //!Instruction add behavior method.
 void ac_behavior( add )
 {
-  cout<<"add com rd "<<rd<<" rs "<<rs<<" rt "<<rt<<" \n";
+  // cout<<"add com rd "<<rd<<" rs "<<rs<<" rt "<<rt<<" \n";
   dbg_printf("add r%d, r%d, r%d\n", rd, rs, rt);
   RB[rd] = RB[rs] + RB[rt];
   dbg_printf("Result = %#x\n", RB[rd]);
@@ -350,7 +350,7 @@ void ac_behavior( sub )
 void ac_behavior( subu )
 {
   
-  cout<<"subu com rd "<<rd<<" rs "<<rs<<" rt "<<rt<<" \n";
+  // cout<<"subu com rd "<<rd<<" rs "<<rs<<" rt "<<rt<<" \n";
   dbg_printf("subu r%d, r%d, r%d\n", rd, rs, rt);
   RB[rd] = RB[rs] - RB[rt];
   dbg_printf("Result = %#x\n", RB[rd]);
@@ -596,7 +596,7 @@ void ac_behavior( jal )
 //!Instruction jr behavior method.
 void ac_behavior( jr )
 {
-  cout<<"RS "<<rs<<"\n";
+  // cout<<"RS "<<rs<<"\n";
   dbg_printf("jr r%d\n", rs);
   // Jump to the address stored on the register reg[RS]
   // It must also flush the instructions that were loaded into the pipeline
@@ -609,7 +609,7 @@ void ac_behavior( jr )
 //!Instruction jalr behavior method.
 void ac_behavior( jalr )
 {
-  cout<<"jalr com rs "<<rs<<"\n";
+  // cout<<"jalr com rs "<<rs<<"\n";
   dbg_printf("jalr r%d, r%d\n", rd, rs);
   // Save the value of PC + 8(return address) in rd and
   // jump to the address given by [rs]
@@ -628,7 +628,7 @@ void ac_behavior( jalr )
 //!Instruction beq behavior method.
 void ac_behavior( beq )
 {
-  cout<<"beq rs "<<rs<<" rt "<<rt<<"\n";
+  // cout<<"beq rs "<<rs<<" rt "<<rt<<"\n";
   dbg_printf("beq r%d, r%d, %d\n", rt, rs, imm & 0xFFFF);
   if( RB[rs] == RB[rt] ){
 #ifndef NO_NEED_PC_UPDATE
