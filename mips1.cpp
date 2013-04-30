@@ -75,7 +75,10 @@ void storeInstruction(int ins_id, int rs, int rt, int rd) {
     // load-store
     //  1-7   load
     //  8-12  store
-    //  13-20 operations with imediate
+    // operations with imediate
+    //  13-20 
+    // branch
+    //  50-57
     IF = control_t(rs, rt);
   } else if (ins_id >= 21 && ins_id <= 45) {
     // R-type
@@ -85,10 +88,6 @@ void storeInstruction(int ins_id, int rs, int rt, int rd) {
     // jump
     //  48-49
     IF = control_t(rs);
-  } else if (ins_id >= 50 && ins_id <= 57) {
-    // branch
-    //  50-57
-    IF = control_t(rs, rt);
   } else {
     // jump to imediate
     //  46-47
