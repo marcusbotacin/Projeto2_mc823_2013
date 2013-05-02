@@ -60,18 +60,25 @@ void storeInstruction(int ins_id, int rs, int rt, int rd) {
   IF.ins_id = ins_id;
 }
 
-hazard_t checkHazard() {
-  // if (!(IF.ins_id >= 50 && IF.ins_id <= 57) &&
-  //     bp_hash[(mips1::ac_pc.read() / 4) % N].guess() &&
-  //     bp_hash[(mips1::ac_pc.read() / 4) % N].jump_pc != mips1::ac_pc.read() + 4) {
-  //   // CONTROL_HAZARD;
-  // }
+bool checkHazard(int ac_pc) {
+  bool hz = false;
+
+  if (!(IF.ins_id >= 50 && IF.ins_id <= 57))
+    if (!checkBranchPred(false, ac_pc)) {
+      // if this returns false, it's trying to branch in a non-branch instruction.
+      // crazy, huh?
+      hazard_count_by_type[CONTROL_HAZARD]++;
+      hz = true;
+    }
 
   if (ID.memread &&
-      (ID.rt == IF.rs || ID.rt == IF.rt))
-    return DATA_HAZARD;
-  else
-    return NO_HAZARD;
+      (ID.rt == IF.rs || ID.rt == IF.rt)) {
+    hazard_count_by_type[DATA_HAZARD]++;
+    hz = true;
+  }
+
+  if (hz) hazard_count++;
+  return hz;
 }
 
 void mips1::behavior() {
@@ -384,9 +391,7 @@ void mips1::behavior() {
 		     instr_vec->get(2),
 		     instr_vec->get(3),
 		     instr_vec->get(4));
-    if (checkHazard() != NO_HAZARD)
-      hazard_count++;
-    // printf("> %d\n", ac_pc.read() / 4);
+    checkHazard(ac_pc.read());
 
     if ((!ac_wait_sig) && (!ac_annul_sig)) ac_instr_counter+=1;
     ac_annul_sig = 0;
@@ -427,6 +432,7 @@ void mips1::init() {
   InitStat();
 
   hazard_count = 0;
+  memset(hazard_count_by_type, 0, sizeof(hazard_count_by_type));
 
   signal(SIGINT, sigint_handler);
   signal(SIGTERM, sigint_handler);
@@ -459,6 +465,7 @@ void mips1::init(int ac, char *av[]) {
   InitStat();
 
   hazard_count = 0;
+  memset(hazard_count_by_type, 0, sizeof(hazard_count_by_type));
 
   signal(SIGINT, sigint_handler);
   signal(SIGTERM, sigint_handler);
@@ -484,7 +491,9 @@ void mips1::stop(int status) {
 #ifndef AC_COMPSIM
   set_stopped();
 #endif
-  cout << "Hazards: " << hazard_count << endl;
+  cout << "Number of hazards: " << hazard_count << endl;
+  cout << "| Data hazards: " << hazard_count_by_type[DATA_HAZARD] << endl;
+  cout << "| Control hazards: " << hazard_count_by_type[CONTROL_HAZARD] << endl;
 }
 
 void mips1::load(char* program) {

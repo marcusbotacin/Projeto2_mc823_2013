@@ -52,9 +52,6 @@
 using namespace mips1_parms;
 
 #include "library.h"
-const int N = 64;
-branch_pred_t bp_hash[N];
-int hazard_count;
 
 //!Generic instruction behavior method.
 void ac_behavior( instruction )
@@ -628,20 +625,6 @@ void ac_behavior( jalr )
   RB[rd] = ac_pc+4;
   dbg_printf("Return = %#x\n", ac_pc+4);
 };
-
-bool checkBranchPred(bool branch_res, int ac_pc, int npc = 0) {
-  if (bp_hash[(ac_pc / 4) % N].guess() == branch_res &&
-      (!branch_res || bp_hash[(ac_pc / 4) % N].jump_pc == npc)) {
-    // PURE AWESOMENESS! I BELIEVE IN UNICORNS, RAINBOWS AND CANDY MOUNTAINS
-  } else {
-    hazard_count++;
-  }
-
-  // fprintf(stderr, "> %d %d\n", (ac_pc / 4) % N, bp_hash[(ac_pc / 4) % N].state);
-
-  if(branch_res) bp_hash[(ac_pc / 4) % N].taken(npc);
-  else bp_hash[(ac_pc / 4) % N].notTaken();
-}
 
 //!Instruction beq behavior method.
 void ac_behavior( beq )

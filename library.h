@@ -33,3 +33,27 @@ branch_pred_t(): state(3), jump_pc(0) {}
 };
 
 enum hazard_t {NO_HAZARD=0, DATA_HAZARD, CONTROL_HAZARD};
+
+const int N = 127;
+branch_pred_t bp_hash[N];
+int hazard_count;
+int hazard_count_by_type[3];
+
+bool checkBranchPred(bool branch_res, int ac_pc, int npc = 0) {
+  bool retval;
+
+  if (bp_hash[(ac_pc / 4) % N].guess() == branch_res &&
+      (!branch_res || bp_hash[(ac_pc / 4) % N].jump_pc == npc)) {
+    // PURE AWESOMENESS! I BELIEVE IN UNICORNS, RAINBOWS AND CANDY MOUNTAINS
+    retval = true;
+  } else {
+    hazard_count++;
+    hazard_count_by_type[CONTROL_HAZARD]++;
+    retval = false;
+  }
+
+  if(branch_res) bp_hash[(ac_pc / 4) % N].taken(npc);
+  else bp_hash[(ac_pc / 4) % N].notTaken();
+
+  return retval;
+}
