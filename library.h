@@ -32,12 +32,12 @@ branch_pred_t(): state(3), jump_pc(0) {}
   }
 };
 
-enum hazard_t {NO_HAZARD=0, DATA_HAZARD, CONTROL_HAZARD};
+enum hazard_t {NO_HAZARD=0, DATA_HAZARD, DATA_HAZARD_NO_FW, CONTROL_HAZARD};
 
 const int N = 127;
 branch_pred_t bp_hash[N];
 int hazard_count;
-int hazard_count_by_type[3];
+int hazard_count_by_type[4];
 
 bool checkBranchPred(bool branch_res, int ac_pc, int npc = 0) {
   bool retval;

@@ -25,6 +25,12 @@ bool useMemory(unsigned ins_id) {
   return (ins_id >= 1 && ins_id <= 7); // intervalo dos loads
 }
 
+// testa se a instrucao escreve no registrador
+bool writeRegister(unsigned ins_id) {
+  return (ins_id >= 1 && ins_id <= 7) ||  // intervalo dos loads
+         (ins_id >= 13 && ins_id <= 45 && ins_id != 31);  // intervalo das operacoes (exceto nop)
+}
+
 void storeInstruction(int ins_id, int rs, int rt, int rd) {
   WB = MEM;
   MEM = EX;
@@ -57,6 +63,7 @@ void storeInstruction(int ins_id, int rs, int rt, int rd) {
   }
 
   IF.memread = useMemory(ins_id);
+  IF.regwrite = writeRegister(ins_id);
   IF.ins_id = ins_id;
 }
 
@@ -75,6 +82,15 @@ bool checkHazard(int ac_pc) {
       (ID.rt == IF.rs || ID.rt == IF.rt)) {
     hazard_count_by_type[DATA_HAZARD]++;
     hz = true;
+  }
+
+  if (ID.regwrite && ID.rd != -1 &&
+      (ID.rd == IF.rs || ID.rd == IF.rt)) {
+    hazard_count_by_type[DATA_HAZARD_NO_FW] += 2;
+  }
+  else if (EX.regwrite && EX.rd != -1 &&
+	   (EX.rd == IF.rs || EX.rd == IF.rt)) {
+    hazard_count_by_type[DATA_HAZARD_NO_FW]++;
   }
 
   if (hz) hazard_count++;
@@ -493,6 +509,7 @@ void mips1::stop(int status) {
 #endif
   cout << "Number of hazards: " << hazard_count << endl;
   cout << "| Data hazards: " << hazard_count_by_type[DATA_HAZARD] << endl;
+  cout << "| Data hazards (without forwarding): " << hazard_count_by_type[DATA_HAZARD_NO_FW] << endl;
   cout << "| Control hazards: " << hazard_count_by_type[CONTROL_HAZARD] << endl;
 }
 
