@@ -63,11 +63,11 @@ bool dcache_lu(unsigned int addr){
   for(i=0;i<DCACHE_LEN;i++){
     if(min==-1){
       min=DATA_CACHE[i].use;
-      emin=DATA_CACHE[i].addr;
+      emin=i;
     }
     else if(DATA_CACHE[i].use<min){
       min=DATA_CACHE[i].use;
-      emin=DATA_CACHE[i].addr;
+      emin=i;
     }
   }
   DATA_CACHE[emin].addr=addr;
@@ -102,11 +102,11 @@ bool icache_lu(int pc){
   for(i=0;i<ICACHE_LEN;i++){
     if(min==-1){
       min=INSTR_CACHE[i].use;
-      emin=INSTR_CACHE[i].pc;
+      emin=i;
     }
     else if(INSTR_CACHE[i].use<min){
       min=INSTR_CACHE[i].use;
-      emin=INSTR_CACHE[i].pc;
+      emin=i;
     }
   }
   INSTR_CACHE[emin].pc=pc;
