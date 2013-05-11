@@ -53,6 +53,7 @@ using namespace mips1_parms;
 
 #include "library.h"
 
+
 //!Generic instruction behavior method.
 void ac_behavior( instruction )
 { 
@@ -69,6 +70,7 @@ void ac_behavior( Type_R ){}
 void ac_behavior( Type_I ){}
 void ac_behavior( Type_J ){}
  
+
 //!Behavior called before starting simulation
 void ac_behavior(begin)
 {
@@ -89,13 +91,13 @@ void ac_behavior(end)
   dbg_printf("@@@ end behavior @@@\n");
 }
 
-
 //!Instruction lb behavior method.
 void ac_behavior( lb )
 {
   char byte;
   dbg_printf("lb r%d, %d(r%d)\n", rt, imm & 0xFFFF, rs);
   byte = DM.read_byte(RB[rs]+ imm);
+  DC_ADDR=RB[rs]+imm;
   RB[rt] = (ac_Sword)byte ;
   dbg_printf("Result = %#x\n", RB[rt]);
 };
@@ -106,6 +108,7 @@ void ac_behavior( lbu )
   unsigned char byte;
   dbg_printf("lbu r%d, %d(r%d)\n", rt, imm & 0xFFFF, rs);
   byte = DM.read_byte(RB[rs]+ imm);
+  DC_ADDR=RB[rs]+imm;
   RB[rt] = byte ;
   dbg_printf("Result = %#x\n", RB[rt]);
 };
@@ -116,6 +119,7 @@ void ac_behavior( lh )
   short int half;
   dbg_printf("lh r%d, %d(r%d)\n", rt, imm & 0xFFFF, rs);
   half = DM.read_half(RB[rs]+ imm);
+  DC_ADDR=RB[rs]+imm;
   RB[rt] = (ac_Sword)half ;
   dbg_printf("Result = %#x\n", RB[rt]);
 };
@@ -125,6 +129,7 @@ void ac_behavior( lhu )
 {
   unsigned short int  half;
   half = DM.read_half(RB[rs]+ imm);
+  DC_ADDR=RB[rs]+imm;
   RB[rt] = half ;
   dbg_printf("Result = %#x\n", RB[rt]);
 };
@@ -135,6 +140,7 @@ void ac_behavior( lw )
   // cout<<"lw com rt= "<<rt<<" rs= "<<rs<<" \n";
   dbg_printf("lw r%d, %d(r%d)\n", rt, imm & 0xFFFF, rs);
   RB[rt] = DM.read(RB[rs]+ imm);
+  DC_ADDR=RB[rs]+imm;
   dbg_printf("Result = %#x\n", RB[rt]);
 };
 
@@ -148,6 +154,7 @@ void ac_behavior( lwl )
   addr = RB[rs] + imm;
   offset = (addr & 0x3) * 8;
   data = DM.read(addr & 0xFFFFFFFC);
+  DC_ADDR=addr & 0xFFFFFFFC;
   data <<= offset;
   data |= RB[rt] & ((1<<offset)-1);
   RB[rt] = data;
@@ -164,6 +171,7 @@ void ac_behavior( lwr )
   addr = RB[rs] + imm;
   offset = (3 - (addr & 0x3)) * 8;
   data = DM.read(addr & 0xFFFFFFFC);
+  DC_ADDR=addr & 0xFFFFFFFC;
   data >>= offset;
   data |= RB[rt] & (0xFFFFFFFF << (32-offset));
   RB[rt] = data;
@@ -636,7 +644,7 @@ void ac_behavior( beq )
     npc = ac_pc + (imm<<2);
 #endif 
     dbg_printf("Taken to %#x\n", ac_pc + (imm<<2));
-
+    
     checkBranchPred(true, ac_pc, ac_pc + (imm<<2));
   } else {
     checkBranchPred(false, ac_pc);

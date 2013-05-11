@@ -1,5 +1,15 @@
 #include <algorithm>
-
+#define DCACHE_LEN 1024
+#define ICACHE_LEN 1024
+unsigned int DC_ADDR;
+typedef struct  dcache {
+  unsigned int addr;
+  int use;//num de vezes utilizado
+};
+typedef struct  icache {
+  unsigned int pc;
+  int use;//num de vezes utilizado
+};
 struct control_t {
   int rs, rt, rd;
   bool regwrite, memread;
