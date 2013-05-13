@@ -46,6 +46,14 @@ bool dcache_hit(unsigned int addr, bool store){
   int i=0,j=0;
   if(store)
     st_instr++;
+  if(DM_DC){
+    if(DATA_CACHE[addr%DCACHE_LEN].addr[addr%DC_NWAY]==addr){
+      DATA_CACHE[addr%DCACHE_LEN].dirty[addr%DC_NWAY]=true;
+      return true;
+    }
+    dcache_lu(addr);
+    return false;
+  }  
   for(i=0;i<DCACHE_LEN;i++){
     for(j=0;j<DC_NWAY;j++){
       if(DATA_CACHE[i].addr[j]==addr){
@@ -62,6 +70,11 @@ bool dcache_hit(unsigned int addr, bool store){
 //least used, true para lugar livre, false para remocao
 bool dcache_lu(unsigned int addr){
   int i,j;
+  if(DM_DC){
+    DATA_CACHE[addr%DCACHE_LEN].addr[addr%DC_NWAY]=addr;
+    DATA_CACHE[addr%DCACHE_LEN].dirty[addr%DC_NWAY]=false;
+    return true;
+  }  
   //1 buscar por lugar vago
   for(i=0;i<DCACHE_LEN;i++){
     for(j=0;j<DC_NWAY;j++){
@@ -98,6 +111,14 @@ bool dcache_lu(unsigned int addr){
 bool icache_hit(int ac_pc){
   int pc = ac_pc-4;
   int i=0,j=0;
+  if(DM_IC){
+    if(INSTR_CACHE[pc%ICACHE_LEN].pc[pc%IC_NWAY]==pc){
+      return true;
+    }
+    icache_lu(pc);
+    return false;
+  }  
+
   for(i=0;i<ICACHE_LEN;i++){
     for(j=0;j<IC_NWAY;j++){
       if(INSTR_CACHE[i].pc[j]==pc){
@@ -112,6 +133,10 @@ bool icache_hit(int ac_pc){
 //least used, true para lugar livre, false para remocao
 bool icache_lu(int pc){
   int i,j;
+  if(DM_IC){
+    INSTR_CACHE[pc%ICACHE_LEN].pc[pc%IC_NWAY]=pc;
+    return true;
+  }  
   //1 buscar por lugar vago
   for(i=0;i<ICACHE_LEN;i++){
     for(j=0;j<IC_NWAY;j++){
