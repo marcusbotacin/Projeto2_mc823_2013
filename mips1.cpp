@@ -168,7 +168,7 @@ bool icache_lu(int pc){
   int i,j;
   int min=-1;
   int emin=0,jmin=0;
-  i=addr%ICACHE_LEN;
+  i=pc%ICACHE_LEN;
   if(DM_IC){
     for(j=0;j<IC_NWAY;j++){
       if(INSTR_CACHE[i].pc[j]==-1){
