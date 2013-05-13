@@ -191,10 +191,6 @@ bool icache_lu(int pc){
     INSTR_CACHE[emin].use[jmin]=0;
     return false;
   }  
-  if(DM_IC){
-    INSTR_CACHE[pc%ICACHE_LEN].pc[pc%IC_NWAY]=pc;
-    return true;
-  }  
   //1 buscar por lugar vago
   for(i=0;i<ICACHE_LEN;i++){
     for(j=0;j<IC_NWAY;j++){
