@@ -24,7 +24,7 @@ icache INSTR_CACHE[ICACHE_LEN];
 int dcount_hit=0,dcount_miss=0,icount_hit=0,icount_miss=0,d_writeback=0, st_instr=0;
 bool dcache_lu(unsigned int addr);
 bool icache_lu(int pc);
-// testa se a instrucao faz read da memoria
+
 void initCache(){
   int i,j;
   for(i=0;i<DCACHE_LEN;i++){
@@ -219,11 +219,12 @@ bool icache_lu(int pc){
   return false;
 }
 
+// testa se a instrucao faz read da memoria
 bool useMemory(unsigned ins_id) {
   return (ins_id >= 1 && ins_id <= 7); // intervalo dos loads
 }
 bool writeMemory(unsigned ins_id){
-  return (ins_id >= 8 && ins_id <= 12); // intervalo dos loads
+  return (ins_id >= 8 && ins_id <= 12); // intervalo dos writes
 }
 // testa se a instrucao escreve no registrador
 bool writeRegister(unsigned ins_id) {
