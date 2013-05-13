@@ -1,10 +1,10 @@
 #include <algorithm>
 #define DCACHE_LEN 1024//num de linhas
-#define DC_NWAY 16//1 para DM
+#define DC_NWAY 16//n-way
 #define ICACHE_LEN 512//num de linhas
-#define IC_NWAY 16//1 para DM
-#define DM_DC 1
-#define DM_IC 1
+#define IC_NWAY 16//n-way
+#define DM_DC 1//1 para DM 0 para Fully-assoc 
+#define DM_IC 1//1 para DM 0 para Fully-assoc 
 
 unsigned int DC_ADDR;
 typedef struct  dcache {
@@ -60,7 +60,6 @@ bool checkBranchPred(bool branch_res, int ac_pc, int npc = 0) {
 
   if (bp_hash[(ac_pc / 4) % N].guess() == branch_res &&
       (!branch_res || bp_hash[(ac_pc / 4) % N].jump_pc == npc)) {
-    // PURE AWESOMENESS! I BELIEVE IN UNICORNS, RAINBOWS AND CANDY MOUNTAINS
     retval = true;
   } else {
     hazard_count++;
