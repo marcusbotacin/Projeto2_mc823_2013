@@ -3,8 +3,8 @@
 #define DC_NWAY 16//1 para DM
 #define ICACHE_LEN 512//num de linhas
 #define IC_NWAY 16//1 para DM
-#define DM_DC 0
-#define DM_IC 0
+#define DM_DC 1
+#define DM_IC 1
 
 unsigned int DC_ADDR;
 typedef struct  dcache {

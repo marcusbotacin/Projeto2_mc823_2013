@@ -46,10 +46,14 @@ bool dcache_hit(unsigned int addr, bool store){
   int i=0,j=0;
   if(store)
     st_instr++;
+  i=addr%DCACHE_LEN;
   if(DM_DC){
-    if(DATA_CACHE[addr%DCACHE_LEN].addr[addr%DC_NWAY]==addr){
-      DATA_CACHE[addr%DCACHE_LEN].dirty[addr%DC_NWAY]=true;
-      return true;
+    for(j=0;j<DC_NWAY;j++){
+      if(DATA_CACHE[i].addr[j]==addr){
+	DATA_CACHE[i].dirty[j]=true;
+	DATA_CACHE[i].use[j]++;
+	return true;
+      }
     }
     dcache_lu(addr);
     return false;
@@ -70,10 +74,34 @@ bool dcache_hit(unsigned int addr, bool store){
 //least used, true para lugar livre, false para remocao
 bool dcache_lu(unsigned int addr){
   int i,j;
+  int min=-1;
+  int emin,jmin;
+  i=addr%DCACHE_LEN;
   if(DM_DC){
-    DATA_CACHE[addr%DCACHE_LEN].addr[addr%DC_NWAY]=addr;
-    DATA_CACHE[addr%DCACHE_LEN].dirty[addr%DC_NWAY]=false;
-    return true;
+    for(j=0;j<DC_NWAY;j++){
+      if(DATA_CACHE[i].addr[j]==-1){
+	DATA_CACHE[i].addr[j]=addr;
+	DATA_CACHE[i].use[j]=0;
+	DATA_CACHE[i].dirty[j]=false;
+	return true;
+      }
+      if(min==-1){
+	min=DATA_CACHE[i].use[j];
+	emin=i;
+	jmin=j;
+      }
+      else if(DATA_CACHE[i].use[j]<min){
+	min=DATA_CACHE[i].use[j];
+	emin=i;
+	jmin=j;
+      }
+    }
+    if(DATA_CACHE[emin].dirty[jmin])
+      d_writeback++;
+    DATA_CACHE[emin].addr[jmin]=addr;
+    DATA_CACHE[emin].use[jmin]=0;
+    DATA_CACHE[emin].dirty[jmin]=false;
+    return false;
   }  
   //1 buscar por lugar vago
   for(i=0;i<DCACHE_LEN;i++){
@@ -84,8 +112,6 @@ bool dcache_lu(unsigned int addr){
       }
     }
   }
-  int min=-1;
-  int emin,jmin;
   for(i=0;i<DCACHE_LEN;i++){
     for(j=0;j<DC_NWAY;j++){
       if(min==-1){
@@ -111,14 +137,17 @@ bool dcache_lu(unsigned int addr){
 bool icache_hit(int ac_pc){
   int pc = ac_pc-4;
   int i=0,j=0;
+  i=pc%ICACHE_LEN;
   if(DM_IC){
-    if(INSTR_CACHE[pc%ICACHE_LEN].pc[pc%IC_NWAY]==pc){
-      return true;
+    for(j=0;j<IC_NWAY;j++){
+      if(INSTR_CACHE[i].pc[j]==pc){
+	INSTR_CACHE[i].use[j]++;
+	return true;
+      }
     }
     icache_lu(pc);
     return false;
   }  
-
   for(i=0;i<ICACHE_LEN;i++){
     for(j=0;j<IC_NWAY;j++){
       if(INSTR_CACHE[i].pc[j]==pc){
@@ -133,6 +162,31 @@ bool icache_hit(int ac_pc){
 //least used, true para lugar livre, false para remocao
 bool icache_lu(int pc){
   int i,j;
+  int min=-1;
+  int emin=0,jmin=0;
+  i=addr%ICACHE_LEN;
+  if(DM_IC){
+    for(j=0;j<IC_NWAY;j++){
+      if(INSTR_CACHE[i].pc[j]==-1){
+	INSTR_CACHE[i].pc[j]=pc;
+	INSTR_CACHE[i].use[j]=0;
+	return true;
+      }
+      if(min==-1){
+	min=INSTR_CACHE[i].use[j];
+	emin=i;
+	jmin=j;
+      }
+      else if(INSTR_CACHE[i].use[j]<min){
+	min=INSTR_CACHE[i].use[j];
+	emin=i;
+	jmin=j;
+      }
+    }
+    INSTR_CACHE[emin].pc[jmin]=pc;
+    INSTR_CACHE[emin].use[jmin]=0;
+    return false;
+  }  
   if(DM_IC){
     INSTR_CACHE[pc%ICACHE_LEN].pc[pc%IC_NWAY]=pc;
     return true;
@@ -146,8 +200,6 @@ bool icache_lu(int pc){
       }
     }
   }
-  int min=-1;
-  int emin=0,jmin=0;
   for(i=0;i<ICACHE_LEN;i++){
     for(j=0;j<IC_NWAY;j++){
       if(min==-1){
