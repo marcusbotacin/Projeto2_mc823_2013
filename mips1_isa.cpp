@@ -184,6 +184,7 @@ void ac_behavior( sb )
   unsigned char byte;
   dbg_printf("sb r%d, %d(r%d)\n", rt, imm & 0xFFFF, rs);
   byte = RB[rt] & 0xFF;
+  DC_ADDR=RB[rs]+imm;
   DM.write_byte(RB[rs] + imm, byte);
   dbg_printf("Result = %#x\n", (int) byte);
 };
@@ -195,6 +196,7 @@ void ac_behavior( sh )
   dbg_printf("sh r%d, %d(r%d)\n", rt, imm & 0xFFFF, rs);
   half = RB[rt] & 0xFFFF;
   DM.write_half(RB[rs] + imm, half);
+  DC_ADDR=RB[rs]+imm;
   dbg_printf("Result = %#x\n", (int) half);
 };
 
@@ -203,6 +205,7 @@ void ac_behavior( sw )
 {
   dbg_printf("sw r%d, %d(r%d)\n", rt, imm & 0xFFFF, rs);
   DM.write(RB[rs] + imm, RB[rt]);
+  DC_ADDR=RB[rs]+imm;
   dbg_printf("Result = %#x\n", RB[rt]);
 };
 
@@ -219,6 +222,7 @@ void ac_behavior( swl )
   data >>= offset;
   data |= DM.read(addr & 0xFFFFFFFC) & (0xFFFFFFFF << (32-offset));
   DM.write(addr & 0xFFFFFFFC, data);
+  DC_ADDR=addr & 0xFFFFFFFC;
   dbg_printf("Result = %#x\n", data);
 };
 
@@ -235,6 +239,7 @@ void ac_behavior( swr )
   data <<= offset;
   data |= DM.read(addr & 0xFFFFFFFC) & ((1<<offset)-1);
   DM.write(addr & 0xFFFFFFFC, data);
+  DC_ADDR=addr & 0xFFFFFFFC;
   dbg_printf("Result = %#x\n", data);
 };
 

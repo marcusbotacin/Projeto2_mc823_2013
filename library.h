@@ -1,14 +1,17 @@
 #include <algorithm>
-#define DCACHE_LEN 1024
-#define ICACHE_LEN 1024
+#define DCACHE_LEN 1024//num de linhas
+#define DC_NWAY 16//1 para DM
+#define ICACHE_LEN 512//num de linhas
+#define IC_NWAY 16//1 para DM
 unsigned int DC_ADDR;
 typedef struct  dcache {
-  unsigned int addr;
-  int use;//num de vezes utilizado
+  unsigned int addr[DC_NWAY];
+  int use[DC_NWAY];//num de vezes utilizado
+  bool dirty[DC_NWAY];//dirty-bit , write back policy
 };
 typedef struct  icache {
-  unsigned int pc;
-  int use;//num de vezes utilizado
+  unsigned int pc[IC_NWAY];
+  int use[IC_NWAY];//num de vezes utilizado
 };
 struct control_t {
   int rs, rt, rd;

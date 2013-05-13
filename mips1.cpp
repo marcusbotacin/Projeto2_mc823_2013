@@ -21,28 +21,39 @@
 control_t IF, ID, EX, MEM, WB;
 dcache DATA_CACHE[DCACHE_LEN];
 icache INSTR_CACHE[ICACHE_LEN];
-int dcount_hit=0,dcount_miss=0,icount_hit=0,icount_miss=0;
+int dcount_hit=0,dcount_miss=0,icount_hit=0,icount_miss=0,d_writeback=0, st_instr=0;
 bool dcache_lu(unsigned int addr);
 bool icache_lu(int pc);
 // testa se a instrucao faz read da memoria
 void initCache(){
-  int i;
+  int i,j;
   for(i=0;i<DCACHE_LEN;i++){
-    DATA_CACHE[i].addr=-1;
-    DATA_CACHE[i].use=0;
+    for(j=0;j<DC_NWAY;j++){
+      DATA_CACHE[i].addr[j]=-1;
+      DATA_CACHE[i].use[j]=0;
+      DATA_CACHE[i].dirty[j]=false;
+    }
   }
   for(i=0;i<ICACHE_LEN;i++){
-    INSTR_CACHE[i].pc=-1;
-    INSTR_CACHE[i].use=0;
+    for(j=0;j<IC_NWAY;j++){
+      INSTR_CACHE[i].pc[j]=-1;
+      INSTR_CACHE[i].use[j]=0;
+    }
   }
 }
 
-bool dcache_hit(unsigned int addr){
-  int i=0;
+bool dcache_hit(unsigned int addr, bool store){
+  int i=0,j=0;
+  if(store)
+    st_instr++;
   for(i=0;i<DCACHE_LEN;i++){
-    if(DATA_CACHE[i].addr==addr){
-      DATA_CACHE[i].use++;
-      return true;
+    for(j=0;j<DC_NWAY;j++){
+      if(DATA_CACHE[i].addr[j]==addr){
+	if(store)
+	  DATA_CACHE[i].dirty[j]=true;
+	DATA_CACHE[i].use[j]++;
+	return true;
+      }
     }
   }
   dcache_lu(addr);
@@ -50,38 +61,49 @@ bool dcache_hit(unsigned int addr){
 }
 //least used, true para lugar livre, false para remocao
 bool dcache_lu(unsigned int addr){
-  int i;
+  int i,j;
   //1 buscar por lugar vago
   for(i=0;i<DCACHE_LEN;i++){
-    if(DATA_CACHE[i].addr==-1){
-      DATA_CACHE[i].addr=addr;
-      return true;
+    for(j=0;j<DC_NWAY;j++){
+      if(DATA_CACHE[i].addr[j]==-1){
+	DATA_CACHE[i].addr[j]=addr;
+	return true;
+      }
     }
   }
   int min=-1;
-  int emin;
+  int emin,jmin;
   for(i=0;i<DCACHE_LEN;i++){
-    if(min==-1){
-      min=DATA_CACHE[i].use;
-      emin=i;
-    }
-    else if(DATA_CACHE[i].use<min){
-      min=DATA_CACHE[i].use;
-      emin=i;
+    for(j=0;j<DC_NWAY;j++){
+      if(min==-1){
+	min=DATA_CACHE[i].use[j];
+	emin=i;
+	jmin=j;
+      }
+      else if(DATA_CACHE[i].use[j]<min){
+	min=DATA_CACHE[i].use[j];
+	emin=i;
+	jmin=j;
+      }
     }
   }
-  DATA_CACHE[emin].addr=addr;
-  DATA_CACHE[emin].use=0;
+  if(DATA_CACHE[emin].dirty[jmin])
+    d_writeback++;
+  DATA_CACHE[emin].addr[jmin]=addr;
+  DATA_CACHE[emin].use[jmin]=0;
+  DATA_CACHE[emin].dirty[jmin]=false;
   return false;
 }
 
 bool icache_hit(int ac_pc){
   int pc = ac_pc-4;
-  int i=0;
+  int i=0,j=0;
   for(i=0;i<ICACHE_LEN;i++){
-    if(INSTR_CACHE[i].pc==pc){
-      INSTR_CACHE[i].use++;
-      return true;
+    for(j=0;j<IC_NWAY;j++){
+      if(INSTR_CACHE[i].pc[j]==pc){
+	INSTR_CACHE[i].use[j]++;
+	return true;
+      }
     }
   }
   icache_lu(pc);
@@ -89,35 +111,43 @@ bool icache_hit(int ac_pc){
 }
 //least used, true para lugar livre, false para remocao
 bool icache_lu(int pc){
-  int i;
+  int i,j;
   //1 buscar por lugar vago
   for(i=0;i<ICACHE_LEN;i++){
-    if(INSTR_CACHE[i].pc==-1){
-      INSTR_CACHE[i].pc=pc;
-      return true;
+    for(j=0;j<IC_NWAY;j++){
+      if(INSTR_CACHE[i].pc[j]==-1){
+	INSTR_CACHE[i].pc[j]=pc;
+	return true;
+      }
     }
   }
   int min=-1;
-  int emin;
+  int emin=0,jmin=0;
   for(i=0;i<ICACHE_LEN;i++){
-    if(min==-1){
-      min=INSTR_CACHE[i].use;
-      emin=i;
-    }
-    else if(INSTR_CACHE[i].use<min){
-      min=INSTR_CACHE[i].use;
-      emin=i;
+    for(j=0;j<IC_NWAY;j++){
+      if(min==-1){
+	min=INSTR_CACHE[i].use[j];
+	emin=i;
+	jmin=j;
+      }
+      else if(INSTR_CACHE[i].use[j]<min){
+	min=INSTR_CACHE[i].use[j];
+	emin=i;
+	jmin=j;
+      }
     }
   }
-  INSTR_CACHE[emin].pc=pc;
-  INSTR_CACHE[emin].use=0;
+  INSTR_CACHE[emin].pc[jmin]=pc;
+  INSTR_CACHE[emin].use[jmin]=0;
   return false;
 }
 
 bool useMemory(unsigned ins_id) {
   return (ins_id >= 1 && ins_id <= 7); // intervalo dos loads
 }
-
+bool writeMemory(unsigned ins_id){
+  return (ins_id >= 8 && ins_id <= 12); // intervalo dos loads
+}
 // testa se a instrucao escreve no registrador
 bool writeRegister(unsigned ins_id) {
   return (ins_id >= 1 && ins_id <= 7) ||  // intervalo dos loads
@@ -498,8 +528,8 @@ void mips1::behavior() {
    
     
     //hit&miss data_cache
-      if(useMemory(ins_id)){
-	if(dcache_hit(DC_ADDR))
+      if(useMemory(ins_id) || writeMemory(ins_id)){
+	if(dcache_hit(DC_ADDR,writeMemory(ins_id)))
 	  dcount_hit++;
 	else
 	  dcount_miss++;
@@ -624,6 +654,8 @@ void mips1::stop(int status) {
   cout << "| Control hazards: " << hazard_count_by_type[CONTROL_HAZARD] << endl;
   cout << "| DATA CACHE HIT: " << dcount_hit << endl;
   cout << "| DATA CACHE MISS: " << dcount_miss << endl;
+  cout << "| TOTAL STORE INSTR: " << st_instr << endl;
+  cout << "| DATA WRITE BACK: " << d_writeback << endl;
   cout << "| INSTR CACHE HIT: " << icount_hit << endl;
   cout << "| INSTR CACHE MISS: " << icount_miss << endl;
 }
